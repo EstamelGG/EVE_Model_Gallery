@@ -139,7 +139,7 @@ const brightnessIcon = document.querySelector('.brightness-icon');
 const resetViewIcon = document.getElementById('resetViewIcon');
 const modelLoadingSpinner = document.getElementById('modelLoadingSpinner');
 
-function loadModel(src, shipInfo = null) {
+function loadModel(src, shipInfo = null, typeId = null) {
     if (!src) return;
     
     // 显示加载动画
@@ -158,6 +158,20 @@ function loadModel(src, shipInfo = null) {
         copyrightFooter.classList.add('collapsed');
     }
     
+    // 更新 URL hash
+    if (typeId) {
+        const newHash = `typeid=${typeId}`;
+        // 只有当 hash 不同时才更新，避免不必要的更新
+        if (window.location.hash !== `#${newHash}`) {
+            window.location.hash = newHash;
+        }
+    } else {
+        // 如果没有 typeId，清除 hash
+        if (window.location.hash) {
+            window.location.hash = '';
+        }
+    }
+    
     const shipNameDisplay = document.getElementById('shipNameDisplay');
     if (shipNameDisplay) {
         if (shipInfo) {
@@ -169,8 +183,12 @@ function loadModel(src, shipInfo = null) {
             }
             shipNameDisplay.textContent = displayName;
             shipNameDisplay.classList.add('show');
+            // 更新页面标题
+            document.title = `${displayName} - EVE Model Viewer`;
         } else {
             shipNameDisplay.classList.remove('show');
+            // 恢复默认标题
+            document.title = 'EVE Model Viewer';
         }
     }
     
@@ -213,6 +231,9 @@ function loadModel(src, shipInfo = null) {
         if (shipNameDisplay) {
             shipNameDisplay.classList.remove('show');
         }
+        
+        // 恢复默认标题
+        document.title = 'EVE Model Viewer';
         
         // 展开版权说明
         const copyrightFooter = document.querySelector('.copyright-footer');
@@ -668,7 +689,7 @@ class NavigationManager {
                         name: type.name,
                         name_en: type.name_en || '',
                         name_zh: type.name_zh || ''
-                    });
+                    }, type.id);
                 }
                 
                 if (this.container && this.container.id === 'navContentMobile') {
@@ -768,7 +789,7 @@ function loadModelFromHash() {
         name: result.type.name,
         name_en: result.type.name_en || '',
         name_zh: result.type.name_zh || ''
-    });
+    }, result.type.id);
 }
 
 function showModelNotFoundError() {
@@ -859,7 +880,7 @@ function renderSearchResults(results, searchResultsContainer, navManager) {
                             name: result.name,
                             name_en: result.name_en || '',
                             name_zh: result.name_zh || ''
-                        });
+                        }, result.id);
                     }
                 });
             } else {
@@ -874,7 +895,7 @@ function renderSearchResults(results, searchResultsContainer, navManager) {
                                 name: result.name,
                                 name_en: result.name_en || '',
                                 name_zh: result.name_zh || ''
-                            });
+                            }, result.id);
                         }
                     }
                 }, 100);
