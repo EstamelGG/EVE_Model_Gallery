@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLB Model Viewer</title>
+    <script>
+        self.ModelViewerElement = self.ModelViewerElement || {};
+        self.ModelViewerElement.meshoptDecoderLocation = 'https://cdn.jsdelivr.net/npm/meshoptimizer/meshopt_decoder.js';
+    </script>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+        <p class="loading-text" id="loadingText"></p>
+    </div>
+
+    <div class="glass-frame" id="dropZone" style="display: none;">
+        <div class="inner-content">
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-resizer" id="sidebarResizer"></div>
+                <div class="search-box" id="searchBox">
+                    <input type="text" id="searchInput" placeholder="" autocomplete="off">
+                </div>
+                <div class="breadcrumb" id="breadcrumb"></div>
+                <div class="nav-content" id="navContent"></div>
+            </div>
+
+            <div class="content-main">
+                <div class="ship-name-display" id="shipNameDisplay"></div>
+                <div class="upload-ui" id="uploadUI">
+                    <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                    <p class="hint" id="hintText"></p>
+                </div>
+
+                <div class="model-loading-spinner" id="modelLoadingSpinner">
+                    <div class="model-spinner"></div>
+                </div>
+
+                <model-viewer
+                    id="modelViewer"
+                    src=""
+                    camera-controls
+                    auto-rotate
+                    auto-rotate-speed="10deg"
+                    camera-orbit="45deg auto auto"
+                    max-camera-orbit="auto auto 200%"
+                    interaction-prompt="none"
+                    shadow-intensity="1"
+                    environment-image="neutral"
+                    exposure="1">
+                </model-viewer>
+
+                <div class="info-tag" id="infoTag"></div>
+                <div class="error-tag" id="errorTag"></div>
+
+                <div class="brightness-control" id="brightnessControl">
+                    <svg class="brightness-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" title="重置亮度">
+                        <path d="M12 2V4M12 20V22M4 12H2M6.31412 6.31412L4.8999 4.8999M17.6859 6.31412L19.1001 4.8999M6.31412 17.69L4.8999 19.1042M17.6859 17.69L19.1001 19.1042M22 12H20M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <input type="range" class="brightness-slider" id="brightnessSlider" min="0.5" max="3" step="0.5" value="1">
+                    <svg class="control-icon" id="resetViewIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" title="重置视角">
+                        <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.83 6.72 2.24"></path>
+                        <polyline points="21 3 21 8 16 8"></polyline>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="bottom-panel" id="bottomPanel">
+                <button class="model-selector-btn" id="modelSelectorBtn">
+                    <span id="modelSelectorBtnText">选择模型</span>
+                </button>
+            </div>
+
+            <div class="drawer-overlay" id="drawerOverlay"></div>
+            <div class="drawer-panel" id="drawerPanel">
+                <div class="drawer-header">
+                    <button class="drawer-close-btn" id="drawerCloseBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                <div class="drawer-content">
+                    <div class="search-box" id="searchBoxMobile">
+                        <input type="text" id="searchInputMobile" placeholder="" autocomplete="off">
+                    </div>
+                    <div class="breadcrumb" id="breadcrumbMobile"></div>
+                    <div class="nav-content" id="navContentMobile"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="copyright-footer">
+        <p>EVE Online and the EVE logo are the registered trademarks of CCP hf. All rights are reserved worldwide. All other trademarks are the property of their respective owners. EVE Online, the EVE logo, EVE and all associated logos and designs are the intellectual property of CCP hf. All artwork, screenshots, characters, vehicles, storylines, world facts or other recognizable features of the intellectual property relating to these trademarks are likewise the intellectual property of CCP hf. CCP hf. has granted permission to EVE Tycoon to use EVE Online and all associated logos and designs for promotional and information purposes on its website but does not endorse, and is not in any way affiliated with, EVE Tycoon. CCP is in no way responsible for the content on or functioning of this website, nor can it be liable for any damage arising from the use of this website.</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

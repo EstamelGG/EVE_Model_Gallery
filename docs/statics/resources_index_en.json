@@ -1,0 +1,3827 @@
+[
+  {
+    "id": 6,
+    "name": "Ship",
+    "icon_name": "category_6.png",
+    "groups": [
+      {
+        "id": 324,
+        "name": "Assault Frigate",
+        "icon_name": "type_11365_64.png",
+        "types": [
+          {
+            "id": 32788,
+            "name": "Cambion",
+            "name_en": "Cambion",
+            "name_zh": "魔裔级",
+            "icon_name": "type_32788_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 12044,
+            "name": "Enyo",
+            "name_en": "Enyo",
+            "name_zh": "恩尤级",
+            "icon_name": "type_12044_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 32207,
+            "name": "Freki",
+            "name_en": "Freki",
+            "name_zh": "暴狼级",
+            "icon_name": "type_32207_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 74141,
+            "name": "Geri",
+            "name_en": "Geri",
+            "name_zh": "格里级",
+            "icon_name": "type_74141_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11381,
+            "name": "Harpy",
+            "name_en": "Harpy",
+            "name_zh": "女妖级",
+            "icon_name": "type_11381_64.png",
+            "model_path": "./models/11381_lite.glb"
+          },
+          {
+            "id": 11379,
+            "name": "Hawk",
+            "name_en": "Hawk",
+            "name_zh": "战鹰级",
+            "icon_name": "type_11379_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 12042,
+            "name": "Ishkur",
+            "name_en": "Ishkur",
+            "name_zh": "伊什库尔级",
+            "icon_name": "type_12042_64.png",
+            "model_path": "./models/12042_lite.glb"
+          },
+          {
+            "id": 11400,
+            "name": "Jaguar",
+            "name_en": "Jaguar",
+            "name_zh": "美洲虎级",
+            "icon_name": "type_11400_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 3516,
+            "name": "Malice",
+            "name_en": "Malice",
+            "name_zh": "恶意级",
+            "icon_name": "type_3516_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 52250,
+            "name": "Nergal",
+            "name_en": "Nergal",
+            "name_zh": "涅伽尔级",
+            "icon_name": "type_52250_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11393,
+            "name": "Retribution",
+            "name_en": "Retribution",
+            "name_zh": "审判者级",
+            "icon_name": "type_11393_64.png",
+            "model_path": "./models/11393_lite.glb"
+          },
+          {
+            "id": 78414,
+            "name": "Shapash",
+            "name_en": "Shapash",
+            "name_zh": "沙帕什级",
+            "icon_name": "type_78414_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 2834,
+            "name": "Utu",
+            "name_en": "Utu",
+            "name_zh": "乌图级",
+            "icon_name": "type_2834_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11365,
+            "name": "Vengeance",
+            "name_en": "Vengeance",
+            "name_zh": "复仇级",
+            "icon_name": "type_11365_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11371,
+            "name": "Wolf",
+            "name_en": "Wolf",
+            "name_zh": "猎狼级",
+            "icon_name": "type_11371_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 1201,
+        "name": "Attack Battlecruiser",
+        "icon_name": "type_4302_64.png",
+        "types": [
+          {
+            "id": 89807,
+            "name": "Anhinga",
+            "name_en": "Anhinga",
+            "name_zh": "蛇鹈号",
+            "icon_name": "type_89807_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 4306,
+            "name": "Naga",
+            "name_en": "Naga",
+            "name_zh": "娜迦级",
+            "icon_name": "type_4306_64.png",
+            "model_path": "./models/4306_lite.glb"
+          },
+          {
+            "id": 4302,
+            "name": "Oracle",
+            "name_en": "Oracle",
+            "name_zh": "预言级",
+            "icon_name": "type_4302_64.png",
+            "model_path": "./models/4302_lite.glb"
+          },
+          {
+            "id": 4308,
+            "name": "Talos",
+            "name_en": "Talos",
+            "name_zh": "塔洛斯级",
+            "icon_name": "type_4308_64.png",
+            "model_path": "./models/4308_lite.glb"
+          },
+          {
+            "id": 4310,
+            "name": "Tornado",
+            "name_en": "Tornado",
+            "name_zh": "龙卷风级",
+            "icon_name": "type_4310_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "name": "Battleship",
+        "icon_name": "type_638_64.png",
+        "types": [
+          {
+            "id": 24692,
+            "name": "Abaddon",
+            "name_en": "Abaddon",
+            "name_zh": "地狱天使级",
+            "icon_name": "type_3649_64.png",
+            "model_path": "./models/24692_lite.glb"
+          },
+          {
+            "id": 642,
+            "name": "Apocalypse",
+            "name_en": "Apocalypse",
+            "name_zh": "灾难级",
+            "icon_name": "type_642_64.png",
+            "model_path": "./models/642_lite.glb"
+          },
+          {
+            "id": 11936,
+            "name": "Apocalypse Imperial Issue",
+            "name_en": "Apocalypse Imperial Issue",
+            "name_zh": "灾难级帝国型",
+            "icon_name": "type_11936_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 17726,
+            "name": "Apocalypse Navy Issue",
+            "name_en": "Apocalypse Navy Issue",
+            "name_zh": "灾难级海军型",
+            "icon_name": "type_17726_64.png",
+            "model_path": "./models/17726_lite.glb"
+          },
+          {
+            "id": 643,
+            "name": "Armageddon",
+            "name_en": "Armageddon",
+            "name_zh": "末日沙场级",
+            "icon_name": "type_643_64.png",
+            "model_path": "./models/643_lite.glb"
+          },
+          {
+            "id": 11938,
+            "name": "Armageddon Imperial Issue",
+            "name_en": "Armageddon Imperial Issue",
+            "name_zh": "末日沙场级帝国型",
+            "icon_name": "type_11938_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 32305,
+            "name": "Armageddon Navy Issue",
+            "name_en": "Armageddon Navy Issue",
+            "name_zh": "末日沙场级海军型",
+            "icon_name": "type_32305_64.png",
+            "model_path": "./models/32305_lite.glb"
+          },
+          {
+            "id": 33820,
+            "name": "Barghest",
+            "name_en": "Barghest",
+            "name_zh": "巴盖斯级",
+            "icon_name": "type_33820_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 17920,
+            "name": "Bhaalgorn",
+            "name_en": "Bhaalgorn",
+            "name_zh": "巴戈龙级",
+            "icon_name": "type_17920_64.png",
+            "model_path": "./models/17920_lite.glb"
+          },
+          {
+            "id": 645,
+            "name": "Dominix",
+            "name_en": "Dominix",
+            "name_zh": "多米尼克斯级",
+            "icon_name": "type_645_64.png",
+            "model_path": "./models/645_lite.glb"
+          },
+          {
+            "id": 32307,
+            "name": "Dominix Navy Issue",
+            "name_en": "Dominix Navy Issue",
+            "name_zh": "多米尼克斯级海军型",
+            "icon_name": "type_32307_64.png",
+            "model_path": "./models/32307_lite.glb"
+          },
+          {
+            "id": 24690,
+            "name": "Hyperion",
+            "name_en": "Hyperion",
+            "name_zh": "亥伯龙神级",
+            "icon_name": "type_3706_64.png",
+            "model_path": "./models/24690_lite.glb"
+          },
+          {
+            "id": 47271,
+            "name": "Leshak",
+            "name_en": "Leshak",
+            "name_zh": "勒沙克级",
+            "icon_name": "type_47271_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 17738,
+            "name": "Machariel",
+            "name_en": "Machariel",
+            "name_zh": "马克瑞级",
+            "icon_name": "type_17738_64.png",
+            "model_path": "./models/17738_lite.glb"
+          },
+          {
+            "id": 24694,
+            "name": "Maelstrom",
+            "name_en": "Maelstrom",
+            "name_zh": "死亡漩涡级",
+            "icon_name": "type_3781_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 641,
+            "name": "Megathron",
+            "name_en": "Megathron",
+            "name_zh": "万王宝座级",
+            "icon_name": "type_641_64.png",
+            "model_path": "./models/641_lite.glb"
+          },
+          {
+            "id": 13202,
+            "name": "Megathron Federate Issue",
+            "name_en": "Megathron Federate Issue",
+            "name_zh": "万王宝座级联邦型",
+            "icon_name": "type_13202_64.png",
+            "model_path": "./models/13202_lite.glb"
+          },
+          {
+            "id": 17728,
+            "name": "Megathron Navy Issue",
+            "name_en": "Megathron Navy Issue",
+            "name_zh": "万王宝座级海军型",
+            "icon_name": "type_17728_64.png",
+            "model_path": "./models/17728_lite.glb"
+          },
+          {
+            "id": 33472,
+            "name": "Nestor",
+            "name_en": "Nestor",
+            "name_zh": "涅斯托级",
+            "icon_name": "type_33472_64.png",
+            "model_path": "./models/33472_lite.glb"
+          },
+          {
+            "id": 17736,
+            "name": "Nightmare",
+            "name_en": "Nightmare",
+            "name_zh": "噩梦级",
+            "icon_name": "type_17736_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 47466,
+            "name": "Praxis",
+            "name_en": "Praxis",
+            "name_zh": "实践级",
+            "icon_name": "type_47466_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 17918,
+            "name": "Rattlesnake",
+            "name_en": "Rattlesnake",
+            "name_zh": "响尾蛇级",
+            "icon_name": "type_17918_64.png",
+            "model_path": "./models/17918_lite.glb"
+          },
+          {
+            "id": 638,
+            "name": "Raven",
+            "name_en": "Raven",
+            "name_zh": "乌鸦级",
+            "icon_name": "type_638_64.png",
+            "model_path": "./models/638_lite.glb"
+          },
+          {
+            "id": 17636,
+            "name": "Raven Navy Issue",
+            "name_en": "Raven Navy Issue",
+            "name_zh": "乌鸦级海军型",
+            "icon_name": "type_17636_64.png",
+            "model_path": "./models/17636_lite.glb"
+          },
+          {
+            "id": 26840,
+            "name": "Raven State Issue",
+            "name_en": "Raven State Issue",
+            "name_zh": "乌鸦级政府型",
+            "icon_name": "type_26840_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 24688,
+            "name": "Rokh",
+            "name_en": "Rokh",
+            "name_zh": "鹏鲲级",
+            "icon_name": "type_3688_64.png",
+            "model_path": "./models/24688_lite.glb"
+          },
+          {
+            "id": 640,
+            "name": "Scorpion",
+            "name_en": "Scorpion",
+            "name_zh": "毒蝎级",
+            "icon_name": "type_640_64.png",
+            "model_path": "./models/640_lite.glb"
+          },
+          {
+            "id": 32309,
+            "name": "Scorpion Navy Issue",
+            "name_en": "Scorpion Navy Issue",
+            "name_zh": "毒蝎级海军型",
+            "icon_name": "type_32309_64.png",
+            "model_path": "./models/32309_lite.glb"
+          },
+          {
+            "id": 639,
+            "name": "Tempest",
+            "name_en": "Tempest",
+            "name_zh": "狂暴级",
+            "icon_name": "type_639_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 17732,
+            "name": "Tempest Fleet Issue",
+            "name_en": "Tempest Fleet Issue",
+            "name_zh": "狂暴级舰队型",
+            "icon_name": "type_17732_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 26842,
+            "name": "Tempest Tribal Issue",
+            "name_en": "Tempest Tribal Issue",
+            "name_zh": "狂暴级部族型",
+            "icon_name": "type_26842_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 54733,
+            "name": "Thunderchild",
+            "name_en": "Thunderchild",
+            "name_zh": "雷裔级",
+            "icon_name": "type_54733_64.png",
+            "model_path": "./models/54733_lite.glb"
+          },
+          {
+            "id": 644,
+            "name": "Typhoon",
+            "name_en": "Typhoon",
+            "name_zh": "台风级",
+            "icon_name": "type_644_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 32311,
+            "name": "Typhoon Fleet Issue",
+            "name_en": "Typhoon Fleet Issue",
+            "name_zh": "台风级舰队型",
+            "icon_name": "type_32311_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 17740,
+            "name": "Vindicator",
+            "name_en": "Vindicator",
+            "name_zh": "复仇者级",
+            "icon_name": "type_17740_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 898,
+        "name": "Black Ops",
+        "icon_name": "type_22428_64.png",
+        "types": [
+          {
+            "id": 44996,
+            "name": "Marshal",
+            "name_en": "Marshal",
+            "name_zh": "元帅级",
+            "icon_name": "type_44996_64.png",
+            "model_path": "./models/44996_lite.glb"
+          },
+          {
+            "id": 22440,
+            "name": "Panther",
+            "name_en": "Panther",
+            "name_zh": "黑豹级",
+            "icon_name": "type_22440_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 85236,
+            "name": "Python",
+            "name_en": "Python",
+            "name_zh": "巨蟒级",
+            "icon_name": "type_85236_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 22428,
+            "name": "Redeemer",
+            "name_en": "Redeemer",
+            "name_zh": "救世级",
+            "icon_name": "type_22428_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 22430,
+            "name": "Sin",
+            "name_en": "Sin",
+            "name_zh": "罪恶级",
+            "icon_name": "type_22430_64.png",
+            "model_path": "./models/22430_lite.glb"
+          },
+          {
+            "id": 22436,
+            "name": "Widow",
+            "name_en": "Widow",
+            "name_zh": "寡妇级",
+            "icon_name": "type_22436_64.png",
+            "model_path": "./models/22436_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1202,
+        "name": "Blockade Runner",
+        "icon_name": "type_12729_64.png",
+        "types": [
+          {
+            "id": 12729,
+            "name": "Crane",
+            "name_en": "Crane",
+            "name_zh": "天鹤级",
+            "icon_name": "type_12729_64.png",
+            "model_path": "./models/12729_lite.glb"
+          },
+          {
+            "id": 81046,
+            "name": "Deluge",
+            "name_en": "Deluge",
+            "name_zh": "洪水级",
+            "icon_name": "type_81046_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 12733,
+            "name": "Prorator",
+            "name_en": "Prorator",
+            "name_zh": "分裂级",
+            "icon_name": "type_12733_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 12735,
+            "name": "Prowler",
+            "name_en": "Prowler",
+            "name_zh": "徘徊者级",
+            "icon_name": "type_12735_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 12743,
+            "name": "Viator",
+            "name_en": "Viator",
+            "name_zh": "旅行者级",
+            "icon_name": "type_12743_64.png",
+            "model_path": "./models/12743_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 883,
+        "name": "Capital Industrial Ship",
+        "icon_name": "type_28352_64.png",
+        "types": [
+          {
+            "id": 28352,
+            "name": "Rorqual",
+            "name_en": "Rorqual",
+            "name_zh": "长须鲸级",
+            "icon_name": "type_28352_64.png",
+            "model_path": "./models/28352_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "name": "Capsule",
+        "icon_name": "type_670_64.png",
+        "types": [
+          {
+            "id": 670,
+            "name": "Capsule",
+            "name_en": "Capsule",
+            "name_zh": "太空舱",
+            "icon_name": "type_670_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 33328,
+            "name": "Capsule - Genolution 'Auroral' 197-variant",
+            "name_en": "Capsule - Genolution 'Auroral' 197-variant",
+            "name_zh": "太空舱 - 格鲁汀 曙光 197-衍生型",
+            "icon_name": "type_33328_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 547,
+        "name": "Carrier",
+        "icon_name": "type_3660_64.png",
+        "types": [
+          {
+            "id": 23757,
+            "name": "Archon",
+            "name_en": "Archon",
+            "name_zh": "执政官级",
+            "icon_name": "type_3660_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 23915,
+            "name": "Chimera",
+            "name_en": "Chimera",
+            "name_zh": "奇美拉级",
+            "icon_name": "type_3523_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 24483,
+            "name": "Nidhoggur",
+            "name_en": "Nidhoggur",
+            "name_zh": "尼铎格尔级",
+            "icon_name": "type_3785_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 23911,
+            "name": "Thanatos",
+            "name_en": "Thanatos",
+            "name_zh": "绝念级",
+            "icon_name": "type_3712_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 419,
+        "name": "Combat Battlecruiser",
+        "icon_name": "type_3756_64.png",
+        "types": [
+          {
+            "id": 78366,
+            "name": "Alligator",
+            "name_en": "Alligator",
+            "name_zh": "短吻鳄级",
+            "icon_name": "type_78366_64.png",
+            "model_path": "./models/78366_lite.glb"
+          },
+          {
+            "id": 16229,
+            "name": "Brutix",
+            "name_en": "Brutix",
+            "name_zh": "布鲁提克斯级",
+            "icon_name": "type_3668_64.png",
+            "model_path": "./models/16229_lite.glb"
+          },
+          {
+            "id": 33151,
+            "name": "Brutix Navy Issue",
+            "name_en": "Brutix Navy Issue",
+            "name_zh": "布鲁提克斯级海军型",
+            "icon_name": "type_33151_64.png",
+            "model_path": "./models/33151_lite.glb"
+          },
+          {
+            "id": 85086,
+            "name": "Cenotaph",
+            "name_en": "Cenotaph",
+            "name_zh": "纪念碑级",
+            "icon_name": "type_85086_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 16231,
+            "name": "Cyclone",
+            "name_en": "Cyclone",
+            "name_zh": "飓风级",
+            "icon_name": "type_3778_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 72811,
+            "name": "Cyclone Fleet Issue",
+            "name_en": "Cyclone Fleet Issue",
+            "name_zh": "飓风级舰队型",
+            "icon_name": "type_72811_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 24698,
+            "name": "Drake",
+            "name_en": "Drake",
+            "name_zh": "幼龙级",
+            "icon_name": "type_3682_64.png",
+            "model_path": "./models/24698_lite.glb"
+          },
+          {
+            "id": 33153,
+            "name": "Drake Navy Issue",
+            "name_en": "Drake Navy Issue",
+            "name_zh": "幼龙级海军型",
+            "icon_name": "type_33153_64.png",
+            "model_path": "./models/33153_lite.glb"
+          },
+          {
+            "id": 49711,
+            "name": "Drekavac",
+            "name_en": "Drekavac",
+            "name_zh": "德雷卡瓦级",
+            "icon_name": "type_49711_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 16227,
+            "name": "Ferox",
+            "name_en": "Ferox",
+            "name_zh": "猛鲑级",
+            "icon_name": "type_3684_64.png",
+            "model_path": "./models/16227_lite.glb"
+          },
+          {
+            "id": 72812,
+            "name": "Ferox Navy Issue",
+            "name_en": "Ferox Navy Issue",
+            "name_zh": "猛鲑级海军型",
+            "icon_name": "type_72812_64.png",
+            "model_path": "./models/72812_lite.glb"
+          },
+          {
+            "id": 3756,
+            "name": "Gnosis",
+            "name_en": "Gnosis",
+            "name_zh": "灵感级",
+            "icon_name": "type_3756_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 24696,
+            "name": "Harbinger",
+            "name_en": "Harbinger",
+            "name_zh": "先驱者级",
+            "icon_name": "type_3646_64.png",
+            "model_path": "./models/24696_lite.glb"
+          },
+          {
+            "id": 33155,
+            "name": "Harbinger Navy Issue",
+            "name_en": "Harbinger Navy Issue",
+            "name_zh": "先驱者级海军型",
+            "icon_name": "type_33155_64.png",
+            "model_path": "./models/33155_lite.glb"
+          },
+          {
+            "id": 24702,
+            "name": "Hurricane",
+            "name_en": "Hurricane",
+            "name_zh": "暴风级",
+            "icon_name": "type_3780_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 33157,
+            "name": "Hurricane Fleet Issue",
+            "name_en": "Hurricane Fleet Issue",
+            "name_zh": "暴风级舰队型",
+            "icon_name": "type_33157_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 78369,
+            "name": "Khizriel",
+            "name_en": "Khizriel",
+            "name_zh": "希兹里尔级",
+            "icon_name": "type_78369_64.png",
+            "model_path": "./models/78369_lite.glb"
+          },
+          {
+            "id": 24700,
+            "name": "Myrmidon",
+            "name_en": "Myrmidon",
+            "name_zh": "弥洱米顿级",
+            "icon_name": "type_3669_64.png",
+            "model_path": "./models/24700_lite.glb"
+          },
+          {
+            "id": 72869,
+            "name": "Myrmidon Navy Issue",
+            "name_en": "Myrmidon Navy Issue",
+            "name_zh": "弥洱米顿级海军型",
+            "icon_name": "type_72869_64.png",
+            "model_path": "./models/72869_lite.glb"
+          },
+          {
+            "id": 16233,
+            "name": "Prophecy",
+            "name_en": "Prophecy",
+            "name_zh": "先知级",
+            "icon_name": "type_3648_64.png",
+            "model_path": "./models/16233_lite.glb"
+          },
+          {
+            "id": 72872,
+            "name": "Prophecy Navy Issue",
+            "name_en": "Prophecy Navy Issue",
+            "name_zh": "先知级海军型",
+            "icon_name": "type_72872_64.png",
+            "model_path": "./models/72872_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 906,
+        "name": "Combat Recon Ship",
+        "icon_name": "type_11959_64.png",
+        "types": [
+          {
+            "id": 20125,
+            "name": "Curse",
+            "name_en": "Curse",
+            "name_zh": "诅咒级",
+            "icon_name": "type_20125_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11961,
+            "name": "Huginn",
+            "name_en": "Huginn",
+            "name_zh": "休津级",
+            "icon_name": "type_11961_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11971,
+            "name": "Lachesis",
+            "name_en": "Lachesis",
+            "name_zh": "拉克希斯级",
+            "icon_name": "type_11971_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11959,
+            "name": "Rook",
+            "name_en": "Rook",
+            "name_zh": "白嘴鸦级",
+            "icon_name": "type_11959_64.png",
+            "model_path": "./models/11959_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1534,
+        "name": "Command Destroyer",
+        "icon_name": "type_37480_64.png",
+        "types": [
+          {
+            "id": 37480,
+            "name": "Bifrost",
+            "name_en": "Bifrost",
+            "name_zh": "天梯级",
+            "icon_name": "type_37480_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 52254,
+            "name": "Draugur",
+            "name_en": "Draugur",
+            "name_zh": "德拉古级",
+            "icon_name": "type_52254_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 37483,
+            "name": "Magus",
+            "name_en": "Magus",
+            "name_zh": "占星级",
+            "icon_name": "type_37483_64.png",
+            "model_path": "./models/37483_lite.glb"
+          },
+          {
+            "id": 89649,
+            "name": "Outrider",
+            "name_en": "Outrider",
+            "name_zh": "先驱级",
+            "icon_name": "type_89649_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 37481,
+            "name": "Pontifex",
+            "name_en": "Pontifex",
+            "name_zh": "教皇级",
+            "icon_name": "type_37481_64.png",
+            "model_path": "./models/37481_lite.glb"
+          },
+          {
+            "id": 37482,
+            "name": "Stork",
+            "name_en": "Stork",
+            "name_zh": "鹳鸟级",
+            "icon_name": "type_37482_64.png",
+            "model_path": "./models/37482_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 540,
+        "name": "Command Ship",
+        "icon_name": "type_22442_64.png",
+        "types": [
+          {
+            "id": 22448,
+            "name": "Absolution",
+            "name_en": "Absolution",
+            "name_zh": "救赎级",
+            "icon_name": "type_22448_64.png",
+            "model_path": "./models/22448_lite.glb"
+          },
+          {
+            "id": 22466,
+            "name": "Astarte",
+            "name_en": "Astarte",
+            "name_zh": "阿施塔特级",
+            "icon_name": "type_22466_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 22468,
+            "name": "Claymore",
+            "name_en": "Claymore",
+            "name_zh": "月刃级",
+            "icon_name": "type_22468_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 22474,
+            "name": "Damnation",
+            "name_en": "Damnation",
+            "name_zh": "永灭级",
+            "icon_name": "type_22474_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 22442,
+            "name": "Eos",
+            "name_en": "Eos",
+            "name_zh": "曙光女神级",
+            "icon_name": "type_22442_64.png",
+            "model_path": "./models/22442_lite.glb"
+          },
+          {
+            "id": 22470,
+            "name": "Nighthawk",
+            "name_en": "Nighthawk",
+            "name_zh": "夜鹰级",
+            "icon_name": "type_22470_64.png",
+            "model_path": "./models/22470_lite.glb"
+          },
+          {
+            "id": 22444,
+            "name": "Sleipnir",
+            "name_en": "Sleipnir",
+            "name_zh": "斯雷普尼级",
+            "icon_name": "type_22444_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 22446,
+            "name": "Vulture",
+            "name_en": "Vulture",
+            "name_zh": "兀鹫级",
+            "icon_name": "type_22446_64.png",
+            "model_path": "./models/22446_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 237,
+        "name": "Corvette",
+        "icon_name": "type_588_64.png",
+        "types": [
+          {
+            "id": 617,
+            "name": "Echo",
+            "name_en": "Echo",
+            "name_zh": "回声级",
+            "icon_name": "type_617_64.png",
+            "model_path": "./models/617_lite.glb"
+          },
+          {
+            "id": 33079,
+            "name": "Hematos",
+            "name_en": "Hematos",
+            "name_zh": "未来人类级",
+            "icon_name": "type_33079_64.png",
+            "model_path": "./models/33079_lite.glb"
+          },
+          {
+            "id": 601,
+            "name": "Ibis",
+            "name_en": "Ibis",
+            "name_zh": "伊毕斯号",
+            "icon_name": "type_601_64.png",
+            "model_path": "./models/601_lite.glb"
+          },
+          {
+            "id": 615,
+            "name": "Immolator",
+            "name_en": "Immolator",
+            "name_zh": "献祭者级",
+            "icon_name": "type_615_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 596,
+            "name": "Impairor",
+            "name_en": "Impairor",
+            "name_zh": "帝国号",
+            "icon_name": "type_596_64.png",
+            "model_path": "./models/596_lite.glb"
+          },
+          {
+            "id": 588,
+            "name": "Reaper",
+            "name_en": "Reaper",
+            "name_zh": "死神号",
+            "icon_name": "type_588_64.png",
+            "model_path": "./models/588_lite.glb"
+          },
+          {
+            "id": 33081,
+            "name": "Taipan",
+            "name_en": "Taipan",
+            "name_zh": "毒蛇级",
+            "icon_name": "type_33081_64.png",
+            "model_path": "./models/33081_lite.glb"
+          },
+          {
+            "id": 606,
+            "name": "Velator",
+            "name_en": "Velator",
+            "name_zh": "维拉托尔号",
+            "icon_name": "type_606_64.png",
+            "model_path": "./models/606_lite.glb"
+          },
+          {
+            "id": 33083,
+            "name": "Violator",
+            "name_en": "Violator",
+            "name_zh": "违逆者级",
+            "icon_name": "type_33083_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 830,
+        "name": "Covert Ops",
+        "icon_name": "type_11172_64.png",
+        "types": [
+          {
+            "id": 11188,
+            "name": "Anathema",
+            "name_en": "Anathema",
+            "name_zh": "咒逐级",
+            "icon_name": "type_11188_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11192,
+            "name": "Buzzard",
+            "name_en": "Buzzard",
+            "name_zh": "秃鹰级",
+            "icon_name": "type_11192_64.png",
+            "model_path": "./models/11192_lite.glb"
+          },
+          {
+            "id": 42246,
+            "name": "Caedes",
+            "name_en": "Caedes",
+            "name_zh": "凯帝斯级",
+            "icon_name": "type_42246_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11182,
+            "name": "Cheetah",
+            "name_en": "Cheetah",
+            "name_zh": "猎豹级",
+            "icon_name": "type_11182_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 33397,
+            "name": "Chremoas",
+            "name_en": "Chremoas",
+            "name_zh": "克雷默斯级",
+            "icon_name": "type_33397_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11172,
+            "name": "Helios",
+            "name_en": "Helios",
+            "name_zh": "太阳神级",
+            "icon_name": "type_11172_64.png",
+            "model_path": "./models/11172_lite.glb"
+          },
+          {
+            "id": 48636,
+            "name": "Hydra",
+            "name_en": "Hydra",
+            "name_zh": "九头蛇级",
+            "icon_name": "type_48636_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 44993,
+            "name": "Pacifier",
+            "name_en": "Pacifier",
+            "name_zh": "安抚者",
+            "icon_name": "type_44993_64.png",
+            "model_path": "./models/44993_lite.glb"
+          },
+          {
+            "id": 85062,
+            "name": "Sidewinder",
+            "name_en": "Sidewinder",
+            "name_zh": "响尾蛇级",
+            "icon_name": "type_85062_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "name": "Cruiser",
+        "icon_name": "type_620_64.png",
+        "types": [
+          {
+            "id": 628,
+            "name": "Arbitrator",
+            "name_en": "Arbitrator",
+            "name_zh": "主宰级",
+            "icon_name": "type_628_64.png",
+            "model_path": "./models/628_lite.glb"
+          },
+          {
+            "id": 17922,
+            "name": "Ashimmu",
+            "name_en": "Ashimmu",
+            "name_zh": "阿什姆级",
+            "icon_name": "type_17922_64.png",
+            "model_path": "./models/17922_lite.glb"
+          },
+          {
+            "id": 625,
+            "name": "Augoror",
+            "name_en": "Augoror",
+            "name_zh": "奥格诺级",
+            "icon_name": "type_625_64.png",
+            "model_path": "./models/625_lite.glb"
+          },
+          {
+            "id": 29337,
+            "name": "Augoror Navy Issue",
+            "name_en": "Augoror Navy Issue",
+            "name_zh": "奥格诺级海军型",
+            "icon_name": "type_29337_64.png",
+            "model_path": "./models/29337_lite.glb"
+          },
+          {
+            "id": 630,
+            "name": "Bellicose",
+            "name_en": "Bellicose",
+            "name_zh": "挑战级",
+            "icon_name": "type_630_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 632,
+            "name": "Blackbird",
+            "name_en": "Blackbird",
+            "name_zh": "黑鸟级",
+            "icon_name": "type_632_64.png",
+            "model_path": "./models/632_lite.glb"
+          },
+          {
+            "id": 621,
+            "name": "Caracal",
+            "name_en": "Caracal",
+            "name_zh": "狞獾级",
+            "icon_name": "type_621_64.png",
+            "model_path": "./models/621_lite.glb"
+          },
+          {
+            "id": 17634,
+            "name": "Caracal Navy Issue",
+            "name_en": "Caracal Navy Issue",
+            "name_zh": "狞獾级海军型",
+            "icon_name": "type_17634_64.png",
+            "model_path": "./models/17634_lite.glb"
+          },
+          {
+            "id": 633,
+            "name": "Celestis",
+            "name_en": "Celestis",
+            "name_zh": "星空级",
+            "icon_name": "type_633_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 17720,
+            "name": "Cynabal",
+            "name_en": "Cynabal",
+            "name_zh": "塞纳波级",
+            "icon_name": "type_17720_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 634,
+            "name": "Exequror",
+            "name_en": "Exequror",
+            "name_zh": "送葬者级",
+            "icon_name": "type_634_64.png",
+            "model_path": "./models/634_lite.glb"
+          },
+          {
+            "id": 29344,
+            "name": "Exequror Navy Issue",
+            "name_en": "Exequror Navy Issue",
+            "name_zh": "送葬者级海军型",
+            "icon_name": "type_29344_64.png",
+            "model_path": "./models/29344_lite.glb"
+          },
+          {
+            "id": 17715,
+            "name": "Gila",
+            "name_en": "Gila",
+            "name_zh": "毒蜥级",
+            "icon_name": "type_17715_64.png",
+            "model_path": "./models/17715_lite.glb"
+          },
+          {
+            "id": 11011,
+            "name": "Guardian-Vexor",
+            "name_en": "Guardian-Vexor",
+            "name_zh": "狂怒守卫者级",
+            "icon_name": "type_11011_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 624,
+            "name": "Maller",
+            "name_en": "Maller",
+            "name_zh": "暴君级",
+            "icon_name": "type_624_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 623,
+            "name": "Moa",
+            "name_en": "Moa",
+            "name_zh": "巨鸟级",
+            "icon_name": "type_623_64.png",
+            "model_path": "./models/623_lite.glb"
+          },
+          {
+            "id": 2006,
+            "name": "Omen",
+            "name_en": "Omen",
+            "name_zh": "启示级",
+            "icon_name": "type_2006_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 17709,
+            "name": "Omen Navy Issue",
+            "name_en": "Omen Navy Issue",
+            "name_zh": "启示级海军型",
+            "icon_name": "type_17709_64.png",
+            "model_path": "./models/17709_lite.glb"
+          },
+          {
+            "id": 635,
+            "name": "Opux Luxury Yacht",
+            "name_en": "Opux Luxury Yacht",
+            "name_zh": "奥普克斯级豪华游轮",
+            "icon_name": "type_635_64.png",
+            "model_path": "./models/635_lite.glb"
+          },
+          {
+            "id": 33818,
+            "name": "Orthrus",
+            "name_en": "Orthrus",
+            "name_zh": "奥苏斯级",
+            "icon_name": "type_33818_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 620,
+            "name": "Osprey",
+            "name_en": "Osprey",
+            "name_zh": "鱼鹰级",
+            "icon_name": "type_620_64.png",
+            "model_path": "./models/620_lite.glb"
+          },
+          {
+            "id": 29340,
+            "name": "Osprey Navy Issue",
+            "name_en": "Osprey Navy Issue",
+            "name_zh": "鱼鹰级海军型",
+            "icon_name": "type_29340_64.png",
+            "model_path": "./models/29340_lite.glb"
+          },
+          {
+            "id": 17718,
+            "name": "Phantasm",
+            "name_en": "Phantasm",
+            "name_zh": "幽灵级",
+            "icon_name": "type_17718_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 49712,
+            "name": "Rodiva",
+            "name_en": "Rodiva",
+            "name_zh": "洛迪瓦级",
+            "icon_name": "type_49712_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 629,
+            "name": "Rupture",
+            "name_en": "Rupture",
+            "name_zh": "断崖级",
+            "icon_name": "type_629_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 631,
+            "name": "Scythe",
+            "name_en": "Scythe",
+            "name_zh": "镰刀级",
+            "icon_name": "type_631_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 29336,
+            "name": "Scythe Fleet Issue",
+            "name_en": "Scythe Fleet Issue",
+            "name_zh": "镰刀级舰队型",
+            "icon_name": "type_29336_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 622,
+            "name": "Stabber",
+            "name_en": "Stabber",
+            "name_zh": "刺客级",
+            "icon_name": "type_622_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 17713,
+            "name": "Stabber Fleet Issue",
+            "name_en": "Stabber Fleet Issue",
+            "name_zh": "刺客级舰队型",
+            "icon_name": "type_17713_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 54732,
+            "name": "Stormbringer",
+            "name_en": "Stormbringer",
+            "name_zh": "唤风级",
+            "icon_name": "type_54732_64.png",
+            "model_path": "./models/54732_lite.glb"
+          },
+          {
+            "id": 33470,
+            "name": "Stratios",
+            "name_en": "Stratios",
+            "name_zh": "斯特修斯级",
+            "icon_name": "type_33470_64.png",
+            "model_path": "./models/33470_lite.glb"
+          },
+          {
+            "id": 33553,
+            "name": "Stratios Emergency Responder",
+            "name_en": "Stratios Emergency Responder",
+            "name_zh": "斯特修斯级应急反应型",
+            "icon_name": "type_33553_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 627,
+            "name": "Thorax",
+            "name_en": "Thorax",
+            "name_zh": "托勒克斯级",
+            "icon_name": "type_627_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 47270,
+            "name": "Vedmak",
+            "name_en": "Vedmak",
+            "name_zh": "维德马克级",
+            "icon_name": "type_47270_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 626,
+            "name": "Vexor",
+            "name_en": "Vexor",
+            "name_zh": "狂怒者级",
+            "icon_name": "type_626_64.png",
+            "model_path": "./models/626_lite.glb"
+          },
+          {
+            "id": 17843,
+            "name": "Vexor Navy Issue",
+            "name_en": "Vexor Navy Issue",
+            "name_zh": "狂怒者级海军型",
+            "icon_name": "type_17843_64.png",
+            "model_path": "./models/17843_lite.glb"
+          },
+          {
+            "id": 34590,
+            "name": "Victorieux Luxury Yacht",
+            "name_en": "Victorieux Luxury Yacht",
+            "name_zh": "凯旋奢华游艇",
+            "icon_name": "type_34590_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 17722,
+            "name": "Vigilant",
+            "name_en": "Vigilant",
+            "name_zh": "警惕级",
+            "icon_name": "type_17722_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 380,
+        "name": "Deep Space Transport",
+        "icon_name": "type_12731_64.png",
+        "types": [
+          {
+            "id": 12731,
+            "name": "Bustard",
+            "name_en": "Bustard",
+            "name_zh": "大鸨级",
+            "icon_name": "type_12731_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 12753,
+            "name": "Impel",
+            "name_en": "Impel",
+            "name_zh": "激进级",
+            "icon_name": "type_12753_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 12747,
+            "name": "Mastodon",
+            "name_en": "Mastodon",
+            "name_zh": "巨象级",
+            "icon_name": "type_12747_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 12745,
+            "name": "Occator",
+            "name_en": "Occator",
+            "name_zh": "奥卡托级",
+            "icon_name": "type_12745_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 81047,
+            "name": "Torrent",
+            "name_en": "Torrent",
+            "name_zh": "湍流级",
+            "icon_name": "type_81047_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 420,
+        "name": "Destroyer",
+        "icon_name": "type_3639_64.png",
+        "types": [
+          {
+            "id": 32872,
+            "name": "Algos",
+            "name_en": "Algos",
+            "name_zh": "阿尔格斯级",
+            "icon_name": "type_32872_64.png",
+            "model_path": "./models/32872_lite.glb"
+          },
+          {
+            "id": 16240,
+            "name": "Catalyst",
+            "name_en": "Catalyst",
+            "name_zh": "促进级",
+            "icon_name": "type_3612_64.png",
+            "model_path": "./models/16240_lite.glb"
+          },
+          {
+            "id": 73796,
+            "name": "Catalyst Navy Issue",
+            "name_en": "Catalyst Navy Issue",
+            "name_zh": "促进级海军型",
+            "icon_name": "type_73796_64.png",
+            "model_path": "./models/73796_lite.glb"
+          },
+          {
+            "id": 16236,
+            "name": "Coercer",
+            "name_en": "Coercer",
+            "name_zh": "强制者级",
+            "icon_name": "type_3639_64.png",
+            "model_path": "./models/16236_lite.glb"
+          },
+          {
+            "id": 73789,
+            "name": "Coercer Navy Issue",
+            "name_en": "Coercer Navy Issue",
+            "name_zh": "强制者级海军型",
+            "icon_name": "type_73789_64.png",
+            "model_path": "./models/73789_lite.glb"
+          },
+          {
+            "id": 32876,
+            "name": "Corax",
+            "name_en": "Corax",
+            "name_zh": "渡鸦级",
+            "icon_name": "type_32876_64.png",
+            "model_path": "./models/32876_lite.glb"
+          },
+          {
+            "id": 16238,
+            "name": "Cormorant",
+            "name_en": "Cormorant",
+            "name_zh": "海燕级",
+            "icon_name": "type_3677_64.png",
+            "model_path": "./models/16238_lite.glb"
+          },
+          {
+            "id": 73795,
+            "name": "Cormorant Navy Issue",
+            "name_en": "Cormorant Navy Issue",
+            "name_zh": "海燕级海军型",
+            "icon_name": "type_73795_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 32874,
+            "name": "Dragoon",
+            "name_en": "Dragoon",
+            "name_zh": "龙骑兵级",
+            "icon_name": "type_32874_64.png",
+            "model_path": "./models/32874_lite.glb"
+          },
+          {
+            "id": 49710,
+            "name": "Kikimora",
+            "name_en": "Kikimora",
+            "name_zh": "奇奇莫拉级",
+            "icon_name": "type_49710_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 78367,
+            "name": "Mamba",
+            "name_en": "Mamba",
+            "name_zh": "曼巴级",
+            "icon_name": "type_78367_64.png",
+            "model_path": "./models/78367_lite.glb"
+          },
+          {
+            "id": 78333,
+            "name": "Mekubal",
+            "name_en": "Mekubal",
+            "name_zh": "梅库巴尔级",
+            "icon_name": "type_78333_64.png",
+            "model_path": "./models/78333_lite.glb"
+          },
+          {
+            "id": 91174,
+            "name": "Perseverance",
+            "name_en": "Perseverance",
+            "name_zh": "坚韧型",
+            "icon_name": "type_91174_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 89240,
+            "name": "Pioneer",
+            "name_en": "Pioneer",
+            "name_zh": "开拓者级",
+            "icon_name": "type_89240_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 89647,
+            "name": "Pioneer Consortium Issue",
+            "name_en": "Pioneer Consortium Issue",
+            "name_zh": "开拓者级财团型",
+            "icon_name": "type_89647_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 42685,
+            "name": "Sunesis",
+            "name_en": "Sunesis",
+            "name_zh": "旭日级",
+            "icon_name": "type_3753_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 32878,
+            "name": "Talwar",
+            "name_en": "Talwar",
+            "name_zh": "弯刀级",
+            "icon_name": "type_32878_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 85087,
+            "name": "Tholos",
+            "name_en": "Tholos",
+            "name_zh": "穹顶级",
+            "icon_name": "type_85087_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 16242,
+            "name": "Thrasher",
+            "name_en": "Thrasher",
+            "name_zh": "长尾鲛级",
+            "icon_name": "type_3763_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 73794,
+            "name": "Thrasher Fleet Issue",
+            "name_en": "Thrasher Fleet Issue",
+            "name_zh": "长尾鲛级舰队型",
+            "icon_name": "type_73794_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 485,
+        "name": "Dreadnought",
+        "icon_name": "type_3661_64.png",
+        "types": [
+          {
+            "id": 45647,
+            "name": "Caiman",
+            "name_en": "Caiman",
+            "name_zh": "凯门鳄级",
+            "icon_name": "type_45647_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 42243,
+            "name": "Chemosh",
+            "name_en": "Chemosh",
+            "name_zh": "基抹级",
+            "icon_name": "type_42243_64.png",
+            "model_path": "./models/42243_lite.glb"
+          },
+          {
+            "id": 19724,
+            "name": "Moros",
+            "name_en": "Moros",
+            "name_zh": "莫洛级",
+            "icon_name": "type_3714_64.png",
+            "model_path": "./models/19724_lite.glb"
+          },
+          {
+            "id": 73792,
+            "name": "Moros Navy Issue",
+            "name_en": "Moros Navy Issue",
+            "name_zh": "莫洛级海军型",
+            "icon_name": "type_73792_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 19722,
+            "name": "Naglfar",
+            "name_en": "Naglfar",
+            "name_zh": "纳迦法级",
+            "icon_name": "type_3786_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 73787,
+            "name": "Naglfar Fleet Issue",
+            "name_en": "Naglfar Fleet Issue",
+            "name_zh": "纳迦法级舰队型",
+            "icon_name": "type_73787_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 19726,
+            "name": "Phoenix",
+            "name_en": "Phoenix",
+            "name_zh": "凤凰级",
+            "icon_name": "type_3593_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 73793,
+            "name": "Phoenix Navy Issue",
+            "name_en": "Phoenix Navy Issue",
+            "name_zh": "凤凰级海军型",
+            "icon_name": "type_73793_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 19720,
+            "name": "Revelation",
+            "name_en": "Revelation",
+            "name_zh": "神示级",
+            "icon_name": "type_3661_64.png",
+            "model_path": "./models/19720_lite.glb"
+          },
+          {
+            "id": 73790,
+            "name": "Revelation Navy Issue",
+            "name_en": "Revelation Navy Issue",
+            "name_zh": "神示级海军型",
+            "icon_name": "type_73790_64.png",
+            "model_path": "./models/73790_lite.glb"
+          },
+          {
+            "id": 87381,
+            "name": "Sarathiel",
+            "name_en": "Sarathiel",
+            "name_zh": "萨拉希尔",
+            "icon_name": "type_87381_64.png",
+            "model_path": "./models/87381_lite.glb"
+          },
+          {
+            "id": 42124,
+            "name": "Vehement",
+            "name_en": "Vehement",
+            "name_zh": "猛烈级",
+            "icon_name": "type_42124_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 52907,
+            "name": "Zirnitra",
+            "name_en": "Zirnitra",
+            "name_zh": "泽尼塔级",
+            "icon_name": "type_52701_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 893,
+        "name": "Electronic Attack Ship",
+        "icon_name": "type_11174_64.png",
+        "types": [
+          {
+            "id": 11387,
+            "name": "Hyena",
+            "name_en": "Hyena",
+            "name_zh": "土狼级",
+            "icon_name": "type_11387_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11174,
+            "name": "Keres",
+            "name_en": "Keres",
+            "name_zh": "克勒斯级",
+            "icon_name": "type_11174_64.png",
+            "model_path": "./models/11174_lite.glb"
+          },
+          {
+            "id": 11194,
+            "name": "Kitsune",
+            "name_en": "Kitsune",
+            "name_zh": "狐妖级",
+            "icon_name": "type_11194_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 60765,
+            "name": "Raiju",
+            "name_en": "Raiju",
+            "name_zh": "雷兽级",
+            "icon_name": "type_60765_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11190,
+            "name": "Sentinel",
+            "name_en": "Sentinel",
+            "name_zh": "哨兵级",
+            "icon_name": "type_11190_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 543,
+        "name": "Exhumer",
+        "icon_name": "type_22544_64.png",
+        "types": [
+          {
+            "id": 22544,
+            "name": "Hulk",
+            "name_en": "Hulk",
+            "name_zh": "霍克级",
+            "icon_name": "type_22544_64.png",
+            "model_path": "./models/22544_lite.glb"
+          },
+          {
+            "id": 22548,
+            "name": "Mackinaw",
+            "name_en": "Mackinaw",
+            "name_zh": "麦基诺级",
+            "icon_name": "type_22548_64.png",
+            "model_path": "./models/22548_lite.glb"
+          },
+          {
+            "id": 22546,
+            "name": "Skiff",
+            "name_en": "Skiff",
+            "name_zh": "轻舟级",
+            "icon_name": "type_22546_64.png",
+            "model_path": "./models/22546_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 4902,
+        "name": "Expedition Command Ship",
+        "icon_name": "type_89607_64.png",
+        "types": [
+          {
+            "id": 89607,
+            "name": "Odysseus",
+            "name_en": "Odysseus",
+            "name_zh": "奥德修斯级",
+            "icon_name": "type_89607_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 1283,
+        "name": "Expedition Frigate",
+        "icon_name": "type_33697_64.png",
+        "types": [
+          {
+            "id": 37135,
+            "name": "Endurance",
+            "name_en": "Endurance",
+            "name_zh": "永恒者级",
+            "icon_name": "type_37135_64.png",
+            "model_path": "./models/37135_lite.glb"
+          },
+          {
+            "id": 33697,
+            "name": "Prospect",
+            "name_en": "Prospect",
+            "name_zh": "掘金者级",
+            "icon_name": "type_33697_64.png",
+            "model_path": "./models/33697_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1972,
+        "name": "Flag Cruiser",
+        "icon_name": "type_45534_64.png",
+        "types": [
+          {
+            "id": 45534,
+            "name": "Monitor",
+            "name_en": "Monitor",
+            "name_zh": "监视者级",
+            "icon_name": "type_45534_64.png",
+            "model_path": "./models/45534_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1538,
+        "name": "Force Auxiliary",
+        "icon_name": "type_37604_64.png",
+        "types": [
+          {
+            "id": 37604,
+            "name": "Apostle",
+            "name_en": "Apostle",
+            "name_zh": "使徒级",
+            "icon_name": "type_37604_64.png",
+            "model_path": "./models/37604_lite.glb"
+          },
+          {
+            "id": 42242,
+            "name": "Dagon",
+            "name_en": "Dagon",
+            "name_zh": "大衮级",
+            "icon_name": "type_42242_64.png",
+            "model_path": "./models/42242_lite.glb"
+          },
+          {
+            "id": 37606,
+            "name": "Lif",
+            "name_en": "Lif",
+            "name_zh": "利夫级",
+            "icon_name": "type_37606_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 45645,
+            "name": "Loggerhead",
+            "name_en": "Loggerhead",
+            "name_zh": "赤龟级",
+            "icon_name": "type_45645_64.png",
+            "model_path": "./models/45645_lite.glb"
+          },
+          {
+            "id": 37605,
+            "name": "Minokawa",
+            "name_en": "Minokawa",
+            "name_zh": "龙鸟级",
+            "icon_name": "type_37605_64.png",
+            "model_path": "./models/37605_lite.glb"
+          },
+          {
+            "id": 37607,
+            "name": "Ninazu",
+            "name_en": "Ninazu",
+            "name_zh": "尼纳苏级",
+            "icon_name": "type_37607_64.png",
+            "model_path": "./models/37607_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 833,
+        "name": "Force Recon Ship",
+        "icon_name": "type_11957_64.png",
+        "types": [
+          {
+            "id": 11969,
+            "name": "Arazu",
+            "name_en": "Arazu",
+            "name_zh": "埃拉兹级",
+            "icon_name": "type_11969_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 33675,
+            "name": "Chameleon",
+            "name_en": "Chameleon",
+            "name_zh": "变色龙级",
+            "icon_name": "type_33675_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 85229,
+            "name": "Cobra",
+            "name_en": "Cobra",
+            "name_zh": "眼镜蛇级",
+            "icon_name": "type_85229_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 44995,
+            "name": "Enforcer",
+            "name_en": "Enforcer",
+            "name_zh": "执法者级",
+            "icon_name": "type_44995_64.png",
+            "model_path": "./models/44995_lite.glb"
+          },
+          {
+            "id": 11957,
+            "name": "Falcon",
+            "name_en": "Falcon",
+            "name_zh": "战隼级",
+            "icon_name": "type_11957_64.png",
+            "model_path": "./models/11957_lite.glb"
+          },
+          {
+            "id": 33395,
+            "name": "Moracha",
+            "name_en": "Moracha",
+            "name_zh": "莫拉查级",
+            "icon_name": "type_33395_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11965,
+            "name": "Pilgrim",
+            "name_en": "Pilgrim",
+            "name_zh": "朝圣级",
+            "icon_name": "type_11965_64.png",
+            "model_path": "./models/11965_lite.glb"
+          },
+          {
+            "id": 11963,
+            "name": "Rapier",
+            "name_en": "Rapier",
+            "name_zh": "长剑级",
+            "icon_name": "type_11963_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 48635,
+            "name": "Tiamat",
+            "name_en": "Tiamat",
+            "name_zh": "提亚玛特级",
+            "icon_name": "type_48635_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 45531,
+            "name": "Victor",
+            "name_en": "Victor",
+            "name_zh": "胜利者级",
+            "icon_name": "type_45531_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 513,
+        "name": "Freighter",
+        "icon_name": "type_2879_64.png",
+        "types": [
+          {
+            "id": 81040,
+            "name": "Avalanche",
+            "name_en": "Avalanche",
+            "name_zh": "雪崩级",
+            "icon_name": "type_81040_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 34328,
+            "name": "Bowhead",
+            "name_en": "Bowhead",
+            "name_zh": "弓头鲸级",
+            "icon_name": "type_34328_64.png",
+            "model_path": "./models/34328_lite.glb"
+          },
+          {
+            "id": 20185,
+            "name": "Charon",
+            "name_en": "Charon",
+            "name_zh": "渡神级",
+            "icon_name": "type_2882_64.png",
+            "model_path": "./models/20185_lite.glb"
+          },
+          {
+            "id": 20189,
+            "name": "Fenrir",
+            "name_en": "Fenrir",
+            "name_zh": "芬利厄级",
+            "icon_name": "type_3791_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 20187,
+            "name": "Obelisk",
+            "name_en": "Obelisk",
+            "name_zh": "方尖塔级",
+            "icon_name": "type_2877_64.png",
+            "model_path": "./models/20187_lite.glb"
+          },
+          {
+            "id": 20183,
+            "name": "Providence",
+            "name_en": "Providence",
+            "name_zh": "普罗维登斯级",
+            "icon_name": "type_2879_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "name": "Frigate",
+        "icon_name": "type_582_64.png",
+        "types": [
+          {
+            "id": 33468,
+            "name": "Astero",
+            "name_en": "Astero",
+            "name_zh": "阿斯特罗级",
+            "icon_name": "type_33468_64.png",
+            "model_path": "./models/33468_lite.glb"
+          },
+          {
+            "id": 608,
+            "name": "Atron",
+            "name_en": "Atron",
+            "name_zh": "阿特龙级",
+            "icon_name": "type_608_64.png",
+            "model_path": "./models/608_lite.glb"
+          },
+          {
+            "id": 582,
+            "name": "Bantam",
+            "name_en": "Bantam",
+            "name_zh": "矮脚鸡级",
+            "icon_name": "type_582_64.png",
+            "model_path": "./models/582_lite.glb"
+          },
+          {
+            "id": 598,
+            "name": "Breacher",
+            "name_en": "Breacher",
+            "name_zh": "分裂者级",
+            "icon_name": "type_598_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 599,
+            "name": "Burst",
+            "name_en": "Burst",
+            "name_zh": "爆发级",
+            "icon_name": "type_599_64.png",
+            "model_path": "./models/599_lite.glb"
+          },
+          {
+            "id": 17619,
+            "name": "Caldari Navy Hookbill",
+            "name_en": "Caldari Navy Hookbill",
+            "name_zh": "加达里海军霍克比尔级",
+            "icon_name": "type_17619_64.png",
+            "model_path": "./models/17619_lite.glb"
+          },
+          {
+            "id": 583,
+            "name": "Condor",
+            "name_en": "Condor",
+            "name_zh": "秃鹫级",
+            "icon_name": "type_583_64.png",
+            "model_path": "./models/583_lite.glb"
+          },
+          {
+            "id": 2161,
+            "name": "Crucifier",
+            "name_en": "Crucifier",
+            "name_zh": "磨难级",
+            "icon_name": "type_2077_64.png",
+            "model_path": "./models/2161_lite.glb"
+          },
+          {
+            "id": 37453,
+            "name": "Crucifier Navy Issue",
+            "name_en": "Crucifier Navy Issue",
+            "name_zh": "磨难级海军型",
+            "icon_name": "type_37453_64.png",
+            "model_path": "./models/37453_lite.glb"
+          },
+          {
+            "id": 17926,
+            "name": "Cruor",
+            "name_en": "Cruor",
+            "name_zh": "凝血级",
+            "icon_name": "type_17926_64.png",
+            "model_path": "./models/17926_lite.glb"
+          },
+          {
+            "id": 47269,
+            "name": "Damavik",
+            "name_en": "Damavik",
+            "name_zh": "达玛维克级",
+            "icon_name": "type_47269_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 17928,
+            "name": "Daredevil",
+            "name_en": "Daredevil",
+            "name_zh": "夜魔侠级",
+            "icon_name": "type_17928_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 17932,
+            "name": "Dramiel",
+            "name_en": "Dramiel",
+            "name_zh": "德拉米尔级",
+            "icon_name": "type_17932_64.png",
+            "model_path": "./models/17932_lite.glb"
+          },
+          {
+            "id": 3532,
+            "name": "Echelon",
+            "name_en": "Echelon",
+            "name_zh": "梯队级",
+            "icon_name": "type_3532_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 589,
+            "name": "Executioner",
+            "name_en": "Executioner",
+            "name_zh": "刽子手级",
+            "icon_name": "type_589_64.png",
+            "model_path": "./models/589_lite.glb"
+          },
+          {
+            "id": 17841,
+            "name": "Federation Navy Comet",
+            "name_en": "Federation Navy Comet",
+            "name_zh": "联邦海军彗星级",
+            "icon_name": "type_17841_64.png",
+            "model_path": "./models/17841_lite.glb"
+          },
+          {
+            "id": 33816,
+            "name": "Garmur",
+            "name_en": "Garmur",
+            "name_zh": "加姆级",
+            "icon_name": "type_33816_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11940,
+            "name": "Gold Magnate",
+            "name_en": "Gold Magnate",
+            "name_zh": "黄金富豪级",
+            "icon_name": "type_11940_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 584,
+            "name": "Griffin",
+            "name_en": "Griffin",
+            "name_zh": "狮鹫级",
+            "icon_name": "type_584_64.png",
+            "model_path": "./models/584_lite.glb"
+          },
+          {
+            "id": 37455,
+            "name": "Griffin Navy Issue",
+            "name_en": "Griffin Navy Issue",
+            "name_zh": "狮鹫级海军型",
+            "icon_name": "type_37455_64.png",
+            "model_path": "./models/37455_lite.glb"
+          },
+          {
+            "id": 605,
+            "name": "Heron",
+            "name_en": "Heron",
+            "name_zh": "苍鹭级",
+            "icon_name": "type_605_64.png",
+            "model_path": "./models/605_lite.glb"
+          },
+          {
+            "id": 72904,
+            "name": "Heron Navy Issue",
+            "name_en": "Heron Navy Issue",
+            "name_zh": "苍鹭级海军型",
+            "icon_name": "type_72904_64.png",
+            "model_path": "./models/72904_lite.glb"
+          },
+          {
+            "id": 607,
+            "name": "Imicus",
+            "name_en": "Imicus",
+            "name_zh": "伊米卡斯级",
+            "icon_name": "type_607_64.png",
+            "model_path": "./models/607_lite.glb"
+          },
+          {
+            "id": 72913,
+            "name": "Imicus Navy Issue",
+            "name_en": "Imicus Navy Issue",
+            "name_zh": "伊米卡斯级海军型",
+            "icon_name": "type_72913_64.png",
+            "model_path": "./models/72913_lite.glb"
+          },
+          {
+            "id": 17703,
+            "name": "Imperial Navy Slicer",
+            "name_en": "Imperial Navy Slicer",
+            "name_zh": "帝国海军切割机级",
+            "icon_name": "type_17703_64.png",
+            "model_path": "./models/17703_lite.glb"
+          },
+          {
+            "id": 594,
+            "name": "Incursus",
+            "name_en": "Incursus",
+            "name_zh": "因卡萨斯级",
+            "icon_name": "type_594_64.png",
+            "model_path": "./models/594_lite.glb"
+          },
+          {
+            "id": 590,
+            "name": "Inquisitor",
+            "name_en": "Inquisitor",
+            "name_zh": "检察官级",
+            "icon_name": "type_590_64.png",
+            "model_path": "./models/590_lite.glb"
+          },
+          {
+            "id": 602,
+            "name": "Kestrel",
+            "name_en": "Kestrel",
+            "name_zh": "茶隼级",
+            "icon_name": "type_602_64.png",
+            "model_path": "./models/602_lite.glb"
+          },
+          {
+            "id": 29248,
+            "name": "Magnate",
+            "name_en": "Magnate",
+            "name_zh": "富豪级",
+            "icon_name": "type_3633_64.png",
+            "model_path": "./models/29248_lite.glb"
+          },
+          {
+            "id": 72907,
+            "name": "Magnate Navy Issue",
+            "name_en": "Magnate Navy Issue",
+            "name_zh": "富豪级海军型",
+            "icon_name": "type_72907_64.png",
+            "model_path": "./models/72907_lite.glb"
+          },
+          {
+            "id": 609,
+            "name": "Maulus",
+            "name_en": "Maulus",
+            "name_zh": "毛鲁斯级",
+            "icon_name": "type_609_64.png",
+            "model_path": "./models/609_lite.glb"
+          },
+          {
+            "id": 37456,
+            "name": "Maulus Navy Issue",
+            "name_en": "Maulus Navy Issue",
+            "name_zh": "毛鲁斯级海军型",
+            "icon_name": "type_37456_64.png",
+            "model_path": "./models/37456_lite.glb"
+          },
+          {
+            "id": 603,
+            "name": "Merlin",
+            "name_en": "Merlin",
+            "name_zh": "小鹰级",
+            "icon_name": "type_603_64.png",
+            "model_path": "./models/603_lite.glb"
+          },
+          {
+            "id": 77114,
+            "name": "Metamorphosis",
+            "name_en": "Metamorphosis",
+            "name_zh": "变形级",
+            "icon_name": "type_77114_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 592,
+            "name": "Navitas",
+            "name_en": "Navitas",
+            "name_zh": "纳维达斯级",
+            "icon_name": "type_592_64.png",
+            "model_path": "./models/592_lite.glb"
+          },
+          {
+            "id": 586,
+            "name": "Probe",
+            "name_en": "Probe",
+            "name_zh": "探索级",
+            "icon_name": "type_586_64.png",
+            "model_path": "./models/586_lite.glb"
+          },
+          {
+            "id": 72903,
+            "name": "Probe Fleet Issue",
+            "name_en": "Probe Fleet Issue",
+            "name_zh": "探索级舰队型",
+            "icon_name": "type_72903_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 597,
+            "name": "Punisher",
+            "name_en": "Punisher",
+            "name_zh": "惩罚者级",
+            "icon_name": "type_597_64.png",
+            "model_path": "./models/597_lite.glb"
+          },
+          {
+            "id": 17812,
+            "name": "Republic Fleet Firetail",
+            "name_en": "Republic Fleet Firetail",
+            "name_zh": "共和舰队火尾鸡级",
+            "icon_name": "type_17812_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 587,
+            "name": "Rifter",
+            "name_en": "Rifter",
+            "name_zh": "裂谷级",
+            "icon_name": "type_587_64.png",
+            "model_path": "./models/587_lite.glb"
+          },
+          {
+            "id": 11942,
+            "name": "Silver Magnate",
+            "name_en": "Silver Magnate",
+            "name_zh": "白银富豪级",
+            "icon_name": "type_11942_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 54731,
+            "name": "Skybreaker",
+            "name_en": "Skybreaker",
+            "name_zh": "破天级",
+            "icon_name": "type_54731_64.png",
+            "model_path": "./models/54731_lite.glb"
+          },
+          {
+            "id": 585,
+            "name": "Slasher",
+            "name_en": "Slasher",
+            "name_zh": "伐木者级",
+            "icon_name": "type_585_64.png",
+            "model_path": "./models/585_lite.glb"
+          },
+          {
+            "id": 17924,
+            "name": "Succubus",
+            "name_en": "Succubus",
+            "name_zh": "魔女级",
+            "icon_name": "type_17924_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 591,
+            "name": "Tormentor",
+            "name_en": "Tormentor",
+            "name_zh": "巨神兵级",
+            "icon_name": "type_591_64.png",
+            "model_path": "./models/591_lite.glb"
+          },
+          {
+            "id": 593,
+            "name": "Tristan",
+            "name_en": "Tristan",
+            "name_zh": "特里斯坦级",
+            "icon_name": "type_593_64.png",
+            "model_path": "./models/593_lite.glb"
+          },
+          {
+            "id": 32880,
+            "name": "Venture",
+            "name_en": "Venture",
+            "name_zh": "冲锋者级",
+            "icon_name": "type_32880_64.png",
+            "model_path": "./models/32880_lite.glb"
+          },
+          {
+            "id": 89648,
+            "name": "Venture Consortium Issue",
+            "name_en": "Venture Consortium Issue",
+            "name_zh": "冲锋者级财团型",
+            "icon_name": "type_89648_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 3766,
+            "name": "Vigil",
+            "name_en": "Vigil",
+            "name_zh": "守夜者级",
+            "icon_name": "type_3762_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 37454,
+            "name": "Vigil Fleet Issue",
+            "name_en": "Vigil Fleet Issue",
+            "name_zh": "守夜者级舰队型",
+            "icon_name": "type_37454_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 17930,
+            "name": "Worm",
+            "name_en": "Worm",
+            "name_zh": "潜龙级",
+            "icon_name": "type_17930_64.png",
+            "model_path": "./models/17930_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "name": "Hauler",
+        "icon_name": "type_648_64.png",
+        "types": [
+          {
+            "id": 648,
+            "name": "Badger",
+            "name_en": "Badger",
+            "name_zh": "獾级",
+            "icon_name": "type_648_64.png",
+            "model_path": "./models/648_lite.glb"
+          },
+          {
+            "id": 1944,
+            "name": "Bestower",
+            "name_en": "Bestower",
+            "name_zh": "恩赐者级",
+            "icon_name": "type_1944_64.png",
+            "model_path": "./models/1944_lite.glb"
+          },
+          {
+            "id": 655,
+            "name": "Epithal",
+            "name_en": "Epithal",
+            "name_zh": "埃比斯级",
+            "icon_name": "type_655_64.png",
+            "model_path": "./models/655_lite.glb"
+          },
+          {
+            "id": 651,
+            "name": "Hoarder",
+            "name_en": "Hoarder",
+            "name_zh": "囤积者级",
+            "icon_name": "type_651_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 657,
+            "name": "Iteron Mark V",
+            "name_en": "Iteron Mark V",
+            "name_zh": "伊特龙级MKV",
+            "icon_name": "type_657_64.png",
+            "model_path": "./models/657_lite.glb"
+          },
+          {
+            "id": 654,
+            "name": "Kryos",
+            "name_en": "Kryos",
+            "name_zh": "克琉斯级",
+            "icon_name": "type_654_64.png",
+            "model_path": "./models/654_lite.glb"
+          },
+          {
+            "id": 652,
+            "name": "Mammoth",
+            "name_en": "Mammoth",
+            "name_zh": "猛犸级",
+            "icon_name": "type_652_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 656,
+            "name": "Miasmos",
+            "name_en": "Miasmos",
+            "name_zh": "米亚莫斯级",
+            "icon_name": "type_656_64.png",
+            "model_path": "./models/656_lite.glb"
+          },
+          {
+            "id": 32811,
+            "name": "Miasmos Amastris Edition",
+            "name_en": "Miasmos Amastris Edition",
+            "name_zh": "米亚莫斯级阿玛斯翠丝版",
+            "icon_name": "type_32811_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 4363,
+            "name": "Miasmos Quafe Ultra Edition",
+            "name_en": "Miasmos Quafe Ultra Edition",
+            "name_zh": "米亚莫斯级酷菲特强版",
+            "icon_name": "type_4363_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 4388,
+            "name": "Miasmos Quafe Ultramarine Edition",
+            "name_en": "Miasmos Quafe Ultramarine Edition",
+            "name_zh": "米亚莫斯级酷菲深蓝版",
+            "icon_name": "type_4388_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 650,
+            "name": "Nereus",
+            "name_en": "Nereus",
+            "name_zh": "涅鲁斯级",
+            "icon_name": "type_650_64.png",
+            "model_path": "./models/650_lite.glb"
+          },
+          {
+            "id": 2998,
+            "name": "Noctis",
+            "name_en": "Noctis",
+            "name_zh": "黑夜级",
+            "icon_name": "type_2998_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 2863,
+            "name": "Primae",
+            "name_en": "Primae",
+            "name_zh": "元始级",
+            "icon_name": "type_2863_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 19744,
+            "name": "Sigil",
+            "name_en": "Sigil",
+            "name_zh": "魔符级",
+            "icon_name": "type_3657_64.png",
+            "model_path": "./models/19744_lite.glb"
+          },
+          {
+            "id": 81008,
+            "name": "Squall",
+            "name_en": "Squall",
+            "name_zh": "狂风级",
+            "icon_name": "type_81008_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 649,
+            "name": "Tayra",
+            "name_en": "Tayra",
+            "name_zh": "狐鼬级",
+            "icon_name": "type_649_64.png",
+            "model_path": "./models/649_lite.glb"
+          },
+          {
+            "id": 653,
+            "name": "Wreathe",
+            "name_en": "Wreathe",
+            "name_zh": "环绕级",
+            "icon_name": "type_653_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 358,
+        "name": "Heavy Assault Cruiser",
+        "icon_name": "type_11993_64.png",
+        "types": [
+          {
+            "id": 2836,
+            "name": "Adrestia",
+            "name_en": "Adrestia",
+            "name_zh": "复仇女神级",
+            "icon_name": "type_2836_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 74316,
+            "name": "Bestla",
+            "name_en": "Bestla",
+            "name_zh": "贝斯特拉",
+            "icon_name": "type_74316_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11993,
+            "name": "Cerberus",
+            "name_en": "Cerberus",
+            "name_zh": "希尔博拉斯级",
+            "icon_name": "type_11993_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 77726,
+            "name": "Cybele",
+            "name_en": "Cybele",
+            "name_zh": "西布勒级",
+            "icon_name": "type_77726_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 12023,
+            "name": "Deimos",
+            "name_en": "Deimos",
+            "name_zh": "戴默斯级",
+            "icon_name": "type_12023_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 12011,
+            "name": "Eagle",
+            "name_en": "Eagle",
+            "name_zh": "银鹰级",
+            "icon_name": "type_12011_64.png",
+            "model_path": "./models/12011_lite.glb"
+          },
+          {
+            "id": 52252,
+            "name": "Ikitursa",
+            "name_en": "Ikitursa",
+            "name_zh": "伊基图萨级",
+            "icon_name": "type_52252_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 12005,
+            "name": "Ishtar",
+            "name_en": "Ishtar",
+            "name_zh": "伊什塔级",
+            "icon_name": "type_12005_64.png",
+            "model_path": "./models/12005_lite.glb"
+          },
+          {
+            "id": 32209,
+            "name": "Mimir",
+            "name_en": "Mimir",
+            "name_zh": "弥米尔级",
+            "icon_name": "type_32209_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 12015,
+            "name": "Muninn",
+            "name_en": "Muninn",
+            "name_zh": "缪宁级",
+            "icon_name": "type_12015_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 12019,
+            "name": "Sacrilege",
+            "name_en": "Sacrilege",
+            "name_zh": "渎圣级",
+            "icon_name": "type_12019_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11999,
+            "name": "Vagabond",
+            "name_en": "Vagabond",
+            "name_zh": "流浪级",
+            "icon_name": "type_11999_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 3518,
+            "name": "Vangel",
+            "name_en": "Vangel",
+            "name_zh": "传道者级",
+            "icon_name": "type_3518_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 12003,
+            "name": "Zealot",
+            "name_en": "Zealot",
+            "name_zh": "狂热级",
+            "icon_name": "type_12003_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 894,
+        "name": "Heavy Interdiction Cruiser",
+        "icon_name": "type_11995_64.png",
+        "types": [
+          {
+            "id": 12013,
+            "name": "Broadsword",
+            "name_en": "Broadsword",
+            "name_zh": "阔刀级",
+            "icon_name": "type_12013_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 12017,
+            "name": "Devoter",
+            "name_en": "Devoter",
+            "name_zh": "奉献级",
+            "icon_name": "type_12017_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 35781,
+            "name": "Fiend",
+            "name_en": "Fiend",
+            "name_zh": "恶魔级",
+            "icon_name": "type_35781_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 60764,
+            "name": "Laelaps",
+            "name_en": "Laelaps",
+            "name_zh": "猎獒级",
+            "icon_name": "type_60764_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11995,
+            "name": "Onyx",
+            "name_en": "Onyx",
+            "name_zh": "奥尼克斯级",
+            "icon_name": "type_11995_64.png",
+            "model_path": "./models/11995_lite.glb"
+          },
+          {
+            "id": 12021,
+            "name": "Phobos",
+            "name_en": "Phobos",
+            "name_zh": "伏波斯级",
+            "icon_name": "type_12021_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 941,
+        "name": "Industrial Command Ship",
+        "icon_name": "type_2187_64.png",
+        "types": [
+          {
+            "id": 28606,
+            "name": "Orca",
+            "name_en": "Orca",
+            "name_zh": "逆戟鲸级",
+            "icon_name": "type_2187_64.png",
+            "model_path": "./models/28606_lite.glb"
+          },
+          {
+            "id": 42244,
+            "name": "Porpoise",
+            "name_en": "Porpoise",
+            "name_zh": "海豚级",
+            "icon_name": "type_42244_64.png",
+            "model_path": "./models/42244_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 831,
+        "name": "Interceptor",
+        "icon_name": "type_11176_64.png",
+        "types": [
+          {
+            "id": 11202,
+            "name": "Ares",
+            "name_en": "Ares",
+            "name_zh": "阿瑞斯级",
+            "icon_name": "type_11202_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11196,
+            "name": "Claw",
+            "name_en": "Claw",
+            "name_zh": "利爪级",
+            "icon_name": "type_11196_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11176,
+            "name": "Crow",
+            "name_en": "Crow",
+            "name_zh": "黑鸦级",
+            "icon_name": "type_11176_64.png",
+            "model_path": "./models/11176_lite.glb"
+          },
+          {
+            "id": 11184,
+            "name": "Crusader",
+            "name_en": "Crusader",
+            "name_zh": "十字军级",
+            "icon_name": "type_11184_64.png",
+            "model_path": "./models/11184_lite.glb"
+          },
+          {
+            "id": 35779,
+            "name": "Imp",
+            "name_en": "Imp",
+            "name_zh": "小鬼级",
+            "icon_name": "type_35779_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11186,
+            "name": "Malediction",
+            "name_en": "Malediction",
+            "name_zh": "咒灭级",
+            "icon_name": "type_11186_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11178,
+            "name": "Raptor",
+            "name_en": "Raptor",
+            "name_zh": "猛禽级",
+            "icon_name": "type_11178_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11198,
+            "name": "Stiletto",
+            "name_en": "Stiletto",
+            "name_zh": "短剑级",
+            "icon_name": "type_11198_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11200,
+            "name": "Taranis",
+            "name_en": "Taranis",
+            "name_zh": "塔纳尼斯级",
+            "icon_name": "type_11200_64.png",
+            "model_path": "./models/11200_lite.glb"
+          },
+          {
+            "id": 33673,
+            "name": "Whiptail",
+            "name_en": "Whiptail",
+            "name_zh": "长尾蜥级",
+            "icon_name": "type_33673_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 541,
+        "name": "Interdictor",
+        "icon_name": "type_22452_64.png",
+        "types": [
+          {
+            "id": 22460,
+            "name": "Eris",
+            "name_en": "Eris",
+            "name_zh": "厄里斯级",
+            "icon_name": "type_22460_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 22464,
+            "name": "Flycatcher",
+            "name_en": "Flycatcher",
+            "name_zh": "飞燕级",
+            "icon_name": "type_22464_64.png",
+            "model_path": "./models/22464_lite.glb"
+          },
+          {
+            "id": 22452,
+            "name": "Heretic",
+            "name_en": "Heretic",
+            "name_zh": "异端级",
+            "icon_name": "type_22452_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 22456,
+            "name": "Sabre",
+            "name_en": "Sabre",
+            "name_zh": "剑齿虎级",
+            "icon_name": "type_22456_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 902,
+        "name": "Jump Freighter",
+        "icon_name": "type_28844_64.png",
+        "types": [
+          {
+            "id": 28848,
+            "name": "Anshar",
+            "name_en": "Anshar",
+            "name_zh": "安莎尔级",
+            "icon_name": "type_28848_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 28850,
+            "name": "Ark",
+            "name_en": "Ark",
+            "name_zh": "方舟级",
+            "icon_name": "type_28850_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 28846,
+            "name": "Nomad",
+            "name_en": "Nomad",
+            "name_zh": "游牧者级",
+            "icon_name": "type_28846_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 28844,
+            "name": "Rhea",
+            "name_en": "Rhea",
+            "name_zh": "奥鸟级",
+            "icon_name": "type_28844_64.png",
+            "model_path": "./models/28844_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 4594,
+        "name": "Lancer Dreadnought",
+        "icon_name": "type_77281_64.png",
+        "types": [
+          {
+            "id": 77283,
+            "name": "Bane",
+            "name_en": "Bane",
+            "name_zh": "破坏者",
+            "icon_name": "type_77283_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 77281,
+            "name": "Hubris",
+            "name_en": "Hubris",
+            "name_zh": "狂徒",
+            "icon_name": "type_77281_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 77284,
+            "name": "Karura",
+            "name_en": "Karura",
+            "name_zh": "迦楼罗",
+            "icon_name": "type_77284_64.png",
+            "model_path": "./models/77284_lite.glb"
+          },
+          {
+            "id": 77288,
+            "name": "Valravn",
+            "name_en": "Valravn",
+            "name_zh": "血鸦",
+            "icon_name": "type_77288_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 832,
+        "name": "Logistics",
+        "icon_name": "type_11978_64.png",
+        "types": [
+          {
+            "id": 11985,
+            "name": "Basilisk",
+            "name_en": "Basilisk",
+            "name_zh": "皇冠蜥级",
+            "icon_name": "type_11985_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 32790,
+            "name": "Etana",
+            "name_en": "Etana",
+            "name_zh": "伊塔那级",
+            "icon_name": "type_32790_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11987,
+            "name": "Guardian",
+            "name_en": "Guardian",
+            "name_zh": "守卫级",
+            "icon_name": "type_11987_64.png",
+            "model_path": "./models/11987_lite.glb"
+          },
+          {
+            "id": 11989,
+            "name": "Oneiros",
+            "name_en": "Oneiros",
+            "name_zh": "奥内罗斯级",
+            "icon_name": "type_11989_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 42245,
+            "name": "Rabisu",
+            "name_en": "Rabisu",
+            "name_zh": "拉比苏级",
+            "icon_name": "type_42245_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11978,
+            "name": "Scimitar",
+            "name_en": "Scimitar",
+            "name_zh": "曲剑级",
+            "icon_name": "type_11978_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 49713,
+            "name": "Zarmazd",
+            "name_en": "Zarmazd",
+            "name_zh": "扎玛德级",
+            "icon_name": "type_49713_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 1527,
+        "name": "Logistics Frigate",
+        "icon_name": "type_37457_64.png",
+        "types": [
+          {
+            "id": 37457,
+            "name": "Deacon",
+            "name_en": "Deacon",
+            "name_zh": "执事级",
+            "icon_name": "type_37457_64.png",
+            "model_path": "./models/37457_lite.glb"
+          },
+          {
+            "id": 37458,
+            "name": "Kirin",
+            "name_en": "Kirin",
+            "name_zh": "麒麟级",
+            "icon_name": "type_37458_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 37460,
+            "name": "Scalpel",
+            "name_en": "Scalpel",
+            "name_zh": "手术刀级",
+            "icon_name": "type_37460_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 37459,
+            "name": "Thalia",
+            "name_en": "Thalia",
+            "name_zh": "塔利亚级",
+            "icon_name": "type_37459_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 900,
+        "name": "Marauder",
+        "icon_name": "type_28659_64.png",
+        "types": [
+          {
+            "id": 88001,
+            "name": "Babaroga",
+            "name_en": "Babaroga",
+            "name_zh": "巴巴罗加号",
+            "icon_name": "type_88001_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 28710,
+            "name": "Golem",
+            "name_en": "Golem",
+            "name_zh": "魔像级",
+            "icon_name": "type_28710_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 28661,
+            "name": "Kronos",
+            "name_en": "Kronos",
+            "name_zh": "克洛诺斯级",
+            "icon_name": "type_28661_64.png",
+            "model_path": "./models/28661_lite.glb"
+          },
+          {
+            "id": 28659,
+            "name": "Paladin",
+            "name_en": "Paladin",
+            "name_zh": "帕拉丁级",
+            "icon_name": "type_28659_64.png",
+            "model_path": "./models/28659_lite.glb"
+          },
+          {
+            "id": 28665,
+            "name": "Vargur",
+            "name_en": "Vargur",
+            "name_zh": "恶狼级",
+            "icon_name": "type_28665_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 463,
+        "name": "Mining Barge",
+        "icon_name": "type_17476_64.png",
+        "types": [
+          {
+            "id": 17476,
+            "name": "Covetor",
+            "name_en": "Covetor",
+            "name_zh": "妄想级",
+            "icon_name": "type_17476_64.png",
+            "model_path": "./models/17476_lite.glb"
+          },
+          {
+            "id": 17480,
+            "name": "Procurer",
+            "name_en": "Procurer",
+            "name_zh": "猎获级",
+            "icon_name": "type_17480_64.png",
+            "model_path": "./models/17480_lite.glb"
+          },
+          {
+            "id": 17478,
+            "name": "Retriever",
+            "name_en": "Retriever",
+            "name_zh": "回旋者级",
+            "icon_name": "type_17478_64.png",
+            "model_path": "./models/17478_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1022,
+        "name": "Prototype Exploration Ship",
+        "icon_name": "type_2078_64.png",
+        "types": [
+          {
+            "id": 2078,
+            "name": "Zephyr",
+            "name_en": "Zephyr",
+            "name_zh": "微风级",
+            "icon_name": "type_2078_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "name": "Shuttle",
+        "icon_name": "type_672_64.png",
+        "types": [
+          {
+            "id": 11134,
+            "name": "Amarr Shuttle",
+            "name_en": "Amarr Shuttle",
+            "name_zh": "艾玛穿梭机",
+            "icon_name": "type_11134_64.png",
+            "model_path": "./models/11134_lite.glb"
+          },
+          {
+            "id": 29266,
+            "name": "Apotheosis",
+            "name_en": "Apotheosis",
+            "name_zh": "神圣穿梭机",
+            "icon_name": "type_3751_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 64034,
+            "name": "Boobook",
+            "name_en": "Boobook",
+            "name_zh": "鹰鸮级",
+            "icon_name": "type_64034_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 672,
+            "name": "Caldari Shuttle",
+            "name_en": "Caldari Shuttle",
+            "name_zh": "加达里穿梭机",
+            "icon_name": "type_672_64.png",
+            "model_path": "./models/672_lite.glb"
+          },
+          {
+            "id": 34496,
+            "name": "Council Diplomatic Shuttle",
+            "name_en": "Council Diplomatic Shuttle",
+            "name_zh": "议会外交穿梭机",
+            "icon_name": "type_34496_64.png",
+            "model_path": "./models/34496_lite.glb"
+          },
+          {
+            "id": 11129,
+            "name": "Gallente Shuttle",
+            "name_en": "Gallente Shuttle",
+            "name_zh": "盖伦特穿梭机",
+            "icon_name": "type_11129_64.png",
+            "model_path": "./models/11129_lite.glb"
+          },
+          {
+            "id": 21097,
+            "name": "Goru's Shuttle",
+            "name_en": "Goru's Shuttle",
+            "name_zh": "高鲁的穿梭机",
+            "icon_name": "type_21097_64.png",
+            "model_path": "./models/21097_lite.glb"
+          },
+          {
+            "id": 21628,
+            "name": "Guristas Shuttle",
+            "name_en": "Guristas Shuttle",
+            "name_zh": "古斯塔斯穿梭机",
+            "icon_name": "type_21628_64.png",
+            "model_path": "./models/21628_lite.glb"
+          },
+          {
+            "id": 30842,
+            "name": "InterBus Shuttle",
+            "name_en": "InterBus Shuttle",
+            "name_zh": "星际捷运穿梭机",
+            "icon_name": "type_30842_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 33513,
+            "name": "Leopard",
+            "name_en": "Leopard",
+            "name_zh": "美洲豹级",
+            "icon_name": "type_33513_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11132,
+            "name": "Minmatar Shuttle",
+            "name_en": "Minmatar Shuttle",
+            "name_zh": "米玛塔尔穿梭机",
+            "icon_name": "type_11132_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 834,
+        "name": "Stealth Bomber",
+        "icon_name": "type_11377_64.png",
+        "types": [
+          {
+            "id": 12034,
+            "name": "Hound",
+            "name_en": "Hound",
+            "name_zh": "猎犬级",
+            "icon_name": "type_12034_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 12032,
+            "name": "Manticore",
+            "name_en": "Manticore",
+            "name_zh": "蝎尾怪级",
+            "icon_name": "type_12032_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 11377,
+            "name": "Nemesis",
+            "name_en": "Nemesis",
+            "name_zh": "纳美西斯级",
+            "icon_name": "type_11377_64.png",
+            "model_path": "./models/11377_lite.glb"
+          },
+          {
+            "id": 12038,
+            "name": "Purifier",
+            "name_en": "Purifier",
+            "name_zh": "净化级",
+            "icon_name": "type_12038_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 45530,
+            "name": "Virtuoso",
+            "name_en": "Virtuoso",
+            "name_zh": "收藏家级",
+            "icon_name": "type_45530_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 963,
+        "name": "Strategic Cruiser",
+        "icon_name": "type_29984_64.png",
+        "types": [
+          {
+            "id": 29986,
+            "name": "Legion",
+            "name_en": "Legion",
+            "name_zh": "圣卒级",
+            "icon_name": "type_29986_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 29990,
+            "name": "Loki",
+            "name_en": "Loki",
+            "name_zh": "洛基级",
+            "icon_name": "type_29990_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 29988,
+            "name": "Proteus",
+            "name_en": "Proteus",
+            "name_zh": "海神级",
+            "icon_name": "type_29988_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 29984,
+            "name": "Tengu",
+            "name_en": "Tengu",
+            "name_zh": "金鹏级",
+            "icon_name": "type_29984_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 659,
+        "name": "Supercarrier",
+        "icon_name": "type_3784_64.png",
+        "types": [
+          {
+            "id": 23919,
+            "name": "Aeon",
+            "name_en": "Aeon",
+            "name_zh": "万古级",
+            "icon_name": "type_3659_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 22852,
+            "name": "Hel",
+            "name_en": "Hel",
+            "name_zh": "冥府级",
+            "icon_name": "type_3784_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 23913,
+            "name": "Nyx",
+            "name_en": "Nyx",
+            "name_zh": "夜神级",
+            "icon_name": "type_3710_64.png",
+            "model_path": "./models/23913_lite.glb"
+          },
+          {
+            "id": 3514,
+            "name": "Revenant",
+            "name_en": "Revenant",
+            "name_zh": "归魂者级",
+            "icon_name": "type_3514_64.png",
+            "model_path": "./models/3514_lite.glb"
+          },
+          {
+            "id": 42125,
+            "name": "Vendetta",
+            "name_en": "Vendetta",
+            "name_zh": "仇恨级",
+            "icon_name": "type_42125_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 23917,
+            "name": "Wyvern",
+            "name_en": "Wyvern",
+            "name_zh": "飞龙级",
+            "icon_name": "type_3592_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 1305,
+        "name": "Tactical Destroyer",
+        "icon_name": "type_34317_64.png",
+        "types": [
+          {
+            "id": 34317,
+            "name": "Confessor",
+            "name_en": "Confessor",
+            "name_zh": "忏悔者级",
+            "icon_name": "type_34317_64.png",
+            "model_path": "./models/34317_lite.glb"
+          },
+          {
+            "id": 35683,
+            "name": "Hecate",
+            "name_en": "Hecate",
+            "name_zh": "赫卡特级",
+            "icon_name": "type_35683_64.png",
+            "model_path": "./models/35683_lite.glb"
+          },
+          {
+            "id": 34828,
+            "name": "Jackdaw",
+            "name_en": "Jackdaw",
+            "name_zh": "寒鸦级",
+            "icon_name": "type_34828_64.png",
+            "model_path": "./models/34828_lite.glb"
+          },
+          {
+            "id": 89808,
+            "name": "Skua",
+            "name_en": "Skua",
+            "name_zh": "贼鸥号",
+            "icon_name": "type_89808_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 34562,
+            "name": "Svipul",
+            "name_en": "Svipul",
+            "name_zh": "斯威普级",
+            "icon_name": "type_34562_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "name": "Titan",
+        "icon_name": "type_671_64.png",
+        "types": [
+          {
+            "id": 11567,
+            "name": "Avatar",
+            "name_en": "Avatar",
+            "name_zh": "神使级",
+            "icon_name": "type_3662_64.png",
+            "model_path": "./models/11567_lite.glb"
+          },
+          {
+            "id": 78576,
+            "name": "Azariel",
+            "name_en": "Azariel",
+            "name_zh": "阿里艾尔",
+            "icon_name": "type_78576_64.png",
+            "model_path": "./models/78576_lite.glb"
+          },
+          {
+            "id": 671,
+            "name": "Erebus",
+            "name_en": "Erebus",
+            "name_zh": "俄洛巴斯级",
+            "icon_name": "type_671_64.png",
+            "model_path": "./models/671_lite.glb"
+          },
+          {
+            "id": 45649,
+            "name": "Komodo",
+            "name_en": "Komodo",
+            "name_zh": "科莫多级",
+            "icon_name": "type_45649_64.png",
+            "model_path": "./models/45649_lite.glb"
+          },
+          {
+            "id": 3764,
+            "name": "Leviathan",
+            "name_en": "Leviathan",
+            "name_zh": "勒维亚坦级",
+            "icon_name": "type_3594_64.png",
+            "model_path": "./models/3764_lite.glb"
+          },
+          {
+            "id": 42241,
+            "name": "Molok",
+            "name_en": "Molok",
+            "name_zh": "摩洛克级",
+            "icon_name": "type_42241_64.png",
+            "model_path": "./models/42241_lite.glb"
+          },
+          {
+            "id": 23773,
+            "name": "Ragnarok",
+            "name_en": "Ragnarok",
+            "name_zh": "拉格纳洛克级",
+            "icon_name": "type_3787_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 42126,
+            "name": "Vanquisher",
+            "name_en": "Vanquisher",
+            "name_zh": "征服者级",
+            "icon_name": "type_42126_64.png",
+            "model_path": "./models/42126_lite.glb"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Structure",
+    "icon_name": "category_65.png",
+    "groups": [
+      {
+        "id": 1657,
+        "name": "Citadel",
+        "icon_name": "type_35832_64.png",
+        "types": [
+          {
+            "id": 47513,
+            "name": "'Draccous' Fortizar",
+            "name_en": "'Draccous' Fortizar",
+            "name_zh": "\"德拉库斯\"铁壁",
+            "icon_name": "type_47513_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 47514,
+            "name": "'Horizon' Fortizar",
+            "name_en": "'Horizon' Fortizar",
+            "name_zh": "\"地平线\"铁壁",
+            "icon_name": "type_47514_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 47515,
+            "name": "'Marginis' Fortizar",
+            "name_en": "'Marginis' Fortizar",
+            "name_zh": "\"马金尼斯\"铁壁",
+            "icon_name": "type_47515_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 47512,
+            "name": "'Moreau' Fortizar",
+            "name_en": "'Moreau' Fortizar",
+            "name_zh": "\"莫罗\"铁壁",
+            "icon_name": "type_47512_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 47516,
+            "name": "'Prometheus' Fortizar",
+            "name_en": "'Prometheus' Fortizar",
+            "name_zh": "\"普罗米修斯\"铁壁",
+            "icon_name": "type_47516_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 35832,
+            "name": "Astrahus",
+            "name_en": "Astrahus",
+            "name_zh": "空堡",
+            "icon_name": "type_35832_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 35833,
+            "name": "Fortizar",
+            "name_en": "Fortizar",
+            "name_zh": "铁壁",
+            "icon_name": "type_35833_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 35834,
+            "name": "Keepstar",
+            "name_en": "Keepstar",
+            "name_zh": "星城",
+            "icon_name": "type_35834_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 40340,
+            "name": "Upwell Palatine Keepstar",
+            "name_en": "Upwell Palatine Keepstar",
+            "name_zh": "昇威豪华星城",
+            "icon_name": "type_40340_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 1404,
+        "name": "Engineering Complex",
+        "icon_name": "type_35825_64.png",
+        "types": [
+          {
+            "id": 35826,
+            "name": "Azbel",
+            "name_en": "Azbel",
+            "name_zh": "阿兹贝尔",
+            "icon_name": "type_35826_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 35825,
+            "name": "Raitaru",
+            "name_en": "Raitaru",
+            "name_zh": "莱塔卢",
+            "icon_name": "type_35825_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 35827,
+            "name": "Sotiyo",
+            "name_en": "Sotiyo",
+            "name_zh": "索迪约",
+            "icon_name": "type_35827_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 1406,
+        "name": "Refinery",
+        "icon_name": "type_35835_64.png",
+        "types": [
+          {
+            "id": 35835,
+            "name": "Athanor",
+            "name_en": "Athanor",
+            "name_zh": "阿塔诺",
+            "icon_name": "type_35835_64.png",
+            "model_path": ""
+          },
+          {
+            "id": 35836,
+            "name": "Tatara",
+            "name_en": "Tatara",
+            "name_zh": "塔塔拉",
+            "icon_name": "type_35836_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 2017,
+        "name": "Upwell Cyno Beacon",
+        "icon_name": "type_35840_64.png",
+        "types": [
+          {
+            "id": 35840,
+            "name": "Pharolux Cyno Beacon",
+            "name_en": "Pharolux Cyno Beacon",
+            "name_zh": "明灯诱导信标",
+            "icon_name": "type_35840_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 2016,
+        "name": "Upwell Cyno Jammer",
+        "icon_name": "type_37534_64.png",
+        "types": [
+          {
+            "id": 37534,
+            "name": "Tenebrex Cyno Jammer",
+            "name_en": "Tenebrex Cyno Jammer",
+            "name_zh": "暗影诱导干扰塔",
+            "icon_name": "type_37534_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 1408,
+        "name": "Upwell Jump Bridge",
+        "icon_name": "type_35841_64.png",
+        "types": [
+          {
+            "id": 35841,
+            "name": "Ansiblex Jump Bridge",
+            "name_en": "Ansiblex Jump Bridge",
+            "name_zh": "安塞波跳跃桥接",
+            "icon_name": "type_35841_64.png",
+            "model_path": ""
+          }
+        ]
+      },
+      {
+        "id": 4744,
+        "name": "Upwell Moon Drill",
+        "icon_name": "type_81826_64.png",
+        "types": [
+          {
+            "id": 81826,
+            "name": "Metenox Moon Drill",
+            "name_en": "Metenox Moon Drill",
+            "name_zh": "梅特诺克斯卫星钻探",
+            "icon_name": "type_81826_64.png",
+            "model_path": ""
+          }
+        ]
+      }
+    ]
+  }
+]
