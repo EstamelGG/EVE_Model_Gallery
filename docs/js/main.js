@@ -139,37 +139,37 @@ const brightnessIcon = document.querySelector('.brightness-icon');
 const resetViewIcon = document.getElementById('resetViewIcon');
 const modelLoadingSpinner = document.getElementById('modelLoadingSpinner');
 const modelLoadingProgress = document.getElementById('modelLoadingProgress');
+const modelProgressBar = document.getElementById('modelProgressBar');
 
 function loadModel(src, shipInfo = null, typeId = null) {
     if (!src) return;
     
-    // 显示加载动画
     if (modelLoadingSpinner) {
         modelLoadingSpinner.classList.add('show');
     }
     if (modelLoadingProgress) {
         modelLoadingProgress.textContent = '0%';
     }
+    if (modelProgressBar) {
+        const circumference = 2 * Math.PI * 26;
+        modelProgressBar.style.strokeDashoffset = circumference;
+    }
     
     modelViewer.classList.add('active');
     uploadUI.style.display = 'none';
     brightnessControl.classList.add('show');
     
-    // 折叠版权说明
     const copyrightFooter = document.querySelector('.copyright-footer');
     if (copyrightFooter) {
         copyrightFooter.classList.add('collapsed');
     }
     
-    // 更新 URL hash
     if (typeId) {
         const newHash = `typeid=${typeId}`;
-        // 只有当 hash 不同时才更新，避免不必要的更新
         if (window.location.hash !== `#${newHash}`) {
             window.location.hash = newHash;
         }
     } else {
-        // 如果没有 typeId，清除 hash
         if (window.location.hash) {
             window.location.hash = '';
         }
@@ -186,23 +186,18 @@ function loadModel(src, shipInfo = null, typeId = null) {
             }
             shipNameDisplay.textContent = displayName;
             shipNameDisplay.classList.add('show');
-            // 更新页面标题
             document.title = `${displayName} - EVE Model Viewer`;
         } else {
             shipNameDisplay.classList.remove('show');
-            // 恢复默认标题
             document.title = 'EVE Model Viewer';
         }
     }
     
-    // 清理之前的 blob URL（如果存在）
     if (modelViewer.src && modelViewer.src.startsWith('blob:')) {
         URL.revokeObjectURL(modelViewer.src);
     }
     
-    // 定义错误处理函数
     const errorHandler = (event) => {
-        // 隐藏加载动画
         if (modelLoadingSpinner) {
             modelLoadingSpinner.classList.remove('show');
         }
@@ -225,10 +220,8 @@ function loadModel(src, shipInfo = null, typeId = null) {
             shipNameDisplay.classList.remove('show');
         }
         
-        // 恢复默认标题
         document.title = 'EVE Model Viewer';
         
-        // 展开版权说明
         const copyrightFooter = document.querySelector('.copyright-footer');
         if (copyrightFooter) {
             copyrightFooter.classList.remove('collapsed');
@@ -239,7 +232,6 @@ function loadModel(src, shipInfo = null, typeId = null) {
         }, 5000);
     };
     
-    // 使用 XMLHttpRequest 加载模型以跟踪进度
     const xhr = new XMLHttpRequest();
     xhr.open('GET', src, true);
     xhr.responseType = 'blob';
@@ -247,9 +239,16 @@ function loadModel(src, shipInfo = null, typeId = null) {
     let currentBlobUrl = null;
     
     xhr.addEventListener('progress', (e) => {
-        if (e.lengthComputable && modelLoadingProgress) {
+        if (e.lengthComputable) {
             const percent = Math.round((e.loaded / e.total) * 100);
-            modelLoadingProgress.textContent = `${percent}%`;
+            if (modelLoadingProgress) {
+                modelLoadingProgress.textContent = `${percent}%`;
+            }
+            if (modelProgressBar) {
+                const circumference = 2 * Math.PI * 26;
+                const offset = circumference - (e.loaded / e.total) * circumference;
+                modelProgressBar.style.strokeDashoffset = offset;
+            }
         }
     });
     
@@ -259,14 +258,17 @@ function loadModel(src, shipInfo = null, typeId = null) {
             currentBlobUrl = URL.createObjectURL(blob);
             modelViewer.src = currentBlobUrl;
             
-            // 监听 model-viewer 的 load 事件
             const loadHandler = () => {
-                // 隐藏加载动画
-                if (modelLoadingSpinner) {
-                    modelLoadingSpinner.classList.remove('show');
+                if (modelProgressBar) {
+                    const circumference = 2 * Math.PI * 26;
+                    modelProgressBar.style.strokeDashoffset = 0;
                 }
                 if (modelLoadingProgress) {
                     modelLoadingProgress.textContent = '100%';
+                }
+                
+                if (modelLoadingSpinner) {
+                    modelLoadingSpinner.classList.remove('show');
                 }
                 
                 modelViewer.cameraOrbit = '45deg auto auto';
@@ -278,7 +280,6 @@ function loadModel(src, shipInfo = null, typeId = null) {
                     };
                 }
                 
-                // 清理 blob URL（延迟清理，确保 model-viewer 已加载）
                 setTimeout(() => {
                     if (currentBlobUrl) {
                         URL.revokeObjectURL(currentBlobUrl);
@@ -289,14 +290,12 @@ function loadModel(src, shipInfo = null, typeId = null) {
             
             modelViewer.addEventListener('load', loadHandler, { once: true });
         } else {
-            // 加载失败，回退到直接使用原始 URL
             modelViewer.src = src;
             modelViewer.addEventListener('error', errorHandler, { once: true });
         }
     });
     
     xhr.addEventListener('error', () => {
-        // 网络错误，回退到直接使用原始 URL
         modelViewer.src = src;
         modelViewer.addEventListener('error', errorHandler, { once: true });
     });
@@ -315,7 +314,6 @@ if (hintText) {
     hintText.textContent = currentLang === 'cn' ? '从目录中选择模型' : 'Select a model from the directory';
 }
 
-// 初始化加载文本
 const loadingText = document.getElementById('loadingText');
 if (loadingText) {
     loadingText.textContent = currentLang === 'cn' ? '加载中...' : 'Loading...';
@@ -429,12 +427,9 @@ class NavigationManager {
     }
 
     calculateHasModel() {
-        // 遍历所有目录
         this.data.forEach(category => {
-            // 计算每个组是否有模型
             if (category.groups) {
                 category.groups.forEach(group => {
-                    // 计算每个类型是否有模型
                     if (group.types) {
                         group.types.forEach(type => {
                             type.has_model = !!(type.model_path && type.model_path.trim());
@@ -452,15 +447,13 @@ class NavigationManager {
     }
 
     sortData() {
-        // 先计算has_model
         this.calculateHasModel();
         
-        // 排序：有模型的优先，然后按ID或名称排序
         this.data.sort((a, b) => {
             const aHasModel = a.has_model || false;
             const bHasModel = b.has_model || false;
             if (aHasModel !== bHasModel) {
-                return bHasModel - aHasModel; // true在前
+                return bHasModel - aHasModel;
             }
             return (a.id || 0) - (b.id || 0);
         });
@@ -471,7 +464,7 @@ class NavigationManager {
                     const aHasModel = a.has_model || false;
                     const bHasModel = b.has_model || false;
                     if (aHasModel !== bHasModel) {
-                        return bHasModel - aHasModel; // true在前
+                        return bHasModel - aHasModel;
                     }
                     const nameA = (a.name || '').toLowerCase();
                     const nameB = (b.name || '').toLowerCase();
@@ -483,7 +476,7 @@ class NavigationManager {
                             const aHasModel = a.has_model || false;
                             const bHasModel = b.has_model || false;
                             if (aHasModel !== bHasModel) {
-                                return bHasModel - aHasModel; // true在前
+                                return bHasModel - aHasModel;
                             }
                             const nameA = (a.name || '').toLowerCase();
                             const nameB = (b.name || '').toLowerCase();
@@ -545,14 +538,13 @@ class NavigationManager {
     renderContent() {
         if (!this.container) return;
 
-        // 清除所有可能的焦点状态
         const focusedElement = this.container.querySelector(':focus');
         if (focusedElement) {
             focusedElement.blur();
         }
 
         this.container.innerHTML = '';
-        this.container.scrollTop = 0; // Reset scroll position
+        this.container.scrollTop = 0;
 
         let current = { children: this.data };
         this.path.forEach(item => {
@@ -564,7 +556,6 @@ class NavigationManager {
         });
 
         if (this.path.length === 0) {
-            // 确保数据已排序
             const sortedCategories = [...this.data].sort((a, b) => {
                 const aHasModel = a.has_model || false;
                 const bHasModel = b.has_model || false;
@@ -575,7 +566,6 @@ class NavigationManager {
             });
             this.renderCategories(sortedCategories);
         } else if (this.path[this.path.length - 1].type === 'category') {
-            // 确保组已排序
             const sortedGroups = [...(current.groups || [])].sort((a, b) => {
                 const aHasModel = a.has_model || false;
                 const bHasModel = b.has_model || false;
@@ -588,7 +578,6 @@ class NavigationManager {
             });
             this.renderGroups(sortedGroups);
         } else if (this.path[this.path.length - 1].type === 'group') {
-            // 确保类型已排序
             const sortedTypes = [...(current.types || [])].sort((a, b) => {
                 const aHasModel = a.has_model || false;
                 const bHasModel = b.has_model || false;
@@ -642,7 +631,6 @@ class NavigationManager {
             }
 
             header.addEventListener('click', (e) => {
-                // 立即清除活动状态
                 if (document.activeElement) {
                     document.activeElement.blur();
                 }
@@ -695,7 +683,6 @@ class NavigationManager {
             }
 
             header.addEventListener('click', (e) => {
-                // 立即清除活动状态
                 if (document.activeElement) {
                     document.activeElement.blur();
                 }
@@ -815,33 +802,27 @@ function loadModelFromHash() {
     const hash = window.location.hash;
     if (!hash) return;
     
-    // 解析 hash，格式: #typeid=123
     const match = hash.match(/typeid=(\d+)/);
     if (!match) return;
     
     const typeIdStr = match[1];
     const typeId = parseInt(typeIdStr, 10);
     
-    // 验证是否为有效数字
     if (isNaN(typeId) || typeIdStr !== String(typeId)) {
         showModelNotFoundError();
         return;
     }
     
-    // 检查资源索引是否已加载
     if (!resourcesIndex) {
-        // 如果资源索引还未加载，等待加载完成后再尝试
         return;
     }
     
-    // 查找对应的模型
     const result = findTypeById(resourcesIndex, typeId);
     if (!result || !result.type.model_path) {
         showModelNotFoundError();
         return;
     }
     
-    // 加载模型
     loadModel(result.type.model_path, {
         name: result.type.name,
         name_en: result.type.name_en || '',
@@ -1047,12 +1028,10 @@ function showMainContent() {
     const loadingOverlay = document.getElementById('loadingOverlay');
     const dropZone = document.getElementById('dropZone');
     
-    // 初始化布局和功能
     initLayout();
     initSidebarResizer();
     initDrawer();
     
-    // 显示主要内容
     if (loadingOverlay) {
         loadingOverlay.classList.add('hidden');
     }
@@ -1089,10 +1068,8 @@ fetch(indexFile)
         searchIndex = buildSearchIndex(data);
         initSearch();
         
-        // 数据准备好后，显示主要内容
         setTimeout(() => {
             showMainContent();
-            // 检查 hash 参数并加载模型
             loadModelFromHash();
         }, 100);
     })
@@ -1102,7 +1079,6 @@ fetch(indexFile)
             loadingText.textContent = currentLang === 'cn' ? '加载失败' : 'Loading failed';
         }
         
-        // 即使加载失败，也显示主要内容
         setTimeout(() => {
             showMainContent();
         }, 2000);
@@ -1155,7 +1131,6 @@ brightnessSlider.addEventListener('input', (e) => {
     modelViewer.exposure = value;
 });
 
-// 监听 hash 变化
 window.addEventListener('hashchange', () => {
     loadModelFromHash();
 });

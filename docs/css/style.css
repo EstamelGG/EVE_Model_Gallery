@@ -144,13 +144,17 @@ body {
     justify-content: center;
 }
 
-.model-spinner {
+.model-progress-circle {
     width: 60px;
     height: 60px;
-    border: 4px solid rgba(59, 130, 246, 0.2);
-    border-top-color: #3b82f6;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+}
+
+.model-progress-bg {
+    transition: none;
+}
+
+.model-progress-bar {
+    transition: stroke-dashoffset 0.3s ease;
 }
 
 .model-loading-progress {
