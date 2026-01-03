@@ -137,6 +137,13 @@ body {
     visibility: visible;
 }
 
+.model-spinner-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .model-spinner {
     width: 60px;
     height: 60px;
@@ -144,6 +151,18 @@ body {
     border-top-color: #3b82f6;
     border-radius: 50%;
     animation: spin 1s linear infinite;
+}
+
+.model-loading-progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-weight: 600;
+    color: #3b82f6;
+    user-select: none;
+    pointer-events: none;
 }
 
 .ship-name-display {

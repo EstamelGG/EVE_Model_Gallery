@@ -138,6 +138,7 @@ const brightnessSlider = document.getElementById('brightnessSlider');
 const brightnessIcon = document.querySelector('.brightness-icon');
 const resetViewIcon = document.getElementById('resetViewIcon');
 const modelLoadingSpinner = document.getElementById('modelLoadingSpinner');
+const modelLoadingProgress = document.getElementById('modelLoadingProgress');
 
 function loadModel(src, shipInfo = null, typeId = null) {
     if (!src) return;
@@ -146,8 +147,10 @@ function loadModel(src, shipInfo = null, typeId = null) {
     if (modelLoadingSpinner) {
         modelLoadingSpinner.classList.add('show');
     }
+    if (modelLoadingProgress) {
+        modelLoadingProgress.textContent = '0%';
+    }
     
-    modelViewer.src = src;
     modelViewer.classList.add('active');
     uploadUI.style.display = 'none';
     brightnessControl.classList.add('show');
@@ -192,22 +195,12 @@ function loadModel(src, shipInfo = null, typeId = null) {
         }
     }
     
-    modelViewer.addEventListener('load', () => {
-        // 隐藏加载动画
-        if (modelLoadingSpinner) {
-            modelLoadingSpinner.classList.remove('show');
-        }
-        
-        modelViewer.cameraOrbit = '45deg auto auto';
-        if (modelViewer.cameraTarget) {
-            initialCameraTarget = {
-                x: modelViewer.cameraTarget.x,
-                y: modelViewer.cameraTarget.y,
-                z: modelViewer.cameraTarget.z
-            };
-        }
-    }, { once: true });
+    // 清理之前的 blob URL（如果存在）
+    if (modelViewer.src && modelViewer.src.startsWith('blob:')) {
+        URL.revokeObjectURL(modelViewer.src);
+    }
     
+    // 定义错误处理函数
     const errorHandler = (event) => {
         // 隐藏加载动画
         if (modelLoadingSpinner) {
@@ -245,6 +238,70 @@ function loadModel(src, shipInfo = null, typeId = null) {
             errorTag.classList.remove('show');
         }, 5000);
     };
+    
+    // 使用 XMLHttpRequest 加载模型以跟踪进度
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', src, true);
+    xhr.responseType = 'blob';
+    
+    let currentBlobUrl = null;
+    
+    xhr.addEventListener('progress', (e) => {
+        if (e.lengthComputable && modelLoadingProgress) {
+            const percent = Math.round((e.loaded / e.total) * 100);
+            modelLoadingProgress.textContent = `${percent}%`;
+        }
+    });
+    
+    xhr.addEventListener('load', () => {
+        if (xhr.status === 200) {
+            const blob = xhr.response;
+            currentBlobUrl = URL.createObjectURL(blob);
+            modelViewer.src = currentBlobUrl;
+            
+            // 监听 model-viewer 的 load 事件
+            const loadHandler = () => {
+                // 隐藏加载动画
+                if (modelLoadingSpinner) {
+                    modelLoadingSpinner.classList.remove('show');
+                }
+                if (modelLoadingProgress) {
+                    modelLoadingProgress.textContent = '100%';
+                }
+                
+                modelViewer.cameraOrbit = '45deg auto auto';
+                if (modelViewer.cameraTarget) {
+                    initialCameraTarget = {
+                        x: modelViewer.cameraTarget.x,
+                        y: modelViewer.cameraTarget.y,
+                        z: modelViewer.cameraTarget.z
+                    };
+                }
+                
+                // 清理 blob URL（延迟清理，确保 model-viewer 已加载）
+                setTimeout(() => {
+                    if (currentBlobUrl) {
+                        URL.revokeObjectURL(currentBlobUrl);
+                        currentBlobUrl = null;
+                    }
+                }, 1000);
+            };
+            
+            modelViewer.addEventListener('load', loadHandler, { once: true });
+        } else {
+            // 加载失败，回退到直接使用原始 URL
+            modelViewer.src = src;
+            modelViewer.addEventListener('error', errorHandler, { once: true });
+        }
+    });
+    
+    xhr.addEventListener('error', () => {
+        // 网络错误，回退到直接使用原始 URL
+        modelViewer.src = src;
+        modelViewer.addEventListener('error', errorHandler, { once: true });
+    });
+    
+    xhr.send();
     
     modelViewer.removeEventListener('error', errorHandler);
     modelViewer.addEventListener('error', errorHandler, { once: true });
