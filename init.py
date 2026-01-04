@@ -296,6 +296,15 @@ class EVEDataInitializer:
             json.dump(category_tree, f, ensure_ascii=False, indent=2)
         print(f"  {lang.upper()}索引已保存: {output_file}")
     
+    def save_available_models(self, model_map: Dict[int, str]):
+        """保存有模型的物品ID列表"""
+        available_ids = sorted(model_map.keys())
+        output_data = {"available": available_ids}
+        output_file = self.output_path / "available_models.json"
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(output_data, f, ensure_ascii=False, indent=2)
+        print(f"  可用模型ID列表已保存: {output_file} (共 {len(available_ids)} 个)")
+    
     def cleanup(self):
         """清理临时文件"""
         print("清理临时文件...")
@@ -342,6 +351,10 @@ class EVEDataInitializer:
                 print("保存索引文件...")
                 self.save_index(tree_zh, 'cn')
                 self.save_index(tree_en, 'en')
+                
+                # 8. 保存有模型的物品ID列表
+                print("保存可用模型列表...")
+                self.save_available_models(model_map)
                 
             finally:
                 conn_zh.close()

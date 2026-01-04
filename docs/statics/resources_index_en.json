@@ -1225,7 +1225,7 @@
             "name_en": "Cynabal",
             "name_zh": "塞纳波级",
             "icon_name": "type_17720_64.png",
-            "model_path": ""
+            "model_path": "./models/17720_lite.glb"
           },
           {
             "id": 634,
