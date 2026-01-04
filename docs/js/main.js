@@ -8,17 +8,94 @@ function detectDevice() {
     return width >= 768;
 }
 
+// Hash参数管理辅助函数
+function parseHashParams() {
+    const hash = window.location.hash.slice(1); // 移除#
+    const params = {};
+    if (hash) {
+        hash.split('&').forEach(param => {
+            const [key, value] = param.split('=');
+            if (key) {
+                params[key] = value || true;
+            }
+        });
+    }
+    return params;
+}
+
+function buildHashString(params) {
+    const parts = [];
+    for (const [key, value] of Object.entries(params)) {
+        if (value === true) {
+            parts.push(key);
+        } else if (value) {
+            parts.push(`${key}=${value}`);
+        }
+    }
+    return parts.length > 0 ? '#' + parts.join('&') : '';
+}
+
+function setHashParam(key, value) {
+    const params = parseHashParams();
+    if (value === null || value === undefined || value === '') {
+        delete params[key];
+    } else {
+        params[key] = value;
+    }
+    const newHash = buildHashString(params);
+    if (window.location.hash !== newHash) {
+        window.location.hash = newHash;
+    }
+}
+
+function getHashParam(key) {
+    const params = parseHashParams();
+    return params[key];
+}
+
+function hasHashParam(key) {
+    return key in parseHashParams();
+}
+
 function initLayout() {
     const isDesktop = detectDevice();
     const sidebar = document.getElementById('sidebar');
     const bottomPanel = document.getElementById('bottomPanel');
+    
+    // 检查是否有 tiny hash 参数
+    const isTinyMode = hasHashParam('tiny');
 
-    if (isDesktop) {
-        sidebar.classList.add('show');
-        bottomPanel.classList.remove('show');
+    if (isTinyMode) {
+        // tiny 模式：隐藏目录区，只显示模型渲染区
+        if (sidebar) {
+            sidebar.classList.remove('show');
+            sidebar.style.display = 'none';
+        }
+        if (bottomPanel) {
+            bottomPanel.classList.remove('show');
+            bottomPanel.style.display = 'none';
+        }
     } else {
-        sidebar.classList.remove('show');
-        bottomPanel.classList.add('show');
+        // 正常模式：根据设备类型显示/隐藏
+        if (isDesktop) {
+            if (sidebar) {
+                sidebar.classList.add('show');
+                sidebar.style.display = '';
+            }
+            if (bottomPanel) {
+                bottomPanel.classList.remove('show');
+                bottomPanel.style.display = '';
+            }
+        } else {
+            if (sidebar) {
+                sidebar.classList.remove('show');
+                sidebar.style.display = '';
+            }
+            if (bottomPanel) {
+                bottomPanel.classList.add('show');
+                bottomPanel.style.display = '';
+            }
+        }
     }
 }
 
@@ -165,14 +242,10 @@ function loadModel(src, shipInfo = null, typeId = null) {
     }
     
     if (typeId) {
-        const newHash = `typeid=${typeId}`;
-        if (window.location.hash !== `#${newHash}`) {
-            window.location.hash = newHash;
-        }
+        setHashParam('typeid', typeId);
     } else {
-        if (window.location.hash) {
-            window.location.hash = '';
-        }
+        // 清除typeid参数，但保留其他参数（如tiny）
+        setHashParam('typeid', null);
     }
     
     const shipNameDisplay = document.getElementById('shipNameDisplay');
@@ -848,16 +921,12 @@ function findTypeById(data, typeId) {
 }
 
 function loadModelFromHash() {
-    const hash = window.location.hash;
-    if (!hash) return;
+    const typeIdParam = getHashParam('typeid');
+    if (!typeIdParam) return;
     
-    const match = hash.match(/typeid=(\d+)/);
-    if (!match) return;
+    const typeId = parseInt(typeIdParam, 10);
     
-    const typeIdStr = match[1];
-    const typeId = parseInt(typeIdStr, 10);
-    
-    if (isNaN(typeId) || typeIdStr !== String(typeId)) {
+    if (isNaN(typeId) || String(typeId) !== String(typeIdParam)) {
         showModelNotFoundError();
         return;
     }
@@ -1141,6 +1210,7 @@ fetch(indexFile)
     });
 
 window.addEventListener('resize', initLayout);
+window.addEventListener('hashchange', initLayout);
 
 const initialCameraOrbit = '45deg auto auto';
 const initialExposure = 1;
