@@ -8,9 +8,8 @@ function detectDevice() {
     return width >= 768;
 }
 
-// Hash参数管理辅助函数
 function parseHashParams() {
-    const hash = window.location.hash.slice(1); // 移除#
+    const hash = window.location.hash.slice(1);
     const params = {};
     if (hash) {
         hash.split('&').forEach(param => {
@@ -62,11 +61,9 @@ function initLayout() {
     const sidebar = document.getElementById('sidebar');
     const bottomPanel = document.getElementById('bottomPanel');
     
-    // 检查是否有 tiny hash 参数
     const isTinyMode = hasHashParam('tiny');
 
     if (isTinyMode) {
-        // tiny 模式：隐藏目录区，只显示模型渲染区
         if (sidebar) {
             sidebar.classList.remove('show');
             sidebar.style.display = 'none';
@@ -76,7 +73,6 @@ function initLayout() {
             bottomPanel.style.display = 'none';
         }
     } else {
-        // 正常模式：根据设备类型显示/隐藏
         if (isDesktop) {
             if (sidebar) {
                 sidebar.classList.add('show');
@@ -210,10 +206,12 @@ const uploadUI = document.getElementById('uploadUI');
 const hintText = document.getElementById('hintText');
 const infoTag = document.getElementById('infoTag');
 const errorTag = document.getElementById('errorTag');
+const actionToast = document.getElementById('actionToast');
 const brightnessControl = document.getElementById('brightnessControl');
 const brightnessSlider = document.getElementById('brightnessSlider');
 const brightnessIcon = document.querySelector('.brightness-icon');
 const resetViewIcon = document.getElementById('resetViewIcon');
+const shadowToggleIcon = document.getElementById('shadowToggleIcon');
 const modelLoadingSpinner = document.getElementById('modelLoadingSpinner');
 const modelLoadingProgress = document.getElementById('modelLoadingProgress');
 const modelProgressBar = document.getElementById('modelProgressBar');
@@ -244,7 +242,6 @@ function loadModel(src, shipInfo = null, typeId = null) {
     if (typeId) {
         setHashParam('typeid', typeId);
     } else {
-        // 清除typeid参数，但保留其他参数（如tiny）
         setHashParam('typeid', null);
     }
     
@@ -353,6 +350,8 @@ function loadModel(src, shipInfo = null, typeId = null) {
                     };
                 }
                 
+                applyShadowState(getShadowEnabled());
+                
                 setTimeout(() => {
                     if (currentBlobUrl) {
                         URL.revokeObjectURL(currentBlobUrl);
@@ -382,6 +381,57 @@ function loadModel(src, shipInfo = null, typeId = null) {
 let resourcesIndex = null;
 const currentLang = detectLanguage();
 const indexFile = `./statics/resources_index_${currentLang}.json`;
+
+function getShadowEnabled() {
+    const saved = localStorage.getItem('shadowEnabled');
+    return saved !== null ? saved === 'true' : true;
+}
+
+function setShadowEnabled(enabled) {
+    localStorage.setItem('shadowEnabled', enabled.toString());
+}
+
+function toggleShadow() {
+    const currentEnabled = getShadowEnabled();
+    const newEnabled = !currentEnabled;
+    setShadowEnabled(newEnabled);
+    applyShadowState(newEnabled);
+    
+    const message = newEnabled 
+        ? (currentLang === 'cn' ? '阴影已开启' : 'Shadows enabled')
+        : (currentLang === 'cn' ? '阴影已关闭' : 'Shadows disabled');
+    showActionToast(message);
+    
+    if (navigator.vibrate) navigator.vibrate(10);
+}
+
+function applyShadowState(enabled) {
+    if (shadowToggleIcon) {
+        if (enabled) {
+            shadowToggleIcon.classList.add('active');
+        } else {
+            shadowToggleIcon.classList.remove('active');
+        }
+    }
+    
+    if (modelViewer) {
+        if (enabled) {
+            modelViewer.shadowIntensity = '1';
+        } else {
+            modelViewer.shadowIntensity = '0';
+        }
+    }
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        const initialShadowEnabled = getShadowEnabled();
+        applyShadowState(initialShadowEnabled);
+    });
+} else {
+    const initialShadowEnabled = getShadowEnabled();
+    applyShadowState(initialShadowEnabled);
+}
 
 if (hintText) {
     hintText.textContent = currentLang === 'cn' ? '从目录中选择模型' : 'Select a model from the directory';
@@ -1216,6 +1266,22 @@ const initialCameraOrbit = '45deg auto auto';
 const initialExposure = 1;
 let initialCameraTarget = null;
 
+function showActionToast(message) {
+    if (!actionToast) return;
+    
+    actionToast.textContent = message;
+    actionToast.classList.remove('hide');
+    actionToast.classList.add('show');
+    
+    setTimeout(() => {
+        actionToast.classList.remove('show');
+        actionToast.classList.add('hide');
+        setTimeout(() => {
+            actionToast.classList.remove('hide');
+        }, 300);
+    }, 2000);
+}
+
 brightnessIcon.addEventListener('click', () => {
     const defaultValue = 1;
 
@@ -1223,6 +1289,8 @@ brightnessIcon.addEventListener('click', () => {
 
     brightnessSlider.value = defaultValue;
 
+    showActionToast(currentLang === 'cn' ? '已重置亮度' : 'Brightness reset');
+    
     if (navigator.vibrate) navigator.vibrate(10);
 });
 
@@ -1243,6 +1311,8 @@ resetViewIcon.addEventListener('click', () => {
     modelViewer.exposure = initialExposure;
     brightnessSlider.value = initialExposure;
 
+    showActionToast(currentLang === 'cn' ? '已重置视角' : 'View reset');
+    
     if (navigator.vibrate) navigator.vibrate(10);
 });
 
@@ -1250,6 +1320,12 @@ brightnessSlider.addEventListener('input', (e) => {
     const value = parseFloat(e.target.value);
     modelViewer.exposure = value;
 });
+
+if (shadowToggleIcon) {
+    shadowToggleIcon.addEventListener('click', () => {
+        toggleShadow();
+    });
+}
 
 window.addEventListener('hashchange', () => {
     loadModelFromHash();

@@ -789,6 +789,36 @@ model-viewer.active { display: block; }
 
 .error-tag.show { opacity: 1; }
 
+.action-toast {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(147, 197, 253, 0.95);
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #1e3a8a;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 4px 16px rgba(147, 197, 253, 0.4);
+    z-index: 20;
+    max-width: 80%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.action-toast.show {
+    opacity: 1;
+}
+
+.action-toast.hide {
+    opacity: 0;
+}
+
 .brightness-control {
     position: absolute;
     bottom: 20px;
