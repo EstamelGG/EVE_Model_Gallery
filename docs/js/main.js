@@ -329,8 +329,31 @@ function getTypeIconUrl(typeId) {
     return `https://images.evetech.net/types/${typeId}/icon`;
 }
 
+function createIconWithSpinner(iconClass, iconSrc, iconAlt, hasModel = true) {
+    const iconWrapper = document.createElement('div');
+    iconWrapper.className = 'icon-wrapper';
+    
+    const loadingSpinner = document.createElement('div');
+    loadingSpinner.className = 'icon-loading-spinner';
+    iconWrapper.appendChild(loadingSpinner);
+    
+    const icon = document.createElement('img');
+    icon.className = iconClass;
+    icon.dataset.src = iconSrc;
+    icon.alt = iconAlt;
+    icon.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24"%3E%3C/svg%3E';
+    if (!hasModel) {
+        icon.classList.add('no-model');
+    }
+    iconWrapper.appendChild(icon);
+    
+    iconLoader.observe(icon);
+    
+    return iconWrapper;
+}
+
 class IconLoader {
-    constructor(maxConcurrent = 5) {
+    constructor(maxConcurrent = 10) {
         this.maxConcurrent = maxConcurrent;
         this.loadingQueue = [];
         this.activeLoads = 0;
@@ -371,6 +394,13 @@ class IconLoader {
 
         const src = img.dataset.src;
         if (!src) {
+            const iconWrapper = img.parentElement;
+            if (iconWrapper && iconWrapper.classList.contains('icon-wrapper')) {
+                const spinner = iconWrapper.querySelector('.icon-loading-spinner');
+                if (spinner) {
+                    spinner.remove();
+                }
+            }
             this.activeLoads--;
             this.processQueue();
             return;
@@ -379,6 +409,13 @@ class IconLoader {
         try {
             await this.loadImage(img, src);
         } catch (error) {
+            const iconWrapper = img.parentElement;
+            if (iconWrapper && iconWrapper.classList.contains('icon-wrapper')) {
+                const spinner = iconWrapper.querySelector('.icon-loading-spinner');
+                if (spinner) {
+                    spinner.remove();
+                }
+            }
             img.style.display = 'none';
         } finally {
             this.activeLoads--;
@@ -388,17 +425,35 @@ class IconLoader {
 
     loadImage(img, src) {
         return new Promise((resolve, reject) => {
+            const iconWrapper = img.parentElement;
+            if (!iconWrapper || !iconWrapper.classList.contains('icon-wrapper')) {
+                reject(new Error('Invalid icon wrapper'));
+                return;
+            }
+            
+            const spinner = iconWrapper.querySelector('.icon-loading-spinner');
+            
+            const removeSpinner = () => {
+                if (spinner && spinner.parentNode) {
+                    spinner.remove();
+                }
+            };
+            
             const image = new Image();
             image.onload = () => {
                 img.src = src;
                 img.dataset.loaded = 'true';
                 img.classList.add('loaded');
+                img.style.display = 'block';
+                removeSpinner();
                 resolve();
             };
             image.onerror = () => {
                 img.style.display = 'none';
+                removeSpinner();
                 reject(new Error('Failed to load image'));
             };
+            
             image.src = src;
         });
     }
@@ -604,15 +659,13 @@ class NavigationManager {
             header.className = 'category-header';
 
             if (category.icon_name) {
-                const icon = document.createElement('img');
-                icon.className = 'category-icon';
-                icon.dataset.src = getIconPath(category.icon_name);
-                icon.alt = category.name;
-                if (!category.has_model) {
-                    icon.classList.add('no-model');
-                }
-                header.appendChild(icon);
-                iconLoader.observe(icon);
+                const iconWrapper = createIconWithSpinner(
+                    'category-icon',
+                    getIconPath(category.icon_name),
+                    category.name,
+                    category.has_model
+                );
+                header.appendChild(iconWrapper);
             }
 
             const name = document.createElement('span');
@@ -656,15 +709,13 @@ class NavigationManager {
             header.className = 'group-header';
 
             if (group.icon_name) {
-                const icon = document.createElement('img');
-                icon.className = 'group-icon';
-                icon.dataset.src = getIconPath(group.icon_name);
-                icon.alt = group.name;
-                if (!group.has_model) {
-                    icon.classList.add('no-model');
-                }
-                header.appendChild(icon);
-                iconLoader.observe(icon);
+                const iconWrapper = createIconWithSpinner(
+                    'group-icon',
+                    getIconPath(group.icon_name),
+                    group.name,
+                    group.has_model
+                );
+                header.appendChild(iconWrapper);
             }
 
             const name = document.createElement('span');
@@ -706,15 +757,13 @@ class NavigationManager {
             item.className = 'type-item';
             item.dataset.typeId = type.id;
 
-            const icon = document.createElement('img');
-            icon.className = 'type-icon';
-            icon.dataset.src = getTypeIconUrl(type.id);
-            icon.alt = type.name;
-            if (!type.has_model) {
-                icon.classList.add('no-model');
-            }
-            item.appendChild(icon);
-            iconLoader.observe(icon);
+            const iconWrapper = createIconWithSpinner(
+                'type-icon',
+                getTypeIconUrl(type.id),
+                type.name,
+                type.has_model
+            );
+            item.appendChild(iconWrapper);
 
             const name = document.createElement('span');
             name.className = 'type-name';
@@ -870,12 +919,13 @@ function renderSearchResults(results, searchResultsContainer, navManager) {
         const item = document.createElement('div');
         item.className = 'search-result-item';
         
-        const icon = document.createElement('img');
-        icon.className = 'search-result-icon';
-        icon.dataset.src = getTypeIconUrl(result.id);
-        icon.alt = result.name;
-        item.appendChild(icon);
-        iconLoader.observe(icon);
+        const iconWrapper = createIconWithSpinner(
+            'search-result-icon',
+            getTypeIconUrl(result.id),
+            result.name,
+            true
+        );
+        item.appendChild(iconWrapper);
         
         const info = document.createElement('div');
         info.className = 'search-result-info';
