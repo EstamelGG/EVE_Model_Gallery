@@ -2910,7 +2910,7 @@
             "name_en": "Providence",
             "name_zh": "普罗维登斯级",
             "icon_name": "type_2879_64.png",
-            "model_path": ""
+            "model_path": "./models/20183_lite.glb"
           },
           {
             "id": 20185,
