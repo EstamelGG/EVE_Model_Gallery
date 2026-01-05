@@ -500,7 +500,7 @@
             "name_en": "Redeemer",
             "name_zh": "救世级",
             "icon_name": "type_22428_64.png",
-            "model_path": ""
+            "model_path": "./models/22428_lite.glb"
           },
           {
             "id": 22430,
@@ -547,7 +547,7 @@
             "name_en": "Prorator",
             "name_zh": "分裂级",
             "icon_name": "type_12733_64.png",
-            "model_path": ""
+            "model_path": "./models/12733_lite.glb"
           },
           {
             "id": 12735,
@@ -3398,7 +3398,7 @@
             "name_en": "Purifier",
             "name_zh": "净化级",
             "icon_name": "type_12038_64.png",
-            "model_path": ""
+            "model_path": "./models/12038_lite.glb"
           },
           {
             "id": 45530,
