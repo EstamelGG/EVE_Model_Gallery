@@ -10,8 +10,8 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background: linear-gradient(135deg, #f0f0f0 0%, #e5e5e5 100%);
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -22,8 +22,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100dvw;
+    height: 100dvh;
     background: linear-gradient(135deg, #f0f0f0 0%, #e5e5e5 100%);
     display: flex;
     flex-direction: column;
