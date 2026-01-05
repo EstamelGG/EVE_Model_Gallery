@@ -1821,7 +1821,7 @@
             "name_en": "Sentinel",
             "name_zh": "哨兵级",
             "icon_name": "type_11190_64.png",
-            "model_path": ""
+            "model_path": "./models/11190_lite.glb"
           }
         ]
       },
