@@ -445,7 +445,7 @@
             "name_en": "Typhoon",
             "name_zh": "台风级",
             "icon_name": "type_644_64.png",
-            "model_path": ""
+            "model_path": "./models/644_lite.glb"
           },
           {
             "id": 32311,
@@ -1345,7 +1345,7 @@
             "name_en": "Rupture",
             "name_zh": "断崖级",
             "icon_name": "type_629_64.png",
-            "model_path": ""
+            "model_path": "./models/629_lite.glb"
           },
           {
             "id": 631,
