@@ -2141,7 +2141,7 @@
             "name_en": "Breacher",
             "name_zh": "分裂者级",
             "icon_name": "type_598_64.png",
-            "model_path": ""
+            "model_path": "./models/598_lite.glb"
           },
           {
             "id": 599,
