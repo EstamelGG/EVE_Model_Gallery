@@ -174,7 +174,7 @@
             "name_en": "Tornado",
             "name_zh": "龙卷风级",
             "icon_name": "type_4310_64.png",
-            "model_path": ""
+            "model_path": "./models/4310_lite.glb"
           }
         ]
       },
@@ -413,7 +413,7 @@
             "name_en": "Tempest",
             "name_zh": "狂暴级",
             "icon_name": "type_639_64.png",
-            "model_path": ""
+            "model_path": "./models/639_lite.glb"
           },
           {
             "id": 17732,
@@ -1185,7 +1185,7 @@
             "name_en": "Bellicose",
             "name_zh": "挑战级",
             "icon_name": "type_630_64.png",
-            "model_path": ""
+            "model_path": "./models/630_lite.glb"
           },
           {
             "id": 632,
@@ -1655,7 +1655,7 @@
             "name_en": "Thrasher",
             "name_zh": "长尾鲛级",
             "icon_name": "type_3763_64.png",
-            "model_path": ""
+            "model_path": "./models/16242_lite.glb"
           },
           {
             "id": 73794,
@@ -1936,7 +1936,7 @@
             "name_en": "Lif",
             "name_zh": "利夫级",
             "icon_name": "type_37606_64.png",
-            "model_path": ""
+            "model_path": "./models/37606_lite.glb"
           },
           {
             "id": 45645,
@@ -2086,7 +2086,7 @@
             "name_en": "Fenrir",
             "name_zh": "芬利厄级",
             "icon_name": "type_3791_64.png",
-            "model_path": ""
+            "model_path": "./models/20189_lite.glb"
           },
           {
             "id": 20187,
@@ -2501,7 +2501,7 @@
             "name_en": "Vigil",
             "name_zh": "守夜者级",
             "icon_name": "type_3762_64.png",
-            "model_path": ""
+            "model_path": "./models/3766_lite.glb"
           },
           {
             "id": 37454,
@@ -2556,7 +2556,7 @@
             "name_en": "Hoarder",
             "name_zh": "囤积者级",
             "icon_name": "type_651_64.png",
-            "model_path": ""
+            "model_path": "./models/651_lite.glb"
           },
           {
             "id": 657,
@@ -2580,7 +2580,7 @@
             "name_en": "Mammoth",
             "name_zh": "猛犸级",
             "icon_name": "type_652_64.png",
-            "model_path": ""
+            "model_path": "./models/652_lite.glb"
           },
           {
             "id": 656,
@@ -2668,7 +2668,7 @@
             "name_en": "Wreathe",
             "name_zh": "环绕级",
             "icon_name": "type_653_64.png",
-            "model_path": ""
+            "model_path": "./models/653_lite.glb"
           }
         ]
       },
