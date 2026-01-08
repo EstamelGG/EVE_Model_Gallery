@@ -687,7 +687,7 @@
             "name_en": "Cyclone",
             "name_zh": "飓风级",
             "icon_name": "type_3778_64.png",
-            "model_path": ""
+            "model_path": "./models/16231_lite.glb"
           },
           {
             "id": 72811,
@@ -940,7 +940,7 @@
             "name_en": "Claymore",
             "name_zh": "月刃级",
             "icon_name": "type_22468_64.png",
-            "model_path": ""
+            "model_path": "./models/22468_lite.glb"
           },
           {
             "id": 22474,
@@ -972,7 +972,7 @@
             "name_en": "Sleipnir",
             "name_zh": "斯雷普尼级",
             "icon_name": "type_22444_64.png",
-            "model_path": ""
+            "model_path": "./models/22444_lite.glb"
           },
           {
             "id": 22446,
@@ -1710,7 +1710,7 @@
             "name_en": "Naglfar",
             "name_zh": "纳迦法级",
             "icon_name": "type_3786_64.png",
-            "model_path": ""
+            "model_path": "./models/19722_lite.glb"
           },
           {
             "id": 73787,
@@ -1789,7 +1789,7 @@
             "name_en": "Hyena",
             "name_zh": "土狼级",
             "icon_name": "type_11387_64.png",
-            "model_path": ""
+            "model_path": "./models/11387_lite.glb"
           },
           {
             "id": 11174,
@@ -2031,7 +2031,7 @@
             "name_en": "Rapier",
             "name_zh": "长剑级",
             "icon_name": "type_11963_64.png",
-            "model_path": ""
+            "model_path": "./models/11963_lite.glb"
           },
           {
             "id": 48635,
@@ -2755,7 +2755,7 @@
             "name_en": "Muninn",
             "name_zh": "缪宁级",
             "icon_name": "type_12015_64.png",
-            "model_path": ""
+            "model_path": "./models/12015_lite.glb"
           },
           {
             "id": 12019,
@@ -2802,7 +2802,7 @@
             "name_en": "Broadsword",
             "name_zh": "阔刀级",
             "icon_name": "type_12013_64.png",
-            "model_path": ""
+            "model_path": "./models/12013_lite.glb"
           },
           {
             "id": 12017,
@@ -2888,7 +2888,7 @@
             "name_en": "Claw",
             "name_zh": "利爪级",
             "icon_name": "type_11196_64.png",
-            "model_path": ""
+            "model_path": "./models/11196_lite.glb"
           },
           {
             "id": 11176,
@@ -2936,7 +2936,7 @@
             "name_en": "Stiletto",
             "name_zh": "短剑级",
             "icon_name": "type_11198_64.png",
-            "model_path": ""
+            "model_path": "./models/11198_lite.glb"
           },
           {
             "id": 11200,
@@ -3359,7 +3359,7 @@
             "name_en": "Minmatar Shuttle",
             "name_zh": "米玛塔尔穿梭机",
             "icon_name": "type_11132_64.png",
-            "model_path": ""
+            "model_path": "./models/11132_lite.glb"
           }
         ]
       },
@@ -3374,7 +3374,7 @@
             "name_en": "Hound",
             "name_zh": "猎犬级",
             "icon_name": "type_12034_64.png",
-            "model_path": ""
+            "model_path": "./models/12034_lite.glb"
           },
           {
             "id": 12032,
@@ -3610,7 +3610,7 @@
             "name_en": "Ragnarok",
             "name_zh": "拉格纳洛克级",
             "icon_name": "type_3787_64.png",
-            "model_path": ""
+            "model_path": "./models/23773_lite.glb"
           },
           {
             "id": 42126,
