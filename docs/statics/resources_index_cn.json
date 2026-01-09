@@ -1007,7 +1007,7 @@
             "name_en": "Maelstrom",
             "name_zh": "死亡漩涡级",
             "icon_name": "type_3781_64.png",
-            "model_path": ""
+            "model_path": "./models/24694_lite.glb"
           },
           {
             "id": 640,
@@ -1323,7 +1323,7 @@
             "name_en": "Hurricane",
             "name_zh": "暴风级",
             "icon_name": "type_3780_64.png",
-            "model_path": ""
+            "model_path": "./models/24702_lite.glb"
           },
           {
             "id": 33157,
@@ -1418,7 +1418,7 @@
             "name_en": "Svipul",
             "name_zh": "斯威普级",
             "icon_name": "type_34562_64.png",
-            "model_path": ""
+            "model_path": "./models/34562_lite.glb"
           },
           {
             "id": 89808,
@@ -2155,7 +2155,7 @@
             "name_en": "Bifrost",
             "name_zh": "天梯级",
             "icon_name": "type_37480_64.png",
-            "model_path": ""
+            "model_path": "./models/37480_lite.glb"
           },
           {
             "id": 52254,
@@ -2218,7 +2218,7 @@
             "name_en": "Vargur",
             "name_zh": "恶狼级",
             "icon_name": "type_28665_64.png",
-            "model_path": ""
+            "model_path": "./models/28665_lite.glb"
           },
           {
             "id": 28710,
@@ -3659,7 +3659,7 @@
             "name_en": "Talwar",
             "name_zh": "弯刀级",
             "icon_name": "type_32878_64.png",
-            "model_path": ""
+            "model_path": "./models/32878_lite.glb"
           },
           {
             "id": 16236,
