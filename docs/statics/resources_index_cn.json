@@ -529,7 +529,7 @@
             "name_en": "Omen",
             "name_zh": "启示级",
             "icon_name": "type_2006_64.png",
-            "model_path": ""
+            "model_path": "./models/2006_lite.glb"
           },
           {
             "id": 17709,
@@ -657,7 +657,7 @@
             "name_en": "Maller",
             "name_zh": "暴君级",
             "icon_name": "type_624_64.png",
-            "model_path": ""
+            "model_path": "./models/624_lite.glb"
           },
           {
             "id": 17715,
@@ -2949,7 +2949,7 @@
             "name_en": "Aeon",
             "name_zh": "万古级",
             "icon_name": "type_3659_64.png",
-            "model_path": ""
+            "model_path": "./models/23919_lite.glb"
           },
           {
             "id": 42125,
