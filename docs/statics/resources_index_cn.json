@@ -2303,7 +2303,7 @@
             "name_en": "Phoenix",
             "name_zh": "凤凰级",
             "icon_name": "type_3593_64.png",
-            "model_path": ""
+            "model_path": "./models/19726_lite.glb"
           },
           {
             "id": 73793,
@@ -2311,7 +2311,7 @@
             "name_en": "Phoenix Navy Issue",
             "name_zh": "凤凰级海军型",
             "icon_name": "type_73793_64.png",
-            "model_path": ""
+            "model_path": "./models/73793_lite.glb"
           },
           {
             "id": 45647,
@@ -2855,7 +2855,7 @@
             "name_en": "Chimera",
             "name_zh": "奇美拉级",
             "icon_name": "type_3523_64.png",
-            "model_path": ""
+            "model_path": "./models/23915_lite.glb"
           },
           {
             "id": 24483,
