@@ -1188,7 +1188,7 @@
             "name_en": "Huginn",
             "name_zh": "休津级",
             "icon_name": "type_11961_64.png",
-            "model_path": ""
+            "model_path": "./models/11961_lite.glb"
           },
           {
             "id": 11971,
@@ -2809,7 +2809,7 @@
             "name_en": "Wolf",
             "name_zh": "猎狼级",
             "icon_name": "type_11371_64.png",
-            "model_path": ""
+            "model_path": "./models/11371_lite.glb"
           },
           {
             "id": 11400,
@@ -2871,7 +2871,7 @@
             "name_en": "Archon",
             "name_zh": "执政官级",
             "icon_name": "type_3660_64.png",
-            "model_path": ""
+            "model_path": "./models/23757_lite.glb"
           },
           {
             "id": 23911,
