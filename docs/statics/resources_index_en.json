@@ -3500,7 +3500,7 @@
             "name_en": "Wyvern",
             "name_zh": "飞龙级",
             "icon_name": "type_3592_64.png",
-            "model_path": ""
+            "model_path": "./models/23917_lite.glb"
           }
         ]
       },
