@@ -396,7 +396,7 @@
             "name_en": "Kirin",
             "name_zh": "麒麟级",
             "icon_name": "type_37458_64.png",
-            "model_path": ""
+            "model_path": "./models/37458_lite.glb"
           }
         ]
       },
@@ -459,7 +459,7 @@
             "name_en": "Basilisk",
             "name_zh": "皇冠蜥级",
             "icon_name": "type_11985_64.png",
-            "model_path": ""
+            "model_path": "./models/11985_lite.glb"
           }
         ]
       },
@@ -601,7 +601,7 @@
             "name_en": "Phantasm",
             "name_zh": "幽灵级",
             "icon_name": "type_17718_64.png",
-            "model_path": ""
+            "model_path": "./models/17718_lite.glb"
           },
           {
             "id": 627,
@@ -919,7 +919,7 @@
             "name_en": "Nightmare",
             "name_zh": "噩梦级",
             "icon_name": "type_17736_64.png",
-            "model_path": ""
+            "model_path": "./models/17736_lite.glb"
           },
           {
             "id": 24692,
@@ -1496,7 +1496,7 @@
             "name_en": "Anshar",
             "name_zh": "安莎尔级",
             "icon_name": "type_28848_64.png",
-            "model_path": ""
+            "model_path": "./models/28848_lite.glb"
           },
           {
             "id": 28850,
@@ -1567,7 +1567,7 @@
             "name_en": "Raptor",
             "name_zh": "猛禽级",
             "icon_name": "type_11178_64.png",
-            "model_path": ""
+            "model_path": "./models/11178_lite.glb"
           },
           {
             "id": 11198,
@@ -2006,7 +2006,7 @@
             "name_en": "Succubus",
             "name_zh": "魔女级",
             "icon_name": "type_17924_64.png",
-            "model_path": ""
+            "model_path": "./models/17924_lite.glb"
           },
           {
             "id": 11940,
@@ -2124,7 +2124,7 @@
             "name_en": "Astarte",
             "name_zh": "阿施塔特级",
             "icon_name": "type_22466_64.png",
-            "model_path": ""
+            "model_path": "./models/22466_lite.glb"
           }
         ]
       },
@@ -2139,7 +2139,7 @@
             "name_en": "Outrider",
             "name_zh": "先驱级",
             "icon_name": "type_89649_64.png",
-            "model_path": ""
+            "model_path": "./models/89649_lite.glb"
           },
           {
             "id": 37483,
@@ -2226,7 +2226,7 @@
             "name_en": "Golem",
             "name_zh": "魔像级",
             "icon_name": "type_28710_64.png",
-            "model_path": ""
+            "model_path": "./models/28710_lite.glb"
           }
         ]
       },
@@ -2524,7 +2524,7 @@
             "name_en": "Bustard",
             "name_zh": "大鸨级",
             "icon_name": "type_12731_64.png",
-            "model_path": ""
+            "model_path": "./models/12731_lite.glb"
           },
           {
             "id": 12745,
@@ -2595,7 +2595,7 @@
             "name_en": "Kitsune",
             "name_zh": "狐妖级",
             "icon_name": "type_11194_64.png",
-            "model_path": ""
+            "model_path": "./models/11194_lite.glb"
           },
           {
             "id": 60765,
@@ -2769,7 +2769,7 @@
             "name_en": "Hawk",
             "name_zh": "战鹰级",
             "icon_name": "type_11379_64.png",
-            "model_path": ""
+            "model_path": "./models/11379_lite.glb"
           },
           {
             "id": 32207,
@@ -3052,7 +3052,7 @@
             "name_en": "Immolator",
             "name_zh": "献祭者级",
             "icon_name": "type_615_64.png",
-            "model_path": ""
+            "model_path": "./models/615_lite.glb"
           },
           {
             "id": 606,
@@ -3398,7 +3398,7 @@
             "name_en": "Cerberus",
             "name_zh": "希尔博拉斯级",
             "icon_name": "type_11993_64.png",
-            "model_path": ""
+            "model_path": "./models/11993_lite.glb"
           },
           {
             "id": 32209,
@@ -3596,7 +3596,7 @@
             "name_en": "Manticore",
             "name_zh": "蝎尾怪级",
             "icon_name": "type_12032_64.png",
-            "model_path": ""
+            "model_path": "./models/12032_lite.glb"
           }
         ]
       },
