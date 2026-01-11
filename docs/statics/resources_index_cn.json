@@ -681,7 +681,7 @@
             "name_en": "Guardian-Vexor",
             "name_zh": "狂怒守卫者级",
             "icon_name": "type_11011_64.png",
-            "model_path": ""
+            "model_path": "./models/11011_lite.glb"
           },
           {
             "id": 626,
@@ -935,7 +935,7 @@
             "name_en": "Vindicator",
             "name_zh": "复仇者级",
             "icon_name": "type_17740_64.png",
-            "model_path": ""
+            "model_path": "./models/17740_lite.glb"
           },
           {
             "id": 645,
@@ -1718,7 +1718,7 @@
             "name_en": "Daredevil",
             "name_zh": "夜魔侠级",
             "icon_name": "type_17928_64.png",
-            "model_path": ""
+            "model_path": "./models/17928_lite.glb"
           },
           {
             "id": 3766,
@@ -2957,7 +2957,7 @@
             "name_en": "Vendetta",
             "name_zh": "仇恨级",
             "icon_name": "type_42125_64.png",
-            "model_path": ""
+            "model_path": "./models/42125_lite.glb"
           },
           {
             "id": 22852,
@@ -3068,7 +3068,7 @@
             "name_en": "Violator",
             "name_zh": "违逆者级",
             "icon_name": "type_33083_64.png",
-            "model_path": ""
+            "model_path": "./models/33083_lite.glb"
           }
         ]
       },
