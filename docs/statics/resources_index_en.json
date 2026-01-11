@@ -555,7 +555,7 @@
             "name_en": "Prowler",
             "name_zh": "徘徊者级",
             "icon_name": "type_12735_64.png",
-            "model_path": ""
+            "model_path": "./models/12735_lite.glb"
           },
           {
             "id": 12743,
@@ -2991,7 +2991,7 @@
             "name_en": "Sabre",
             "name_zh": "剑齿虎级",
             "icon_name": "type_22456_64.png",
-            "model_path": ""
+            "model_path": "./models/22456_lite.glb"
           }
         ]
       },
@@ -3124,7 +3124,7 @@
             "name_en": "Scimitar",
             "name_zh": "曲剑级",
             "icon_name": "type_11978_64.png",
-            "model_path": ""
+            "model_path": "./models/11978_lite.glb"
           },
           {
             "id": 49713,
