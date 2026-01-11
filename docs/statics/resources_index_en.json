@@ -1567,7 +1567,7 @@
             "name_en": "Cormorant Navy Issue",
             "name_zh": "海燕级海军型",
             "icon_name": "type_73795_64.png",
-            "model_path": ""
+            "model_path": "./models/73795_lite.glb"
           },
           {
             "id": 32874,
@@ -3014,7 +3014,7 @@
             "name_en": "Ark",
             "name_zh": "方舟级",
             "icon_name": "type_28850_64.png",
-            "model_path": ""
+            "model_path": "./models/28850_lite.glb"
           },
           {
             "id": 28846,
