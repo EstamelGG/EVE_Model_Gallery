@@ -100,6 +100,21 @@ body {
         padding: 6px 12px;
         font-size: 13px;
     }
+    
+    .content-main {
+        border-radius: 0;
+    }
+}
+
+.model-viewer-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: #fdfdfd;
+    position: relative;
 }
 
 .content-main {
@@ -109,13 +124,14 @@ body {
     justify-content: center;
     position: relative;
     background: #fdfdfd;
-    border-radius: var(--radius);
+    border-radius: 0;
     overflow: hidden;
     touch-action: none;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    min-height: 0;
 }
 
 .model-loading-spinner {
@@ -149,17 +165,13 @@ body {
     justify-content: center;
 }
 
-.model-progress-circle {
-    width: 60px;
-    height: 60px;
-}
-
-.model-progress-bg {
-    transition: none;
-}
-
-.model-progress-bar {
-    transition: stroke-dashoffset 0.3s ease;
+.model-spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid rgba(59, 130, 246, 0.2);
+    border-top-color: #3b82f6;
+    border-radius: 50%;
+    animation: spinner-rotate 0.8s linear infinite;
 }
 
 .model-loading-progress {
@@ -174,11 +186,16 @@ body {
     pointer-events: none;
 }
 
+@keyframes spinner-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .ship-name-display {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     padding: 8px 16px;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px) saturate(150%);
@@ -188,20 +205,18 @@ body {
     font-size: 14px;
     font-weight: 500;
     color: #333;
-    z-index: 10;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    pointer-events: none;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: none;
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .ship-name-display.show {
-    opacity: 1;
-    visibility: visible;
+    display: block;
 }
 
 .sidebar {
@@ -747,24 +762,6 @@ model-viewer.active { display: block; }
 
 .file-input { display: none; }
 
-.info-tag {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 8px 16px;
-    border-radius: 10px;
-    font-size: 12px;
-    color: #333;
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255,255,255,0.5);
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.5s;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.info-tag.show { opacity: 1; }
 
 .error-tag {
     position: absolute;

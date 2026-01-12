@@ -33,8 +33,9 @@
                 <div class="nav-content" id="navContent"></div>
             </div>
 
-            <div class="content-main">
+            <div class="model-viewer-container">
                 <div class="ship-name-display" id="shipNameDisplay"></div>
+                <div class="content-main">
                 <div class="upload-ui" id="uploadUI">
                     <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
@@ -46,10 +47,7 @@
 
                 <div class="model-loading-spinner" id="modelLoadingSpinner">
                     <div class="model-spinner-wrapper">
-                        <svg class="model-progress-circle" viewBox="0 0 60 60">
-                            <circle class="model-progress-bg" cx="30" cy="30" r="26" fill="none" stroke="rgba(59, 130, 246, 0.2)" stroke-width="4"/>
-                            <circle class="model-progress-bar" id="modelProgressBar" cx="30" cy="30" r="26" fill="none" stroke="#3b82f6" stroke-width="4" stroke-linecap="round" stroke-dasharray="163.36" stroke-dashoffset="163.36" transform="rotate(-90 30 30)"/>
-                        </svg>
+                        <div class="model-spinner"></div>
                         <div class="model-loading-progress" id="modelLoadingProgress">0%</div>
                     </div>
                 </div>
@@ -68,7 +66,6 @@
                     exposure="1">
                 </model-viewer>
 
-                <div class="info-tag" id="infoTag"></div>
                 <div class="error-tag" id="errorTag"></div>
                 <div class="action-toast" id="actionToast"></div>
 
@@ -86,6 +83,7 @@
                         <circle cx="12" cy="12" r="4"></circle>
                         <path d="M12 8v8M8 12h8" opacity="0.5"></path>
                     </svg>
+                </div>
                 </div>
             </div>
 

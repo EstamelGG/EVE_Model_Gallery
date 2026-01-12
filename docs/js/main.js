@@ -204,7 +204,6 @@ function initSidebarResizer() {
 const modelViewer = document.getElementById('modelViewer');
 const uploadUI = document.getElementById('uploadUI');
 const hintText = document.getElementById('hintText');
-const infoTag = document.getElementById('infoTag');
 const errorTag = document.getElementById('errorTag');
 const actionToast = document.getElementById('actionToast');
 const brightnessControl = document.getElementById('brightnessControl');
@@ -214,9 +213,8 @@ const resetViewIcon = document.getElementById('resetViewIcon');
 const shadowToggleIcon = document.getElementById('shadowToggleIcon');
 const modelLoadingSpinner = document.getElementById('modelLoadingSpinner');
 const modelLoadingProgress = document.getElementById('modelLoadingProgress');
-const modelProgressBar = document.getElementById('modelProgressBar');
 
-function loadModel(src, shipInfo = null, typeId = null) {
+function loadModel(src, shipInfo = null, typeId = null, updateHash = true) {
     if (!src) return;
     
     if (modelLoadingSpinner) {
@@ -224,10 +222,6 @@ function loadModel(src, shipInfo = null, typeId = null) {
     }
     if (modelLoadingProgress) {
         modelLoadingProgress.textContent = '0%';
-    }
-    if (modelProgressBar) {
-        const circumference = 2 * Math.PI * 26;
-        modelProgressBar.style.strokeDashoffset = circumference;
     }
     
     modelViewer.classList.add('active');
@@ -239,10 +233,12 @@ function loadModel(src, shipInfo = null, typeId = null) {
         copyrightFooter.classList.add('collapsed');
     }
     
-    if (typeId) {
-        setHashParam('typeid', typeId);
-    } else {
-        setHashParam('typeid', null);
+    if (updateHash) {
+        if (typeId) {
+            setHashParam('typeid', typeId);
+        } else {
+            setHashParam('typeid', null);
+        }
     }
     
     const shipNameDisplay = document.getElementById('shipNameDisplay');
@@ -261,10 +257,6 @@ function loadModel(src, shipInfo = null, typeId = null) {
             shipNameDisplay.classList.remove('show');
             document.title = 'EVE Model Viewer';
         }
-    }
-    
-    if (modelViewer.src && modelViewer.src.startsWith('blob:')) {
-        URL.revokeObjectURL(modelViewer.src);
     }
     
     const errorHandler = (event) => {
@@ -302,80 +294,47 @@ function loadModel(src, shipInfo = null, typeId = null) {
         }, 5000);
     };
     
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', src, true);
-    xhr.responseType = 'blob';
-    
-    let currentBlobUrl = null;
-    
-    xhr.addEventListener('progress', (e) => {
-        if (e.lengthComputable) {
-            const percent = Math.round((e.loaded / e.total) * 100);
-            if (modelLoadingProgress) {
-                modelLoadingProgress.textContent = `${percent}%`;
-            }
-            if (modelProgressBar) {
-                const circumference = 2 * Math.PI * 26;
-                const offset = circumference - (e.loaded / e.total) * circumference;
-                modelProgressBar.style.strokeDashoffset = offset;
-            }
+    const progressHandler = (e) => {
+        if (e.detail && e.detail.totalProgress !== undefined && modelLoadingProgress) {
+            const progress01 = e.detail.totalProgress;
+            const progress100 = Math.round(progress01 * 100);
+            modelLoadingProgress.textContent = `${progress100}%`;
         }
-    });
+    };
     
-    xhr.addEventListener('load', () => {
-        if (xhr.status === 200) {
-            const blob = xhr.response;
-            currentBlobUrl = URL.createObjectURL(blob);
-            modelViewer.src = currentBlobUrl;
-            
-            const loadHandler = () => {
-                if (modelProgressBar) {
-                    const circumference = 2 * Math.PI * 26;
-                    modelProgressBar.style.strokeDashoffset = 0;
-                }
-                if (modelLoadingProgress) {
-                    modelLoadingProgress.textContent = '100%';
-                }
-                
-                if (modelLoadingSpinner) {
-                    modelLoadingSpinner.classList.remove('show');
-                }
-                
-                modelViewer.cameraOrbit = '45deg auto auto';
-                if (modelViewer.cameraTarget) {
-                    initialCameraTarget = {
-                        x: modelViewer.cameraTarget.x,
-                        y: modelViewer.cameraTarget.y,
-                        z: modelViewer.cameraTarget.z
-                    };
-                }
-                
-                applyShadowState(getShadowEnabled());
-                
-                setTimeout(() => {
-                    if (currentBlobUrl) {
-                        URL.revokeObjectURL(currentBlobUrl);
-                        currentBlobUrl = null;
-                    }
-                }, 1000);
+    const loadHandler = () => {
+        if (modelLoadingProgress) {
+            modelLoadingProgress.textContent = '100%';
+        }
+        if (modelLoadingSpinner) {
+            modelLoadingSpinner.classList.remove('show');
+        }
+        
+        modelViewer.cameraOrbit = '45deg auto auto';
+        if (modelViewer.cameraTarget) {
+            initialCameraTarget = {
+                x: modelViewer.cameraTarget.x,
+                y: modelViewer.cameraTarget.y,
+                z: modelViewer.cameraTarget.z
             };
-            
-            modelViewer.addEventListener('load', loadHandler, { once: true });
-        } else {
-            modelViewer.src = src;
-            modelViewer.addEventListener('error', errorHandler, { once: true });
         }
-    });
+        
+        applyShadowState(getShadowEnabled());
+    };
     
-    xhr.addEventListener('error', () => {
-        modelViewer.src = src;
-        modelViewer.addEventListener('error', errorHandler, { once: true });
-    });
+    const abortController = new AbortController();
+    const signal = abortController.signal;
     
-    xhr.send();
+    if (modelViewer._loadAbortController) {
+        modelViewer._loadAbortController.abort();
+    }
+    modelViewer._loadAbortController = abortController;
     
-    modelViewer.removeEventListener('error', errorHandler);
-    modelViewer.addEventListener('error', errorHandler, { once: true });
+    modelViewer.addEventListener('load', loadHandler, { once: true, signal });
+    modelViewer.addEventListener('error', errorHandler, { once: true, signal });
+    modelViewer.addEventListener('progress', progressHandler, { signal });
+    
+    modelViewer.src = src;
 }
 
 let resourcesIndex = null;
@@ -995,7 +954,7 @@ function loadModelFromHash() {
         name: result.type.name,
         name_en: result.type.name_en || '',
         name_zh: result.type.name_zh || ''
-    }, result.type.id);
+    }, result.type.id, false);
 }
 
 function showModelNotFoundError() {

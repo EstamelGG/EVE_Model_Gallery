@@ -1212,7 +1212,7 @@
             "name_en": "Curse",
             "name_zh": "诅咒级",
             "icon_name": "type_20125_64.png",
-            "model_path": ""
+            "model_path": "./models/20125_lite.glb"
           }
         ]
       },
@@ -1543,7 +1543,7 @@
             "name_en": "Malediction",
             "name_zh": "咒灭级",
             "icon_name": "type_11186_64.png",
-            "model_path": ""
+            "model_path": "./models/11186_lite.glb"
           },
           {
             "id": 11200,
@@ -2045,7 +2045,7 @@
             "name_en": "Heretic",
             "name_zh": "异端级",
             "icon_name": "type_22452_64.png",
-            "model_path": ""
+            "model_path": "./models/22452_lite.glb"
           },
           {
             "id": 22464,
@@ -2116,7 +2116,7 @@
             "name_en": "Damnation",
             "name_zh": "永灭级",
             "icon_name": "type_22474_64.png",
-            "model_path": ""
+            "model_path": "./models/22474_lite.glb"
           },
           {
             "id": 22466,
@@ -2556,7 +2556,7 @@
             "name_en": "Impel",
             "name_zh": "激进级",
             "icon_name": "type_12753_64.png",
-            "model_path": ""
+            "model_path": "./models/12753_lite.glb"
           }
         ]
       },
@@ -2729,7 +2729,7 @@
             "name_en": "Vengeance",
             "name_zh": "复仇级",
             "icon_name": "type_11365_64.png",
-            "model_path": ""
+            "model_path": "./models/11365_lite.glb"
           },
           {
             "id": 11381,
@@ -3509,7 +3509,7 @@
             "name_en": "Anathema",
             "name_zh": "咒逐级",
             "icon_name": "type_11188_64.png",
-            "model_path": ""
+            "model_path": "./models/11188_lite.glb"
           },
           {
             "id": 85062,
