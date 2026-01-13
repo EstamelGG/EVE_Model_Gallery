@@ -3468,7 +3468,7 @@
             "name_en": "Hel",
             "name_zh": "冥府级",
             "icon_name": "type_3784_64.png",
-            "model_path": ""
+            "model_path": "./models/22852_lite.glb"
           },
           {
             "id": 23913,
