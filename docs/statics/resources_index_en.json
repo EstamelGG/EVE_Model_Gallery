@@ -453,7 +453,7 @@
             "name_en": "Typhoon Fleet Issue",
             "name_zh": "台风级舰队型",
             "icon_name": "type_32311_64.png",
-            "model_path": ""
+            "model_path": "./models/32311_lite.glb"
           },
           {
             "id": 17740,
@@ -695,7 +695,7 @@
             "name_en": "Cyclone Fleet Issue",
             "name_zh": "飓风级舰队型",
             "icon_name": "type_72811_64.png",
-            "model_path": ""
+            "model_path": "./models/72811_lite.glb"
           },
           {
             "id": 24698,
@@ -775,7 +775,7 @@
             "name_en": "Hurricane Fleet Issue",
             "name_zh": "暴风级舰队型",
             "icon_name": "type_33157_64.png",
-            "model_path": ""
+            "model_path": "./models/33157_lite.glb"
           },
           {
             "id": 78369,
@@ -2405,7 +2405,7 @@
             "name_en": "Probe Fleet Issue",
             "name_zh": "探索级舰队型",
             "icon_name": "type_72903_64.png",
-            "model_path": ""
+            "model_path": "./models/72903_lite.glb"
           },
           {
             "id": 597,
@@ -2421,7 +2421,7 @@
             "name_en": "Republic Fleet Firetail",
             "name_zh": "共和舰队火尾鸡级",
             "icon_name": "type_17812_64.png",
-            "model_path": ""
+            "model_path": "./models/17812_lite.glb"
           },
           {
             "id": 587,
@@ -2509,7 +2509,7 @@
             "name_en": "Vigil Fleet Issue",
             "name_zh": "守夜者级舰队型",
             "icon_name": "type_37454_64.png",
-            "model_path": ""
+            "model_path": "./models/37454_lite.glb"
           },
           {
             "id": 17930,
