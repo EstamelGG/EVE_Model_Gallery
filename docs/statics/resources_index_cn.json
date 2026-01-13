@@ -585,7 +585,7 @@
             "name_en": "Orthrus",
             "name_zh": "奥苏斯级",
             "icon_name": "type_33818_64.png",
-            "model_path": ""
+            "model_path": "./models/33818_lite.glb"
           },
           {
             "id": 623,
@@ -959,7 +959,7 @@
             "name_en": "Praxis",
             "name_zh": "实践级",
             "icon_name": "type_47466_64.png",
-            "model_path": ""
+            "model_path": "./models/47466_lite.glb"
           },
           {
             "id": 17920,
@@ -975,7 +975,7 @@
             "name_en": "Barghest",
             "name_zh": "巴盖斯级",
             "icon_name": "type_33820_64.png",
-            "model_path": ""
+            "model_path": "./models/33820_lite.glb"
           },
           {
             "id": 643,
@@ -1339,7 +1339,7 @@
             "name_en": "Gnosis",
             "name_zh": "灵感级",
             "icon_name": "type_3756_64.png",
-            "model_path": ""
+            "model_path": "./models/3756_lite.glb"
           },
           {
             "id": 16227,
@@ -1686,7 +1686,7 @@
             "name_en": "Garmur",
             "name_zh": "加姆级",
             "icon_name": "type_33816_64.png",
-            "model_path": ""
+            "model_path": "./models/33816_lite.glb"
           },
           {
             "id": 17619,
@@ -1702,7 +1702,7 @@
             "name_en": "Metamorphosis",
             "name_zh": "变形级",
             "icon_name": "type_77114_64.png",
-            "model_path": ""
+            "model_path": "./models/77114_lite.glb"
           },
           {
             "id": 594,
@@ -2650,7 +2650,7 @@
             "name_en": "Apotheosis",
             "name_zh": "神圣穿梭机",
             "icon_name": "type_3751_64.png",
-            "model_path": ""
+            "model_path": "./models/29266_lite.glb"
           },
           {
             "id": 11132,
@@ -3683,7 +3683,7 @@
             "name_en": "Sunesis",
             "name_zh": "旭日级",
             "icon_name": "type_3753_64.png",
-            "model_path": ""
+            "model_path": "./models/42685_lite.glb"
           },
           {
             "id": 78367,
