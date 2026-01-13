@@ -43,6 +43,20 @@
                         <line x1="12" y1="22.08" x2="12" y2="12"></line>
                     </svg>
                     <p class="hint" id="hintText"></p>
+                    <button class="theme-toggle-btn" id="themeToggleBtnHome">
+                        <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <defs>
+                                <clipPath id="leftHalf">
+                                    <rect x="0" y="0" width="12" height="24"/>
+                                </clipPath>
+                                <clipPath id="rightHalf">
+                                    <rect x="12" y="0" width="12" height="24"/>
+                                </clipPath>
+                            </defs>
+                            <circle cx="12" cy="12" r="10" fill="currentColor" clip-path="url(#leftHalf)" class="theme-icon-left"></circle>
+                            <circle cx="12" cy="12" r="10" fill="white" clip-path="url(#rightHalf)" class="theme-icon-right"></circle>
+                        </svg>
+                    </button>
                 </div>
 
                 <div class="model-loading-spinner" id="modelLoadingSpinner">
@@ -81,6 +95,18 @@
                         <path d="M12 2v2M12 20v2M4 12H2M6.314 6.314L4.9 4.9M17.686 6.314L19.1 4.9M6.314 17.686L4.9 19.1M17.686 17.686L19.1 19.1M22 12h-2"></path>
                         <circle cx="12" cy="12" r="4"></circle>
                         <path d="M12 8v8M8 12h8" opacity="0.5"></path>
+                    </svg>
+                    <svg class="control-icon" id="themeToggleIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" title="切换主题">
+                        <defs>
+                            <clipPath id="leftHalfIcon">
+                                <rect x="0" y="0" width="12" height="24"/>
+                            </clipPath>
+                            <clipPath id="rightHalfIcon">
+                                <rect x="12" y="0" width="12" height="24"/>
+                            </clipPath>
+                        </defs>
+                        <circle cx="12" cy="12" r="10" fill="currentColor" clip-path="url(#leftHalfIcon)" class="theme-icon-left"></circle>
+                        <circle cx="12" cy="12" r="10" fill="white" clip-path="url(#rightHalfIcon)" class="theme-icon-right"></circle>
                     </svg>
                 </div>
                 </div>

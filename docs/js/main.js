@@ -211,8 +211,94 @@ const brightnessSlider = document.getElementById('brightnessSlider');
 const brightnessIcon = document.querySelector('.brightness-icon');
 const resetViewIcon = document.getElementById('resetViewIcon');
 const shadowToggleIcon = document.getElementById('shadowToggleIcon');
+const themeToggleIcon = document.getElementById('themeToggleIcon');
+const themeToggleBtnHome = document.getElementById('themeToggleBtnHome');
 const modelLoadingSpinner = document.getElementById('modelLoadingSpinner');
 const modelLoadingProgress = document.getElementById('modelLoadingProgress');
+
+function getManualTheme() {
+    return localStorage.getItem('manualTheme');
+}
+
+function setManualTheme(theme) {
+    if (theme) {
+        localStorage.setItem('manualTheme', theme);
+    } else {
+        localStorage.removeItem('manualTheme');
+    }
+}
+
+function getSystemTheme() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+function applyTheme() {
+    const manualTheme = getManualTheme();
+    const root = document.documentElement;
+    
+    if (manualTheme) {
+        root.setAttribute('data-theme', manualTheme);
+    } else {
+        root.removeAttribute('data-theme');
+        const systemTheme = getSystemTheme();
+        if (systemTheme === 'dark') {
+            root.setAttribute('data-theme', 'dark');
+        } else {
+            root.removeAttribute('data-theme');
+        }
+    }
+}
+
+function toggleTheme() {
+    const manualTheme = getManualTheme();
+    const systemTheme = getSystemTheme();
+    
+    let newTheme;
+    if (!manualTheme) {
+        newTheme = systemTheme === 'dark' ? 'light' : 'dark';
+    } else {
+        newTheme = manualTheme === 'dark' ? 'light' : 'dark';
+    }
+    
+    setManualTheme(newTheme);
+    applyTheme();
+    
+    if (getShadowEnabled()) {
+        applyShadowState(true);
+    }
+    
+    const message = newTheme === 'dark' 
+        ? (currentLang === 'cn' ? '已切换到深色模式' : 'Switched to dark mode')
+        : (currentLang === 'cn' ? '已切换到浅色模式' : 'Switched to light mode');
+    showActionToast(message);
+    
+    if (navigator.vibrate) navigator.vibrate(10);
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        applyTheme();
+    });
+} else {
+    applyTheme();
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    if (!getManualTheme()) {
+        applyTheme();
+        if (getShadowEnabled()) {
+            applyShadowState(true);
+        }
+    }
+});
+
+if (themeToggleBtnHome) {
+    themeToggleBtnHome.addEventListener('click', toggleTheme);
+}
+
+if (themeToggleIcon) {
+    themeToggleIcon.addEventListener('click', toggleTheme);
+}
 
 function loadModel(src, shipInfo = null, typeId = null, updateHash = true) {
     if (!src) return;
@@ -375,7 +461,12 @@ function applyShadowState(enabled) {
     
     if (modelViewer) {
         if (enabled) {
-            modelViewer.shadowIntensity = '1';
+            const currentTheme = document.documentElement.getAttribute('data-theme') || getSystemTheme();
+            if (currentTheme === 'dark') {
+                modelViewer.shadowIntensity = '1.5';
+            } else {
+                modelViewer.shadowIntensity = '1';
+            }
         } else {
             modelViewer.shadowIntensity = '0';
         }
@@ -394,6 +485,11 @@ if (document.readyState === 'loading') {
 
 if (hintText) {
     hintText.textContent = currentLang === 'cn' ? '从目录中选择模型' : 'Select a model from the directory';
+}
+
+const modelSelectorBtnText = document.getElementById('modelSelectorBtnText');
+if (modelSelectorBtnText) {
+    modelSelectorBtnText.textContent = currentLang === 'cn' ? '选择模型' : 'Select Model';
 }
 
 const loadingText = document.getElementById('loadingText');
