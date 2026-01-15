@@ -23,7 +23,7 @@
             "name_en": "Enyo",
             "name_zh": "恩尤级",
             "icon_name": "type_12044_64.png",
-            "model_path": ""
+            "model_path": "./models/12044_lite.glb"
           },
           {
             "id": 32207,
@@ -285,7 +285,7 @@
             "name_en": "Leshak",
             "name_zh": "勒沙克级",
             "icon_name": "type_47271_64.png",
-            "model_path": ""
+            "model_path": "./models/47271_lite.glb"
           },
           {
             "id": 17738,
@@ -719,7 +719,7 @@
             "name_en": "Drekavac",
             "name_zh": "德雷卡瓦级",
             "icon_name": "type_49711_64.png",
-            "model_path": ""
+            "model_path": "./models/49711_lite.glb"
           },
           {
             "id": 16227,
@@ -1337,7 +1337,7 @@
             "name_en": "Rodiva",
             "name_zh": "洛迪瓦级",
             "icon_name": "type_49712_64.png",
-            "model_path": ""
+            "model_path": "./models/49712_lite.glb"
           },
           {
             "id": 629,
@@ -1417,7 +1417,7 @@
             "name_en": "Vedmak",
             "name_zh": "维德马克级",
             "icon_name": "type_47270_64.png",
-            "model_path": ""
+            "model_path": "./models/47270_lite.glb"
           },
           {
             "id": 626,
@@ -1488,7 +1488,7 @@
             "name_en": "Occator",
             "name_zh": "奥卡托级",
             "icon_name": "type_12745_64.png",
-            "model_path": ""
+            "model_path": "./models/12745_lite.glb"
           },
           {
             "id": 81047,
@@ -1583,7 +1583,7 @@
             "name_en": "Kikimora",
             "name_zh": "奇奇莫拉级",
             "icon_name": "type_49710_64.png",
-            "model_path": ""
+            "model_path": "./models/49710_lite.glb"
           },
           {
             "id": 78367,
@@ -1774,7 +1774,7 @@
             "name_en": "Zirnitra",
             "name_zh": "泽尼塔级",
             "icon_name": "type_52701_64.png",
-            "model_path": ""
+            "model_path": "./models/52907_lite.glb"
           }
         ]
       },
@@ -2197,7 +2197,7 @@
             "name_en": "Damavik",
             "name_zh": "达玛维克级",
             "icon_name": "type_47269_64.png",
-            "model_path": ""
+            "model_path": "./models/47269_lite.glb"
           },
           {
             "id": 17928,
@@ -2880,7 +2880,7 @@
             "name_en": "Ares",
             "name_zh": "阿瑞斯级",
             "icon_name": "type_11202_64.png",
-            "model_path": ""
+            "model_path": "./models/11202_lite.glb"
           },
           {
             "id": 11196,
@@ -2967,7 +2967,7 @@
             "name_en": "Eris",
             "name_zh": "厄里斯级",
             "icon_name": "type_22460_64.png",
-            "model_path": ""
+            "model_path": "./models/22460_lite.glb"
           },
           {
             "id": 22464,
@@ -3108,7 +3108,7 @@
             "name_en": "Oneiros",
             "name_zh": "奥内罗斯级",
             "icon_name": "type_11989_64.png",
-            "model_path": ""
+            "model_path": "./models/11989_lite.glb"
           },
           {
             "id": 42245,
@@ -3171,7 +3171,7 @@
             "name_en": "Thalia",
             "name_zh": "塔利亚级",
             "icon_name": "type_37459_64.png",
-            "model_path": ""
+            "model_path": "./models/37459_lite.glb"
           }
         ]
       },
