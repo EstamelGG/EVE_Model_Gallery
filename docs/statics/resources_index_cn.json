@@ -513,7 +513,7 @@
             "name_en": "Stabber",
             "name_zh": "刺客级",
             "icon_name": "type_622_64.png",
-            "model_path": ""
+            "model_path": "./models/622_lite.glb"
           },
           {
             "id": 17713,
@@ -753,7 +753,7 @@
             "name_en": "Scythe",
             "name_zh": "镰刀级",
             "icon_name": "type_631_64.png",
-            "model_path": ""
+            "model_path": "./models/631_lite.glb"
           },
           {
             "id": 29336,
@@ -2863,7 +2863,7 @@
             "name_en": "Nidhoggur",
             "name_zh": "尼铎格尔级",
             "icon_name": "type_3785_64.png",
-            "model_path": ""
+            "model_path": "./models/24483_lite.glb"
           },
           {
             "id": 23757,
@@ -2879,7 +2879,7 @@
             "name_en": "Thanatos",
             "name_zh": "绝念级",
             "icon_name": "type_3712_64.png",
-            "model_path": ""
+            "model_path": "./models/23911_lite.glb"
           }
         ]
       },
