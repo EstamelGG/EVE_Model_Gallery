@@ -1217,7 +1217,7 @@
             "name_en": "Celestis",
             "name_zh": "星空级",
             "icon_name": "type_633_64.png",
-            "model_path": ""
+            "model_path": "./models/633_lite.glb"
           },
           {
             "id": 17720,
@@ -1361,7 +1361,7 @@
             "name_en": "Scythe Fleet Issue",
             "name_zh": "镰刀级舰队型",
             "icon_name": "type_29336_64.png",
-            "model_path": ""
+            "model_path": "./models/29336_lite.glb"
           },
           {
             "id": 622,
@@ -1377,7 +1377,7 @@
             "name_en": "Stabber Fleet Issue",
             "name_zh": "刺客级舰队型",
             "icon_name": "type_17713_64.png",
-            "model_path": ""
+            "model_path": "./models/17713_lite.glb"
           },
           {
             "id": 54732,
@@ -1409,7 +1409,7 @@
             "name_en": "Thorax",
             "name_zh": "托勒克斯级",
             "icon_name": "type_627_64.png",
-            "model_path": ""
+            "model_path": "./models/627_lite.glb"
           },
           {
             "id": 47270,
@@ -1663,7 +1663,7 @@
             "name_en": "Thrasher Fleet Issue",
             "name_zh": "长尾鲛级舰队型",
             "icon_name": "type_73794_64.png",
-            "model_path": ""
+            "model_path": "./models/73794_lite.glb"
           }
         ]
       },
@@ -1678,7 +1678,7 @@
             "name_en": "Caiman",
             "name_zh": "凯门鳄级",
             "icon_name": "type_45647_64.png",
-            "model_path": ""
+            "model_path": "./models/45647_lite.glb"
           },
           {
             "id": 42243,
@@ -1702,7 +1702,7 @@
             "name_en": "Moros Navy Issue",
             "name_zh": "莫洛级海军型",
             "icon_name": "type_73792_64.png",
-            "model_path": ""
+            "model_path": "./models/73792_lite.glb"
           },
           {
             "id": 19722,
@@ -1718,7 +1718,7 @@
             "name_en": "Naglfar Fleet Issue",
             "name_zh": "纳迦法级舰队型",
             "icon_name": "type_73787_64.png",
-            "model_path": ""
+            "model_path": "./models/73787_lite.glb"
           },
           {
             "id": 19726,
@@ -2763,7 +2763,7 @@
             "name_en": "Sacrilege",
             "name_zh": "渎圣级",
             "icon_name": "type_12019_64.png",
-            "model_path": ""
+            "model_path": "./models/12019_lite.glb"
           },
           {
             "id": 11999,
@@ -3045,7 +3045,7 @@
             "name_en": "Bane",
             "name_zh": "破坏者",
             "icon_name": "type_77283_64.png",
-            "model_path": ""
+            "model_path": "./models/77283_lite.glb"
           },
           {
             "id": 77281,
