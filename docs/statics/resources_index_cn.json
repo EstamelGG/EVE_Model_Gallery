@@ -1196,7 +1196,7 @@
             "name_en": "Lachesis",
             "name_zh": "拉克希斯级",
             "icon_name": "type_11971_64.png",
-            "model_path": ""
+            "model_path": "./models/11971_lite.glb"
           },
           {
             "id": 11959,
@@ -3091,7 +3091,7 @@
             "name_en": "Primae",
             "name_zh": "元始级",
             "icon_name": "type_2863_64.png",
-            "model_path": ""
+            "model_path": "./models/2863_lite.glb"
           },
           {
             "id": 654,
@@ -3219,7 +3219,7 @@
             "name_en": "Noctis",
             "name_zh": "黑夜级",
             "icon_name": "type_2998_64.png",
-            "model_path": ""
+            "model_path": "./models/2998_lite.glb"
           }
         ]
       },
@@ -3311,7 +3311,7 @@
             "name_en": "Phobos",
             "name_zh": "伏波斯级",
             "icon_name": "type_12021_64.png",
-            "model_path": ""
+            "model_path": "./models/12021_lite.glb"
           },
           {
             "id": 12017,
@@ -3643,7 +3643,7 @@
             "name_en": "Pioneer",
             "name_zh": "开拓者级",
             "icon_name": "type_89240_64.png",
-            "model_path": ""
+            "model_path": "./models/89240_lite.glb"
           },
           {
             "id": 89647,
