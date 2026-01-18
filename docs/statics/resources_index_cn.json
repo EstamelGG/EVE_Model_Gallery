@@ -435,7 +435,7 @@
             "name_en": "Zarmazd",
             "name_zh": "扎玛德级",
             "icon_name": "type_49713_64.png",
-            "model_path": ""
+            "model_path": "./models/49713_lite.glb"
           },
           {
             "id": 42245,
@@ -2163,7 +2163,7 @@
             "name_en": "Draugur",
             "name_zh": "德拉古级",
             "icon_name": "type_52254_64.png",
-            "model_path": ""
+            "model_path": "./models/52254_lite.glb"
           },
           {
             "id": 37481,
@@ -2801,7 +2801,7 @@
             "name_en": "Nergal",
             "name_zh": "涅伽尔级",
             "icon_name": "type_52250_64.png",
-            "model_path": ""
+            "model_path": "./models/52250_lite.glb"
           },
           {
             "id": 11371,
@@ -3234,7 +3234,7 @@
             "name_en": "Odysseus",
             "name_zh": "奥德修斯级",
             "icon_name": "type_89607_64.png",
-            "model_path": ""
+            "model_path": "./models/89607_lite.glb"
           }
         ]
       },
@@ -3374,7 +3374,7 @@
             "name_en": "Ikitursa",
             "name_zh": "伊基图萨级",
             "icon_name": "type_52252_64.png",
-            "model_path": ""
+            "model_path": "./models/52252_lite.glb"
           },
           {
             "id": 3518,
