@@ -14,6 +14,11 @@ class EVEDataInitializer:
         self.temp_icons_path = Path("icons_temp")
         self.models_path = Path("docs") / "models"
         
+        # 硬编码的额外物品ID列表（即使不在categoryID 6或65中也要展示）
+        self.extra_type_ids = [
+            52361
+        ]
+        
         # 清空输出目录
         if self.output_path.exists():
             shutil.rmtree(self.output_path)
@@ -65,28 +70,50 @@ class EVEDataInitializer:
             return None
     
     def load_data(self, conn: sqlite3.Connection, lang: str) -> Dict:
-        """加载指定语言的数据（只查询categoryID为6和65）"""
+        """加载指定语言的数据（查询categoryID为6和65，以及额外指定的物品ID）"""
         print(f"加载{lang.upper()}数据...")
         
-        query = """
-        SELECT 
-            t.type_id,
-            t.en_name,
-            t.zh_name,
-            t.categoryID,
-            t.groupID,
-            t.icon_filename,
-            c.name as category_name,
-            c.icon_filename AS category_icon_name,
-            g.name as group_name,
-            g.icon_filename AS group_icon_name
-        FROM types t
-        LEFT JOIN categories c ON t.categoryID = c.category_id
-        LEFT JOIN groups g ON t.groupID = g.group_id
-        WHERE t.categoryID IN (6, 65) AND t.published = 1
-        """
-        
-        cursor = conn.execute(query)
+        # 构建查询条件：categoryID为6或65，或者type_id在额外列表中
+        if self.extra_type_ids:
+            placeholders = ','.join(['?'] * len(self.extra_type_ids))
+            query = f"""
+            SELECT 
+                t.type_id,
+                t.en_name,
+                t.zh_name,
+                t.categoryID,
+                t.groupID,
+                t.icon_filename,
+                c.name as category_name,
+                c.icon_filename AS category_icon_name,
+                g.name as group_name,
+                g.icon_filename AS group_icon_name
+            FROM types t
+            LEFT JOIN categories c ON t.categoryID = c.category_id
+            LEFT JOIN groups g ON t.groupID = g.group_id
+            WHERE (t.categoryID IN (6, 65) AND t.published = 1)
+               OR t.type_id IN ({placeholders})
+            """
+            cursor = conn.execute(query, self.extra_type_ids)
+        else:
+            query = """
+            SELECT 
+                t.type_id,
+                t.en_name,
+                t.zh_name,
+                t.categoryID,
+                t.groupID,
+                t.icon_filename,
+                c.name as category_name,
+                c.icon_filename AS category_icon_name,
+                g.name as group_name,
+                g.icon_filename AS group_icon_name
+            FROM types t
+            LEFT JOIN categories c ON t.categoryID = c.category_id
+            LEFT JOIN groups g ON t.groupID = g.group_id
+            WHERE t.categoryID IN (6, 65) AND t.published = 1
+            """
+            cursor = conn.execute(query)
         categories = {}
         groups = {}
         types = {}
@@ -132,6 +159,15 @@ class EVEDataInitializer:
                 if row['group_icon_name']:
                     icon_names.add(row['group_icon_name'])
         
+        # 如果有额外物品ID，输出统计信息
+        if self.extra_type_ids:
+            extra_found = [tid for tid in self.extra_type_ids if tid in types]
+            if extra_found:
+                print(f"  额外物品ID中找到 {len(extra_found)} 个物品: {extra_found}")
+            missing = [tid for tid in self.extra_type_ids if tid not in types]
+            if missing:
+                print(f"  警告: 额外物品ID中未找到 {len(missing)} 个物品: {missing}")
+        
         print(f"  加载了 {len(types)} 个类型，{len(categories)} 个分类，{len(groups)} 个组")
         
         return {
@@ -165,7 +201,16 @@ class EVEDataInitializer:
         # 添加groups到categories
         for group_id, group_info in groups.items():
             category_id = group_info.get('categoryID')
-            if category_id and category_id in category_map:
+            if category_id:
+                # 如果category不在map中，需要先创建（用于额外物品ID的情况）
+                if category_id not in category_map:
+                    category_map[category_id] = {
+                        'id': category_id,
+                        'name': categories.get(category_id, {}).get('name', f'分类 {category_id}'),
+                        'icon_name': categories.get(category_id, {}).get('icon_name'),
+                        'groups': {}
+                    }
+                # 添加group到category
                 category_map[category_id]['groups'][group_id] = {
                     'id': group_id,
                     'name': group_info['name'],
@@ -179,18 +224,36 @@ class EVEDataInitializer:
             group_id = type_info.get('groupID')
             
             if category_id and group_id:
-                if category_id in category_map and group_id in category_map[category_id]['groups']:
-                    # 获取模型路径（如果有）
-                    model_path = model_map.get(type_id, '')
-                    
-                    category_map[category_id]['groups'][group_id]['types'].append({
-                        'id': type_id,
-                        'name': type_info['name'],
-                        'name_en': type_info.get('name_en', ''),
-                        'name_zh': type_info.get('name_zh', ''),
-                        'icon_name': type_info.get('icon_name'),
-                        'model_path': model_path
-                    })
+                # 如果category不在map中，需要先创建（用于额外物品ID的情况）
+                if category_id not in category_map:
+                    # 从groups中获取category信息，如果groups中也没有，则创建一个默认的
+                    category_map[category_id] = {
+                        'id': category_id,
+                        'name': categories.get(category_id, {}).get('name', f'分类 {category_id}'),
+                        'icon_name': categories.get(category_id, {}).get('icon_name'),
+                        'groups': {}
+                    }
+                
+                # 如果group不在category的groups中，需要先创建
+                if group_id not in category_map[category_id]['groups']:
+                    category_map[category_id]['groups'][group_id] = {
+                        'id': group_id,
+                        'name': groups.get(group_id, {}).get('name', f'组 {group_id}'),
+                        'icon_name': groups.get(group_id, {}).get('icon_name'),
+                        'types': []
+                    }
+                
+                # 获取模型路径（如果有）
+                model_path = model_map.get(type_id, '')
+                
+                category_map[category_id]['groups'][group_id]['types'].append({
+                    'id': type_id,
+                    'name': type_info['name'],
+                    'name_en': type_info.get('name_en', ''),
+                    'name_zh': type_info.get('name_zh', ''),
+                    'icon_name': type_info.get('icon_name'),
+                    'model_path': model_path
+                })
         
         # 转换为列表并排序（按名称排序）
         result = []

@@ -1,5 +1,27 @@
 [
   {
+    "id": 11,
+    "name": "Entity",
+    "icon_name": "category_11.png",
+    "groups": [
+      {
+        "id": 319,
+        "name": "Large Collidable Structure",
+        "icon_name": "type_2896_64.png",
+        "types": [
+          {
+            "id": 52361,
+            "name": "World Ark (Xordazh-class)",
+            "name_en": "World Ark (Xordazh-class)",
+            "name_zh": "世界方舟（佐达克级）",
+            "icon_name": "type_52361_64.png",
+            "model_path": "./models/52361_lite.glb"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": 6,
     "name": "Ship",
     "icon_name": "category_6.png",
@@ -1766,7 +1788,7 @@
             "name_en": "Vehement",
             "name_zh": "猛烈级",
             "icon_name": "type_42124_64.png",
-            "model_path": ""
+            "model_path": "./models/42124_lite.glb"
           },
           {
             "id": 52907,
@@ -3186,7 +3208,7 @@
             "name_en": "Babaroga",
             "name_zh": "巴巴罗加号",
             "icon_name": "type_88001_64.png",
-            "model_path": ""
+            "model_path": "./models/88001_lite.glb"
           },
           {
             "id": 28710,
