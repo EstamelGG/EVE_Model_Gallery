@@ -3341,7 +3341,7 @@
             "name_en": "Devoter",
             "name_zh": "奉献级",
             "icon_name": "type_12017_64.png",
-            "model_path": ""
+            "model_path": "./models/12017_lite.glb"
           },
           {
             "id": 11995,
