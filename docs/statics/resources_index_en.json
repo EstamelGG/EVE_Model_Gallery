@@ -93,7 +93,7 @@
             "name_en": "Jaguar",
             "name_zh": "美洲虎级",
             "icon_name": "type_11400_64.png",
-            "model_path": ""
+            "model_path": "./models/11400_lite.glb"
           },
           {
             "id": 3516,
@@ -506,7 +506,7 @@
             "name_en": "Panther",
             "name_zh": "黑豹级",
             "icon_name": "type_22440_64.png",
-            "model_path": ""
+            "model_path": "./models/22440_lite.glb"
           },
           {
             "id": 85236,
@@ -1120,7 +1120,7 @@
             "name_en": "Cheetah",
             "name_zh": "猎豹级",
             "icon_name": "type_11182_64.png",
-            "model_path": ""
+            "model_path": "./models/11182_lite.glb"
           },
           {
             "id": 33397,
@@ -1502,7 +1502,7 @@
             "name_en": "Mastodon",
             "name_zh": "巨象级",
             "icon_name": "type_12747_64.png",
-            "model_path": ""
+            "model_path": "./models/12747_lite.glb"
           },
           {
             "id": 12745,
@@ -2793,7 +2793,7 @@
             "name_en": "Vagabond",
             "name_zh": "流浪级",
             "icon_name": "type_11999_64.png",
-            "model_path": ""
+            "model_path": "./models/11999_lite.glb"
           },
           {
             "id": 3518,
@@ -3044,7 +3044,7 @@
             "name_en": "Nomad",
             "name_zh": "游牧者级",
             "icon_name": "type_28846_64.png",
-            "model_path": ""
+            "model_path": "./models/28846_lite.glb"
           },
           {
             "id": 28844,
@@ -3091,7 +3091,7 @@
             "name_en": "Valravn",
             "name_zh": "血鸦",
             "icon_name": "type_77288_64.png",
-            "model_path": ""
+            "model_path": "./models/77288_lite.glb"
           }
         ]
       },
@@ -3185,7 +3185,7 @@
             "name_en": "Scalpel",
             "name_zh": "手术刀级",
             "icon_name": "type_37460_64.png",
-            "model_path": ""
+            "model_path": "./models/37460_lite.glb"
           },
           {
             "id": 37459,
