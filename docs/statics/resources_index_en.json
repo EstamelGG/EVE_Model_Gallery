@@ -615,7 +615,7 @@
             "name_en": "Capsule",
             "name_zh": "太空舱",
             "icon_name": "type_670_64.png",
-            "model_path": ""
+            "model_path": "./models/670_lite.glb"
           },
           {
             "id": 33328,
@@ -1463,7 +1463,7 @@
             "name_en": "Victorieux Luxury Yacht",
             "name_zh": "凯旋奢华游艇",
             "icon_name": "type_34590_64.png",
-            "model_path": ""
+            "model_path": "./models/34590_lite.glb"
           },
           {
             "id": 17722,
@@ -1471,7 +1471,7 @@
             "name_en": "Vigilant",
             "name_zh": "警惕级",
             "icon_name": "type_17722_64.png",
-            "model_path": ""
+            "model_path": "./models/17722_lite.glb"
           }
         ]
       },
@@ -1645,7 +1645,7 @@
             "name_en": "Pioneer Consortium Issue",
             "name_zh": "开拓者级财团型",
             "icon_name": "type_89647_64.png",
-            "model_path": ""
+            "model_path": "./models/89647_lite.glb"
           },
           {
             "id": 42685,
@@ -2084,7 +2084,7 @@
             "name_en": "Avalanche",
             "name_zh": "雪崩级",
             "icon_name": "type_81040_64.png",
-            "model_path": ""
+            "model_path": "./models/81040_lite.glb"
           },
           {
             "id": 34328,
@@ -2515,7 +2515,7 @@
             "name_en": "Venture Consortium Issue",
             "name_zh": "冲锋者级财团型",
             "icon_name": "type_89648_64.png",
-            "model_path": ""
+            "model_path": "./models/89648_lite.glb"
           },
           {
             "id": 3766,
@@ -3317,7 +3317,7 @@
             "name_en": "Boobook",
             "name_zh": "鹰鸮级",
             "icon_name": "type_64034_64.png",
-            "model_path": ""
+            "model_path": "./models/64034_lite.glb"
           },
           {
             "id": 672,
@@ -3365,7 +3365,7 @@
             "name_en": "InterBus Shuttle",
             "name_zh": "星际捷运穿梭机",
             "icon_name": "type_30842_64.png",
-            "model_path": ""
+            "model_path": "./models/30842_lite.glb"
           },
           {
             "id": 33513,
