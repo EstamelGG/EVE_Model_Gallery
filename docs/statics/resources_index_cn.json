@@ -3460,7 +3460,7 @@
             "name_en": "Zealot",
             "name_zh": "狂热级",
             "icon_name": "type_12003_64.png",
-            "model_path": ""
+            "model_path": "./models/12003_lite.glb"
           },
           {
             "id": 12015,
