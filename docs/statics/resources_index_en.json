@@ -561,7 +561,7 @@
             "name_en": "Deluge",
             "name_zh": "洪水级",
             "icon_name": "type_81046_64.png",
-            "model_path": ""
+            "model_path": "./models/81046_lite.glb"
           },
           {
             "id": 12733,
@@ -3286,7 +3286,7 @@
             "name_en": "Zephyr",
             "name_zh": "微风级",
             "icon_name": "type_2078_64.png",
-            "model_path": ""
+            "model_path": "./models/2078_lite.glb"
           }
         ]
       },
