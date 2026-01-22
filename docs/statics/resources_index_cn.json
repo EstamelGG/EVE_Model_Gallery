@@ -2570,7 +2570,7 @@
             "name_en": "Torrent",
             "name_zh": "湍流级",
             "icon_name": "type_81047_64.png",
-            "model_path": ""
+            "model_path": "./models/81047_lite.glb"
           },
           {
             "id": 12753,
@@ -3161,7 +3161,7 @@
             "name_en": "Squall",
             "name_zh": "狂风级",
             "icon_name": "type_81008_64.png",
-            "model_path": ""
+            "model_path": "./models/81008_lite.glb"
           },
           {
             "id": 649,
