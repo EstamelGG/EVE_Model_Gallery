@@ -13,11 +13,7 @@ class EVEDataInitializer:
         self.icons_path = self.output_path / "icons"
         self.temp_icons_path = Path("icons_temp")
         self.models_path = Path("docs") / "models"
-        
-        # 硬编码的额外物品ID列表（即使不在categoryID 6或65中也要展示）
-        self.extra_type_ids = [
-            52361
-        ]
+        self.extra_models_path = Path("docs") / "extra_models"
         
         # 清空输出目录
         if self.output_path.exists():
@@ -69,13 +65,16 @@ class EVEDataInitializer:
             print(f"数据库连接失败: {e}")
             return None
     
-    def load_data(self, conn: sqlite3.Connection, lang: str) -> Dict:
+    def load_data(self, conn: sqlite3.Connection, lang: str, extra_type_ids: list = None) -> Dict:
         """加载指定语言的数据（查询categoryID为6和65，以及额外指定的物品ID）"""
         print(f"加载{lang.upper()}数据...")
         
+        if extra_type_ids is None:
+            extra_type_ids = []
+        
         # 构建查询条件：categoryID为6或65，或者type_id在额外列表中
-        if self.extra_type_ids:
-            placeholders = ','.join(['?'] * len(self.extra_type_ids))
+        if extra_type_ids:
+            placeholders = ','.join(['?'] * len(extra_type_ids))
             query = f"""
             SELECT 
                 t.type_id,
@@ -94,7 +93,7 @@ class EVEDataInitializer:
             WHERE (t.categoryID IN (6, 65) AND t.published = 1)
                OR t.type_id IN ({placeholders})
             """
-            cursor = conn.execute(query, self.extra_type_ids)
+            cursor = conn.execute(query, extra_type_ids)
         else:
             query = """
             SELECT 
@@ -160,11 +159,11 @@ class EVEDataInitializer:
                     icon_names.add(row['group_icon_name'])
         
         # 如果有额外物品ID，输出统计信息
-        if self.extra_type_ids:
-            extra_found = [tid for tid in self.extra_type_ids if tid in types]
+        if extra_type_ids:
+            extra_found = [tid for tid in extra_type_ids if tid in types]
             if extra_found:
                 print(f"  额外物品ID中找到 {len(extra_found)} 个物品: {extra_found}")
-            missing = [tid for tid in self.extra_type_ids if tid not in types]
+            missing = [tid for tid in extra_type_ids if tid not in types]
             if missing:
                 print(f"  警告: 额外物品ID中未找到 {len(missing)} 个物品: {missing}")
         
@@ -323,6 +322,77 @@ class EVEDataInitializer:
         print(f"  扫描到 {len(model_map)} 个模型文件")
         return model_map
     
+    def scan_extra_models(self) -> Dict[int, str]:
+        """扫描extra_models目录，提取额外物品ID和文件映射"""
+        print("扫描额外模型目录...")
+        
+        extra_models_map = {}
+        duplicate_ids = []
+        
+        if not self.extra_models_path.exists():
+            print(f"  提示: 额外模型目录不存在 {self.extra_models_path}，跳过")
+            return extra_models_map
+        
+        # 支持的模型文件扩展名
+        model_extensions = {'.glb', '.gltf'}
+        
+        # 扫描所有模型文件
+        for model_file in self.extra_models_path.iterdir():
+            if not model_file.is_file():
+                continue
+            
+            # 检查文件扩展名
+            if model_file.suffix.lower() not in model_extensions:
+                continue
+            
+            # 按下划线分割文件名，取第一位作为id
+            filename_without_ext = model_file.stem
+            parts = filename_without_ext.split('_')
+            model_id_str = parts[0]
+            
+            try:
+                model_id = int(model_id_str)
+            except ValueError:
+                print(f"  警告: 无法解析额外模型ID: {model_file.name} (提取的ID: {model_id_str})")
+                continue
+            
+            # 检查是否有重复的id（在extra_models目录内部）
+            if model_id in extra_models_map:
+                duplicate_ids.append({
+                    'id': model_id,
+                    'existing': extra_models_map[model_id],
+                    'duplicate': model_file.name
+                })
+                continue
+            
+            # 记录文件路径（相对于docs目录）
+            file_path = f"./extra_models/{model_file.name}"
+            extra_models_map[model_id] = file_path
+        
+        # 报告重复项
+        if duplicate_ids:
+            print(f"  警告: 额外模型目录中发现 {len(duplicate_ids)} 个重复的模型ID:")
+            for dup in duplicate_ids:
+                print(f"    ID {dup['id']}: 已使用 {dup['existing']}, 跳过 {dup['duplicate']}")
+        
+        print(f"  从额外模型目录中提取了 {len(extra_models_map)} 个物品ID")
+        return extra_models_map
+    
+    def check_duplicate_ids(self, model_map: Dict[int, str], extra_models_map: Dict[int, str]):
+        """检查models和extra_models目录是否有重复的ID"""
+        model_ids = set(model_map.keys())
+        extra_ids = set(extra_models_map.keys())
+        duplicate_ids = model_ids & extra_ids
+        
+        if duplicate_ids:
+            error_msg = f"\n错误: 发现 {len(duplicate_ids)} 个重复的物品ID，这些ID同时存在于models和extra_models目录中:\n"
+            for dup_id in sorted(duplicate_ids):
+                error_msg += f"  物品ID {dup_id}:\n"
+                error_msg += f"    - models目录: {model_map[dup_id]}\n"
+                error_msg += f"    - extra_models目录: {extra_models_map[dup_id]}\n"
+            error_msg += "\n请移除其中一个目录中的文件，确保每个物品ID只在一个目录中出现。\n"
+            raise ValueError(error_msg)
+    
     def extract_icons(self, icon_names: Set[str]):
         """提取所需的图标文件到static/icons目录"""
         print(f"提取 {len(icon_names)} 个图标文件...")
@@ -398,26 +468,38 @@ class EVEDataInitializer:
                 # 3. 扫描模型文件
                 model_map = self.scan_models()
                 
-                # 4. 加载中文数据
-                data_zh = self.load_data(conn_zh, 'zh')
-                tree_zh = self.build_category_tree(data_zh, model_map)
+                # 4. 扫描额外模型目录，提取额外物品ID
+                extra_models_map = self.scan_extra_models()
                 
-                # 5. 加载英文数据
-                data_en = self.load_data(conn_en, 'en')
-                tree_en = self.build_category_tree(data_en, model_map)
+                # 5. 检查两个目录是否有重复的ID
+                self.check_duplicate_ids(model_map, extra_models_map)
                 
-                # 6. 提取图标（合并中英文的图标需求）
+                # 6. 合并两个目录的模型映射（由于已检查过重复，两个目录不会有相同ID）
+                combined_model_map = {**model_map, **extra_models_map}
+                
+                # 7. 提取额外物品ID列表用于数据加载
+                extra_type_ids = list(extra_models_map.keys())
+                
+                # 8. 加载中文数据
+                data_zh = self.load_data(conn_zh, 'zh', extra_type_ids)
+                tree_zh = self.build_category_tree(data_zh, combined_model_map)
+                
+                # 9. 加载英文数据
+                data_en = self.load_data(conn_en, 'en', extra_type_ids)
+                tree_en = self.build_category_tree(data_en, combined_model_map)
+                
+                # 10. 提取图标（合并中英文的图标需求）
                 all_icons = data_zh['icon_names'] | data_en['icon_names']
                 self.extract_icons(all_icons)
                 
-                # 7. 保存索引文件
+                # 11. 保存索引文件
                 print("保存索引文件...")
                 self.save_index(tree_zh, 'cn')
                 self.save_index(tree_en, 'en')
                 
-                # 8. 保存有模型的物品ID列表
+                # 12. 保存有模型的物品ID列表（包含两个目录的模型）
                 print("保存可用模型列表...")
-                self.save_available_models(model_map)
+                self.save_available_models(combined_model_map)
                 
             finally:
                 conn_zh.close()

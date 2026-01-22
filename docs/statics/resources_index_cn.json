@@ -215,7 +215,7 @@
             "name_en": "World Ark (Xordazh-class)",
             "name_zh": "世界方舟（佐达克级）",
             "icon_name": "type_52361_64.png",
-            "model_path": "./models/52361_lite.glb"
+            "model_path": "./extra_models/52361_lite.glb"
           }
         ]
       }
@@ -2436,7 +2436,7 @@
             "name_en": "Hubris",
             "name_zh": "狂徒",
             "icon_name": "type_77281_64.png",
-            "model_path": ""
+            "model_path": "./models/77281_lite.glb"
           },
           {
             "id": 77283,
