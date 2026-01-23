@@ -1332,6 +1332,27 @@ body {
     font-weight: 600;
 }
 
+.category-count {
+    color: #999;
+    font-weight: 400;
+    font-size: 12px;
+    transition: color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .category-count {
+        color: #666;
+    }
+}
+
+[data-theme="dark"] .category-count {
+    color: #666;
+}
+
+[data-theme="light"] .category-count {
+    color: #999;
+}
+
 .group-name {
     font-weight: 500;
 }
