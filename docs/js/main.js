@@ -825,6 +825,22 @@ class NavigationManager {
         }
     }
 
+    countModelsInCategory(category) {
+        let count = 0;
+        if (category.groups) {
+            category.groups.forEach(group => {
+                if (group.types) {
+                    group.types.forEach(type => {
+                        if (type.has_model || (type.model_path && type.model_path.trim())) {
+                            count++;
+                        }
+                    });
+                }
+            });
+        }
+        return count;
+    }
+
     renderCategories(categories) {
         const list = document.createElement('ul');
         list.className = 'category-tree';
@@ -853,6 +869,14 @@ class NavigationManager {
                 name.classList.add('no-model');
             }
             header.appendChild(name);
+            
+            const modelCount = this.countModelsInCategory(category);
+            if (modelCount > 0) {
+                const countSpan = document.createElement('span');
+                countSpan.className = 'category-count';
+                countSpan.textContent = ` (${modelCount})`;
+                header.appendChild(countSpan);
+            }
 
             if (category.groups && category.groups.length > 0) {
                 const arrow = document.createElement('div');
