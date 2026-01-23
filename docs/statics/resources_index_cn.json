@@ -1,5 +1,72 @@
 [
   {
+    "id": 2,
+    "name": "天体",
+    "icon_name": "category_2.png",
+    "groups": [
+      {
+        "id": 1981,
+        "name": "三神裔后勤塔",
+        "icon_name": "type_47437_64.png",
+        "types": [
+          {
+            "id": 47437,
+            "name": "近距异常自动装置抑制器",
+            "name_en": "Short-Range Deviant Automata Suppressor",
+            "name_zh": "近距异常自动装置抑制器",
+            "icon_name": "type_47437_64.png",
+            "model_path": "./extra_models/47437_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 4079,
+        "name": "事件监测装置",
+        "icon_name": "type_55914_64.png",
+        "types": [
+          {
+            "id": 55914,
+            "name": "事件监测装置",
+            "name_en": "Encounter Surveillance System",
+            "name_zh": "事件监测装置",
+            "icon_name": "type_55914_64.png",
+            "model_path": "./extra_models/55914_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1165,
+        "name": "人造卫星",
+        "icon_name": "type_32884_64.png",
+        "types": [
+          {
+            "id": 32884,
+            "name": "地区人造卫星",
+            "name_en": "District Satellite",
+            "name_zh": "地区人造卫星",
+            "icon_name": "type_32884_64.png",
+            "model_path": "./extra_models/32884_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1940,
+        "name": "卫星区块",
+        "icon_name": "type_45008_64.png",
+        "types": [
+          {
+            "id": 46032,
+            "name": "卫星区块",
+            "name_en": "Moon Chunk",
+            "name_zh": "卫星区块",
+            "icon_name": "type_46032_64.png",
+            "model_path": "./extra_models/46032_lite.glb"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": 65,
     "name": "建筑",
     "icon_name": "category_65.png",
@@ -216,6 +283,21 @@
             "name_zh": "世界方舟（佐达克级）",
             "icon_name": "type_52361_64.png",
             "model_path": "./extra_models/52361_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1310,
+        "name": "流浪者战列舰",
+        "icon_name": "type_34495_64.png",
+        "types": [
+          {
+            "id": 34495,
+            "name": "流浪者战列舰",
+            "name_en": "Drifter Battleship",
+            "name_zh": "流浪者战列舰",
+            "icon_name": "type_34495_64.png",
+            "model_path": "./extra_models/34495_lite.glb"
           }
         ]
       }
