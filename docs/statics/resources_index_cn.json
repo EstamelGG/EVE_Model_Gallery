@@ -130,7 +130,7 @@
             "name_en": "Keepstar",
             "name_zh": "星城",
             "icon_name": "type_35834_64.png",
-            "model_path": ""
+            "model_path": "./extra_models/35834_lite.glb"
           },
           {
             "id": 35832,
@@ -271,6 +271,36 @@
     "name": "空间实体",
     "icon_name": "category_11.png",
     "groups": [
+      {
+        "id": 4028,
+        "name": "三神裔实体",
+        "icon_name": "type_47269_64.png",
+        "types": [
+          {
+            "id": 54570,
+            "name": "达兹 斯博扎",
+            "name_en": "Dazh Stribozha",
+            "name_zh": "达兹 斯博扎",
+            "icon_name": "type_54570_64.png",
+            "model_path": "./extra_models/54570_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1724,
+        "name": "叛道者无畏舰",
+        "icon_name": "type_37465_64.png",
+        "types": [
+          {
+            "id": 88613,
+            "name": "将军级无畏舰",
+            "name_en": "Strategos Dreadnought",
+            "name_zh": "将军级无畏舰",
+            "icon_name": "type_88154_64.png",
+            "model_path": "./extra_models/88613_lite.glb"
+          }
+        ]
+      },
       {
         "id": 319,
         "name": "大型可撞击的建筑",
