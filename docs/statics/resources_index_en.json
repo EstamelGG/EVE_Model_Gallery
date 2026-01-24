@@ -3814,7 +3814,7 @@
             "name_en": "Astrahus",
             "name_zh": "空堡",
             "icon_name": "type_35832_64.png",
-            "model_path": ""
+            "model_path": "./extra_models/35832_lite.glb"
           },
           {
             "id": 35833,
@@ -3822,7 +3822,7 @@
             "name_en": "Fortizar",
             "name_zh": "铁壁",
             "icon_name": "type_35833_64.png",
-            "model_path": ""
+            "model_path": "./extra_models/35833_lite.glb"
           },
           {
             "id": 35834,
@@ -3838,7 +3838,7 @@
             "name_en": "Upwell Palatine Keepstar",
             "name_zh": "昇威豪华星城",
             "icon_name": "type_40340_64.png",
-            "model_path": ""
+            "model_path": "./extra_models/40340_lite.glb"
           }
         ]
       },
@@ -3853,7 +3853,7 @@
             "name_en": "Azbel",
             "name_zh": "阿兹贝尔",
             "icon_name": "type_35826_64.png",
-            "model_path": ""
+            "model_path": "./extra_models/35826_lite.glb"
           },
           {
             "id": 35825,
@@ -3861,7 +3861,7 @@
             "name_en": "Raitaru",
             "name_zh": "莱塔卢",
             "icon_name": "type_35825_64.png",
-            "model_path": ""
+            "model_path": "./extra_models/35825_lite.glb"
           },
           {
             "id": 35827,
@@ -3869,7 +3869,7 @@
             "name_en": "Sotiyo",
             "name_zh": "索迪约",
             "icon_name": "type_35827_64.png",
-            "model_path": ""
+            "model_path": "./extra_models/35827_lite.glb"
           }
         ]
       },
