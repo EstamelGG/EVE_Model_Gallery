@@ -3792,6 +3792,318 @@
         "icon_name": "type_54_64.png",
         "types": [
           {
+            "id": 3864,
+            "name": "Amarr Citadel",
+            "name_en": "Amarr Citadel",
+            "name_zh": "艾玛母站",
+            "icon_name": "type_3864_64.png",
+            "model_path": "./extra_models/3864_lite.glb"
+          },
+          {
+            "id": 9856,
+            "name": "Amarr Class A Starport",
+            "name_en": "Amarr Class A Starport",
+            "name_zh": "A等艾玛星站",
+            "icon_name": "type_9856_64.png",
+            "model_path": "./extra_models/9856_lite.glb"
+          },
+          {
+            "id": 9857,
+            "name": "Amarr Class B Starport",
+            "name_en": "Amarr Class B Starport",
+            "name_zh": "B等艾玛星站",
+            "icon_name": "type_3864_64.png",
+            "model_path": "./extra_models/9857_lite.glb"
+          },
+          {
+            "id": 21644,
+            "name": "Amarr Factory Outpost",
+            "name_en": "Amarr Factory Outpost",
+            "name_zh": "艾玛制造站",
+            "icon_name": "type_4099_64.png",
+            "model_path": "./extra_models/21644_lite.glb"
+          },
+          {
+            "id": 1928,
+            "name": "Amarr Industrial Station",
+            "name_en": "Amarr Industrial Station",
+            "name_zh": "艾玛工业空间站",
+            "icon_name": "type_1928_64.png",
+            "model_path": "./extra_models/1928_lite.glb"
+          },
+          {
+            "id": 1930,
+            "name": "Amarr Mining Station",
+            "name_en": "Amarr Mining Station",
+            "name_zh": "艾玛矿冶空间站",
+            "icon_name": "type_1930_64.png",
+            "model_path": "./extra_models/1930_lite.glb"
+          },
+          {
+            "id": 1931,
+            "name": "Amarr Research Station",
+            "name_en": "Amarr Research Station",
+            "name_zh": "艾玛研究空间站",
+            "icon_name": "type_1931_64.png",
+            "model_path": "./extra_models/1931_lite.glb"
+          },
+          {
+            "id": 1929,
+            "name": "Amarr Standard Station",
+            "name_en": "Amarr Standard Station",
+            "name_zh": "艾玛标准空间站",
+            "icon_name": "type_1929_64.png",
+            "model_path": "./extra_models/1929_lite.glb"
+          },
+          {
+            "id": 1926,
+            "name": "Amarr Station Hub",
+            "name_en": "Amarr Station Hub",
+            "name_zh": "艾玛中继空间站",
+            "icon_name": "type_1926_64.png",
+            "model_path": "./extra_models/1926_lite.glb"
+          },
+          {
+            "id": 1927,
+            "name": "Amarr Station Military",
+            "name_en": "Amarr Station Military",
+            "name_zh": "艾玛军事空间站",
+            "icon_name": "type_1927_64.png",
+            "model_path": "./extra_models/1927_lite.glb"
+          },
+          {
+            "id": 1932,
+            "name": "Amarr Trade Post",
+            "name_en": "Amarr Trade Post",
+            "name_zh": "艾玛贸易站",
+            "icon_name": "type_1932_64.png",
+            "model_path": "./extra_models/1932_lite.glb"
+          },
+          {
+            "id": 1529,
+            "name": "Caldari Administrative Station",
+            "name_en": "Caldari Administrative Station",
+            "name_zh": "空间站（加达里1）",
+            "icon_name": "type_1529_64.png",
+            "model_path": "./extra_models/1529_lite.glb"
+          },
+          {
+            "id": 4024,
+            "name": "Caldari Food Processing Plant Station",
+            "name_en": "Caldari Food Processing Plant Station",
+            "name_zh": "加达里食品处理站",
+            "icon_name": "type_4024_64.png",
+            "model_path": "./extra_models/4024_lite.glb"
+          },
+          {
+            "id": 54,
+            "name": "Caldari Logistics Station",
+            "name_en": "Caldari Logistics Station",
+            "name_zh": "空间站（加达里4）",
+            "icon_name": "type_54_64.png",
+            "model_path": "./extra_models/54_lite.glb"
+          },
+          {
+            "id": 3872,
+            "name": "Caldari Military Station",
+            "name_en": "Caldari Military Station",
+            "name_zh": "空间站（加达里6）",
+            "icon_name": "type_3872_64.png",
+            "model_path": "./extra_models/3872_lite.glb"
+          },
+          {
+            "id": 4023,
+            "name": "Caldari Mining Station",
+            "name_en": "Caldari Mining Station",
+            "name_zh": "加达里矿冶空间站",
+            "icon_name": "type_3872_64.png",
+            "model_path": "./extra_models/4023_lite.glb"
+          },
+          {
+            "id": 21642,
+            "name": "Caldari Research Outpost",
+            "name_en": "Caldari Research Outpost",
+            "name_zh": "加达里研究哨站",
+            "icon_name": "type_4100_64.png",
+            "model_path": "./extra_models/21642_lite.glb"
+          },
+          {
+            "id": 1530,
+            "name": "Caldari Research Station",
+            "name_en": "Caldari Research Station",
+            "name_zh": "空间站（加达里2）",
+            "icon_name": "type_1530_64.png",
+            "model_path": "./extra_models/1530_lite.glb"
+          },
+          {
+            "id": 3871,
+            "name": "Caldari Station Hub",
+            "name_en": "Caldari Station Hub",
+            "name_zh": "空间站（加达里5）",
+            "icon_name": "type_3871_64.png",
+            "model_path": "./extra_models/3871_lite.glb"
+          },
+          {
+            "id": 1531,
+            "name": "Caldari Trading Station",
+            "name_en": "Caldari Trading Station",
+            "name_zh": "空间站（加达里3）",
+            "icon_name": "type_1531_64.png",
+            "model_path": "./extra_models/1531_lite.glb"
+          },
+          {
+            "id": 21645,
+            "name": "Gallente Administrative Outpost",
+            "name_en": "Gallente Administrative Outpost",
+            "name_zh": "盖伦特行政空间站",
+            "icon_name": "type_3970_64.png",
+            "model_path": "./extra_models/21645_lite.glb"
+          },
+          {
+            "id": 3868,
+            "name": "Gallente Administrative Station",
+            "name_en": "Gallente Administrative Station",
+            "name_zh": "空间站（盖伦特6）",
+            "icon_name": "type_2071_64.png",
+            "model_path": "./extra_models/3868_lite.glb"
+          },
+          {
+            "id": 3867,
+            "name": "Gallente Industrial Station",
+            "name_en": "Gallente Industrial Station",
+            "name_zh": "空间站（盖伦特5）",
+            "icon_name": "type_3867_64.png",
+            "model_path": "./extra_models/3867_lite.glb"
+          },
+          {
+            "id": 3869,
+            "name": "Gallente Logistics Station",
+            "name_en": "Gallente Logistics Station",
+            "name_zh": "空间站（盖伦特7）",
+            "icon_name": "type_3869_64.png",
+            "model_path": "./extra_models/3869_lite.glb"
+          },
+          {
+            "id": 56,
+            "name": "Gallente Military Station",
+            "name_en": "Gallente Military Station",
+            "name_zh": "空间站（盖伦特1）",
+            "icon_name": "type_56_64.png",
+            "model_path": "./extra_models/56_lite.glb"
+          },
+          {
+            "id": 3870,
+            "name": "Gallente Mining Station",
+            "name_en": "Gallente Mining Station",
+            "name_zh": "空间站（盖伦特8）",
+            "icon_name": "type_3870_64.png",
+            "model_path": "./extra_models/3870_lite.glb"
+          },
+          {
+            "id": 3865,
+            "name": "Gallente Research Station",
+            "name_en": "Gallente Research Station",
+            "name_zh": "空间站 （盖伦特3）",
+            "icon_name": "type_3865_64.png",
+            "model_path": "./extra_models/3865_lite.glb"
+          },
+          {
+            "id": 57,
+            "name": "Gallente Station Hub",
+            "name_en": "Gallente Station Hub",
+            "name_zh": "盖伦特空间站枢纽",
+            "icon_name": "type_57_64.png",
+            "model_path": "./extra_models/57_lite.glb"
+          },
+          {
+            "id": 3866,
+            "name": "Gallente Trading Hub",
+            "name_en": "Gallente Trading Hub",
+            "name_zh": "空间站（盖伦特4）",
+            "icon_name": "type_3866_64.png",
+            "model_path": "./extra_models/3866_lite.glb"
+          },
+          {
+            "id": 29323,
+            "name": "Ishukone Corporation Headquarters",
+            "name_en": "Ishukone Corporation Headquarters",
+            "name_zh": "异株湖集团总部",
+            "icon_name": "type_1529_64.png",
+            "model_path": "./extra_models/29323_lite.glb"
+          },
+          {
+            "id": 2496,
+            "name": "Minmatar Hub",
+            "name_en": "Minmatar Hub",
+            "name_zh": "米玛塔尔中继站",
+            "icon_name": "type_2496_64.png",
+            "model_path": "./extra_models/2496_lite.glb"
+          },
+          {
+            "id": 2497,
+            "name": "Minmatar Industrial Station",
+            "name_en": "Minmatar Industrial Station",
+            "name_zh": "米玛塔尔工业空间站",
+            "icon_name": "type_2497_64.png",
+            "model_path": "./extra_models/2497_lite.glb"
+          },
+          {
+            "id": 2498,
+            "name": "Minmatar Military Station",
+            "name_en": "Minmatar Military Station",
+            "name_zh": "米玛塔尔军事空间站",
+            "icon_name": "type_2498_64.png",
+            "model_path": "./extra_models/2498_lite.glb"
+          },
+          {
+            "id": 2499,
+            "name": "Minmatar Mining Station",
+            "name_en": "Minmatar Mining Station",
+            "name_zh": "米玛塔尔矿冶空间站",
+            "icon_name": "type_2499_64.png",
+            "model_path": "./extra_models/2499_lite.glb"
+          },
+          {
+            "id": 2500,
+            "name": "Minmatar Research Station",
+            "name_en": "Minmatar Research Station",
+            "name_zh": "米玛塔尔空间研究站",
+            "icon_name": "type_2500_64.png",
+            "model_path": "./extra_models/2500_lite.glb"
+          },
+          {
+            "id": 21646,
+            "name": "Minmatar Service Outpost",
+            "name_en": "Minmatar Service Outpost",
+            "name_zh": "米玛塔尔服务哨站",
+            "icon_name": "type_3974_64.png",
+            "model_path": "./extra_models/21646_lite.glb"
+          },
+          {
+            "id": 2501,
+            "name": "Minmatar Station",
+            "name_en": "Minmatar Station",
+            "name_zh": "米玛塔尔空间站",
+            "icon_name": "type_2501_64.png",
+            "model_path": "./extra_models/2501_lite.glb"
+          },
+          {
+            "id": 2502,
+            "name": "Minmatar Trade Post",
+            "name_en": "Minmatar Trade Post",
+            "name_zh": "米玛塔尔贸易空间站",
+            "icon_name": "type_2502_64.png",
+            "model_path": "./extra_models/2502_lite.glb"
+          },
+          {
+            "id": 19757,
+            "name": "Research Outpost",
+            "name_en": "Research Outpost",
+            "name_zh": "研究哨站",
+            "icon_name": "type_3974_64.png",
+            "model_path": "./extra_models/19757_lite.glb"
+          },
+          {
             "id": 34326,
             "name": "Sisters of EVE Industrial Station",
             "name_en": "Sisters of EVE Industrial Station",
@@ -3806,6 +4118,14 @@
             "name_zh": "姐妹会后勤空间站",
             "icon_name": "type_34325_64.png",
             "model_path": "./extra_models/34325_lite.glb"
+          },
+          {
+            "id": 2071,
+            "name": "Station (InterBus)",
+            "name_en": "Station (InterBus)",
+            "name_zh": "空间站（星际捷运）",
+            "icon_name": "type_2071_64.png",
+            "model_path": "./extra_models/2071_lite.glb"
           }
         ]
       }
