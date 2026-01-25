@@ -20,6 +20,29 @@
         ]
       },
       {
+        "id": 226,
+        "name": "Large Collidable Object",
+        "icon_name": "type_2096_64.png",
+        "types": [
+          {
+            "id": 34765,
+            "name": "Jove Observatory",
+            "name_en": "Jove Observatory",
+            "name_zh": "朱庇特瞭望台",
+            "icon_name": "type_34765_64.png",
+            "model_path": "./extra_models/34765_lite.glb"
+          },
+          {
+            "id": 56726,
+            "name": "Pochven Conduit Gate (Inactive)",
+            "name_en": "Pochven Conduit Gate (Inactive)",
+            "name_zh": "波赫文导管星门 (未启用)",
+            "icon_name": "type_56317_64.png",
+            "model_path": "./extra_models/56726_lite.glb"
+          }
+        ]
+      },
+      {
         "id": 1940,
         "name": "Moon Chunk",
         "icon_name": "type_45008_64.png",
@@ -3759,6 +3782,36 @@
     ]
   },
   {
+    "id": 3,
+    "name": "Station",
+    "icon_name": "category_3.png",
+    "groups": [
+      {
+        "id": 15,
+        "name": "Station",
+        "icon_name": "type_54_64.png",
+        "types": [
+          {
+            "id": 34326,
+            "name": "Sisters of EVE Industrial Station",
+            "name_en": "Sisters of EVE Industrial Station",
+            "name_zh": "姐妹会工业空间站",
+            "icon_name": "type_34326_64.png",
+            "model_path": "./extra_models/34326_lite.glb"
+          },
+          {
+            "id": 34325,
+            "name": "Sisters of EVE Logistics Station",
+            "name_en": "Sisters of EVE Logistics Station",
+            "name_zh": "姐妹会后勤空间站",
+            "icon_name": "type_34325_64.png",
+            "model_path": "./extra_models/34325_lite.glb"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": 65,
     "name": "Structure",
     "icon_name": "category_65.png",
@@ -3884,7 +3937,7 @@
             "name_en": "Athanor",
             "name_zh": "阿塔诺",
             "icon_name": "type_35835_64.png",
-            "model_path": ""
+            "model_path": "./extra_models/35835_lite.glb"
           },
           {
             "id": 35836,
@@ -3892,7 +3945,7 @@
             "name_en": "Tatara",
             "name_zh": "塔塔拉",
             "icon_name": "type_35836_64.png",
-            "model_path": ""
+            "model_path": "./extra_models/35836_lite.glb"
           }
         ]
       },
@@ -3907,7 +3960,7 @@
             "name_en": "Pharolux Cyno Beacon",
             "name_zh": "明灯诱导信标",
             "icon_name": "type_35840_64.png",
-            "model_path": ""
+            "model_path": "./extra_models/35840_lite.glb"
           }
         ]
       },
@@ -3922,7 +3975,7 @@
             "name_en": "Tenebrex Cyno Jammer",
             "name_zh": "暗影诱导干扰塔",
             "icon_name": "type_37534_64.png",
-            "model_path": ""
+            "model_path": "./extra_models/37534_lite.glb"
           }
         ]
       },
@@ -3937,7 +3990,7 @@
             "name_en": "Ansiblex Jump Bridge",
             "name_zh": "安塞波跳跃桥接",
             "icon_name": "type_35841_64.png",
-            "model_path": ""
+            "model_path": "./extra_models/35841_lite.glb"
           }
         ]
       },
@@ -3952,7 +4005,7 @@
             "name_en": "Metenox Moon Drill",
             "name_zh": "梅特诺克斯卫星钻探",
             "icon_name": "type_81826_64.png",
-            "model_path": ""
+            "model_path": "./extra_models/81826_lite.glb"
           }
         ]
       }
