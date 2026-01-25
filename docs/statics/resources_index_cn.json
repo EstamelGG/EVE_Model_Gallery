@@ -1,5 +1,436 @@
 [
   {
+    "id": 22,
+    "name": "可部署物品",
+    "icon_name": "category_22.png",
+    "groups": [
+      {
+        "id": 4499,
+        "name": "势力战争监听站",
+        "icon_name": "type_3069_64.png",
+        "types": [
+          {
+            "id": 73272,
+            "name": "加达里监听哨站",
+            "name_en": "Caldari Listening Outpost",
+            "name_zh": "加达里监听哨站",
+            "icon_name": "type_3069_64.png",
+            "model_path": "./extra_models/73272_lite.glb"
+          },
+          {
+            "id": 73273,
+            "name": "盖伦特监听哨站",
+            "name_en": "Gallente Listening Outpost",
+            "name_zh": "盖伦特监听哨站",
+            "icon_name": "type_3069_64.png",
+            "model_path": "./extra_models/73273_lite.glb"
+          },
+          {
+            "id": 73271,
+            "name": "米玛塔尔监听哨站",
+            "name_en": "Minmatar Listening Outpost",
+            "name_zh": "米玛塔尔监听哨站",
+            "icon_name": "type_3069_64.png",
+            "model_path": "./extra_models/73271_lite.glb"
+          },
+          {
+            "id": 73270,
+            "name": "艾玛监听哨站",
+            "name_en": "Amarr Listening Outpost",
+            "name_zh": "艾玛监听哨站",
+            "icon_name": "type_3069_64.png",
+            "model_path": "./extra_models/73270_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 2005,
+        "name": "可部署广告",
+        "icon_name": "type_33587_64.png",
+        "types": [
+          {
+            "id": 48899,
+            "name": "可部署公告屏",
+            "name_en": "Deployable Billboard",
+            "name_zh": "可部署公告屏",
+            "icon_name": "type_33587_64.png",
+            "model_path": "./extra_models/48899_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 361,
+        "name": "机动跃迁扰断器",
+        "icon_name": "type_4386_64.png",
+        "types": [
+          {
+            "id": 12199,
+            "name": "中型机动跃迁扰断器 I",
+            "name_en": "Mobile Medium Warp Disruptor I",
+            "name_zh": "中型机动跃迁扰断器 I",
+            "icon_name": "type_4386_64.png",
+            "model_path": "./extra_models/12199_lite.glb"
+          },
+          {
+            "id": 26890,
+            "name": "中型机动跃迁扰断器 II",
+            "name_en": "Mobile Medium Warp Disruptor II",
+            "name_zh": "中型机动跃迁扰断器 II",
+            "icon_name": "type_26888_64.png",
+            "model_path": "./extra_models/26890_lite.glb"
+          },
+          {
+            "id": 28772,
+            "name": "中型辛迪加机动跃迁扰断器",
+            "name_en": "Syndicate Mobile Medium Warp Disruptor",
+            "name_zh": "中型辛迪加机动跃迁扰断器",
+            "icon_name": "type_28770_64.png",
+            "model_path": "./extra_models/28772_lite.glb"
+          },
+          {
+            "id": 12200,
+            "name": "大型机动跃迁扰断器 I",
+            "name_en": "Mobile Large Warp Disruptor I",
+            "name_zh": "大型机动跃迁扰断器 I",
+            "icon_name": "type_4386_64.png",
+            "model_path": "./extra_models/12200_lite.glb"
+          },
+          {
+            "id": 26888,
+            "name": "大型机动跃迁扰断器 II",
+            "name_en": "Mobile Large Warp Disruptor II",
+            "name_zh": "大型机动跃迁扰断器 II",
+            "icon_name": "type_26888_64.png",
+            "model_path": "./extra_models/26888_lite.glb"
+          },
+          {
+            "id": 28770,
+            "name": "大型辛迪加机动跃迁扰断器",
+            "name_en": "Syndicate Mobile Large Warp Disruptor",
+            "name_zh": "大型辛迪加机动跃迁扰断器",
+            "icon_name": "type_28770_64.png",
+            "model_path": "./extra_models/28770_lite.glb"
+          },
+          {
+            "id": 12198,
+            "name": "小型机动跃迁扰断器 I",
+            "name_en": "Mobile Small Warp Disruptor I",
+            "name_zh": "小型机动跃迁扰断器 I",
+            "icon_name": "type_4386_64.png",
+            "model_path": "./extra_models/12198_lite.glb"
+          },
+          {
+            "id": 26892,
+            "name": "小型机动跃迁扰断器 II",
+            "name_en": "Mobile Small Warp Disruptor II",
+            "name_zh": "小型机动跃迁扰断器 II",
+            "icon_name": "type_26888_64.png",
+            "model_path": "./extra_models/26892_lite.glb"
+          },
+          {
+            "id": 28774,
+            "name": "小型辛迪加机动跃迁扰断器",
+            "name_en": "Syndicate Mobile Small Warp Disruptor",
+            "name_zh": "小型辛迪加机动跃迁扰断器",
+            "icon_name": "type_28770_64.png",
+            "model_path": "./extra_models/28774_lite.glb"
+          },
+          {
+            "id": 26849,
+            "name": "锦标赛版跃迁阻扰设备",
+            "name_en": "Tournament Bubble",
+            "name_zh": "锦标赛版跃迁阻扰设备",
+            "icon_name": "type_26849_64.png",
+            "model_path": "./extra_models/26849_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1149,
+        "name": "机动跳跃扰断器",
+        "icon_name": "type_4386_64.png",
+        "types": [
+          {
+            "id": 4386,
+            "name": "大型机动跳跃扰断器 I",
+            "name_en": "Mobile Large Jump Disruptor I",
+            "name_zh": "大型机动跳跃扰断器 I",
+            "icon_name": "type_4386_64.png",
+            "model_path": "./extra_models/4386_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1246,
+        "name": "移动式仓库",
+        "icon_name": "type_33474_64.png",
+        "types": [
+          {
+            "id": 33520,
+            "name": "小屋移动式仓库",
+            "name_en": "'Wetu' Mobile Depot",
+            "name_zh": "小屋移动式仓库",
+            "icon_name": "type_33474_64.png",
+            "model_path": "./extra_models/33520_lite.glb"
+          },
+          {
+            "id": 33522,
+            "name": "帐篷移动式仓库",
+            "name_en": "'Yurt' Mobile Depot",
+            "name_zh": "帐篷移动式仓库",
+            "icon_name": "type_33474_64.png",
+            "model_path": "./extra_models/33522_lite.glb"
+          },
+          {
+            "id": 33474,
+            "name": "移动式仓库",
+            "name_en": "Mobile Depot",
+            "name_zh": "移动式仓库",
+            "icon_name": "type_33474_64.png",
+            "model_path": "./extra_models/33474_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 4137,
+        "name": "移动式分析信标",
+        "icon_name": "type_60244_64.png",
+        "types": [
+          {
+            "id": 60244,
+            "name": "统合部自由分析信标",
+            "name_en": "CONCORD Rogue Analysis Beacon",
+            "name_zh": "统合部自由分析信标",
+            "icon_name": "type_60244_64.png",
+            "model_path": "./extra_models/60244_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1276,
+        "name": "移动式微型跳跃装置",
+        "icon_name": "type_33591_64.png",
+        "types": [
+          {
+            "id": 33591,
+            "name": "移动式微型跳跃装置",
+            "name_en": "Mobile Micro Jump Unit",
+            "name_zh": "移动式微型跳跃装置",
+            "icon_name": "type_33591_64.png",
+            "model_path": "./extra_models/33591_lite.glb"
+          },
+          {
+            "id": 33990,
+            "name": "锦标赛微型跳跃装置",
+            "name_en": "Tournament Micro Jump Unit",
+            "name_zh": "锦标赛微型跳跃装置",
+            "icon_name": "type_33591_64.png",
+            "model_path": "./extra_models/33990_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1275,
+        "name": "移动式扫描抑制装置",
+        "icon_name": "type_33589_64.png",
+        "types": [
+          {
+            "id": 33589,
+            "name": "移动式扫描抑制装置",
+            "name_en": "Mobile Scan Inhibitor",
+            "name_zh": "移动式扫描抑制装置",
+            "icon_name": "type_33589_64.png",
+            "model_path": "./extra_models/33589_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1250,
+        "name": "移动式牵引装置",
+        "icon_name": "type_33475_64.png",
+        "types": [
+          {
+            "id": 33702,
+            "name": "喜鹊移动式牵引装置",
+            "name_en": "'Magpie' Mobile Tractor Unit",
+            "name_zh": "喜鹊移动式牵引装置",
+            "icon_name": "type_33475_64.png",
+            "model_path": "./extra_models/33702_lite.glb"
+          },
+          {
+            "id": 33700,
+            "name": "林鼠移动式牵引装置",
+            "name_en": "'Packrat' Mobile Tractor Unit",
+            "name_zh": "林鼠移动式牵引装置",
+            "icon_name": "type_33475_64.png",
+            "model_path": "./extra_models/33700_lite.glb"
+          },
+          {
+            "id": 33475,
+            "name": "移动式牵引装置",
+            "name_en": "Mobile Tractor Unit",
+            "name_zh": "移动式牵引装置",
+            "icon_name": "type_33475_64.png",
+            "model_path": "./extra_models/33475_lite.glb"
+          },
+          {
+            "id": 56701,
+            "name": "移动式生物质收割者",
+            "name_en": "Mobile Sanguine Harvester",
+            "name_zh": "移动式生物质收割者",
+            "icon_name": "type_33475_64.png",
+            "model_path": "./extra_models/56701_lite.glb"
+          },
+          {
+            "id": 81951,
+            "name": "财团移动式牵引装置",
+            "name_en": "Consortium Mobile Tractor Unit",
+            "name_zh": "财团移动式牵引装置",
+            "icon_name": "type_81951_64.png",
+            "model_path": "./extra_models/81951_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1247,
+        "name": "移动式虹吸装置",
+        "icon_name": "type_33477_64.png",
+        "types": [
+          {
+            "id": 33478,
+            "name": "中型移动式虹吸装置",
+            "name_en": "Medium Mobile Siphon Unit",
+            "name_zh": "中型移动式虹吸装置",
+            "icon_name": "type_33478_64.png",
+            "model_path": "./extra_models/33478_lite.glb"
+          },
+          {
+            "id": 33479,
+            "name": "大型移动式虹吸装置",
+            "name_en": "Large Mobile Siphon Unit",
+            "name_zh": "大型移动式虹吸装置",
+            "icon_name": "type_33478_64.png",
+            "model_path": "./extra_models/33479_lite.glb"
+          },
+          {
+            "id": 33583,
+            "name": "小型搬运工移动式虹吸装置",
+            "name_en": "Small Mobile 'Rote' Siphon Unit",
+            "name_zh": "小型搬运工移动式虹吸装置",
+            "icon_name": "type_33583_64.png",
+            "model_path": "./extra_models/33583_lite.glb"
+          },
+          {
+            "id": 33581,
+            "name": "小型混合物移动式虹吸装置",
+            "name_en": "Small Mobile 'Hybrid' Siphon Unit",
+            "name_zh": "小型混合物移动式虹吸装置",
+            "icon_name": "type_33478_64.png",
+            "model_path": "./extra_models/33581_lite.glb"
+          },
+          {
+            "id": 33477,
+            "name": "小型移动式虹吸装置",
+            "name_en": "Small Mobile Siphon Unit",
+            "name_zh": "小型移动式虹吸装置",
+            "icon_name": "type_33477_64.png",
+            "model_path": "./extra_models/33477_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 4093,
+        "name": "移动式诱导信标",
+        "icon_name": "type_57319_64.png",
+        "types": [
+          {
+            "id": 57319,
+            "name": "移动式诱导信标",
+            "name_en": "Mobile Cynosural Beacon",
+            "name_zh": "移动式诱导信标",
+            "icon_name": "type_57319_64.png",
+            "model_path": "./extra_models/57319_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1249,
+        "name": "移动式诱导抑制装置",
+        "icon_name": "type_33476_64.png",
+        "types": [
+          {
+            "id": 33476,
+            "name": "移动式诱导抑制装置",
+            "name_en": "Mobile Cynosural Inhibitor",
+            "name_zh": "移动式诱导抑制装置",
+            "icon_name": "type_33476_64.png",
+            "model_path": "./extra_models/33476_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1274,
+        "name": "移动式诱捕装置",
+        "icon_name": "type_33587_64.png",
+        "types": [
+          {
+            "id": 33587,
+            "name": "移动式诱捕装置",
+            "name_en": "Mobile Decoy Unit",
+            "name_zh": "移动式诱捕装置",
+            "icon_name": "type_33587_64.png",
+            "model_path": "./extra_models/33587_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 4913,
+        "name": "移动相位锚标",
+        "icon_name": "type_90037_64.png",
+        "types": [
+          {
+            "id": 90037,
+            "name": "移动相位锚标",
+            "name_en": "Mobile Phase Anchor",
+            "name_zh": "移动相位锚标",
+            "icon_name": "type_90037_64.png",
+            "model_path": "./extra_models/90037_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 4107,
+        "name": "移动观测站",
+        "icon_name": "type_58904_64.png",
+        "types": [
+          {
+            "id": 58904,
+            "name": "移动观测站",
+            "name_en": "Mobile Observatory",
+            "name_zh": "移动观测站",
+            "icon_name": "type_58904_64.png",
+            "model_path": "./extra_models/58904_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 4810,
+        "name": "雇佣兵巢穴",
+        "icon_name": "type_85230_64.png",
+        "types": [
+          {
+            "id": 85230,
+            "name": "雇佣兵巢穴",
+            "name_en": "Mercenary Den",
+            "name_zh": "雇佣兵巢穴",
+            "icon_name": "type_85230_64.png",
+            "model_path": "./extra_models/85230_lite.glb"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": 2,
     "name": "天体",
     "icon_name": "category_2.png",
@@ -4326,6 +4757,28 @@
             "name_zh": "黑豹级",
             "icon_name": "type_22440_64.png",
             "model_path": "./models/22440_lite.glb"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "轨道类",
+    "icon_name": "category_46.png",
+    "groups": [
+      {
+        "id": 4736,
+        "name": "天钩",
+        "icon_name": "type_81080_64.png",
+        "types": [
+          {
+            "id": 81080,
+            "name": "轨道天钩",
+            "name_en": "Orbital Skyhook",
+            "name_zh": "轨道天钩",
+            "icon_name": "type_81080_64.png",
+            "model_path": "./extra_models/81080_lite.glb"
           }
         ]
       }
