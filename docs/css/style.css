@@ -331,6 +331,7 @@ body {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px) saturate(150%);
     -webkit-backdrop-filter: blur(10px) saturate(150%);
+    border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: var(--radius) var(--radius) 0 0;
     font-size: 14px;
@@ -345,6 +346,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -369,6 +371,28 @@ body {
 
 .ship-name-display.show {
     display: block;
+}
+
+.ship-name-display:hover {
+    background: rgba(255, 255, 255, 0.98);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .ship-name-display:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+}
+
+[data-theme="dark"] .ship-name-display:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+[data-theme="light"] .ship-name-display:hover {
+    background: rgba(255, 255, 255, 0.98);
+}
+
+.ship-name-display:active {
+    opacity: 0.9;
 }
 
 .sidebar {

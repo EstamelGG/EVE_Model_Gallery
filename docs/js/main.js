@@ -339,6 +339,49 @@ function loadModel(src, shipInfo = null, typeId = null, updateHash = true) {
             shipNameDisplay.textContent = displayName;
             shipNameDisplay.classList.add('show');
             document.title = `${displayName} - EVE Model Viewer`;
+            
+            // 添加点击事件来复制模型URL
+            const getModelUrl = () => {
+                if (src.startsWith('http://') || src.startsWith('https://')) {
+                    return src;
+                }
+                try {
+                    return new URL(src, window.location.href).href;
+                } catch (e) {
+                    // fallback: 手动构建URL
+                    const baseUrl = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '');
+                    return baseUrl + '/' + src.replace(/^\.\//, '');
+                }
+            };
+            
+            // 移除旧的点击事件监听器（通过保存的引用）
+            if (shipNameDisplay._copyHandler) {
+                shipNameDisplay.removeEventListener('click', shipNameDisplay._copyHandler);
+            }
+            
+            // 创建新的点击事件处理函数
+            shipNameDisplay._copyHandler = async () => {
+                const modelUrl = getModelUrl();
+                try {
+                    await navigator.clipboard.writeText(modelUrl);
+                } catch (err) {
+                    // 如果clipboard API失败，使用fallback方法
+                    const textArea = document.createElement('textarea');
+                    textArea.value = modelUrl;
+                    textArea.style.position = 'fixed';
+                    textArea.style.opacity = '0';
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    try {
+                        document.execCommand('copy');
+                    } catch (e) {
+                        // 忽略错误
+                    }
+                    document.body.removeChild(textArea);
+                }
+            };
+            
+            shipNameDisplay.addEventListener('click', shipNameDisplay._copyHandler);
         } else {
             shipNameDisplay.classList.remove('show');
             document.title = 'EVE Model Viewer';
