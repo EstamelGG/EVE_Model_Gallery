@@ -723,6 +723,14 @@
             "model_path": "./extra_models/2476_lite.glb"
           },
           {
+            "id": 2478,
+            "name": "Berserker II",
+            "name_en": "Berserker II",
+            "name_zh": "狂战士 II",
+            "icon_name": "type_2478_64.png",
+            "model_path": "./extra_models/2478_lite.glb"
+          },
+          {
             "id": 32465,
             "name": "Civilian Hobgoblin",
             "name_en": "Civilian Hobgoblin",
