@@ -546,8 +546,17 @@ function getIconPath(iconName) {
     return `./statics/icons/${normalized}`;
 }
 
-function getTypeIconUrl(typeId) {
-    return `https://images.evetech.net/types/${typeId}/icon`;
+function getTypeIconUrl(iconName, typeId) {
+    if (iconName) {
+        // 如果有图标名称，使用本地图标文件
+        return getIconPath(iconName);
+    }
+    // 如果没有图标名称，使用 API 作为兜底
+    if (typeId) {
+        return `https://images.evetech.net/types/${typeId}/icon`;
+    }
+    // 如果既没有图标名称也没有 typeId，返回默认
+    return './statics/icons/type_default.png';
 }
 
 function createIconWithSpinner(iconClass, iconSrc, iconAlt, hasModel = true) {
@@ -1004,7 +1013,7 @@ class NavigationManager {
 
             const iconWrapper = createIconWithSpinner(
                 'type-icon',
-                getTypeIconUrl(type.id),
+                getTypeIconUrl(type.icon_name, type.id),
                 type.name,
                 type.has_model
             );
@@ -1057,6 +1066,7 @@ function buildSearchIndex(data) {
                             name: type.name,
                             name_en: type.name_en || '',
                             name_zh: type.name_zh || '',
+                            icon_name: type.icon_name || '',
                             model_path: type.model_path || '',
                             categoryId: category.id,
                             categoryName: category.name,
@@ -1162,7 +1172,7 @@ function renderSearchResults(results, searchResultsContainer, navManager) {
         
         const iconWrapper = createIconWithSpinner(
             'search-result-icon',
-            getTypeIconUrl(result.id),
+            getTypeIconUrl(result.icon_name, result.id),
             result.name,
             true
         );
