@@ -3,8 +3,9 @@ import zipfile
 import sqlite3
 import json
 from pathlib import Path
-from typing import Dict, Set, Optional
+from typing import Dict, Set, Optional, List, Tuple
 import shutil
+import hashlib
 
 class EVEDataInitializer:
     def __init__(self):
@@ -266,28 +267,44 @@ class EVEDataInitializer:
         result.sort(key=lambda x: x['name'])
         return result
     
-    def scan_models(self) -> Dict[int, str]:
-        """扫描models目录，提取模型文件信息"""
+    def calculate_file_hash(self, file_path: Path) -> str:
+        """计算文件的 SHA256 哈希值"""
+        sha256_hash = hashlib.sha256()
+        try:
+            with open(file_path, "rb") as f:
+                # 分块读取，避免大文件占用过多内存
+                for byte_block in iter(lambda: f.read(4096), b""):
+                    sha256_hash.update(byte_block)
+            return sha256_hash.hexdigest()
+        except Exception as e:
+            print(f"  警告: 计算文件哈希失败 {file_path}: {e}")
+            return ""
+    
+    def scan_models(self) -> Tuple[Dict[int, str], List[Dict]]:
+        """扫描models目录，提取模型文件信息，返回模型映射和文件信息列表（包含哈希）"""
         print("扫描模型文件...")
         
         model_map = {}
         duplicate_ids = []
+        file_info_list = []  # 存储文件信息：typeid, path, hash
         
         if not self.models_path.exists():
             print(f"  警告: 模型目录不存在 {self.models_path}")
-            return model_map
+            return model_map, file_info_list
         
         # 支持的模型文件扩展名
         model_extensions = {'.glb', '.gltf'}
         
-        # 扫描所有模型文件
-        for model_file in self.models_path.iterdir():
-            if not model_file.is_file():
-                continue
-            
-            # 检查文件扩展名
-            if model_file.suffix.lower() not in model_extensions:
-                continue
+        # 获取所有模型文件
+        model_files = [f for f in self.models_path.iterdir() 
+                      if f.is_file() and f.suffix.lower() in model_extensions]
+        
+        print(f"  找到 {len(model_files)} 个模型文件，开始计算哈希值...")
+        
+        # 扫描所有模型文件并计算哈希
+        for idx, model_file in enumerate(model_files, 1):
+            if idx % 50 == 0 or idx == len(model_files):
+                print(f"    进度: {idx}/{len(model_files)} ({idx*100//len(model_files)}%)")
             
             # 按下划线分割文件名，取第一位作为id
             filename_without_ext = model_file.stem
@@ -300,7 +317,7 @@ class EVEDataInitializer:
                 print(f"  警告: 无法解析模型ID: {model_file.name} (提取的ID: {model_id_str})")
                 continue
             
-            # 检查是否有重复的id
+            # 检查是否有重复的id（文件名重复）
             if model_id in model_map:
                 duplicate_ids.append({
                     'id': model_id,
@@ -309,9 +326,22 @@ class EVEDataInitializer:
                 })
                 continue
             
+            # 计算文件哈希
+            file_hash = self.calculate_file_hash(model_file)
+            if not file_hash:
+                continue
+            
             # 记录模型路径（相对于docs目录）
             model_path = f"./models/{model_file.name}"
             model_map[model_id] = model_path
+            
+            # 记录文件信息
+            file_info_list.append({
+                'typeid': model_id,
+                'path': model_file,
+                'relative_path': model_path,
+                'hash': file_hash
+            })
         
         # 报告重复项
         if duplicate_ids:
@@ -320,30 +350,33 @@ class EVEDataInitializer:
                 print(f"    ID {dup['id']}: 已使用 {dup['existing']}, 跳过 {dup['duplicate']}")
         
         print(f"  扫描到 {len(model_map)} 个模型文件")
-        return model_map
+        return model_map, file_info_list
     
-    def scan_extra_models(self) -> Dict[int, str]:
-        """扫描extra_models目录，提取额外物品ID和文件映射"""
+    def scan_extra_models(self) -> Tuple[Dict[int, str], List[Dict]]:
+        """扫描extra_models目录，提取额外物品ID和文件映射，返回模型映射和文件信息列表（包含哈希）"""
         print("扫描额外模型目录...")
         
         extra_models_map = {}
         duplicate_ids = []
+        file_info_list = []  # 存储文件信息：typeid, path, hash
         
         if not self.extra_models_path.exists():
             print(f"  提示: 额外模型目录不存在 {self.extra_models_path}，跳过")
-            return extra_models_map
+            return extra_models_map, file_info_list
         
         # 支持的模型文件扩展名
         model_extensions = {'.glb', '.gltf'}
         
-        # 扫描所有模型文件
-        for model_file in self.extra_models_path.iterdir():
-            if not model_file.is_file():
-                continue
-            
-            # 检查文件扩展名
-            if model_file.suffix.lower() not in model_extensions:
-                continue
+        # 获取所有模型文件
+        model_files = [f for f in self.extra_models_path.iterdir() 
+                      if f.is_file() and f.suffix.lower() in model_extensions]
+        
+        print(f"  找到 {len(model_files)} 个模型文件，开始计算哈希值...")
+        
+        # 扫描所有模型文件并计算哈希
+        for idx, model_file in enumerate(model_files, 1):
+            if idx % 50 == 0 or idx == len(model_files):
+                print(f"    进度: {idx}/{len(model_files)} ({idx*100//len(model_files)}%)")
             
             # 按下划线分割文件名，取第一位作为id
             filename_without_ext = model_file.stem
@@ -365,9 +398,22 @@ class EVEDataInitializer:
                 })
                 continue
             
+            # 计算文件哈希
+            file_hash = self.calculate_file_hash(model_file)
+            if not file_hash:
+                continue
+            
             # 记录文件路径（相对于docs目录）
             file_path = f"./extra_models/{model_file.name}"
             extra_models_map[model_id] = file_path
+            
+            # 记录文件信息
+            file_info_list.append({
+                'typeid': model_id,
+                'path': model_file,
+                'relative_path': file_path,
+                'hash': file_hash
+            })
         
         # 报告重复项
         if duplicate_ids:
@@ -376,7 +422,7 @@ class EVEDataInitializer:
                 print(f"    ID {dup['id']}: 已使用 {dup['existing']}, 跳过 {dup['duplicate']}")
         
         print(f"  从额外模型目录中提取了 {len(extra_models_map)} 个物品ID")
-        return extra_models_map
+        return extra_models_map, file_info_list
     
     def check_duplicate_ids(self, model_map: Dict[int, str], extra_models_map: Dict[int, str]):
         """检查models和extra_models目录是否有重复的ID"""
@@ -392,6 +438,91 @@ class EVEDataInitializer:
                 error_msg += f"    - extra_models目录: {extra_models_map[dup_id]}\n"
             error_msg += "\n请移除其中一个目录中的文件，确保每个物品ID只在一个目录中出现。\n"
             raise ValueError(error_msg)
+    
+    def remove_duplicate_files(self, file_info_list: List[Dict]) -> Tuple[Dict[int, str], int, int]:
+        """
+        根据文件哈希值删除重复文件，保留 typeid 最小的文件
+        返回: (保留的文件映射, 删除的文件数量, 节省的空间字节数)
+        """
+        print("检测并删除重复文件...")
+        
+        if not file_info_list:
+            return {}, 0, 0
+        
+        # 按哈希值分组
+        hash_groups: Dict[str, List[Dict]] = {}
+        for file_info in file_info_list:
+            file_hash = file_info['hash']
+            if file_hash not in hash_groups:
+                hash_groups[file_hash] = []
+            hash_groups[file_hash].append(file_info)
+        
+        # 找出重复的哈希值（组内文件数 > 1）
+        duplicate_groups = {h: files for h, files in hash_groups.items() if len(files) > 1}
+        
+        if not duplicate_groups:
+            print("  未发现重复文件")
+            # 返回所有文件的映射
+            result_map = {info['typeid']: info['relative_path'] for info in file_info_list}
+            return result_map, 0, 0
+        
+        print(f"  发现 {len(duplicate_groups)} 组重复文件")
+        
+        # 保留的文件映射
+        kept_map = {}
+        files_to_delete = []
+        total_saved_bytes = 0
+        
+        # 处理每个重复组
+        for file_hash, files in duplicate_groups.items():
+            # 按 typeid 排序，保留最小的
+            files_sorted = sorted(files, key=lambda x: x['typeid'])
+            keep_file = files_sorted[0]
+            delete_files = files_sorted[1:]
+            
+            # 记录保留的文件
+            kept_map[keep_file['typeid']] = keep_file['relative_path']
+            
+            # 记录要删除的文件
+            for del_file in delete_files:
+                files_to_delete.append(del_file)
+                # 计算文件大小
+                try:
+                    file_size = del_file['path'].stat().st_size
+                    total_saved_bytes += file_size
+                except Exception:
+                    pass
+            
+            # 输出详细信息
+            print(f"    哈希 {file_hash[:16]}...:")
+            print(f"      保留: {keep_file['path'].name} (typeid: {keep_file['typeid']})")
+            for del_file in delete_files:
+                print(f"      删除: {del_file['path'].name} (typeid: {del_file['typeid']})")
+        
+        # 处理非重复的文件（直接保留）
+        for file_hash, files in hash_groups.items():
+            if file_hash not in duplicate_groups:
+                for file_info in files:
+                    kept_map[file_info['typeid']] = file_info['relative_path']
+        
+        # 删除重复文件
+        deleted_count = 0
+        for file_info in files_to_delete:
+            try:
+                file_path = file_info['path']
+                if file_path.exists():
+                    file_path.unlink()
+                    deleted_count += 1
+            except Exception as e:
+                print(f"  警告: 删除文件失败 {file_info['path']}: {e}")
+        
+        # 格式化节省的空间
+        saved_mb = total_saved_bytes / (1024 * 1024)
+        
+        print(f"  删除完成: 删除了 {deleted_count} 个重复文件，节省空间 {saved_mb:.2f} MB")
+        print(f"  保留文件: {len(kept_map)} 个")
+        
+        return kept_map, deleted_count, total_saved_bytes
     
     def extract_icons(self, icon_names: Set[str]):
         """提取所需的图标文件到static/icons目录"""
@@ -465,39 +596,45 @@ class EVEDataInitializer:
                 return
             
             try:
-                # 3. 扫描模型文件
-                model_map = self.scan_models()
+                # 3. 扫描模型文件（包含哈希计算）
+                model_map, model_file_info = self.scan_models()
                 
-                # 4. 扫描额外模型目录，提取额外物品ID
-                extra_models_map = self.scan_extra_models()
+                # 4. 扫描额外模型目录，提取额外物品ID（包含哈希计算）
+                extra_models_map, extra_file_info = self.scan_extra_models()
                 
-                # 5. 检查两个目录是否有重复的ID
+                # 5. 检查两个目录是否有重复的ID（文件名重复）
                 self.check_duplicate_ids(model_map, extra_models_map)
                 
-                # 6. 合并两个目录的模型映射（由于已检查过重复，两个目录不会有相同ID）
-                combined_model_map = {**model_map, **extra_models_map}
+                # 6. 合并文件信息列表，进行哈希去重
+                all_file_info = model_file_info + extra_file_info
                 
-                # 7. 提取额外物品ID列表用于数据加载
-                extra_type_ids = list(extra_models_map.keys())
+                # 7. 根据哈希值删除重复文件
+                deduplicated_model_map, deleted_count, saved_bytes = self.remove_duplicate_files(all_file_info)
                 
-                # 8. 加载中文数据
+                # 8. 使用去重后的模型映射
+                combined_model_map = deduplicated_model_map
+                
+                # 9. 提取额外物品ID列表用于数据加载（使用去重后的映射）
+                extra_type_ids = [tid for tid in extra_models_map.keys() if tid in combined_model_map]
+                
+                # 10. 加载中文数据
                 data_zh = self.load_data(conn_zh, 'zh', extra_type_ids)
                 tree_zh = self.build_category_tree(data_zh, combined_model_map)
                 
-                # 9. 加载英文数据
+                # 11. 加载英文数据
                 data_en = self.load_data(conn_en, 'en', extra_type_ids)
                 tree_en = self.build_category_tree(data_en, combined_model_map)
                 
-                # 10. 提取图标（合并中英文的图标需求）
+                # 12. 提取图标（合并中英文的图标需求）
                 all_icons = data_zh['icon_names'] | data_en['icon_names']
                 self.extract_icons(all_icons)
                 
-                # 11. 保存索引文件
+                # 13. 保存索引文件
                 print("保存索引文件...")
                 self.save_index(tree_zh, 'cn')
                 self.save_index(tree_en, 'en')
                 
-                # 12. 保存有模型的物品ID列表（包含两个目录的模型）
+                # 14. 保存有模型的物品ID列表（包含两个目录的模型，已去重）
                 print("保存可用模型列表...")
                 self.save_available_models(combined_model_map)
                 
