@@ -439,15 +439,16 @@ class EVEDataInitializer:
             error_msg += "\n请移除其中一个目录中的文件，确保每个物品ID只在一个目录中出现。\n"
             raise ValueError(error_msg)
     
-    def remove_duplicate_files(self, file_info_list: List[Dict]) -> Tuple[Dict[int, str], int, int]:
+    def deduplicate_model_mapping(self, file_info_list: List[Dict]) -> Dict[int, str]:
         """
-        根据文件哈希值删除重复文件，保留 typeid 最小的文件
-        返回: (保留的文件映射, 删除的文件数量, 节省的空间字节数)
+        根据文件哈希值复用模型文件，对于哈希相同的文件，让所有 typeid 都指向 typeid 最小的文件
+        不删除任何文件，只是更新映射关系以实现复用
+        返回: 去重后的模型映射（所有相同哈希的 typeid 都指向保留的文件）
         """
-        print("检测并删除重复文件...")
+        print("检测重复文件并建立复用映射...")
         
         if not file_info_list:
-            return {}, 0, 0
+            return {}
         
         # 按哈希值分组
         hash_groups: Dict[str, List[Dict]] = {}
@@ -460,69 +461,45 @@ class EVEDataInitializer:
         # 找出重复的哈希值（组内文件数 > 1）
         duplicate_groups = {h: files for h, files in hash_groups.items() if len(files) > 1}
         
-        if not duplicate_groups:
-            print("  未发现重复文件")
-            # 返回所有文件的映射
-            result_map = {info['typeid']: info['relative_path'] for info in file_info_list}
-            return result_map, 0, 0
-        
-        print(f"  发现 {len(duplicate_groups)} 组重复文件")
-        
-        # 保留的文件映射
-        kept_map = {}
-        files_to_delete = []
-        total_saved_bytes = 0
+        # 构建复用映射：所有 typeid -> 保留文件的路径
+        result_map = {}
+        reused_count = 0
         
         # 处理每个重复组
         for file_hash, files in duplicate_groups.items():
-            # 按 typeid 排序，保留最小的
+            # 按 typeid 排序，保留最小的作为复用目标
             files_sorted = sorted(files, key=lambda x: x['typeid'])
             keep_file = files_sorted[0]
-            delete_files = files_sorted[1:]
+            reuse_files = files_sorted[1:]
             
-            # 记录保留的文件
-            kept_map[keep_file['typeid']] = keep_file['relative_path']
+            # 保留文件自己的映射
+            result_map[keep_file['typeid']] = keep_file['relative_path']
             
-            # 记录要删除的文件
-            for del_file in delete_files:
-                files_to_delete.append(del_file)
-                # 计算文件大小
-                try:
-                    file_size = del_file['path'].stat().st_size
-                    total_saved_bytes += file_size
-                except Exception:
-                    pass
+            # 让所有重复文件的 typeid 都指向保留文件
+            for reuse_file in reuse_files:
+                result_map[reuse_file['typeid']] = keep_file['relative_path']
+                reused_count += 1
             
             # 输出详细信息
             print(f"    哈希 {file_hash[:16]}...:")
-            print(f"      保留: {keep_file['path'].name} (typeid: {keep_file['typeid']})")
-            for del_file in delete_files:
-                print(f"      删除: {del_file['path'].name} (typeid: {del_file['typeid']})")
+            print(f"      复用目标: {keep_file['path'].name} (typeid: {keep_file['typeid']})")
+            for reuse_file in reuse_files:
+                print(f"        复用: {reuse_file['path'].name} (typeid: {reuse_file['typeid']}) -> 指向 {keep_file['path'].name}")
         
-        # 处理非重复的文件（直接保留）
+        # 处理非重复的文件（直接使用自己的路径）
         for file_hash, files in hash_groups.items():
             if file_hash not in duplicate_groups:
                 for file_info in files:
-                    kept_map[file_info['typeid']] = file_info['relative_path']
+                    result_map[file_info['typeid']] = file_info['relative_path']
         
-        # 删除重复文件
-        deleted_count = 0
-        for file_info in files_to_delete:
-            try:
-                file_path = file_info['path']
-                if file_path.exists():
-                    file_path.unlink()
-                    deleted_count += 1
-            except Exception as e:
-                print(f"  警告: 删除文件失败 {file_info['path']}: {e}")
+        if duplicate_groups:
+            print(f"  复用完成: {len(duplicate_groups)} 组重复文件，{reused_count} 个 typeid 复用已有文件")
+        else:
+            print("  未发现重复文件，无需复用")
         
-        # 格式化节省的空间
-        saved_mb = total_saved_bytes / (1024 * 1024)
+        print(f"  映射关系: {len(result_map)} 个 typeid")
         
-        print(f"  删除完成: 删除了 {deleted_count} 个重复文件，节省空间 {saved_mb:.2f} MB")
-        print(f"  保留文件: {len(kept_map)} 个")
-        
-        return kept_map, deleted_count, total_saved_bytes
+        return result_map
     
     def extract_icons(self, icon_names: Set[str]):
         """提取所需的图标文件到static/icons目录"""
@@ -608,11 +585,8 @@ class EVEDataInitializer:
                 # 6. 合并文件信息列表，进行哈希去重
                 all_file_info = model_file_info + extra_file_info
                 
-                # 7. 根据哈希值删除重复文件
-                deduplicated_model_map, deleted_count, saved_bytes = self.remove_duplicate_files(all_file_info)
-                
-                # 8. 使用去重后的模型映射
-                combined_model_map = deduplicated_model_map
+                # 7. 根据哈希值建立复用映射（不删除文件，只更新映射关系）
+                combined_model_map = self.deduplicate_model_mapping(all_file_info)
                 
                 # 9. 提取额外物品ID列表用于数据加载（使用去重后的映射）
                 extra_type_ids = [tid for tid in extra_models_map.keys() if tid in combined_model_map]

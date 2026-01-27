@@ -731,12 +731,28 @@
         "icon_name": "type_23512_64.png",
         "types": [
           {
+            "id": 23731,
+            "name": "武士SW-300",
+            "name_en": "Warrior SW-300",
+            "name_zh": "武士SW-300",
+            "icon_name": "type_2486_64.png",
+            "model_path": "./extra_models/2486_lite.glb"
+          },
+          {
             "id": 23536,
             "name": "狂战士SW-900",
             "name_en": "Berserker SW-900",
             "name_zh": "狂战士SW-900",
             "icon_name": "type_23512_64.png",
-            "model_path": "./extra_models/23536_lite.glb"
+            "model_path": "./extra_models/2476_lite.glb"
+          },
+          {
+            "id": 23729,
+            "name": "瓦尔基里SW-600",
+            "name_en": "Valkyrie SW-600",
+            "name_zh": "瓦尔基里SW-600",
+            "icon_name": "type_10990_64.png",
+            "model_path": "./extra_models/15510_lite.glb"
           }
         ]
       },
@@ -751,7 +767,7 @@
             "name_en": "Unanchoring Drone",
             "name_zh": "反悬浮定位无人机",
             "icon_name": "type_2203_64.png",
-            "model_path": "./extra_models/17565_lite.glb"
+            "model_path": "./extra_models/2203_lite.glb"
           }
         ]
       },
@@ -766,7 +782,7 @@
             "name_en": "Medium Shield Maintenance Bot I",
             "name_zh": "中型护盾维护机器人 I",
             "icon_name": "type_15508_64.png",
-            "model_path": "./extra_models/23717_lite.glb"
+            "model_path": "./extra_models/15508_lite.glb"
           },
           {
             "id": 28207,
@@ -774,7 +790,7 @@
             "name_en": "Medium Shield Maintenance Bot II",
             "name_zh": "中型护盾维护机器人 II",
             "icon_name": "type_21638_64.png",
-            "model_path": "./extra_models/28207_lite.glb"
+            "model_path": "./extra_models/21638_lite.glb"
           },
           {
             "id": 33704,
@@ -782,7 +798,7 @@
             "name_en": "Medium Hull Maintenance Bot I",
             "name_zh": "中型船体维护机器人 I",
             "icon_name": "type_2183_64.png",
-            "model_path": "./extra_models/33704_lite.glb"
+            "model_path": "./extra_models/2183_lite.glb"
           },
           {
             "id": 33710,
@@ -790,7 +806,7 @@
             "name_en": "Medium Hull Maintenance Bot II",
             "name_zh": "中型船体维护机器人 II",
             "icon_name": "type_2185_64.png",
-            "model_path": "./extra_models/33710_lite.glb"
+            "model_path": "./extra_models/2185_lite.glb"
           },
           {
             "id": 23709,
@@ -798,7 +814,7 @@
             "name_en": "Medium Armor Maintenance Bot I",
             "name_zh": "中型装甲维护机器人 I",
             "icon_name": "type_2173_64.png",
-            "model_path": "./extra_models/23709_lite.glb"
+            "model_path": "./extra_models/2173_lite.glb"
           },
           {
             "id": 28205,
@@ -806,7 +822,7 @@
             "name_en": "Medium Armor Maintenance Bot II",
             "name_zh": "中型装甲维护机器人 II",
             "icon_name": "type_2175_64.png",
-            "model_path": "./extra_models/28205_lite.glb"
+            "model_path": "./extra_models/2175_lite.glb"
           },
           {
             "id": 23719,
@@ -814,7 +830,7 @@
             "name_en": "Light Shield Maintenance Bot I",
             "name_zh": "轻型护盾维护机器人 I",
             "icon_name": "type_2464_64.png",
-            "model_path": "./extra_models/23719_lite.glb"
+            "model_path": "./extra_models/2464_lite.glb"
           },
           {
             "id": 28203,
@@ -822,7 +838,7 @@
             "name_en": "Light Shield Maintenance Bot II",
             "name_zh": "轻型护盾维护机器人 II",
             "icon_name": "type_2466_64.png",
-            "model_path": "./extra_models/28203_lite.glb"
+            "model_path": "./extra_models/2466_lite.glb"
           },
           {
             "id": 33706,
@@ -830,7 +846,7 @@
             "name_en": "Light Hull Maintenance Bot I",
             "name_zh": "轻型船体维护机器人 I",
             "icon_name": "type_2454_64.png",
-            "model_path": "./extra_models/33706_lite.glb"
+            "model_path": "./extra_models/2454_lite.glb"
           },
           {
             "id": 33712,
@@ -838,7 +854,7 @@
             "name_en": "Light Hull Maintenance Bot II",
             "name_zh": "轻型船体维护机器人 II",
             "icon_name": "type_2456_64.png",
-            "model_path": "./extra_models/33712_lite.glb"
+            "model_path": "./extra_models/2456_lite.glb"
           },
           {
             "id": 23711,
@@ -846,7 +862,7 @@
             "name_en": "Light Armor Maintenance Bot I",
             "name_zh": "轻型装甲维护机器人 I",
             "icon_name": "type_2203_64.png",
-            "model_path": "./extra_models/23711_lite.glb"
+            "model_path": "./extra_models/2203_lite.glb"
           },
           {
             "id": 28201,
@@ -854,7 +870,7 @@
             "name_en": "Light Armor Maintenance Bot II",
             "name_zh": "轻型装甲维护机器人 II",
             "icon_name": "type_2205_64.png",
-            "model_path": "./extra_models/28201_lite.glb"
+            "model_path": "./extra_models/2205_lite.glb"
           },
           {
             "id": 22765,
@@ -862,7 +878,7 @@
             "name_en": "Heavy Shield Maintenance Bot I",
             "name_zh": "重型护盾维护机器人 I",
             "icon_name": "type_1201_64.png",
-            "model_path": "./extra_models/22765_lite.glb"
+            "model_path": "./extra_models/1201_lite.glb"
           },
           {
             "id": 28199,
@@ -870,7 +886,7 @@
             "name_en": "Heavy Shield Maintenance Bot II",
             "name_zh": "重型护盾维护机器人 II",
             "icon_name": "type_2436_64.png",
-            "model_path": "./extra_models/28199_lite.glb"
+            "model_path": "./extra_models/2436_lite.glb"
           },
           {
             "id": 33671,
@@ -878,7 +894,7 @@
             "name_en": "Heavy Hull Maintenance Bot I",
             "name_zh": "重型船体维护机器人 I",
             "icon_name": "type_2444_64.png",
-            "model_path": "./extra_models/33671_lite.glb"
+            "model_path": "./extra_models/2444_lite.glb"
           },
           {
             "id": 33708,
@@ -886,7 +902,7 @@
             "name_en": "Heavy Hull Maintenance Bot II",
             "name_zh": "重型船体维护机器人 II",
             "icon_name": "type_2446_64.png",
-            "model_path": "./extra_models/33708_lite.glb"
+            "model_path": "./extra_models/2446_lite.glb"
           },
           {
             "id": 23523,
@@ -894,7 +910,7 @@
             "name_en": "Heavy Armor Maintenance Bot I",
             "name_zh": "重型装甲维护机器人 I",
             "icon_name": "type_2193_64.png",
-            "model_path": "./extra_models/23523_lite.glb"
+            "model_path": "./extra_models/2193_lite.glb"
           },
           {
             "id": 28197,
@@ -902,7 +918,7 @@
             "name_en": "Heavy Armor Maintenance Bot II",
             "name_zh": "重型装甲维护机器人 II",
             "icon_name": "type_2195_64.png",
-            "model_path": "./extra_models/28197_lite.glb"
+            "model_path": "./extra_models/2195_lite.glb"
           }
         ]
       },
@@ -917,15 +933,7 @@
             "name_en": "'Subverted' JVN-UC49",
             "name_zh": "\"颠覆\"JVN-UC49",
             "icon_name": "type_48744_64.png",
-            "model_path": "./extra_models/48744_lite.glb"
-          },
-          {
-            "id": 23759,
-            "name": "FA-14圣殿武士舰载机",
-            "name_en": "FA-14 Templar",
-            "name_zh": "FA-14圣殿武士舰载机",
-            "icon_name": "type_23055_64.png",
-            "model_path": "./extra_models/23759_lite.glb"
+            "model_path": "./extra_models/2183_lite.glb"
           },
           {
             "id": 22780,
@@ -933,7 +941,7 @@
             "name_en": "Fighter Uno",
             "name_zh": "乌弩舰载机",
             "icon_name": "type_2444_64.png",
-            "model_path": "./extra_models/22780_lite.glb"
+            "model_path": "./extra_models/2444_lite.glb"
           },
           {
             "id": 2203,
@@ -952,12 +960,52 @@
             "model_path": "./extra_models/2205_lite.glb"
           },
           {
+            "id": 23563,
+            "name": "保镖 I",
+            "name_en": "Bouncer I",
+            "name_zh": "保镖 I",
+            "icon_name": "type_23563_64.png",
+            "model_path": "./extra_models/23563_lite.glb"
+          },
+          {
+            "id": 28215,
+            "name": "保镖 II",
+            "name_en": "Bouncer II",
+            "name_zh": "保镖 II",
+            "icon_name": "type_28215_64.png",
+            "model_path": "./extra_models/28215_lite.glb"
+          },
+          {
+            "id": 31894,
+            "name": "共和舰队保镖",
+            "name_en": "Republic Fleet Bouncer",
+            "name_zh": "共和舰队保镖",
+            "icon_name": "type_31894_64.png",
+            "model_path": "./extra_models/31894_lite.glb"
+          },
+          {
+            "id": 31888,
+            "name": "共和舰队武士",
+            "name_en": "Republic Fleet Warrior",
+            "name_zh": "共和舰队武士",
+            "icon_name": "type_31888_64.png",
+            "model_path": "./extra_models/31888_lite.glb"
+          },
+          {
             "id": 31892,
             "name": "共和舰队狂战士",
             "name_en": "Republic Fleet Berserker",
             "name_zh": "共和舰队狂战士",
             "icon_name": "type_31892_64.png",
             "model_path": "./extra_models/31892_lite.glb"
+          },
+          {
+            "id": 31890,
+            "name": "共和舰队瓦尔基里",
+            "name_en": "Republic Fleet Valkyrie",
+            "name_zh": "共和舰队瓦尔基里",
+            "icon_name": "type_31890_64.png",
+            "model_path": "./extra_models/31890_lite.glb"
           },
           {
             "id": 23559,
@@ -981,7 +1029,7 @@
             "name_en": "'Augmented' Acolyte",
             "name_zh": "加强型侍僧",
             "icon_name": "type_28262_64.png",
-            "model_path": "./extra_models/28264_lite.glb"
+            "model_path": "./extra_models/2203_lite.glb"
           },
           {
             "id": 28276,
@@ -989,7 +1037,7 @@
             "name_en": "'Augmented' Hobgoblin",
             "name_zh": "加强型地精灵",
             "icon_name": "type_28274_64.png",
-            "model_path": "./extra_models/28276_lite.glb"
+            "model_path": "./extra_models/2454_lite.glb"
           },
           {
             "id": 28280,
@@ -997,7 +1045,7 @@
             "name_en": "'Augmented' Hornet",
             "name_zh": "加强型大黄蜂",
             "icon_name": "type_28278_64.png",
-            "model_path": "./extra_models/28280_lite.glb"
+            "model_path": "./extra_models/2464_lite.glb"
           },
           {
             "id": 28272,
@@ -1005,7 +1053,7 @@
             "name_en": "'Augmented' Hammerhead",
             "name_zh": "加强型战锤",
             "icon_name": "type_28270_64.png",
-            "model_path": "./extra_models/28272_lite.glb"
+            "model_path": "./extra_models/2183_lite.glb"
           },
           {
             "id": 28292,
@@ -1013,7 +1061,15 @@
             "name_en": "'Augmented' Praetor",
             "name_zh": "加强型执政官",
             "icon_name": "type_28290_64.png",
-            "model_path": "./extra_models/28292_lite.glb"
+            "model_path": "./extra_models/2193_lite.glb"
+          },
+          {
+            "id": 28304,
+            "name": "加强型武士",
+            "name_en": "'Augmented' Warrior",
+            "name_zh": "加强型武士",
+            "icon_name": "type_28302_64.png",
+            "model_path": "./extra_models/2486_lite.glb"
           },
           {
             "id": 28284,
@@ -1021,7 +1077,7 @@
             "name_en": "'Augmented' Infiltrator",
             "name_zh": "加强型渗透者",
             "icon_name": "type_28282_64.png",
-            "model_path": "./extra_models/28284_lite.glb"
+            "model_path": "./extra_models/2173_lite.glb"
           },
           {
             "id": 28268,
@@ -1029,7 +1085,15 @@
             "name_en": "'Augmented' Berserker",
             "name_zh": "加强型狂战士",
             "icon_name": "type_28266_64.png",
-            "model_path": "./extra_models/28268_lite.glb"
+            "model_path": "./extra_models/2476_lite.glb"
+          },
+          {
+            "id": 28296,
+            "name": "加强型瓦尔基里",
+            "name_en": "'Augmented' Valkyrie",
+            "name_zh": "加强型瓦尔基里",
+            "icon_name": "type_28294_64.png",
+            "model_path": "./extra_models/15510_lite.glb"
           },
           {
             "id": 28308,
@@ -1037,7 +1101,7 @@
             "name_en": "'Augmented' Wasp",
             "name_zh": "加强型胡蜂",
             "icon_name": "type_28306_64.png",
-            "model_path": "./extra_models/28308_lite.glb"
+            "model_path": "./extra_models/1201_lite.glb"
           },
           {
             "id": 28288,
@@ -1045,7 +1109,7 @@
             "name_en": "'Augmented' Ogre",
             "name_zh": "加强型蛮妖",
             "icon_name": "type_28286_64.png",
-            "model_path": "./extra_models/28288_lite.glb"
+            "model_path": "./extra_models/2444_lite.glb"
           },
           {
             "id": 28300,
@@ -1053,7 +1117,39 @@
             "name_en": "'Augmented' Vespa",
             "name_zh": "加强型金星",
             "icon_name": "type_28298_64.png",
-            "model_path": "./extra_models/28300_lite.glb"
+            "model_path": "./extra_models/15508_lite.glb"
+          },
+          {
+            "id": 31878,
+            "name": "加达里海军典狱官",
+            "name_en": "Caldari Navy Warden",
+            "name_zh": "加达里海军典狱官",
+            "icon_name": "type_31878_64.png",
+            "model_path": "./extra_models/31878_lite.glb"
+          },
+          {
+            "id": 31872,
+            "name": "加达里海军大黄蜂",
+            "name_en": "Caldari Navy Hornet",
+            "name_zh": "加达里海军大黄蜂",
+            "icon_name": "type_31872_64.png",
+            "model_path": "./extra_models/31872_lite.glb"
+          },
+          {
+            "id": 31876,
+            "name": "加达里海军胡蜂",
+            "name_en": "Caldari Navy Wasp",
+            "name_zh": "加达里海军胡蜂",
+            "icon_name": "type_31876_64.png",
+            "model_path": "./extra_models/31876_lite.glb"
+          },
+          {
+            "id": 31874,
+            "name": "加达里海军金星",
+            "name_en": "Caldari Navy Vespa",
+            "name_zh": "加达里海军金星",
+            "icon_name": "type_31874_64.png",
+            "model_path": "./extra_models/31874_lite.glb"
           },
           {
             "id": 23561,
@@ -1077,7 +1173,7 @@
             "name_en": "Hellhound I",
             "name_zh": "地狱犬 I",
             "icon_name": "type_2444_64.png",
-            "model_path": "./extra_models/16206_lite.glb"
+            "model_path": "./extra_models/2444_lite.glb"
           },
           {
             "id": 2454,
@@ -1112,6 +1208,38 @@
             "model_path": "./extra_models/2466_lite.glb"
           },
           {
+            "id": 31864,
+            "name": "帝国海军侍僧",
+            "name_en": "Imperial Navy Acolyte",
+            "name_zh": "帝国海军侍僧",
+            "icon_name": "type_31864_64.png",
+            "model_path": "./extra_models/31864_lite.glb"
+          },
+          {
+            "id": 31870,
+            "name": "帝国海军执政官",
+            "name_en": "Imperial Navy Praetor",
+            "name_zh": "帝国海军执政官",
+            "icon_name": "type_31870_64.png",
+            "model_path": "./extra_models/31870_lite.glb"
+          },
+          {
+            "id": 31866,
+            "name": "帝国海军渗透者",
+            "name_en": "Imperial Navy Infiltrator",
+            "name_zh": "帝国海军渗透者",
+            "icon_name": "type_31866_64.png",
+            "model_path": "./extra_models/31866_lite.glb"
+          },
+          {
+            "id": 31868,
+            "name": "帝国海军监护官",
+            "name_en": "Imperial Navy Curator",
+            "name_zh": "帝国海军监护官",
+            "icon_name": "type_31868_64.png",
+            "model_path": "./extra_models/31868_lite.glb"
+          },
+          {
             "id": 2183,
             "name": "战锤 I",
             "name_en": "Hammerhead I",
@@ -1144,12 +1272,28 @@
             "model_path": "./extra_models/2195_lite.glb"
           },
           {
+            "id": 2486,
+            "name": "武士 I",
+            "name_en": "Warrior I",
+            "name_zh": "武士 I",
+            "icon_name": "type_2486_64.png",
+            "model_path": "./extra_models/2486_lite.glb"
+          },
+          {
+            "id": 2488,
+            "name": "武士 II",
+            "name_en": "Warrior II",
+            "name_zh": "武士 II",
+            "icon_name": "type_2488_64.png",
+            "model_path": "./extra_models/2488_lite.glb"
+          },
+          {
             "id": 32465,
             "name": "民用地精灵无人机",
             "name_en": "Civilian Hobgoblin",
             "name_zh": "民用地精灵无人机",
             "icon_name": "type_2454_64.png",
-            "model_path": "./extra_models/32465_lite.glb"
+            "model_path": "./extra_models/2454_lite.glb"
           },
           {
             "id": 2173,
@@ -1184,6 +1328,22 @@
             "model_path": "./extra_models/2478_lite.glb"
           },
           {
+            "id": 15510,
+            "name": "瓦尔基里 I",
+            "name_en": "Valkyrie I",
+            "name_zh": "瓦尔基里 I",
+            "icon_name": "type_10990_64.png",
+            "model_path": "./extra_models/15510_lite.glb"
+          },
+          {
+            "id": 21640,
+            "name": "瓦尔基里 II",
+            "name_en": "Valkyrie II",
+            "name_zh": "瓦尔基里 II",
+            "icon_name": "type_21640_64.png",
+            "model_path": "./extra_models/21640_lite.glb"
+          },
+          {
             "id": 23525,
             "name": "监护官 I",
             "name_en": "Curator I",
@@ -1206,6 +1366,30 @@
             "name_zh": "联邦海军卫兵",
             "icon_name": "type_31886_64.png",
             "model_path": "./extra_models/31886_lite.glb"
+          },
+          {
+            "id": 31880,
+            "name": "联邦海军地精灵",
+            "name_en": "Federation Navy Hobgoblin",
+            "name_zh": "联邦海军地精灵",
+            "icon_name": "type_31880_64.png",
+            "model_path": "./extra_models/31880_lite.glb"
+          },
+          {
+            "id": 31882,
+            "name": "联邦海军战锤",
+            "name_en": "Federation Navy Hammerhead",
+            "name_zh": "联邦海军战锤",
+            "icon_name": "type_31882_64.png",
+            "model_path": "./extra_models/31882_lite.glb"
+          },
+          {
+            "id": 31884,
+            "name": "联邦海军蛮妖",
+            "name_en": "Federation Navy Ogre",
+            "name_zh": "联邦海军蛮妖",
+            "icon_name": "type_31884_64.png",
+            "model_path": "./extra_models/31884_lite.glb"
           },
           {
             "id": 1201,
@@ -1261,7 +1445,7 @@
             "name_en": "'Integrated' Acolyte",
             "name_zh": "集成型侍僧",
             "icon_name": "type_28262_64.png",
-            "model_path": "./extra_models/28262_lite.glb"
+            "model_path": "./extra_models/2203_lite.glb"
           },
           {
             "id": 28274,
@@ -1269,7 +1453,7 @@
             "name_en": "'Integrated' Hobgoblin",
             "name_zh": "集成型地精灵",
             "icon_name": "type_28274_64.png",
-            "model_path": "./extra_models/28274_lite.glb"
+            "model_path": "./extra_models/2454_lite.glb"
           },
           {
             "id": 28278,
@@ -1277,7 +1461,7 @@
             "name_en": "'Integrated' Hornet",
             "name_zh": "集成型大黄蜂",
             "icon_name": "type_28278_64.png",
-            "model_path": "./extra_models/28278_lite.glb"
+            "model_path": "./extra_models/2464_lite.glb"
           },
           {
             "id": 28270,
@@ -1285,7 +1469,7 @@
             "name_en": "'Integrated' Hammerhead",
             "name_zh": "集成型战锤",
             "icon_name": "type_28270_64.png",
-            "model_path": "./extra_models/28270_lite.glb"
+            "model_path": "./extra_models/2183_lite.glb"
           },
           {
             "id": 28290,
@@ -1293,7 +1477,15 @@
             "name_en": "'Integrated' Praetor",
             "name_zh": "集成型执政官",
             "icon_name": "type_28290_64.png",
-            "model_path": "./extra_models/28290_lite.glb"
+            "model_path": "./extra_models/2193_lite.glb"
+          },
+          {
+            "id": 28302,
+            "name": "集成型武士",
+            "name_en": "'Integrated' Warrior",
+            "name_zh": "集成型武士",
+            "icon_name": "type_28302_64.png",
+            "model_path": "./extra_models/2486_lite.glb"
           },
           {
             "id": 28282,
@@ -1301,7 +1493,7 @@
             "name_en": "'Integrated' Infiltrator",
             "name_zh": "集成型渗透者",
             "icon_name": "type_28282_64.png",
-            "model_path": "./extra_models/28282_lite.glb"
+            "model_path": "./extra_models/2173_lite.glb"
           },
           {
             "id": 28266,
@@ -1309,7 +1501,15 @@
             "name_en": "'Integrated' Berserker",
             "name_zh": "集成型狂战士",
             "icon_name": "type_28266_64.png",
-            "model_path": "./extra_models/28266_lite.glb"
+            "model_path": "./extra_models/2476_lite.glb"
+          },
+          {
+            "id": 28294,
+            "name": "集成型瓦尔基里",
+            "name_en": "'Integrated' Valkyrie",
+            "name_zh": "集成型瓦尔基里",
+            "icon_name": "type_28294_64.png",
+            "model_path": "./extra_models/15510_lite.glb"
           },
           {
             "id": 28306,
@@ -1317,7 +1517,7 @@
             "name_en": "'Integrated' Wasp",
             "name_zh": "集成型胡蜂",
             "icon_name": "type_28306_64.png",
-            "model_path": "./extra_models/28306_lite.glb"
+            "model_path": "./extra_models/1201_lite.glb"
           },
           {
             "id": 28286,
@@ -1325,7 +1525,7 @@
             "name_en": "'Integrated' Ogre",
             "name_zh": "集成型蛮妖",
             "icon_name": "type_28286_64.png",
-            "model_path": "./extra_models/28286_lite.glb"
+            "model_path": "./extra_models/2444_lite.glb"
           },
           {
             "id": 28298,
@@ -1333,7 +1533,7 @@
             "name_en": "'Integrated' Vespa",
             "name_zh": "集成型金星",
             "icon_name": "type_28298_64.png",
-            "model_path": "./extra_models/28298_lite.glb"
+            "model_path": "./extra_models/15508_lite.glb"
           },
           {
             "id": 3549,
@@ -1341,7 +1541,7 @@
             "name_en": "Tutorial Attack Drone",
             "name_zh": "靶机无人机",
             "icon_name": "type_2203_64.png",
-            "model_path": "./extra_models/3549_lite.glb"
+            "model_path": "./extra_models/2203_lite.glb"
           }
         ]
       },
@@ -1356,7 +1556,7 @@
             "name_en": "'Dunk' Salvage Drone",
             "name_zh": "'浸入'打捞无人机",
             "icon_name": "type_55761_64.png",
-            "model_path": "./extra_models/55761_lite.glb"
+            "model_path": "./extra_models/32787_lite.glb"
           },
           {
             "id": 32787,
@@ -1372,7 +1572,7 @@
             "name_en": "Salvage Drone II",
             "name_zh": "打捞无人机 II",
             "icon_name": "type_55760_64.png",
-            "model_path": "./extra_models/55760_lite.glb"
+            "model_path": "./extra_models/32787_lite.glb"
           }
         ]
       },
@@ -1387,7 +1587,7 @@
             "name_en": "Acolyte TD-300",
             "name_zh": "侍僧TD-300",
             "icon_name": "type_2203_64.png",
-            "model_path": "./extra_models/23727_lite.glb"
+            "model_path": "./extra_models/2203_lite.glb"
           },
           {
             "id": 23715,
@@ -1395,7 +1595,7 @@
             "name_en": "Hobgoblin SD-300",
             "name_zh": "地精灵SD-300",
             "icon_name": "type_2454_64.png",
-            "model_path": "./extra_models/23715_lite.glb"
+            "model_path": "./extra_models/2454_lite.glb"
           },
           {
             "id": 23707,
@@ -1403,7 +1603,7 @@
             "name_en": "Hornet EC-300",
             "name_zh": "大黄蜂EC-300",
             "icon_name": "type_2464_64.png",
-            "model_path": "./extra_models/23707_lite.glb"
+            "model_path": "./extra_models/2464_lite.glb"
           },
           {
             "id": 23713,
@@ -1411,7 +1611,7 @@
             "name_en": "Hammerhead SD-600",
             "name_zh": "战锤SD-600",
             "icon_name": "type_2183_64.png",
-            "model_path": "./extra_models/23713_lite.glb"
+            "model_path": "./extra_models/2183_lite.glb"
           },
           {
             "id": 23510,
@@ -1419,7 +1619,15 @@
             "name_en": "Praetor TD-900",
             "name_zh": "执政官TD-900",
             "icon_name": "type_2193_64.png",
-            "model_path": "./extra_models/23510_lite.glb"
+            "model_path": "./extra_models/2193_lite.glb"
+          },
+          {
+            "id": 23723,
+            "name": "武士TP-300",
+            "name_en": "Warrior TP-300",
+            "name_zh": "武士TP-300",
+            "icon_name": "type_2486_64.png",
+            "model_path": "./extra_models/2486_lite.glb"
           },
           {
             "id": 23725,
@@ -1427,7 +1635,7 @@
             "name_en": "Infiltrator TD-600",
             "name_zh": "渗透者TD-600",
             "icon_name": "type_2173_64.png",
-            "model_path": "./extra_models/23725_lite.glb"
+            "model_path": "./extra_models/2173_lite.glb"
           },
           {
             "id": 23512,
@@ -1435,7 +1643,15 @@
             "name_en": "Berserker TP-900",
             "name_zh": "狂战士TP-900",
             "icon_name": "type_23512_64.png",
-            "model_path": "./extra_models/23512_lite.glb"
+            "model_path": "./extra_models/2476_lite.glb"
+          },
+          {
+            "id": 23721,
+            "name": "瓦尔基里TP-600",
+            "name_en": "Valkyrie TP-600",
+            "name_zh": "瓦尔基里TP-600",
+            "icon_name": "type_10990_64.png",
+            "model_path": "./extra_models/15510_lite.glb"
           },
           {
             "id": 23473,
@@ -1443,7 +1659,7 @@
             "name_en": "Wasp EC-900",
             "name_zh": "胡蜂EC-900",
             "icon_name": "type_1201_64.png",
-            "model_path": "./extra_models/23473_lite.glb"
+            "model_path": "./extra_models/1201_lite.glb"
           },
           {
             "id": 23506,
@@ -1451,7 +1667,7 @@
             "name_en": "Ogre SD-900",
             "name_zh": "蛮妖SD-900",
             "icon_name": "type_2444_64.png",
-            "model_path": "./extra_models/23506_lite.glb"
+            "model_path": "./extra_models/2444_lite.glb"
           },
           {
             "id": 23705,
@@ -1459,7 +1675,7 @@
             "name_en": "Vespa EC-600",
             "name_zh": "金星EC-600",
             "icon_name": "type_15508_64.png",
-            "model_path": "./extra_models/23705_lite.glb"
+            "model_path": "./extra_models/15508_lite.glb"
           }
         ]
       },
@@ -1474,7 +1690,7 @@
             "name_en": "Repair Drone",
             "name_zh": "维修无人机",
             "icon_name": "type_1202_64.png",
-            "model_path": "./extra_models/9871_lite.glb"
+            "model_path": "./extra_models/1202_lite.glb"
           }
         ]
       },
@@ -1489,7 +1705,7 @@
             "name_en": "Acolyte EV-300",
             "name_zh": "侍僧EV-300",
             "icon_name": "type_2203_64.png",
-            "model_path": "./extra_models/23659_lite.glb"
+            "model_path": "./extra_models/2203_lite.glb"
           },
           {
             "id": 22572,
@@ -1497,7 +1713,7 @@
             "name_en": "Praetor EV-900",
             "name_zh": "执政官EV-900",
             "icon_name": "type_2193_64.png",
-            "model_path": "./extra_models/22572_lite.glb"
+            "model_path": "./extra_models/2193_lite.glb"
           },
           {
             "id": 23702,
@@ -1505,7 +1721,7 @@
             "name_en": "Infiltrator EV-600",
             "name_zh": "渗透者EV-600",
             "icon_name": "type_2173_64.png",
-            "model_path": "./extra_models/23702_lite.glb"
+            "model_path": "./extra_models/2173_lite.glb"
           }
         ]
       },
@@ -1520,7 +1736,7 @@
             "name_en": "10mn webscramblifying Drone",
             "name_zh": "10MN跃迁干扰无人机",
             "icon_name": "type_2203_64.png",
-            "model_path": "./extra_models/22713_lite.glb"
+            "model_path": "./extra_models/2203_lite.glb"
           },
           {
             "id": 22574,
@@ -1528,7 +1744,7 @@
             "name_en": "Warp Scrambling Drone",
             "name_zh": "跃迁干扰无人机",
             "icon_name": "type_2203_64.png",
-            "model_path": "./extra_models/22574_lite.glb"
+            "model_path": "./extra_models/2203_lite.glb"
           }
         ]
       },
@@ -1559,7 +1775,7 @@
             "name_en": "'Augmented' Ice Harvesting Drone",
             "name_zh": "加强型冰矿采集无人机",
             "icon_name": "type_43701_64.png",
-            "model_path": "./extra_models/43701_lite.glb"
+            "model_path": "./extra_models/43700_lite.glb"
           },
           {
             "id": 43694,
@@ -1567,7 +1783,7 @@
             "name_en": "'Augmented' Mining Drone",
             "name_zh": "加强型采矿无人机",
             "icon_name": "type_43694_64.png",
-            "model_path": "./extra_models/43694_lite.glb"
+            "model_path": "./extra_models/10250_lite.glb"
           },
           {
             "id": 10248,
@@ -1575,7 +1791,7 @@
             "name_en": "Mining Drone - Improved",
             "name_zh": "加强级采矿无人机",
             "icon_name": "type_1202_64.png",
-            "model_path": "./extra_models/10248_lite.glb"
+            "model_path": "./extra_models/1202_lite.glb"
           },
           {
             "id": 3218,
@@ -1583,7 +1799,7 @@
             "name_en": "Harvester Mining Drone",
             "name_zh": "收割者采矿无人机",
             "icon_name": "type_3218_64.png",
-            "model_path": "./extra_models/3218_lite.glb"
+            "model_path": "./extra_models/1202_lite.glb"
           },
           {
             "id": 1202,
@@ -1599,7 +1815,7 @@
             "name_en": "Mutated 'Excavator' Ice Harvesting Drone",
             "name_zh": "突变“采掘者”冰矿采集无人机",
             "icon_name": "type_90622_64.png",
-            "model_path": "./extra_models/90622_lite.glb"
+            "model_path": "./extra_models/43681_lite.glb"
           },
           {
             "id": 90621,
@@ -1607,7 +1823,7 @@
             "name_en": "Mutated 'Excavator' Mining Drone",
             "name_zh": "突变“采掘者”采矿无人机",
             "icon_name": "type_90621_64.png",
-            "model_path": "./extra_models/90621_lite.glb"
+            "model_path": "./extra_models/41030_lite.glb"
           },
           {
             "id": 90618,
@@ -1615,7 +1831,7 @@
             "name_en": "Mutated Ice Harvesting Drone",
             "name_zh": "突变冰矿采集无人机",
             "icon_name": "type_90618_64.png",
-            "model_path": "./extra_models/90618_lite.glb"
+            "model_path": "./extra_models/43699_lite.glb"
           },
           {
             "id": 43681,
@@ -1639,7 +1855,7 @@
             "name_en": "Mining Drone - Elite",
             "name_zh": "采矿无人机 - 精英级",
             "icon_name": "type_1202_64.png",
-            "model_path": "./extra_models/10252_lite.glb"
+            "model_path": "./extra_models/1202_lite.glb"
           },
           {
             "id": 10246,
@@ -1647,7 +1863,7 @@
             "name_en": "Mining Drone I",
             "name_zh": "采矿无人机 I",
             "icon_name": "type_1202_64.png",
-            "model_path": "./extra_models/10246_lite.glb"
+            "model_path": "./extra_models/1202_lite.glb"
           },
           {
             "id": 10250,
@@ -5731,17 +5947,653 @@
     "icon_name": "category_87.png",
     "groups": [
       {
+        "id": 1537,
+        "name": "后勤铁骑舰载机",
+        "icon_name": "type_23055_64.png",
+        "types": [
+          {
+            "id": 37599,
+            "name": "修道士 I",
+            "name_en": "Cenobite I",
+            "name_zh": "修道士 I",
+            "icon_name": "type_23055_64.png",
+            "model_path": "./extra_models/23055_lite.glb"
+          },
+          {
+            "id": 40568,
+            "name": "修道士 II",
+            "name_en": "Cenobite II",
+            "name_zh": "修道士 II",
+            "icon_name": "type_40552_64.png",
+            "model_path": "./extra_models/23055_lite.glb"
+          },
+          {
+            "id": 83594,
+            "name": "共和舰队德洛米",
+            "name_en": "Republic Fleet Dromi",
+            "name_zh": "共和舰队德洛米",
+            "icon_name": "type_83584_64.png",
+            "model_path": "./extra_models/83584_lite.glb"
+          },
+          {
+            "id": 83592,
+            "name": "加达里海军圣甲虫",
+            "name_en": "Caldari Navy Scarab",
+            "name_zh": "加达里海军圣甲虫",
+            "icon_name": "type_83582_64.png",
+            "model_path": "./extra_models/83582_lite.glb"
+          },
+          {
+            "id": 40345,
+            "name": "圣甲虫 I",
+            "name_en": "Scarab I",
+            "name_zh": "圣甲虫 I",
+            "icon_name": "type_23057_64.png",
+            "model_path": "./extra_models/23057_lite.glb"
+          },
+          {
+            "id": 40569,
+            "name": "圣甲虫 II",
+            "name_en": "Scarab II",
+            "name_zh": "圣甲虫 II",
+            "icon_name": "type_40554_64.png",
+            "model_path": "./extra_models/23057_lite.glb"
+          },
+          {
+            "id": 40346,
+            "name": "塞壬 I",
+            "name_en": "Siren I",
+            "name_zh": "塞壬 I",
+            "icon_name": "type_23059_64.png",
+            "model_path": "./extra_models/23059_lite.glb"
+          },
+          {
+            "id": 40570,
+            "name": "塞壬 II",
+            "name_en": "Siren II",
+            "name_zh": "塞壬 II",
+            "icon_name": "type_40555_64.png",
+            "model_path": "./extra_models/23059_lite.glb"
+          },
+          {
+            "id": 83591,
+            "name": "帝国海军修道士",
+            "name_en": "Imperial Navy Cenobite",
+            "name_zh": "帝国海军修道士",
+            "icon_name": "type_83579_64.png",
+            "model_path": "./extra_models/83579_lite.glb"
+          },
+          {
+            "id": 40347,
+            "name": "德洛米 I",
+            "name_en": "Dromi I",
+            "name_zh": "德洛米 I",
+            "icon_name": "type_23061_64.png",
+            "model_path": "./extra_models/23061_lite.glb"
+          },
+          {
+            "id": 40571,
+            "name": "德洛米 II",
+            "name_en": "Dromi II",
+            "name_zh": "德洛米 II",
+            "icon_name": "type_40553_64.png",
+            "model_path": "./extra_models/23061_lite.glb"
+          },
+          {
+            "id": 83593,
+            "name": "联邦海军塞壬",
+            "name_en": "Federation Navy Siren",
+            "name_zh": "联邦海军塞壬",
+            "icon_name": "type_83583_64.png",
+            "model_path": "./extra_models/83583_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 4778,
+        "name": "建筑后勤铁骑舰载机",
+        "icon_name": "type_47134_64.png",
+        "types": [
+          {
+            "id": 47131,
+            "name": "屹立修道士 I",
+            "name_en": "Standup Cenobite I",
+            "name_zh": "屹立修道士 I",
+            "icon_name": "type_47035_64.png",
+            "model_path": "./extra_models/23055_lite.glb"
+          },
+          {
+            "id": 47134,
+            "name": "屹立修道士 II",
+            "name_en": "Standup Cenobite II",
+            "name_zh": "屹立修道士 II",
+            "icon_name": "type_47134_64.png",
+            "model_path": "./extra_models/23055_lite.glb"
+          },
+          {
+            "id": 47132,
+            "name": "屹立圣甲虫 I",
+            "name_en": "Standup Scarab I",
+            "name_zh": "屹立圣甲虫 I",
+            "icon_name": "type_47132_64.png",
+            "model_path": "./extra_models/23057_lite.glb"
+          },
+          {
+            "id": 47135,
+            "name": "屹立圣甲虫 II",
+            "name_en": "Standup Scarab II",
+            "name_zh": "屹立圣甲虫 II",
+            "icon_name": "type_47135_64.png",
+            "model_path": "./extra_models/23057_lite.glb"
+          },
+          {
+            "id": 47037,
+            "name": "屹立塞壬 I",
+            "name_en": "Standup Siren I",
+            "name_zh": "屹立塞壬 I",
+            "icon_name": "type_47037_64.png",
+            "model_path": "./extra_models/23059_lite.glb"
+          },
+          {
+            "id": 47136,
+            "name": "屹立塞壬 II",
+            "name_en": "Standup Siren II",
+            "name_zh": "屹立塞壬 II",
+            "icon_name": "type_47136_64.png",
+            "model_path": "./extra_models/23059_lite.glb"
+          },
+          {
+            "id": 47133,
+            "name": "屹立德洛米 I",
+            "name_en": "Standup Dromi I",
+            "name_zh": "屹立德洛米 I",
+            "icon_name": "type_47036_64.png",
+            "model_path": "./extra_models/23061_lite.glb"
+          },
+          {
+            "id": 47137,
+            "name": "屹立德洛米 II",
+            "name_en": "Standup Dromi II",
+            "name_zh": "屹立德洛米 II",
+            "icon_name": "type_47137_64.png",
+            "model_path": "./extra_models/23061_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 4777,
+        "name": "建筑轻型铁骑舰载机",
+        "icon_name": "type_47134_64.png",
+        "types": [
+          {
+            "id": 47140,
+            "name": "屹立因赫吉 I",
+            "name_en": "Standup Einherji I",
+            "name_zh": "屹立因赫吉 I",
+            "icon_name": "type_47036_64.png",
+            "model_path": "./extra_models/23061_lite.glb"
+          },
+          {
+            "id": 47144,
+            "name": "屹立因赫吉 II",
+            "name_en": "Standup Einherji II",
+            "name_zh": "屹立因赫吉 II",
+            "icon_name": "type_47137_64.png",
+            "model_path": "./extra_models/23061_lite.glb"
+          },
+          {
+            "id": 47035,
+            "name": "屹立圣殿骑士 I",
+            "name_en": "Standup Templar I",
+            "name_zh": "屹立圣殿骑士 I",
+            "icon_name": "type_47035_64.png",
+            "model_path": "./extra_models/23055_lite.glb"
+          },
+          {
+            "id": 47141,
+            "name": "屹立圣殿骑士 II",
+            "name_en": "Standup Templar II",
+            "name_zh": "屹立圣殿骑士 II",
+            "icon_name": "type_47134_64.png",
+            "model_path": "./extra_models/23055_lite.glb"
+          },
+          {
+            "id": 47139,
+            "name": "屹立掷矛手 I",
+            "name_en": "Standup Firbolg I",
+            "name_zh": "屹立掷矛手 I",
+            "icon_name": "type_47037_64.png",
+            "model_path": "./extra_models/23059_lite.glb"
+          },
+          {
+            "id": 47143,
+            "name": "屹立掷矛手 II",
+            "name_en": "Standup Firbolg II",
+            "name_zh": "屹立掷矛手 II",
+            "icon_name": "type_47136_64.png",
+            "model_path": "./extra_models/23059_lite.glb"
+          },
+          {
+            "id": 47036,
+            "name": "屹立格拉墨 I",
+            "name_en": "Standup Gram I",
+            "name_zh": "屹立格拉墨 I",
+            "icon_name": "type_47036_64.png",
+            "model_path": "./extra_models/23061_lite.glb"
+          },
+          {
+            "id": 47151,
+            "name": "屹立格拉墨 II",
+            "name_en": "Standup Gram II",
+            "name_zh": "屹立格拉墨 II",
+            "icon_name": "type_47137_64.png",
+            "model_path": "./extra_models/23061_lite.glb"
+          },
+          {
+            "id": 47147,
+            "name": "屹立萨梯 I",
+            "name_en": "Standup Satyr I",
+            "name_zh": "屹立萨梯 I",
+            "icon_name": "type_47037_64.png",
+            "model_path": "./extra_models/23059_lite.glb"
+          },
+          {
+            "id": 47150,
+            "name": "屹立萨梯 II",
+            "name_en": "Standup Satyr II",
+            "name_zh": "屹立萨梯 II",
+            "icon_name": "type_47136_64.png",
+            "model_path": "./extra_models/23059_lite.glb"
+          },
+          {
+            "id": 47146,
+            "name": "屹立蚱蜢 I",
+            "name_en": "Standup Locust I",
+            "name_zh": "屹立蚱蜢 I",
+            "icon_name": "type_47132_64.png",
+            "model_path": "./extra_models/23057_lite.glb"
+          },
+          {
+            "id": 47149,
+            "name": "屹立蚱蜢 II",
+            "name_en": "Standup Locust II",
+            "name_zh": "屹立蚱蜢 II",
+            "icon_name": "type_47135_64.png",
+            "model_path": "./extra_models/23057_lite.glb"
+          },
+          {
+            "id": 47138,
+            "name": "屹立蜻蜓 I",
+            "name_en": "Standup Dragonfly I",
+            "name_zh": "屹立蜻蜓 I",
+            "icon_name": "type_47132_64.png",
+            "model_path": "./extra_models/23057_lite.glb"
+          },
+          {
+            "id": 47142,
+            "name": "屹立蜻蜓 II",
+            "name_en": "Standup Dragonfly II",
+            "name_zh": "屹立蜻蜓 II",
+            "icon_name": "type_47135_64.png",
+            "model_path": "./extra_models/23057_lite.glb"
+          },
+          {
+            "id": 47145,
+            "name": "屹立骑士 I",
+            "name_en": "Standup Equite I",
+            "name_zh": "屹立骑士 I",
+            "icon_name": "type_47035_64.png",
+            "model_path": "./extra_models/23055_lite.glb"
+          },
+          {
+            "id": 47148,
+            "name": "屹立骑士 II",
+            "name_en": "Standup Equite II",
+            "name_zh": "屹立骑士 II",
+            "icon_name": "type_47134_64.png",
+            "model_path": "./extra_models/23055_lite.glb"
+          }
+        ]
+      },
+      {
         "id": 4779,
         "name": "建筑重型铁骑舰载机",
         "icon_name": "type_47123_64.png",
         "types": [
+          {
+            "id": 47126,
+            "name": "屹立安泰 I",
+            "name_en": "Standup Antaeus I",
+            "name_zh": "屹立安泰 I",
+            "icon_name": "type_47117_64.png",
+            "model_path": "./extra_models/32325_lite.glb"
+          },
+          {
+            "id": 47129,
+            "name": "屹立安泰 II",
+            "name_en": "Standup Antaeus II",
+            "name_zh": "屹立安泰 II",
+            "icon_name": "type_47121_64.png",
+            "model_path": "./extra_models/32325_lite.glb"
+          },
+          {
+            "id": 47118,
+            "name": "屹立斩裂剑 I",
+            "name_en": "Standup Tyrfing I",
+            "name_zh": "屹立斩裂剑 I",
+            "icon_name": "type_47039_64.png",
+            "model_path": "./extra_models/32342_lite.glb"
+          },
+          {
+            "id": 47122,
+            "name": "屹立斩裂剑 II",
+            "name_en": "Standup Tyrfing II",
+            "name_zh": "屹立斩裂剑 II",
+            "icon_name": "type_47122_64.png",
+            "model_path": "./extra_models/32342_lite.glb"
+          },
           {
             "id": 47123,
             "name": "屹立暗影舰载机",
             "name_en": "Standup Shadow",
             "name_zh": "屹立暗影舰载机",
             "icon_name": "type_47123_64.png",
-            "model_path": "./extra_models/47123_lite.glb"
+            "model_path": "./extra_models/2948_lite.glb"
+          },
+          {
+            "id": 47116,
+            "name": "屹立槌骨 I",
+            "name_en": "Standup Malleus I",
+            "name_zh": "屹立槌骨 I",
+            "icon_name": "type_47116_64.png",
+            "model_path": "./extra_models/32340_lite.glb"
+          },
+          {
+            "id": 47119,
+            "name": "屹立槌骨 II",
+            "name_en": "Standup Malleus II",
+            "name_zh": "屹立槌骨 II",
+            "icon_name": "type_47119_64.png",
+            "model_path": "./extra_models/32340_lite.glb"
+          },
+          {
+            "id": 47117,
+            "name": "屹立独眼巨人 I",
+            "name_en": "Standup Cyclops I",
+            "name_zh": "屹立独眼巨人 I",
+            "icon_name": "type_47117_64.png",
+            "model_path": "./extra_models/32325_lite.glb"
+          },
+          {
+            "id": 47121,
+            "name": "屹立独眼巨人 II",
+            "name_en": "Standup Cyclops II",
+            "name_zh": "屹立独眼巨人 II",
+            "icon_name": "type_47121_64.png",
+            "model_path": "./extra_models/32325_lite.glb"
+          },
+          {
+            "id": 47125,
+            "name": "屹立白蚁 I",
+            "name_en": "Standup Termite I",
+            "name_zh": "屹立白蚁 I",
+            "icon_name": "type_47038_64.png",
+            "model_path": "./extra_models/32344_lite.glb"
+          },
+          {
+            "id": 47128,
+            "name": "屹立白蚁 II",
+            "name_en": "Standup Termite II",
+            "name_zh": "屹立白蚁 II",
+            "icon_name": "type_47120_64.png",
+            "model_path": "./extra_models/32344_lite.glb"
+          },
+          {
+            "id": 47038,
+            "name": "屹立螳螂 I",
+            "name_en": "Standup Mantis I",
+            "name_zh": "屹立螳螂 I",
+            "icon_name": "type_47038_64.png",
+            "model_path": "./extra_models/32344_lite.glb"
+          },
+          {
+            "id": 47120,
+            "name": "屹立螳螂 II",
+            "name_en": "Standup Mantis II",
+            "name_zh": "屹立螳螂 II",
+            "icon_name": "type_47120_64.png",
+            "model_path": "./extra_models/32344_lite.glb"
+          },
+          {
+            "id": 47039,
+            "name": "屹立长枪 I",
+            "name_en": "Standup Gungnir I",
+            "name_zh": "屹立长枪 I",
+            "icon_name": "type_47039_64.png",
+            "model_path": "./extra_models/32342_lite.glb"
+          },
+          {
+            "id": 47130,
+            "name": "屹立长枪 II",
+            "name_en": "Standup Gungnir II",
+            "name_zh": "屹立长枪 II",
+            "icon_name": "type_47122_64.png",
+            "model_path": "./extra_models/32342_lite.glb"
+          },
+          {
+            "id": 47124,
+            "name": "屹立阿米特 I",
+            "name_en": "Standup Ametat I",
+            "name_zh": "屹立阿米特 I",
+            "icon_name": "type_47116_64.png",
+            "model_path": "./extra_models/32340_lite.glb"
+          },
+          {
+            "id": 47127,
+            "name": "屹立阿米特 II",
+            "name_en": "Standup Ametat II",
+            "name_zh": "屹立阿米特 II",
+            "icon_name": "type_47119_64.png",
+            "model_path": "./extra_models/32340_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1652,
+        "name": "轻型铁骑舰载机",
+        "icon_name": "type_23055_64.png",
+        "types": [
+          {
+            "id": 83584,
+            "name": "共和舰队因赫吉舰载机",
+            "name_en": "Republic Fleet Einherji",
+            "name_zh": "共和舰队因赫吉舰载机",
+            "icon_name": "type_83584_64.png",
+            "model_path": "./extra_models/83584_lite.glb"
+          },
+          {
+            "id": 83589,
+            "name": "共和舰队格拉墨",
+            "name_en": "Republic Fleet Gram",
+            "name_zh": "共和舰队格拉墨",
+            "icon_name": "type_83584_64.png",
+            "model_path": "./extra_models/83584_lite.glb"
+          },
+          {
+            "id": 83586,
+            "name": "加达里海军蚱蜢",
+            "name_en": "Caldari Navy Locust",
+            "name_zh": "加达里海军蚱蜢",
+            "icon_name": "type_83582_64.png",
+            "model_path": "./extra_models/83582_lite.glb"
+          },
+          {
+            "id": 23061,
+            "name": "因赫吉 I",
+            "name_en": "Einherji I",
+            "name_zh": "因赫吉 I",
+            "icon_name": "type_23061_64.png",
+            "model_path": "./extra_models/23061_lite.glb"
+          },
+          {
+            "id": 40559,
+            "name": "因赫吉 II",
+            "name_en": "Einherji II",
+            "name_zh": "因赫吉 II",
+            "icon_name": "type_40553_64.png",
+            "model_path": "./extra_models/23061_lite.glb"
+          },
+          {
+            "id": 23055,
+            "name": "圣殿骑士 I",
+            "name_en": "Templar I",
+            "name_zh": "圣殿骑士 I",
+            "icon_name": "type_23055_64.png",
+            "model_path": "./extra_models/23055_lite.glb"
+          },
+          {
+            "id": 40556,
+            "name": "圣殿骑士 II",
+            "name_en": "Templar II",
+            "name_zh": "圣殿骑士 II",
+            "icon_name": "type_40552_64.png",
+            "model_path": "./extra_models/23055_lite.glb"
+          },
+          {
+            "id": 83579,
+            "name": "圣殿骑士级帝国海军",
+            "name_en": "Imperial Navy Templar",
+            "name_zh": "圣殿骑士级帝国海军",
+            "icon_name": "type_83579_64.png",
+            "model_path": "./extra_models/83579_lite.glb"
+          },
+          {
+            "id": 83585,
+            "name": "帝国海军骑士",
+            "name_en": "Imperial Navy Equite",
+            "name_zh": "帝国海军骑士",
+            "icon_name": "type_83579_64.png",
+            "model_path": "./extra_models/83579_lite.glb"
+          },
+          {
+            "id": 23059,
+            "name": "掷矛手 I",
+            "name_en": "Firbolg I",
+            "name_zh": "掷矛手 I",
+            "icon_name": "type_23059_64.png",
+            "model_path": "./extra_models/23059_lite.glb"
+          },
+          {
+            "id": 40558,
+            "name": "掷矛手 II",
+            "name_en": "Firbolg II",
+            "name_zh": "掷矛手 II",
+            "icon_name": "type_40555_64.png",
+            "model_path": "./extra_models/23059_lite.glb"
+          },
+          {
+            "id": 40361,
+            "name": "格拉墨 I",
+            "name_en": "Gram I",
+            "name_zh": "格拉墨 I",
+            "icon_name": "type_23061_64.png",
+            "model_path": "./extra_models/23061_lite.glb"
+          },
+          {
+            "id": 40553,
+            "name": "格拉墨 II",
+            "name_en": "Gram II",
+            "name_zh": "格拉墨 II",
+            "icon_name": "type_40553_64.png",
+            "model_path": "./extra_models/23061_lite.glb"
+          },
+          {
+            "id": 83583,
+            "name": "联邦海军掷矛手舰载机",
+            "name_en": "Federation Navy Firbolg",
+            "name_zh": "联邦海军掷矛手舰载机",
+            "icon_name": "type_83583_64.png",
+            "model_path": "./extra_models/83583_lite.glb"
+          },
+          {
+            "id": 83587,
+            "name": "联邦海军萨梯",
+            "name_en": "Federation Navy Satyr",
+            "name_zh": "联邦海军萨梯",
+            "icon_name": "type_83583_64.png",
+            "model_path": "./extra_models/83583_lite.glb"
+          },
+          {
+            "id": 40360,
+            "name": "萨梯 I",
+            "name_en": "Satyr I",
+            "name_zh": "萨梯 I",
+            "icon_name": "type_23059_64.png",
+            "model_path": "./extra_models/23059_lite.glb"
+          },
+          {
+            "id": 40555,
+            "name": "萨梯 II",
+            "name_en": "Satyr II",
+            "name_zh": "萨梯 II",
+            "icon_name": "type_40555_64.png",
+            "model_path": "./extra_models/23059_lite.glb"
+          },
+          {
+            "id": 40359,
+            "name": "蚱蜢 I",
+            "name_en": "Locust I",
+            "name_zh": "蚱蜢 I",
+            "icon_name": "type_23057_64.png",
+            "model_path": "./extra_models/23057_lite.glb"
+          },
+          {
+            "id": 40554,
+            "name": "蚱蜢 II",
+            "name_en": "Locust II",
+            "name_zh": "蚱蜢 II",
+            "icon_name": "type_40554_64.png",
+            "model_path": "./extra_models/23057_lite.glb"
+          },
+          {
+            "id": 23057,
+            "name": "蜻蜓 I",
+            "name_en": "Dragonfly I",
+            "name_zh": "蜻蜓 I",
+            "icon_name": "type_23057_64.png",
+            "model_path": "./extra_models/23057_lite.glb"
+          },
+          {
+            "id": 40557,
+            "name": "蜻蜓 II",
+            "name_en": "Dragonfly II",
+            "name_zh": "蜻蜓 II",
+            "icon_name": "type_40554_64.png",
+            "model_path": "./extra_models/23057_lite.glb"
+          },
+          {
+            "id": 83582,
+            "name": "蜻蜓级加达里海军",
+            "name_en": "Caldari Navy Dragonfly",
+            "name_zh": "蜻蜓级加达里海军",
+            "icon_name": "type_83582_64.png",
+            "model_path": "./extra_models/83582_lite.glb"
+          },
+          {
+            "id": 40358,
+            "name": "骑士 I",
+            "name_en": "Equite I",
+            "name_zh": "骑士 I",
+            "icon_name": "type_23055_64.png",
+            "model_path": "./extra_models/23055_lite.glb"
+          },
+          {
+            "id": 40552,
+            "name": "骑士 II",
+            "name_en": "Equite II",
+            "name_zh": "骑士 II",
+            "icon_name": "type_40552_64.png",
+            "model_path": "./extra_models/23055_lite.glb"
           }
         ]
       },
@@ -5751,12 +6603,140 @@
         "icon_name": "type_32325_64.png",
         "types": [
           {
+            "id": 40364,
+            "name": "安泰 I",
+            "name_en": "Antaeus I",
+            "name_zh": "安泰 I",
+            "icon_name": "type_32325_64.png",
+            "model_path": "./extra_models/32325_lite.glb"
+          },
+          {
+            "id": 40562,
+            "name": "安泰 II",
+            "name_en": "Antaeus II",
+            "name_zh": "安泰 II",
+            "icon_name": "type_40562_64.png",
+            "model_path": "./extra_models/32325_lite.glb"
+          },
+          {
+            "id": 32342,
+            "name": "斩裂剑 I",
+            "name_en": "Tyrfing I",
+            "name_zh": "斩裂剑 I",
+            "icon_name": "type_32342_64.png",
+            "model_path": "./extra_models/32342_lite.glb"
+          },
+          {
+            "id": 40565,
+            "name": "斩裂剑 II",
+            "name_en": "Tyrfing II",
+            "name_zh": "斩裂剑 II",
+            "icon_name": "type_40564_64.png",
+            "model_path": "./extra_models/32342_lite.glb"
+          },
+          {
             "id": 2948,
             "name": "暗影",
             "name_en": "Shadow",
             "name_zh": "暗影",
             "icon_name": "type_2948_64.png",
             "model_path": "./extra_models/2948_lite.glb"
+          },
+          {
+            "id": 32340,
+            "name": "槌骨 I",
+            "name_en": "Malleus I",
+            "name_zh": "槌骨 I",
+            "icon_name": "type_32340_64.png",
+            "model_path": "./extra_models/32340_lite.glb"
+          },
+          {
+            "id": 40561,
+            "name": "槌骨 II",
+            "name_en": "Malleus II",
+            "name_zh": "槌骨 II",
+            "icon_name": "type_40560_64.png",
+            "model_path": "./extra_models/32340_lite.glb"
+          },
+          {
+            "id": 32325,
+            "name": "独眼巨人 I",
+            "name_en": "Cyclops I",
+            "name_zh": "独眼巨人 I",
+            "icon_name": "type_32325_64.png",
+            "model_path": "./extra_models/32325_lite.glb"
+          },
+          {
+            "id": 40563,
+            "name": "独眼巨人 II",
+            "name_en": "Cyclops II",
+            "name_zh": "独眼巨人 II",
+            "icon_name": "type_40562_64.png",
+            "model_path": "./extra_models/32325_lite.glb"
+          },
+          {
+            "id": 40363,
+            "name": "白蚁 I",
+            "name_en": "Termite I",
+            "name_zh": "白蚁 I",
+            "icon_name": "type_32344_64.png",
+            "model_path": "./extra_models/32344_lite.glb"
+          },
+          {
+            "id": 40566,
+            "name": "白蚁 II",
+            "name_en": "Termite II",
+            "name_zh": "白蚁 II",
+            "icon_name": "type_40566_64.png",
+            "model_path": "./extra_models/32344_lite.glb"
+          },
+          {
+            "id": 32344,
+            "name": "螳螂 I",
+            "name_en": "Mantis I",
+            "name_zh": "螳螂 I",
+            "icon_name": "type_32344_64.png",
+            "model_path": "./extra_models/32344_lite.glb"
+          },
+          {
+            "id": 40567,
+            "name": "螳螂 II",
+            "name_en": "Mantis II",
+            "name_zh": "螳螂 II",
+            "icon_name": "type_40566_64.png",
+            "model_path": "./extra_models/32344_lite.glb"
+          },
+          {
+            "id": 40365,
+            "name": "长枪 I",
+            "name_en": "Gungnir I",
+            "name_zh": "长枪 I",
+            "icon_name": "type_32342_64.png",
+            "model_path": "./extra_models/32342_lite.glb"
+          },
+          {
+            "id": 40564,
+            "name": "长枪 II",
+            "name_en": "Gungnir II",
+            "name_zh": "长枪 II",
+            "icon_name": "type_40564_64.png",
+            "model_path": "./extra_models/32342_lite.glb"
+          },
+          {
+            "id": 40362,
+            "name": "阿米特 I",
+            "name_en": "Ametat I",
+            "name_zh": "阿米特 I",
+            "icon_name": "type_32340_64.png",
+            "model_path": "./extra_models/32340_lite.glb"
+          },
+          {
+            "id": 40560,
+            "name": "阿米特 II",
+            "name_en": "Ametat II",
+            "name_zh": "阿米特 II",
+            "icon_name": "type_40560_64.png",
+            "model_path": "./extra_models/32340_lite.glb"
           }
         ]
       }
