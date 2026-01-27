@@ -556,7 +556,7 @@ function getTypeIconUrl(iconName, typeId) {
         return `https://images.evetech.net/types/${typeId}/icon`;
     }
     // 如果既没有图标名称也没有 typeId，返回默认
-    return './statics/icons/type_default.png';
+    return './type_default.png';
 }
 
 function createIconWithSpinner(iconClass, iconSrc, iconAlt, hasModel = true) {

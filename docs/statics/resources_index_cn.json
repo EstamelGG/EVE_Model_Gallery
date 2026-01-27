@@ -1878,6 +1878,2020 @@
     ]
   },
   {
+    "id": 23,
+    "name": "母星",
+    "icon_name": "category_23.png",
+    "groups": [
+      {
+        "id": 1212,
+        "name": "个人机库",
+        "icon_name": "type_12240_64.png",
+        "types": [
+          {
+            "id": 33149,
+            "name": "个人机库阵列",
+            "name_en": "Personal Hangar Array",
+            "name_zh": "个人机库阵列",
+            "icon_name": "type_12240_64.png",
+            "model_path": "./extra_models/12240_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 441,
+        "name": "停滞网状光束发射台",
+        "icon_name": "type_17174_64.png",
+        "types": [
+          {
+            "id": 27573,
+            "name": "主天使停滞缠绕光束发射台",
+            "name_en": "Domination Stasis Webification Battery",
+            "name_zh": "主天使停滞缠绕光束发射台",
+            "icon_name": "type_27570_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 17178,
+            "name": "停滞缠绕光束发射台",
+            "name_en": "Stasis Webification Battery",
+            "name_zh": "停滞缠绕光束发射台",
+            "icon_name": "type_17174_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 27570,
+            "name": "天使停滞缠绕光束发射台",
+            "name_en": "Angel Stasis Webification Battery",
+            "name_zh": "天使停滞缠绕光束发射台",
+            "icon_name": "type_27570_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 404,
+        "name": "储藏库",
+        "icon_name": "type_14343_64.png",
+        "types": [
+          {
+            "id": 14343,
+            "name": "储藏库",
+            "name_en": "Silo",
+            "name_zh": "储藏库",
+            "icon_name": "type_14343_64.png",
+            "model_path": "./extra_models/14343_lite.glb"
+          },
+          {
+            "id": 25271,
+            "name": "催化剂储藏库",
+            "name_en": "Catalyst Silo",
+            "name_zh": "催化剂储藏库",
+            "icon_name": "type_14343_64.png",
+            "model_path": "./extra_models/14343_lite.glb"
+          },
+          {
+            "id": 28316,
+            "name": "劳工集中营",
+            "name_en": "Slave Pen",
+            "name_zh": "劳工集中营",
+            "icon_name": "type_14343_64.png",
+            "model_path": "./extra_models/14343_lite.glb"
+          },
+          {
+            "id": 28884,
+            "name": "扩充型储藏库",
+            "name_en": "Expanded Silo",
+            "name_zh": "扩充型储藏库",
+            "icon_name": "type_14343_64.png",
+            "model_path": "./extra_models/14343_lite.glb"
+          },
+          {
+            "id": 28314,
+            "name": "接待中心",
+            "name_en": "Reception Center",
+            "name_zh": "接待中心",
+            "icon_name": "type_14343_64.png",
+            "model_path": "./extra_models/14343_lite.glb"
+          },
+          {
+            "id": 25280,
+            "name": "有害化学制剂储藏库",
+            "name_en": "Hazardous Chemical Silo",
+            "name_zh": "有害化学制剂储藏库",
+            "icon_name": "type_14343_64.png",
+            "model_path": "./extra_models/14343_lite.glb"
+          },
+          {
+            "id": 30655,
+            "name": "混合聚合物储藏库",
+            "name_en": "Hybrid Polymer Silo",
+            "name_zh": "混合聚合物储藏库",
+            "icon_name": "type_14343_64.png",
+            "model_path": "./extra_models/14343_lite.glb"
+          },
+          {
+            "id": 25270,
+            "name": "生化储藏库",
+            "name_en": "Biochemical Silo",
+            "name_zh": "生化储藏库",
+            "icon_name": "type_14343_64.png",
+            "model_path": "./extra_models/14343_lite.glb"
+          },
+          {
+            "id": 28317,
+            "name": "自由医院",
+            "name_en": "Freedom Hospital",
+            "name_zh": "自由医院",
+            "icon_name": "type_14343_64.png",
+            "model_path": "./extra_models/14343_lite.glb"
+          },
+          {
+            "id": 17764,
+            "name": "超高速储藏库",
+            "name_en": "Ultra Fast Silo",
+            "name_zh": "超高速储藏库",
+            "icon_name": "type_12240_64.png",
+            "model_path": "./extra_models/12240_lite.glb"
+          },
+          {
+            "id": 17982,
+            "name": "连接装置阵列",
+            "name_en": "Coupling Array",
+            "name_zh": "连接装置阵列",
+            "icon_name": "type_14343_64.png",
+            "model_path": "./extra_models/14343_lite.glb"
+          },
+          {
+            "id": 25821,
+            "name": "通用储藏装置",
+            "name_en": "General Storage",
+            "name_zh": "通用储藏装置",
+            "icon_name": "type_14343_64.png",
+            "model_path": "./extra_models/14343_lite.glb"
+          },
+          {
+            "id": 28315,
+            "name": "集中营",
+            "name_en": "Holding Pen",
+            "name_zh": "集中营",
+            "icon_name": "type_14343_64.png",
+            "model_path": "./extra_models/14343_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 445,
+        "name": "力场阵列",
+        "icon_name": "type_16222_64.png",
+        "types": [
+          {
+            "id": 17188,
+            "name": "力场阵列",
+            "name_en": "Force Field Array",
+            "name_zh": "力场阵列",
+            "icon_name": "type_16222_64.png",
+            "model_path": "./extra_models/16222_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 416,
+        "name": "卫星开采设备",
+        "icon_name": "type_3522_64.png",
+        "types": [
+          {
+            "id": 16221,
+            "name": "卫星开采阵列",
+            "name_en": "Moon Harvesting Array",
+            "name_zh": "卫星开采阵列",
+            "icon_name": "type_3522_64.png",
+            "model_path": "./extra_models/16221_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 1282,
+        "name": "压缩阵列",
+        "icon_name": "type_12238_64.png",
+        "types": [
+          {
+            "id": 12239,
+            "name": "压缩阵列",
+            "name_en": "Compression Array",
+            "name_zh": "压缩阵列",
+            "icon_name": "type_12238_64.png",
+            "model_path": "./extra_models/12238_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 480,
+        "name": "反侦测发射天线阵列",
+        "icon_name": "type_17174_64.png",
+        "types": [
+          {
+            "id": 18586,
+            "name": "BH 结构固定装置阵列",
+            "name_en": "BH Structure Anchoring Array",
+            "name_zh": "BH 结构固定装置阵列",
+            "icon_name": "type_17174_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 17899,
+            "name": "反侦测发射天线阵列",
+            "name_en": "Stealth Emitter Array",
+            "name_zh": "反侦测发射天线阵列",
+            "icon_name": "type_17174_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 413,
+        "name": "实验室",
+        "icon_name": "type_16216_64.png",
+        "types": [
+          {
+            "id": 32245,
+            "name": "三岛集团研究实验室",
+            "name_en": "Hyasyoda Research Laboratory",
+            "name_zh": "三岛集团研究实验室",
+            "icon_name": "type_16216_64.png",
+            "model_path": "./extra_models/16216_lite.glb"
+          },
+          {
+            "id": 16216,
+            "name": "研究实验室",
+            "name_en": "Research Laboratory",
+            "name_zh": "研究实验室",
+            "icon_name": "type_16216_64.png",
+            "model_path": "./extra_models/16216_lite.glb"
+          },
+          {
+            "id": 28351,
+            "name": "设计实验室",
+            "name_en": "Design Laboratory",
+            "name_zh": "设计实验室",
+            "icon_name": "type_16216_64.png",
+            "model_path": "./extra_models/16216_lite.glb"
+          },
+          {
+            "id": 24567,
+            "name": "逆向工程实验室",
+            "name_en": "Experimental Laboratory",
+            "name_zh": "逆向工程实验室",
+            "icon_name": "type_16216_64.png",
+            "model_path": "./extra_models/16216_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 440,
+        "name": "感应抑阻波发射台",
+        "icon_name": "type_17174_64.png",
+        "types": [
+          {
+            "id": 27778,
+            "name": "天蛇感应抑阻波发射台",
+            "name_en": "Serpentis Sensor Dampening Battery",
+            "name_zh": "天蛇感应抑阻波发射台",
+            "icon_name": "type_27570_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 17180,
+            "name": "感应抑阻波发射台",
+            "name_en": "Sensor Dampening Battery",
+            "name_zh": "感应抑阻波发射台",
+            "icon_name": "type_17174_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 27779,
+            "name": "暗影感应抑阻波发射台",
+            "name_en": "Shadow Sensor Dampening Battery",
+            "name_zh": "暗影感应抑阻波发射台",
+            "icon_name": "type_27570_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 709,
+        "name": "扫描器阵列",
+        "icon_name": "type_17181_64.png",
+        "types": [
+          {
+            "id": 27675,
+            "name": "星系扫描阵列",
+            "name_en": "System Scanning Array",
+            "name_zh": "星系扫描阵列",
+            "icon_name": "type_17181_64.png",
+            "model_path": "./extra_models/17181_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 444,
+        "name": "护盾强化阵列",
+        "icon_name": "type_3620_64.png",
+        "types": [
+          {
+            "id": 17187,
+            "name": "光子散射阵列",
+            "name_en": "Photon Scattering Array",
+            "name_zh": "光子散射阵列",
+            "icon_name": "type_3620_64.png",
+            "model_path": "./extra_models/16223_lite.glb"
+          },
+          {
+            "id": 17184,
+            "name": "弹道偏阻阵列",
+            "name_en": "Ballistic Deflection Array",
+            "name_zh": "弹道偏阻阵列",
+            "icon_name": "type_3620_64.png",
+            "model_path": "./extra_models/16223_lite.glb"
+          },
+          {
+            "id": 17186,
+            "name": "热消散阵列",
+            "name_en": "Heat Dissipation Array",
+            "name_zh": "热消散阵列",
+            "icon_name": "type_3620_64.png",
+            "model_path": "./extra_models/16223_lite.glb"
+          },
+          {
+            "id": 17185,
+            "name": "爆炸伤害弱化阵列",
+            "name_en": "Explosion Dampening Array",
+            "name_zh": "爆炸伤害弱化阵列",
+            "icon_name": "type_3620_64.png",
+            "model_path": "./extra_models/16223_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 365,
+        "name": "控制塔",
+        "icon_name": "type_12235_64.png",
+        "types": [
+          {
+            "id": 16286,
+            "name": "QA测试控制塔",
+            "name_en": "QA Control Tower",
+            "name_zh": "QA测试控制塔",
+            "icon_name": "type_12235_64.png",
+            "model_path": "./extra_models/12235_lite.glb"
+          },
+          {
+            "id": 4361,
+            "name": "QA测试燃料控制塔",
+            "name_en": "QA Fuel Control Tower",
+            "name_zh": "QA测试燃料控制塔",
+            "icon_name": "type_3495_64.png",
+            "model_path": "./extra_models/4361_lite.glb"
+          },
+          {
+            "id": 27609,
+            "name": "主天使中型控制塔",
+            "name_en": "Domination Control Tower Medium",
+            "name_zh": "主天使中型控制塔",
+            "icon_name": "type_27539_64.png",
+            "model_path": "./extra_models/27539_lite.glb"
+          },
+          {
+            "id": 27612,
+            "name": "主天使小型控制塔",
+            "name_en": "Domination Control Tower Small",
+            "name_zh": "主天使小型控制塔",
+            "icon_name": "type_27539_64.png",
+            "model_path": "./extra_models/27539_lite.glb"
+          },
+          {
+            "id": 27540,
+            "name": "主天使控制塔",
+            "name_en": "Domination Control Tower",
+            "name_zh": "主天使控制塔",
+            "icon_name": "type_27539_64.png",
+            "model_path": "./extra_models/27539_lite.glb"
+          },
+          {
+            "id": 20061,
+            "name": "加达里中型控制塔",
+            "name_en": "Caldari Control Tower Medium",
+            "name_zh": "加达里中型控制塔",
+            "icon_name": "type_3495_64.png",
+            "model_path": "./extra_models/4361_lite.glb"
+          },
+          {
+            "id": 20062,
+            "name": "加达里小型控制塔",
+            "name_en": "Caldari Control Tower Small",
+            "name_zh": "加达里小型控制塔",
+            "icon_name": "type_3495_64.png",
+            "model_path": "./extra_models/4361_lite.glb"
+          },
+          {
+            "id": 16213,
+            "name": "加达里控制塔",
+            "name_en": "Caldari Control Tower",
+            "name_zh": "加达里控制塔",
+            "icon_name": "type_3495_64.png",
+            "model_path": "./extra_models/4361_lite.glb"
+          },
+          {
+            "id": 27595,
+            "name": "古斯塔斯中型控制塔",
+            "name_en": "Guristas Control Tower Medium",
+            "name_zh": "古斯塔斯中型控制塔",
+            "icon_name": "type_27533_64.png",
+            "model_path": "./extra_models/27533_lite.glb"
+          },
+          {
+            "id": 27598,
+            "name": "古斯塔斯小型控制塔",
+            "name_en": "Guristas Control Tower Small",
+            "name_zh": "古斯塔斯小型控制塔",
+            "icon_name": "type_27533_64.png",
+            "model_path": "./extra_models/27533_lite.glb"
+          },
+          {
+            "id": 27533,
+            "name": "古斯塔斯控制塔",
+            "name_en": "Guristas Control Tower",
+            "name_zh": "古斯塔斯控制塔",
+            "icon_name": "type_27533_64.png",
+            "model_path": "./extra_models/27533_lite.glb"
+          },
+          {
+            "id": 27607,
+            "name": "天使中型控制塔",
+            "name_en": "Angel Control Tower Medium",
+            "name_zh": "天使中型控制塔",
+            "icon_name": "type_27539_64.png",
+            "model_path": "./extra_models/27539_lite.glb"
+          },
+          {
+            "id": 27610,
+            "name": "天使小型控制塔",
+            "name_en": "Angel Control Tower Small",
+            "name_zh": "天使小型控制塔",
+            "icon_name": "type_27539_64.png",
+            "model_path": "./extra_models/27539_lite.glb"
+          },
+          {
+            "id": 27539,
+            "name": "天使控制塔",
+            "name_en": "Angel Control Tower",
+            "name_zh": "天使控制塔",
+            "icon_name": "type_27539_64.png",
+            "model_path": "./extra_models/27539_lite.glb"
+          },
+          {
+            "id": 27601,
+            "name": "天蛇中型控制塔",
+            "name_en": "Serpentis Control Tower Medium",
+            "name_zh": "天蛇中型控制塔",
+            "icon_name": "type_27536_64.png",
+            "model_path": "./extra_models/27536_lite.glb"
+          },
+          {
+            "id": 27604,
+            "name": "天蛇小型控制塔",
+            "name_en": "Serpentis Control Tower Small",
+            "name_zh": "天蛇小型控制塔",
+            "icon_name": "type_27536_64.png",
+            "model_path": "./extra_models/27536_lite.glb"
+          },
+          {
+            "id": 27536,
+            "name": "天蛇控制塔",
+            "name_en": "Serpentis Control Tower",
+            "name_zh": "天蛇控制塔",
+            "icon_name": "type_27536_64.png",
+            "model_path": "./extra_models/27536_lite.glb"
+          },
+          {
+            "id": 27597,
+            "name": "恐惧古斯塔斯中型控制塔",
+            "name_en": "Dread Guristas Control Tower Medium",
+            "name_zh": "恐惧古斯塔斯中型控制塔",
+            "icon_name": "type_27533_64.png",
+            "model_path": "./extra_models/27533_lite.glb"
+          },
+          {
+            "id": 27600,
+            "name": "恐惧古斯塔斯小型控制塔",
+            "name_en": "Dread Guristas Control Tower Small",
+            "name_zh": "恐惧古斯塔斯小型控制塔",
+            "icon_name": "type_27533_64.png",
+            "model_path": "./extra_models/27533_lite.glb"
+          },
+          {
+            "id": 27535,
+            "name": "恐惧古斯塔斯控制塔",
+            "name_en": "Dread Guristas Control Tower",
+            "name_zh": "恐惧古斯塔斯控制塔",
+            "icon_name": "type_27533_64.png",
+            "model_path": "./extra_models/27533_lite.glb"
+          },
+          {
+            "id": 27603,
+            "name": "暗影中型控制塔",
+            "name_en": "Shadow Control Tower Medium",
+            "name_zh": "暗影中型控制塔",
+            "icon_name": "type_27536_64.png",
+            "model_path": "./extra_models/27536_lite.glb"
+          },
+          {
+            "id": 27606,
+            "name": "暗影小型控制塔",
+            "name_en": "Shadow Control Tower Small",
+            "name_zh": "暗影小型控制塔",
+            "icon_name": "type_27536_64.png",
+            "model_path": "./extra_models/27536_lite.glb"
+          },
+          {
+            "id": 27538,
+            "name": "暗影控制塔",
+            "name_en": "Shadow Control Tower",
+            "name_zh": "暗影控制塔",
+            "icon_name": "type_27536_64.png",
+            "model_path": "./extra_models/27536_lite.glb"
+          },
+          {
+            "id": 20063,
+            "name": "盖伦特中型控制塔",
+            "name_en": "Gallente Control Tower Medium",
+            "name_zh": "盖伦特中型控制塔",
+            "icon_name": "type_12236_64.png",
+            "model_path": "./extra_models/12236_lite.glb"
+          },
+          {
+            "id": 20064,
+            "name": "盖伦特小型控制塔",
+            "name_en": "Gallente Control Tower Small",
+            "name_zh": "盖伦特小型控制塔",
+            "icon_name": "type_12236_64.png",
+            "model_path": "./extra_models/12236_lite.glb"
+          },
+          {
+            "id": 12236,
+            "name": "盖伦特控制塔",
+            "name_en": "Gallente Control Tower",
+            "name_zh": "盖伦特控制塔",
+            "icon_name": "type_12236_64.png",
+            "model_path": "./extra_models/12236_lite.glb"
+          },
+          {
+            "id": 20065,
+            "name": "米玛塔尔中型控制塔",
+            "name_en": "Minmatar Control Tower Medium",
+            "name_zh": "米玛塔尔中型控制塔",
+            "icon_name": "type_16214_64.png",
+            "model_path": "./extra_models/16214_lite.glb"
+          },
+          {
+            "id": 20066,
+            "name": "米玛塔尔小型控制塔",
+            "name_en": "Minmatar Control Tower Small",
+            "name_zh": "米玛塔尔小型控制塔",
+            "icon_name": "type_16214_64.png",
+            "model_path": "./extra_models/16214_lite.glb"
+          },
+          {
+            "id": 16214,
+            "name": "米玛塔尔控制塔",
+            "name_en": "Minmatar Control Tower",
+            "name_zh": "米玛塔尔控制塔",
+            "icon_name": "type_16214_64.png",
+            "model_path": "./extra_models/16214_lite.glb"
+          },
+          {
+            "id": 20059,
+            "name": "艾玛中型控制塔",
+            "name_en": "Amarr Control Tower Medium",
+            "name_zh": "艾玛中型控制塔",
+            "icon_name": "type_12235_64.png",
+            "model_path": "./extra_models/12235_lite.glb"
+          },
+          {
+            "id": 20060,
+            "name": "艾玛小型控制塔",
+            "name_en": "Amarr Control Tower Small",
+            "name_zh": "艾玛小型控制塔",
+            "icon_name": "type_12235_64.png",
+            "model_path": "./extra_models/12235_lite.glb"
+          },
+          {
+            "id": 12235,
+            "name": "艾玛控制塔",
+            "name_en": "Amarr Control Tower",
+            "name_zh": "艾玛控制塔",
+            "icon_name": "type_12235_64.png",
+            "model_path": "./extra_models/12235_lite.glb"
+          },
+          {
+            "id": 27782,
+            "name": "萨沙中型控制塔",
+            "name_en": "Sansha Control Tower Medium",
+            "name_zh": "萨沙中型控制塔",
+            "icon_name": "type_27780_64.png",
+            "model_path": "./extra_models/27780_lite.glb"
+          },
+          {
+            "id": 27784,
+            "name": "萨沙小型控制塔",
+            "name_en": "Sansha Control Tower Small",
+            "name_zh": "萨沙小型控制塔",
+            "icon_name": "type_27780_64.png",
+            "model_path": "./extra_models/27780_lite.glb"
+          },
+          {
+            "id": 27780,
+            "name": "萨沙控制塔",
+            "name_en": "Sansha Control Tower",
+            "name_zh": "萨沙控制塔",
+            "icon_name": "type_27780_64.png",
+            "model_path": "./extra_models/27780_lite.glb"
+          },
+          {
+            "id": 27788,
+            "name": "萨沙爱国者中型控制塔",
+            "name_en": "True Sansha Control Tower Medium",
+            "name_zh": "萨沙爱国者中型控制塔",
+            "icon_name": "type_27780_64.png",
+            "model_path": "./extra_models/27780_lite.glb"
+          },
+          {
+            "id": 27790,
+            "name": "萨沙爱国者小型控制塔",
+            "name_en": "True Sansha Control Tower Small",
+            "name_zh": "萨沙爱国者小型控制塔",
+            "icon_name": "type_27780_64.png",
+            "model_path": "./extra_models/27780_lite.glb"
+          },
+          {
+            "id": 27786,
+            "name": "萨沙爱国者控制塔",
+            "name_en": "True Sansha Control Tower",
+            "name_zh": "萨沙爱国者控制塔",
+            "icon_name": "type_27780_64.png",
+            "model_path": "./extra_models/27780_lite.glb"
+          },
+          {
+            "id": 27589,
+            "name": "血袭者中型控制塔",
+            "name_en": "Blood Control Tower Medium",
+            "name_zh": "血袭者中型控制塔",
+            "icon_name": "type_27530_64.png",
+            "model_path": "./extra_models/27530_lite.glb"
+          },
+          {
+            "id": 27592,
+            "name": "血袭者小型控制塔",
+            "name_en": "Blood Control Tower Small",
+            "name_zh": "血袭者小型控制塔",
+            "icon_name": "type_27530_64.png",
+            "model_path": "./extra_models/27530_lite.glb"
+          },
+          {
+            "id": 27530,
+            "name": "血袭者控制塔",
+            "name_en": "Blood Control Tower",
+            "name_zh": "血袭者控制塔",
+            "icon_name": "type_27530_64.png",
+            "model_path": "./extra_models/27530_lite.glb"
+          },
+          {
+            "id": 27591,
+            "name": "黑暗血袭者中型控制塔",
+            "name_en": "Dark Blood Control Tower Medium",
+            "name_zh": "黑暗血袭者中型控制塔",
+            "icon_name": "type_27530_64.png",
+            "model_path": "./extra_models/27530_lite.glb"
+          },
+          {
+            "id": 27594,
+            "name": "黑暗血袭者小型控制塔",
+            "name_en": "Dark Blood Control Tower Small",
+            "name_zh": "黑暗血袭者小型控制塔",
+            "icon_name": "type_27530_64.png",
+            "model_path": "./extra_models/27530_lite.glb"
+          },
+          {
+            "id": 27532,
+            "name": "黑暗血袭者控制塔",
+            "name_en": "Dark Blood Control Tower",
+            "name_zh": "黑暗血袭者控制塔",
+            "icon_name": "type_27530_64.png",
+            "model_path": "./extra_models/27530_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 311,
+        "name": "提炼阵列",
+        "icon_name": "type_12238_64.png",
+        "types": [
+          {
+            "id": 12238,
+            "name": "提炼阵列",
+            "name_en": "Reprocessing Array",
+            "name_zh": "提炼阵列",
+            "icon_name": "type_12238_64.png",
+            "model_path": "./extra_models/12238_lite.glb"
+          },
+          {
+            "id": 19470,
+            "name": "高强度提炼阵列",
+            "name_en": "Intensive Reprocessing Array",
+            "name_zh": "高强度提炼阵列",
+            "icon_name": "type_12238_64.png",
+            "model_path": "./extra_models/12238_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 439,
+        "name": "电子战炮台",
+        "icon_name": "type_17174_64.png",
+        "types": [
+          {
+            "id": 27583,
+            "name": "古斯塔斯白噪发生器台站",
+            "name_en": "Guristas White Noise Generation Battery",
+            "name_zh": "古斯塔斯白噪发生器台站",
+            "icon_name": "type_27570_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 27577,
+            "name": "古斯塔斯相位倒置接收塔",
+            "name_en": "Guristas Phase Inversion Battery",
+            "name_zh": "古斯塔斯相位倒置接收塔",
+            "icon_name": "type_27570_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 27574,
+            "name": "古斯塔斯离子力场投射台",
+            "name_en": "Guristas Ion Field Projection Battery",
+            "name_zh": "古斯塔斯离子力场投射台",
+            "icon_name": "type_27570_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 27580,
+            "name": "古斯塔斯空间扰乱发射器",
+            "name_en": "Guristas Spatial Destabilization Battery",
+            "name_zh": "古斯塔斯空间扰乱发射器",
+            "icon_name": "type_27570_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 27585,
+            "name": "恐惧古斯塔斯白噪发生器台站",
+            "name_en": "Dread Guristas White Noise Generation Battery",
+            "name_zh": "恐惧古斯塔斯白噪发生器台站",
+            "icon_name": "type_27570_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 27579,
+            "name": "恐惧古斯塔斯相位倒置接收塔",
+            "name_en": "Dread Guristas Phase Inversion Battery",
+            "name_zh": "恐惧古斯塔斯相位倒置接收塔",
+            "icon_name": "type_27570_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 27576,
+            "name": "恐惧古斯塔斯离子力场投射台",
+            "name_en": "Dread Guristas Ion Field Projection Battery",
+            "name_zh": "恐惧古斯塔斯离子力场投射台",
+            "icon_name": "type_27570_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 27582,
+            "name": "恐惧古斯塔斯空间扰乱发射器",
+            "name_en": "Dread Guristas Spatial Destabilization Battery",
+            "name_zh": "恐惧古斯塔斯空间扰乱发射器",
+            "icon_name": "type_27570_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 17177,
+            "name": "白噪发生器台站",
+            "name_en": "White Noise Generation Battery",
+            "name_zh": "白噪发生器台站",
+            "icon_name": "type_17174_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 17175,
+            "name": "相位倒置接收塔",
+            "name_en": "Phase Inversion Battery",
+            "name_zh": "相位倒置接收塔",
+            "icon_name": "type_17174_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 17174,
+            "name": "离子力场投射台",
+            "name_en": "Ion Field Projection Battery",
+            "name_zh": "离子力场投射台",
+            "icon_name": "type_17174_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 17176,
+            "name": "空间扰乱发射器",
+            "name_en": "Spatial Destabilization Battery",
+            "name_zh": "空间扰乱发射器",
+            "icon_name": "type_17174_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 877,
+        "name": "目标标记发射台",
+        "icon_name": "type_17174_64.png",
+        "types": [
+          {
+            "id": 28191,
+            "name": "目标标记发射台",
+            "name_en": "Target Painting Battery",
+            "name_zh": "目标标记发射台",
+            "icon_name": "type_17174_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 438,
+        "name": "移动反应堆",
+        "icon_name": "type_16220_64.png",
+        "types": [
+          {
+            "id": 22634,
+            "name": "中型生化反应堆阵列",
+            "name_en": "Medium Biochemical Reactor Array",
+            "name_zh": "中型生化反应堆阵列",
+            "icon_name": "type_16220_64.png",
+            "model_path": "./extra_models/16220_lite.glb"
+          },
+          {
+            "id": 16869,
+            "name": "复杂反应堆阵列",
+            "name_en": "Complex Reactor Array",
+            "name_zh": "复杂反应堆阵列",
+            "icon_name": "type_16220_64.png",
+            "model_path": "./extra_models/16220_lite.glb"
+          },
+          {
+            "id": 28319,
+            "name": "崴砣柯注射中心",
+            "name_en": "Vitoc Injection Center",
+            "name_zh": "崴砣柯注射中心",
+            "icon_name": "type_16220_64.png",
+            "model_path": "./extra_models/16220_lite.glb"
+          },
+          {
+            "id": 24684,
+            "name": "生化反应堆阵列",
+            "name_en": "Biochemical Reactor Array",
+            "name_zh": "生化反应堆阵列",
+            "icon_name": "type_16220_64.png",
+            "model_path": "./extra_models/16220_lite.glb"
+          },
+          {
+            "id": 20176,
+            "name": "研究院",
+            "name_en": "Academy",
+            "name_zh": "研究院",
+            "icon_name": "type_16220_64.png",
+            "model_path": "./extra_models/16220_lite.glb"
+          },
+          {
+            "id": 20175,
+            "name": "简单反应堆阵列",
+            "name_en": "Simple Reactor Array",
+            "name_zh": "简单反应堆阵列",
+            "icon_name": "type_16220_64.png",
+            "model_path": "./extra_models/16220_lite.glb"
+          },
+          {
+            "id": 28318,
+            "name": "精神创伤诊疗设施",
+            "name_en": "Trauma Treatment Facility",
+            "name_zh": "精神创伤诊疗设施",
+            "icon_name": "type_16220_64.png",
+            "model_path": "./extra_models/16220_lite.glb"
+          },
+          {
+            "id": 30656,
+            "name": "聚合物反应堆阵列",
+            "name_en": "Polymer Reactor Array",
+            "name_zh": "聚合物反应堆阵列",
+            "icon_name": "type_16220_64.png",
+            "model_path": "./extra_models/16220_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 417,
+        "name": "移动导弹岗哨炮",
+        "icon_name": "type_16222_64.png",
+        "types": [
+          {
+            "id": 27638,
+            "name": "古斯塔斯巡航导弹发射台",
+            "name_en": "Guristas Cruise Missile Battery",
+            "name_zh": "古斯塔斯巡航导弹发射台",
+            "icon_name": "type_27560_64.png",
+            "model_path": "./extra_models/16222_lite.glb"
+          },
+          {
+            "id": 27560,
+            "name": "古斯塔斯超大型鱼雷发射台",
+            "name_en": "Guristas XL Torpedo Battery",
+            "name_zh": "古斯塔斯超大型鱼雷发射台",
+            "icon_name": "type_27560_64.png",
+            "model_path": "./extra_models/16222_lite.glb"
+          },
+          {
+            "id": 27641,
+            "name": "古斯塔斯鱼雷发射台",
+            "name_en": "Guristas Torpedo Battery",
+            "name_zh": "古斯塔斯鱼雷发射台",
+            "icon_name": "type_27560_64.png",
+            "model_path": "./extra_models/16222_lite.glb"
+          },
+          {
+            "id": 16696,
+            "name": "巡航导弹发射台",
+            "name_en": "Cruise Missile Battery",
+            "name_zh": "巡航导弹发射台",
+            "icon_name": "type_16222_64.png",
+            "model_path": "./extra_models/16222_lite.glb"
+          },
+          {
+            "id": 27640,
+            "name": "恐惧古斯塔斯巡航导弹发射台",
+            "name_en": "Dread Guristas Cruise Missile Battery",
+            "name_zh": "恐惧古斯塔斯巡航导弹发射台",
+            "icon_name": "type_27560_64.png",
+            "model_path": "./extra_models/16222_lite.glb"
+          },
+          {
+            "id": 27562,
+            "name": "恐惧古斯塔斯超大型鱼雷发射台",
+            "name_en": "Dread Guristas XL Torpedo Battery",
+            "name_zh": "恐惧古斯塔斯超大型鱼雷发射台",
+            "icon_name": "type_27560_64.png",
+            "model_path": "./extra_models/16222_lite.glb"
+          },
+          {
+            "id": 27643,
+            "name": "恐惧古斯塔斯鱼雷发射台",
+            "name_en": "Dread Guristas Torpedo Battery",
+            "name_zh": "恐惧古斯塔斯鱼雷发射台",
+            "icon_name": "type_27560_64.png",
+            "model_path": "./extra_models/16222_lite.glb"
+          },
+          {
+            "id": 17773,
+            "name": "超大型鱼雷发射台",
+            "name_en": "XL Torpedo Battery",
+            "name_zh": "超大型鱼雷发射台",
+            "icon_name": "type_16222_64.png",
+            "model_path": "./extra_models/16222_lite.glb"
+          },
+          {
+            "id": 16222,
+            "name": "轻型导弹发射台",
+            "name_en": "Light Missile Battery",
+            "name_zh": "轻型导弹发射台",
+            "icon_name": "type_16222_64.png",
+            "model_path": "./extra_models/16222_lite.glb"
+          },
+          {
+            "id": 16695,
+            "name": "重型导弹发射阵列",
+            "name_en": "Heavy Missile Battery",
+            "name_zh": "重型导弹发射阵列",
+            "icon_name": "type_16222_64.png",
+            "model_path": "./extra_models/16222_lite.glb"
+          },
+          {
+            "id": 16697,
+            "name": "鱼雷发射台",
+            "name_en": "Torpedo Battery",
+            "name_zh": "鱼雷发射台",
+            "icon_name": "type_16222_64.png",
+            "model_path": "./extra_models/16222_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 426,
+        "name": "移动式射弹岗哨炮",
+        "icon_name": "type_3743_64.png",
+        "types": [
+          {
+            "id": 16688,
+            "name": "中型火炮塔台",
+            "name_en": "Medium Artillery Battery",
+            "name_zh": "中型火炮塔台",
+            "icon_name": "type_3743_64.png",
+            "model_path": "./extra_models/16631_lite.glb"
+          },
+          {
+            "id": 17771,
+            "name": "中型自动加农炮塔台",
+            "name_en": "Medium AutoCannon Battery",
+            "name_zh": "中型自动加农炮塔台",
+            "icon_name": "type_3743_64.png",
+            "model_path": "./extra_models/16631_lite.glb"
+          },
+          {
+            "id": 27646,
+            "name": "主天使中型火炮塔台",
+            "name_en": "Domination Medium Artillery Battery",
+            "name_zh": "主天使中型火炮塔台",
+            "icon_name": "type_27646_64.png",
+            "model_path": "./extra_models/16631_lite.glb"
+          },
+          {
+            "id": 27649,
+            "name": "主天使中型自动加农炮塔台",
+            "name_en": "Domination Medium AutoCannon Battery",
+            "name_zh": "主天使中型自动加农炮塔台",
+            "icon_name": "type_27646_64.png",
+            "model_path": "./extra_models/16631_lite.glb"
+          },
+          {
+            "id": 27559,
+            "name": "主天使大型火炮塔台",
+            "name_en": "Domination Large Artillery Battery",
+            "name_zh": "主天使大型火炮塔台",
+            "icon_name": "type_27542_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27556,
+            "name": "主天使大型自动加农炮塔台",
+            "name_en": "Domination Large AutoCannon Battery",
+            "name_zh": "主天使大型自动加农炮塔台",
+            "icon_name": "type_27542_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27652,
+            "name": "主天使小型火炮塔台",
+            "name_en": "Domination Small Artillery Battery",
+            "name_zh": "主天使小型火炮塔台",
+            "icon_name": "type_27646_64.png",
+            "model_path": "./extra_models/16631_lite.glb"
+          },
+          {
+            "id": 27655,
+            "name": "主天使小型自动加农炮塔台",
+            "name_en": "Domination Small AutoCannon Battery",
+            "name_zh": "主天使小型自动加农炮塔台",
+            "icon_name": "type_27646_64.png",
+            "model_path": "./extra_models/16631_lite.glb"
+          },
+          {
+            "id": 16689,
+            "name": "大型火炮塔台",
+            "name_en": "Large Artillery Battery",
+            "name_zh": "大型火炮塔台",
+            "icon_name": "type_16689_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 17770,
+            "name": "大型自动加农炮塔台",
+            "name_en": "Large AutoCannon Battery",
+            "name_zh": "大型自动加农炮塔台",
+            "icon_name": "type_16689_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27644,
+            "name": "天使中型火炮塔台",
+            "name_en": "Angel Medium Artillery Battery",
+            "name_zh": "天使中型火炮塔台",
+            "icon_name": "type_27644_64.png",
+            "model_path": "./extra_models/27644_lite.glb"
+          },
+          {
+            "id": 27647,
+            "name": "天使中型自动加农炮塔台",
+            "name_en": "Angel Medium AutoCannon Battery",
+            "name_zh": "天使中型自动加农炮塔台",
+            "icon_name": "type_27644_64.png",
+            "model_path": "./extra_models/27644_lite.glb"
+          },
+          {
+            "id": 27557,
+            "name": "天使大型火炮塔台",
+            "name_en": "Angel Large Artillery Battery",
+            "name_zh": "天使大型火炮塔台",
+            "icon_name": "type_27542_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27554,
+            "name": "天使大型自动加农炮塔台",
+            "name_en": "Angel Large AutoCannon Battery",
+            "name_zh": "天使大型自动加农炮塔台",
+            "icon_name": "type_27542_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27650,
+            "name": "天使小型火炮塔台",
+            "name_en": "Angel Small Artillery Battery",
+            "name_zh": "天使小型火炮塔台",
+            "icon_name": "type_27644_64.png",
+            "model_path": "./extra_models/27644_lite.glb"
+          },
+          {
+            "id": 27653,
+            "name": "天使小型自动加农炮塔台",
+            "name_en": "Angel Small AutoCannon Battery",
+            "name_zh": "天使小型自动加农炮塔台",
+            "icon_name": "type_27644_64.png",
+            "model_path": "./extra_models/27644_lite.glb"
+          },
+          {
+            "id": 16631,
+            "name": "小型火炮塔台",
+            "name_en": "Small Artillery Battery",
+            "name_zh": "小型火炮塔台",
+            "icon_name": "type_3743_64.png",
+            "model_path": "./extra_models/16631_lite.glb"
+          },
+          {
+            "id": 17772,
+            "name": "小型自动加农炮塔台",
+            "name_en": "Small AutoCannon Battery",
+            "name_zh": "小型自动加农炮塔台",
+            "icon_name": "type_3743_64.png",
+            "model_path": "./extra_models/16631_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 449,
+        "name": "移动式混合岗哨炮",
+        "icon_name": "type_3742_64.png",
+        "types": [
+          {
+            "id": 17403,
+            "name": "中型疾速炮台",
+            "name_en": "Medium Blaster Battery",
+            "name_zh": "中型疾速炮台",
+            "icon_name": "type_3742_64.png",
+            "model_path": "./extra_models/16690_lite.glb"
+          },
+          {
+            "id": 16691,
+            "name": "中型磁轨炮台",
+            "name_en": "Medium Railgun Battery",
+            "name_zh": "中型磁轨炮台",
+            "icon_name": "type_3742_64.png",
+            "model_path": "./extra_models/16690_lite.glb"
+          },
+          {
+            "id": 17402,
+            "name": "大型疾速炮台",
+            "name_en": "Large Blaster Battery",
+            "name_zh": "大型疾速炮台",
+            "icon_name": "type_16689_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 16692,
+            "name": "大型磁轨炮台",
+            "name_en": "Large Railgun Battery",
+            "name_zh": "大型磁轨炮台",
+            "icon_name": "type_16689_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27613,
+            "name": "天蛇中型疾速炮台",
+            "name_en": "Serpentis Medium Blaster Battery",
+            "name_zh": "天蛇中型疾速炮台",
+            "icon_name": "type_27613_64.png",
+            "model_path": "./extra_models/27613_lite.glb"
+          },
+          {
+            "id": 27616,
+            "name": "天蛇中型磁轨炮台",
+            "name_en": "Serpentis Medium Railgun Battery",
+            "name_zh": "天蛇中型磁轨炮台",
+            "icon_name": "type_27613_64.png",
+            "model_path": "./extra_models/27613_lite.glb"
+          },
+          {
+            "id": 27542,
+            "name": "天蛇大型疾速炮台",
+            "name_en": "Serpentis Large Blaster Battery",
+            "name_zh": "天蛇大型疾速炮台",
+            "icon_name": "type_27542_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27545,
+            "name": "天蛇大型磁轨炮台",
+            "name_en": "Serpentis Large Railgun Battery",
+            "name_zh": "天蛇大型磁轨炮台",
+            "icon_name": "type_27542_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27619,
+            "name": "天蛇小型疾速炮台",
+            "name_en": "Serpentis Small Blaster Battery",
+            "name_zh": "天蛇小型疾速炮台",
+            "icon_name": "type_27613_64.png",
+            "model_path": "./extra_models/27613_lite.glb"
+          },
+          {
+            "id": 27622,
+            "name": "天蛇小型磁轨炮台",
+            "name_en": "Serpentis Small Railgun Battery",
+            "name_zh": "天蛇小型磁轨炮台",
+            "icon_name": "type_27613_64.png",
+            "model_path": "./extra_models/27613_lite.glb"
+          },
+          {
+            "id": 17404,
+            "name": "小型疾速炮台",
+            "name_en": "Small Blaster Battery",
+            "name_zh": "小型疾速炮台",
+            "icon_name": "type_3742_64.png",
+            "model_path": "./extra_models/16690_lite.glb"
+          },
+          {
+            "id": 16690,
+            "name": "小型磁轨炮台",
+            "name_en": "Small Railgun Battery",
+            "name_zh": "小型磁轨炮台",
+            "icon_name": "type_3742_64.png",
+            "model_path": "./extra_models/16690_lite.glb"
+          },
+          {
+            "id": 27615,
+            "name": "暗影中型疾速炮台",
+            "name_en": "Shadow Medium Blaster Battery",
+            "name_zh": "暗影中型疾速炮台",
+            "icon_name": "type_27615_64.png",
+            "model_path": "./extra_models/16690_lite.glb"
+          },
+          {
+            "id": 27618,
+            "name": "暗影中型磁轨炮台",
+            "name_en": "Shadow Medium Railgun Battery",
+            "name_zh": "暗影中型磁轨炮台",
+            "icon_name": "type_27615_64.png",
+            "model_path": "./extra_models/16690_lite.glb"
+          },
+          {
+            "id": 27544,
+            "name": "暗影大型疾速炮台",
+            "name_en": "Shadow Large Blaster Battery",
+            "name_zh": "暗影大型疾速炮台",
+            "icon_name": "type_27542_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27547,
+            "name": "暗影大型磁轨炮台",
+            "name_en": "Shadow Large Railgun Battery",
+            "name_zh": "暗影大型磁轨炮台",
+            "icon_name": "type_27542_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27621,
+            "name": "暗影小型疾速炮台",
+            "name_en": "Shadow Small Blaster Battery",
+            "name_zh": "暗影小型疾速炮台",
+            "icon_name": "type_27615_64.png",
+            "model_path": "./extra_models/16690_lite.glb"
+          },
+          {
+            "id": 27624,
+            "name": "暗影小型磁轨炮台",
+            "name_en": "Shadow Small Railgun Battery",
+            "name_zh": "暗影小型磁轨炮台",
+            "icon_name": "type_27615_64.png",
+            "model_path": "./extra_models/16690_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 430,
+        "name": "移动式激光岗哨炮",
+        "icon_name": "type_16689_64.png",
+        "types": [
+          {
+            "id": 17407,
+            "name": "中型脉冲激光炮台",
+            "name_en": "Medium Pulse Laser Battery",
+            "name_zh": "中型脉冲激光炮台",
+            "icon_name": "type_1194_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 17168,
+            "name": "中型集束激光炮台",
+            "name_en": "Medium Beam Laser Battery",
+            "name_zh": "中型集束激光炮台",
+            "icon_name": "type_1194_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 17406,
+            "name": "大型脉冲激光炮台",
+            "name_en": "Large Pulse Laser Battery",
+            "name_zh": "大型脉冲激光炮台",
+            "icon_name": "type_16689_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 16694,
+            "name": "大型集束激光炮台",
+            "name_en": "Large Beam Laser Battery",
+            "name_zh": "大型集束激光炮台",
+            "icon_name": "type_16689_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 17408,
+            "name": "小型脉冲激光炮台",
+            "name_en": "Small Pulse Laser Battery",
+            "name_zh": "小型脉冲激光炮台",
+            "icon_name": "type_1194_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 17167,
+            "name": "小型集束激光炮台",
+            "name_en": "Small Beam Laser Battery",
+            "name_zh": "小型集束激光炮台",
+            "icon_name": "type_1194_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 27769,
+            "name": "萨沙中型脉冲激光炮台",
+            "name_en": "Sansha Medium Pulse Laser Battery",
+            "name_zh": "萨沙中型脉冲激光炮台",
+            "icon_name": "type_27625_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 27768,
+            "name": "萨沙中型集束激光炮台",
+            "name_en": "Sansha Medium Beam Laser Battery",
+            "name_zh": "萨沙中型集束激光炮台",
+            "icon_name": "type_27625_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 27767,
+            "name": "萨沙大型脉冲激光炮台",
+            "name_en": "Sansha Large Pulse Laser Battery",
+            "name_zh": "萨沙大型脉冲激光炮台",
+            "icon_name": "type_27542_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27766,
+            "name": "萨沙大型集束激光炮台",
+            "name_en": "Sansha Large Beam Laser Battery",
+            "name_zh": "萨沙大型集束激光炮台",
+            "icon_name": "type_27542_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27771,
+            "name": "萨沙小型脉冲激光炮台",
+            "name_en": "Sansha Small Pulse Laser Battery",
+            "name_zh": "萨沙小型脉冲激光炮台",
+            "icon_name": "type_27625_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 27770,
+            "name": "萨沙小型集束激光炮台",
+            "name_en": "Sansha Small Beam Laser Battery",
+            "name_zh": "萨沙小型集束激光炮台",
+            "icon_name": "type_27625_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 27775,
+            "name": "萨沙爱国者中型脉冲激光炮台",
+            "name_en": "True Sansha Medium Pulse Laser Battery",
+            "name_zh": "萨沙爱国者中型脉冲激光炮台",
+            "icon_name": "type_27625_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 27774,
+            "name": "萨沙爱国者中型集束激光炮台",
+            "name_en": "True Sansha Medium Beam Laser Battery",
+            "name_zh": "萨沙爱国者中型集束激光炮台",
+            "icon_name": "type_27625_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 27773,
+            "name": "萨沙爱国者大型脉冲激光炮台",
+            "name_en": "True Sansha Large Pulse Laser Battery",
+            "name_zh": "萨沙爱国者大型脉冲激光炮台",
+            "icon_name": "type_27542_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27772,
+            "name": "萨沙爱国者大型集束激光炮台",
+            "name_en": "True Sansha Large Beam Laser Battery",
+            "name_zh": "萨沙爱国者大型集束激光炮台",
+            "icon_name": "type_27542_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27777,
+            "name": "萨沙爱国者小型脉冲激光炮台",
+            "name_en": "True Sansha Small Pulse Laser Battery",
+            "name_zh": "萨沙爱国者小型脉冲激光炮台",
+            "icon_name": "type_27625_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 27776,
+            "name": "萨沙爱国者小型集束激光炮台",
+            "name_en": "True Sansha Small Beam Laser Battery",
+            "name_zh": "萨沙爱国者小型集束激光炮台",
+            "icon_name": "type_27625_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 27628,
+            "name": "血袭者中型脉冲激光炮台",
+            "name_en": "Blood Medium Pulse Laser Battery",
+            "name_zh": "血袭者中型脉冲激光炮台",
+            "icon_name": "type_27625_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 27625,
+            "name": "血袭者中型集束激光炮台",
+            "name_en": "Blood Medium Beam Laser Battery",
+            "name_zh": "血袭者中型集束激光炮台",
+            "icon_name": "type_27625_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 27548,
+            "name": "血袭者大型脉冲激光炮台",
+            "name_en": "Blood Large Pulse Laser Battery",
+            "name_zh": "血袭者大型脉冲激光炮台",
+            "icon_name": "type_27542_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27551,
+            "name": "血袭者大型集束激光炮台",
+            "name_en": "Blood Large Beam Laser Battery",
+            "name_zh": "血袭者大型集束激光炮台",
+            "icon_name": "type_27542_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27634,
+            "name": "血袭者小型脉冲激光炮台",
+            "name_en": "Blood Small Pulse Laser Battery",
+            "name_zh": "血袭者小型脉冲激光炮台",
+            "icon_name": "type_27625_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 27631,
+            "name": "血袭者小型集束激光炮台",
+            "name_en": "Blood Small Beam Laser Battery",
+            "name_zh": "血袭者小型集束激光炮台",
+            "icon_name": "type_27625_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 16867,
+            "name": "超高速移动激光岗哨炮",
+            "name_en": "Ultra Fast Mobile Laser Sentry",
+            "name_zh": "超高速移动激光岗哨炮",
+            "icon_name": "type_16689_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27630,
+            "name": "黑暗血袭者中型脉冲激光炮台",
+            "name_en": "Dark Blood Medium Pulse Laser Battery",
+            "name_zh": "黑暗血袭者中型脉冲激光炮台",
+            "icon_name": "type_27625_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 27627,
+            "name": "黑暗血袭者中型集束激光炮台",
+            "name_en": "Dark Blood Medium Beam Laser Battery",
+            "name_zh": "黑暗血袭者中型集束激光炮台",
+            "icon_name": "type_27625_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 27550,
+            "name": "黑暗血袭者大型脉冲激光炮台",
+            "name_en": "Dark Blood Large Pulse Laser Battery",
+            "name_zh": "黑暗血袭者大型脉冲激光炮台",
+            "icon_name": "type_27542_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27553,
+            "name": "黑暗血袭者大型集束激光炮台",
+            "name_en": "Dark Blood Large Beam Laser Battery",
+            "name_zh": "黑暗血袭者大型集束激光炮台",
+            "icon_name": "type_27542_64.png",
+            "model_path": "./extra_models/16689_lite.glb"
+          },
+          {
+            "id": 27636,
+            "name": "黑暗血袭者小型脉冲激光炮台",
+            "name_en": "Dark Blood Small Pulse Laser Battery",
+            "name_zh": "黑暗血袭者小型脉冲激光炮台",
+            "icon_name": "type_27625_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          },
+          {
+            "id": 27633,
+            "name": "黑暗血袭者小型集束激光炮台",
+            "name_en": "Dark Blood Small Beam Laser Battery",
+            "name_zh": "黑暗血袭者小型集束激光炮台",
+            "icon_name": "type_27625_64.png",
+            "model_path": "./extra_models/17167_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 418,
+        "name": "移动护盾发生器",
+        "icon_name": "type_3620_64.png",
+        "types": [
+          {
+            "id": 16223,
+            "name": "护盾发生器阵列",
+            "name_en": "Shield Generation Array",
+            "name_zh": "护盾发生器阵列",
+            "icon_name": "type_3620_64.png",
+            "model_path": "./extra_models/16223_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 414,
+        "name": "移动能源阵列",
+        "icon_name": "type_4359_64.png",
+        "types": [
+          {
+            "id": 17172,
+            "name": "中型辅助能源阵列",
+            "name_en": "Medium Auxiliary Power Array",
+            "name_zh": "中型辅助能源阵列",
+            "icon_name": "type_4359_64.png",
+            "model_path": "./extra_models/4359_lite.glb"
+          },
+          {
+            "id": 17173,
+            "name": "大型辅助能源阵列",
+            "name_en": "Large Auxiliary Power Array",
+            "name_zh": "大型辅助能源阵列",
+            "icon_name": "type_4359_64.png",
+            "model_path": "./extra_models/4359_lite.glb"
+          },
+          {
+            "id": 16217,
+            "name": "小型辅助能源阵列",
+            "name_en": "Small Auxiliary Power Array",
+            "name_zh": "小型辅助能源阵列",
+            "icon_name": "type_4359_64.png",
+            "model_path": "./extra_models/4359_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 364,
+        "name": "移动贮藏设备",
+        "icon_name": "type_12240_64.png",
+        "types": [
+          {
+            "id": 12240,
+            "name": "中型仓库阵列",
+            "name_en": "Medium Storage Array",
+            "name_zh": "中型仓库阵列",
+            "icon_name": "type_12240_64.png",
+            "model_path": "./extra_models/12240_lite.glb"
+          },
+          {
+            "id": 16219,
+            "name": "小型仓库阵列",
+            "name_en": "Small Storage Array",
+            "name_zh": "小型仓库阵列",
+            "icon_name": "type_12240_64.png",
+            "model_path": "./extra_models/12240_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 473,
+        "name": "索敌天线阵列",
+        "icon_name": "type_17174_64.png",
+        "types": [
+          {
+            "id": 17701,
+            "name": "索敌天线阵列",
+            "name_en": "Tracking Array",
+            "name_zh": "索敌天线阵列",
+            "icon_name": "type_17174_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 840,
+        "name": "结构维修阵列",
+        "icon_name": "type_14343_64.png",
+        "types": [
+          {
+            "id": 27676,
+            "name": "结构维修阵列",
+            "name_en": "Structure Repair Array",
+            "name_zh": "结构维修阵列",
+            "icon_name": "type_14343_64.png",
+            "model_path": "./extra_models/14343_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 471,
+        "name": "联合机库阵列",
+        "icon_name": "type_12240_64.png",
+        "types": [
+          {
+            "id": 17621,
+            "name": "军团机库阵列",
+            "name_en": "Corporate Hangar Array",
+            "name_zh": "军团机库阵列",
+            "icon_name": "type_12240_64.png",
+            "model_path": "./extra_models/12240_lite.glb"
+          },
+          {
+            "id": 24652,
+            "name": "旗舰级船坞",
+            "name_en": "Capital Shipyard",
+            "name_zh": "旗舰级船坞",
+            "icon_name": "type_12240_64.png",
+            "model_path": "./extra_models/12240_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 837,
+        "name": "能量中和波发射台",
+        "icon_name": "type_17174_64.png",
+        "types": [
+          {
+            "id": 27672,
+            "name": "能量中和波发射台",
+            "name_en": "Energy Neutralizing Battery",
+            "name_zh": "能量中和波发射台",
+            "icon_name": "type_17174_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 27856,
+            "name": "萨沙爱国者能量中和波发射台",
+            "name_en": "True Sansha Energy Neutralizing Battery",
+            "name_zh": "萨沙爱国者能量中和波发射台",
+            "icon_name": "type_27570_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 27855,
+            "name": "萨沙能量中和波发射台",
+            "name_en": "Sansha Energy Neutralizing Battery",
+            "name_zh": "萨沙能量中和波发射台",
+            "icon_name": "type_27570_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 27857,
+            "name": "血袭者能量中和波发射台",
+            "name_en": "Blood Energy Neutralizing Battery",
+            "name_zh": "血袭者能量中和波发射台",
+            "icon_name": "type_27570_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          },
+          {
+            "id": 27858,
+            "name": "黑暗血袭者能量中和波发射台",
+            "name_en": "Dark Blood Energy Neutralizing Battery",
+            "name_zh": "黑暗血袭者能量中和波发射台",
+            "icon_name": "type_27570_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 363,
+        "name": "船只维护阵列",
+        "icon_name": "type_12237_64.png",
+        "types": [
+          {
+            "id": 12237,
+            "name": "舰船维护阵列",
+            "name_en": "Ship Maintenance Array",
+            "name_zh": "舰船维护阵列",
+            "icon_name": "type_12237_64.png",
+            "model_path": "./extra_models/12237_lite.glb"
+          },
+          {
+            "id": 24646,
+            "name": "超大型舰船维护阵列",
+            "name_en": "X-Large Ship Maintenance Array",
+            "name_zh": "超大型舰船维护阵列",
+            "icon_name": "type_24575_64.png",
+            "model_path": "./extra_models/24575_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 397,
+        "name": "装配阵列",
+        "icon_name": "type_3811_64.png",
+        "types": [
+          {
+            "id": 24654,
+            "name": "中型舰船组装阵列",
+            "name_en": "Medium Ship Assembly Array",
+            "name_zh": "中型舰船组装阵列",
+            "icon_name": "type_3498_64.png",
+            "model_path": "./extra_models/24574_lite.glb"
+          },
+          {
+            "id": 33867,
+            "name": "图克尔组件装配阵列",
+            "name_en": "Thukker Component Assembly Array",
+            "name_zh": "图克尔组件装配阵列",
+            "icon_name": "type_33867_64.png",
+            "model_path": "./extra_models/16220_lite.glb"
+          },
+          {
+            "id": 29613,
+            "name": "大型舰船组装阵列",
+            "name_en": "Large Ship Assembly Array",
+            "name_zh": "大型舰船组装阵列",
+            "icon_name": "type_3498_64.png",
+            "model_path": "./extra_models/24574_lite.glb"
+          },
+          {
+            "id": 30389,
+            "name": "子系统组装阵列",
+            "name_en": "Subsystem Assembly Array",
+            "name_zh": "子系统组装阵列",
+            "icon_name": "type_3498_64.png",
+            "model_path": "./extra_models/24574_lite.glb"
+          },
+          {
+            "id": 24574,
+            "name": "小型舰船组装阵列",
+            "name_en": "Small Ship Assembly Array",
+            "name_zh": "小型舰船组装阵列",
+            "icon_name": "type_3498_64.png",
+            "model_path": "./extra_models/24574_lite.glb"
+          },
+          {
+            "id": 24658,
+            "name": "弹药组装阵列",
+            "name_en": "Ammunition Assembly Array",
+            "name_zh": "弹药组装阵列",
+            "icon_name": "type_16220_64.png",
+            "model_path": "./extra_models/16220_lite.glb"
+          },
+          {
+            "id": 16220,
+            "name": "快速装备组装阵列",
+            "name_en": "Rapid Equipment Assembly Array",
+            "name_zh": "快速装备组装阵列",
+            "icon_name": "type_16220_64.png",
+            "model_path": "./extra_models/16220_lite.glb"
+          },
+          {
+            "id": 24656,
+            "name": "旗舰组装阵列",
+            "name_en": "Capital Ship Assembly Array",
+            "name_zh": "旗舰组装阵列",
+            "icon_name": "type_3498_64.png",
+            "model_path": "./extra_models/24574_lite.glb"
+          },
+          {
+            "id": 24659,
+            "name": "无人机组装阵列",
+            "name_en": "Drone Assembly Array",
+            "name_zh": "无人机组装阵列",
+            "icon_name": "type_16220_64.png",
+            "model_path": "./extra_models/16220_lite.glb"
+          },
+          {
+            "id": 24660,
+            "name": "组件装配阵列",
+            "name_en": "Component Assembly Array",
+            "name_zh": "组件装配阵列",
+            "icon_name": "type_16220_64.png",
+            "model_path": "./extra_models/16220_lite.glb"
+          },
+          {
+            "id": 25305,
+            "name": "药物实验室",
+            "name_en": "Drug Lab",
+            "name_zh": "药物实验室",
+            "icon_name": "type_16220_64.png",
+            "model_path": "./extra_models/16220_lite.glb"
+          },
+          {
+            "id": 13780,
+            "name": "装备组装阵列",
+            "name_en": "Equipment Assembly Array",
+            "name_zh": "装备组装阵列",
+            "icon_name": "type_3811_64.png",
+            "model_path": "./extra_models/13780_lite.glb"
+          },
+          {
+            "id": 24575,
+            "name": "超级旗舰组装阵列",
+            "name_en": "Supercapital Ship Assembly Array",
+            "name_zh": "超级旗舰组装阵列",
+            "icon_name": "type_24575_64.png",
+            "model_path": "./extra_models/24575_lite.glb"
+          },
+          {
+            "id": 24655,
+            "name": "高级中型舰船组装阵列",
+            "name_en": "Advanced Medium Ship Assembly Array",
+            "name_zh": "高级中型舰船组装阵列",
+            "icon_name": "type_3498_64.png",
+            "model_path": "./extra_models/24574_lite.glb"
+          },
+          {
+            "id": 24657,
+            "name": "高级大型舰船组装阵列",
+            "name_en": "Advanced Large Ship Assembly Array",
+            "name_zh": "高级大型舰船组装阵列",
+            "icon_name": "type_3498_64.png",
+            "model_path": "./extra_models/24574_lite.glb"
+          },
+          {
+            "id": 24653,
+            "name": "高级小型舰船组装阵列",
+            "name_en": "Advanced Small Ship Assembly Array",
+            "name_zh": "高级小型舰船组装阵列",
+            "icon_name": "type_3498_64.png",
+            "model_path": "./extra_models/24574_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 838,
+        "name": "诱导力场发生阵列",
+        "icon_name": "type_17174_64.png",
+        "types": [
+          {
+            "id": 27673,
+            "name": "诱导力场发生阵列",
+            "name_en": "Cynosural Generator Array",
+            "name_zh": "诱导力场发生阵列",
+            "icon_name": "type_17174_64.png",
+            "model_path": "./extra_models/17174_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 839,
+        "name": "诱导力场系统干扰器",
+        "icon_name": "type_17181_64.png",
+        "types": [
+          {
+            "id": 27674,
+            "name": "诱导力场系统干扰器",
+            "name_en": "Cynosural System Jammer",
+            "name_zh": "诱导力场系统干扰器",
+            "icon_name": "type_17181_64.png",
+            "model_path": "./extra_models/17181_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 443,
+        "name": "跃迁扰频波发射台",
+        "icon_name": "type_17181_64.png",
+        "types": [
+          {
+            "id": 27563,
+            "name": "天蛇跃迁扰断波发射台",
+            "name_en": "Serpentis Warp Disruption Battery",
+            "name_zh": "天蛇跃迁扰断波发射台",
+            "icon_name": "type_27563_64.png",
+            "model_path": "./extra_models/17181_lite.glb"
+          },
+          {
+            "id": 27567,
+            "name": "天蛇跃迁扰频波发射台",
+            "name_en": "Serpentis Warp Scrambling Battery",
+            "name_zh": "天蛇跃迁扰频波发射台",
+            "icon_name": "type_27563_64.png",
+            "model_path": "./extra_models/17181_lite.glb"
+          },
+          {
+            "id": 27565,
+            "name": "暗影跃迁扰断波发射台",
+            "name_en": "Shadow Warp Disruption Battery",
+            "name_zh": "暗影跃迁扰断波发射台",
+            "icon_name": "type_27563_64.png",
+            "model_path": "./extra_models/17181_lite.glb"
+          },
+          {
+            "id": 27569,
+            "name": "暗影跃迁扰频波发射台",
+            "name_en": "Shadow Warp Scrambling Battery",
+            "name_zh": "暗影跃迁扰频波发射台",
+            "icon_name": "type_27563_64.png",
+            "model_path": "./extra_models/17181_lite.glb"
+          },
+          {
+            "id": 17181,
+            "name": "跃迁扰断波发射台",
+            "name_en": "Warp Disruption Battery",
+            "name_zh": "跃迁扰断波发射台",
+            "icon_name": "type_17181_64.png",
+            "model_path": "./extra_models/17181_lite.glb"
+          },
+          {
+            "id": 17182,
+            "name": "跃迁扰频波发射台",
+            "name_en": "Warp Scrambling Battery",
+            "name_zh": "跃迁扰频波发射台",
+            "icon_name": "type_17181_64.png",
+            "model_path": "./extra_models/17181_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 707,
+        "name": "跳跃通道阵列",
+        "icon_name": "type_4359_64.png",
+        "types": [
+          {
+            "id": 4359,
+            "name": "QA测试跳跃桥接",
+            "name_en": "QA Jump Bridge",
+            "name_zh": "QA测试跳跃桥接",
+            "icon_name": "type_4359_64.png",
+            "model_path": "./extra_models/4359_lite.glb"
+          },
+          {
+            "id": 27897,
+            "name": "跳跃桥接",
+            "name_en": "Jump Bridge",
+            "name_zh": "跳跃桥接",
+            "icon_name": "type_4359_64.png",
+            "model_path": "./extra_models/4359_lite.glb"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": 11,
     "name": "空间实体",
     "icon_name": "category_11.png",
