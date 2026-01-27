@@ -137,6 +137,9 @@ class EVEDataInitializer:
                 'groupID': group_id,
                 'icon_name': row['icon_filename']
             }
+            # 收集类型图标名称
+            if row['icon_filename']:
+                icon_names.add(row['icon_filename'])
             
             # 收集分类信息
             if category_id and category_id not in categories:
