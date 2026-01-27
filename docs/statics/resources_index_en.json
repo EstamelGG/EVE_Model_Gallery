@@ -5989,7 +5989,7 @@
             "name_en": "Legion",
             "name_zh": "圣卒级",
             "icon_name": "type_29986_64.png",
-            "model_path": ""
+            "model_path": "./models/29986_lite.glb"
           },
           {
             "id": 29990,
@@ -5997,7 +5997,7 @@
             "name_en": "Loki",
             "name_zh": "洛基级",
             "icon_name": "type_29990_64.png",
-            "model_path": ""
+            "model_path": "./models/29990_lite.glb"
           },
           {
             "id": 29988,
@@ -6005,7 +6005,7 @@
             "name_en": "Proteus",
             "name_zh": "海神级",
             "icon_name": "type_29988_64.png",
-            "model_path": ""
+            "model_path": "./models/29988_lite.glb"
           },
           {
             "id": 29984,
@@ -6013,7 +6013,7 @@
             "name_en": "Tengu",
             "name_zh": "金鹏级",
             "icon_name": "type_29984_64.png",
-            "model_path": ""
+            "model_path": "./models/29984_lite.glb"
           }
         ]
       },
