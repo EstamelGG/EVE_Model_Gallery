@@ -530,6 +530,25 @@ if (hintText) {
     hintText.textContent = currentLang === 'cn' ? '从目录中选择模型' : 'Select a model from the directory';
 }
 
+const infoText1 = document.getElementById('infoText1');
+const infoText2 = document.getElementById('infoText2');
+const infoText3 = document.getElementById('infoText3');
+if (infoText1) {
+    infoText1.innerHTML = currentLang === 'cn' 
+        ? '仓库：<a href="https://github.com/EstamelGG/EVE_Model_Gallery" target="_blank" rel="noopener noreferrer">https://github.com/EstamelGG/EVE_Model_Gallery</a> ，您可以下载、使用模型文件，但请注意：版权仍归属于CCP Game，不可商用。'
+        : 'Repository: <a href="https://github.com/EstamelGG/EVE_Model_Gallery" target="_blank" rel="noopener noreferrer">https://github.com/EstamelGG/EVE_Model_Gallery</a>. You can download and use the model files, but please note: Copyright still belongs to CCP Game, not for commercial use.';
+}
+if (infoText2) {
+    infoText2.textContent = currentLang === 'cn'
+        ? '我们只对游戏内物品颜色、金属度、粗糙度、纹理进行了力所能及的还原，仍有大量缺失的细节，渲染效果与游戏内的实际呈现效果不完全一致，请仅作参考。'
+        : 'We have only restored the color, metallicity, roughness, and textures of in-game items to the best of our ability. There are still many missing details, and the rendering effects may not be completely consistent with the actual in-game presentation. Please use for reference only.';
+}
+if (infoText3) {
+    infoText3.textContent = currentLang === 'cn'
+        ? '我们建议移动端设备使用谷歌浏览器访问，以获得更好的体验。'
+        : 'We recommend using Google Chrome on mobile devices for a better experience.';
+}
+
 const modelSelectorBtnText = document.getElementById('modelSelectorBtnText');
 if (modelSelectorBtnText) {
     modelSelectorBtnText.textContent = currentLang === 'cn' ? '选择模型' : 'Select Model';

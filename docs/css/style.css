@@ -1436,6 +1436,68 @@ body {
     color: #aaa;
 }
 
+.info-text-container {
+    margin-top: 30px;
+    max-width: 600px;
+    padding: 0 20px;
+    pointer-events: auto;
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+}
+
+.info-text {
+    color: #666;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 12px 0;
+    transition: color 0.3s ease;
+    pointer-events: auto;
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .info-text {
+        color: #999;
+    }
+}
+
+[data-theme="dark"] .info-text {
+    color: #999;
+}
+
+.info-text a {
+    color: #0066cc;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.info-text a:hover {
+    color: #0052a3;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .info-text a {
+        color: #4a9eff;
+    }
+    :root:not([data-theme="light"]) .info-text a:hover {
+        color: #6bb3ff;
+    }
+}
+
+[data-theme="dark"] .info-text a {
+    color: #4a9eff;
+}
+
+[data-theme="dark"] .info-text a:hover {
+    color: #6bb3ff;
+}
+
 .theme-toggle-btn {
     margin-top: 20px;
     padding: 10px;
