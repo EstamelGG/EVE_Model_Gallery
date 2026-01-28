@@ -20,6 +20,21 @@
         ]
       },
       {
+        "id": 1316,
+        "name": "Entosis Command Node",
+        "icon_name": "type_32250_64.png",
+        "types": [
+          {
+            "id": 34832,
+            "name": "Structure Command Node",
+            "name_en": "Structure Command Node",
+            "name_zh": "建筑指挥节点",
+            "icon_name": "type_32250_64.png",
+            "model_path": "./extra_models/34832_lite.glb"
+          }
+        ]
+      },
+      {
         "id": 226,
         "name": "Large Collidable Object",
         "icon_name": "type_2096_64.png",
@@ -69,6 +84,173 @@
             "name_zh": "地区人造卫星",
             "icon_name": "type_32884_64.png",
             "model_path": "./extra_models/32884_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Stargate",
+        "icon_name": "type_16_64.png",
+        "types": [
+          {
+            "id": 12292,
+            "name": "Smuggler route stargate",
+            "name_en": "Smuggler route stargate",
+            "name_zh": "走私通道星门",
+            "icon_name": "type_12292_64.png",
+            "model_path": "./extra_models/12292_lite.glb"
+          },
+          {
+            "id": 29625,
+            "name": "Stargate (Amarr Border)",
+            "name_en": "Stargate (Amarr Border)",
+            "name_zh": "星门（艾玛边境）",
+            "icon_name": "type_29625_64.png",
+            "model_path": "./extra_models/29625_lite.glb"
+          },
+          {
+            "id": 17,
+            "name": "Stargate (Amarr Constellation)",
+            "name_en": "Stargate (Amarr Constellation)",
+            "name_zh": "星门（艾玛星座）",
+            "icon_name": "type_17_64.png",
+            "model_path": "./extra_models/17_lite.glb"
+          },
+          {
+            "id": 29626,
+            "name": "Stargate (Amarr Region)",
+            "name_en": "Stargate (Amarr Region)",
+            "name_zh": "星门（艾玛星域）",
+            "icon_name": "type_29626_64.png",
+            "model_path": "./extra_models/29626_lite.glb"
+          },
+          {
+            "id": 29624,
+            "name": "Stargate (Amarr System)",
+            "name_en": "Stargate (Amarr System)",
+            "name_zh": "星门（艾玛星系）",
+            "icon_name": "type_29624_64.png",
+            "model_path": "./extra_models/29624_lite.glb"
+          },
+          {
+            "id": 3873,
+            "name": "Stargate (Caldari Border)",
+            "name_en": "Stargate (Caldari Border)",
+            "name_zh": "星门（加达里边境）",
+            "icon_name": "type_3873_64.png",
+            "model_path": "./extra_models/3873_lite.glb"
+          },
+          {
+            "id": 29627,
+            "name": "Stargate (Caldari Constellation)",
+            "name_en": "Stargate (Caldari Constellation)",
+            "name_zh": "星门（加达里星座）",
+            "icon_name": "type_29627_64.png",
+            "model_path": "./extra_models/29627_lite.glb"
+          },
+          {
+            "id": 29629,
+            "name": "Stargate (Caldari Region)",
+            "name_en": "Stargate (Caldari Region)",
+            "name_zh": "星门（加达里星域）",
+            "icon_name": "type_29629_64.png",
+            "model_path": "./extra_models/29629_lite.glb"
+          },
+          {
+            "id": 16,
+            "name": "Stargate (Caldari System)",
+            "name_en": "Stargate (Caldari System)",
+            "name_zh": "星门（加达里星系）",
+            "icon_name": "type_16_64.png",
+            "model_path": "./extra_models/16_lite.glb"
+          },
+          {
+            "id": 29628,
+            "name": "Stargate (Caldari Unused)",
+            "name_en": "Stargate (Caldari Unused)",
+            "name_zh": "星门（加达里新建）",
+            "icon_name": "type_2902_64.png",
+            "model_path": "./extra_models/29628_lite.glb"
+          },
+          {
+            "id": 3876,
+            "name": "Stargate (Gallente Border)",
+            "name_en": "Stargate (Gallente Border)",
+            "name_zh": "星门（盖伦特边境）",
+            "icon_name": "type_3876_64.png",
+            "model_path": "./extra_models/3876_lite.glb"
+          },
+          {
+            "id": 3874,
+            "name": "Stargate (Gallente Constellation)",
+            "name_en": "Stargate (Gallente Constellation)",
+            "name_zh": "星门（盖伦特星座）",
+            "icon_name": "type_3874_64.png",
+            "model_path": "./extra_models/3874_lite.glb"
+          },
+          {
+            "id": 29632,
+            "name": "Stargate (Gallente Region)",
+            "name_en": "Stargate (Gallente Region)",
+            "name_zh": "星门（盖伦特星域）",
+            "icon_name": "type_29632_64.png",
+            "model_path": "./extra_models/29632_lite.glb"
+          },
+          {
+            "id": 3875,
+            "name": "Stargate (Gallente System)",
+            "name_en": "Stargate (Gallente System)",
+            "name_zh": "星门（盖伦特星系）",
+            "icon_name": "type_3875_64.png",
+            "model_path": "./extra_models/3875_lite.glb"
+          },
+          {
+            "id": 29631,
+            "name": "Stargate (Gallente Unused 1)",
+            "name_en": "Stargate (Gallente Unused 1)",
+            "name_zh": "星门（盖伦特新建1）",
+            "icon_name": "type_2902_64.png",
+            "model_path": "./extra_models/29631_lite.glb"
+          },
+          {
+            "id": 29630,
+            "name": "Stargate (Gallente Unused 2)",
+            "name_en": "Stargate (Gallente Unused 2)",
+            "name_zh": "星门（盖伦特新建2）",
+            "icon_name": "type_2902_64.png",
+            "model_path": "./extra_models/29630_lite.glb"
+          },
+          {
+            "id": 29634,
+            "name": "Stargate (Minmatar Border)",
+            "name_en": "Stargate (Minmatar Border)",
+            "name_zh": "星门（米玛塔尔边境）",
+            "icon_name": "type_29634_64.png",
+            "model_path": "./extra_models/29634_lite.glb"
+          },
+          {
+            "id": 3877,
+            "name": "Stargate (Minmatar Constellation)",
+            "name_en": "Stargate (Minmatar Constellation)",
+            "name_zh": "星门（米玛塔尔星座）",
+            "icon_name": "type_3877_64.png",
+            "model_path": "./extra_models/3877_lite.glb"
+          },
+          {
+            "id": 29635,
+            "name": "Stargate (Minmatar Region)",
+            "name_en": "Stargate (Minmatar Region)",
+            "name_zh": "星门（米玛塔尔星域）",
+            "icon_name": "type_29635_64.png",
+            "model_path": "./extra_models/29635_lite.glb"
+          },
+          {
+            "id": 29633,
+            "name": "Stargate (Minmatar System)",
+            "name_en": "Stargate (Minmatar System)",
+            "name_zh": "星门（米玛塔尔星系）",
+            "icon_name": "type_29633_64.png",
+            "model_path": "./extra_models/29633_lite.glb"
           }
         ]
       },
