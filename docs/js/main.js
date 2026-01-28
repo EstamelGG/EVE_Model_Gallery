@@ -303,6 +303,20 @@ if (themeToggleIcon) {
 function loadModel(src, shipInfo = null, typeId = null, updateHash = true) {
     if (!src) return;
     
+    const normalizeSrc = (path) => {
+        if (!path) return '';
+        try {
+            const url = new URL(path, window.location.href);
+            return url.pathname + url.search;
+        } catch (e) {
+            return path.split('#')[0].split('?')[0];
+        }
+    };
+    
+    const currentSrc = normalizeSrc(modelViewer.src);
+    const newSrc = normalizeSrc(src);
+    const isSameModel = currentSrc === newSrc && currentSrc !== '';
+    
     if (modelLoadingSpinner) {
         modelLoadingSpinner.classList.add('show');
     }
@@ -340,7 +354,6 @@ function loadModel(src, shipInfo = null, typeId = null, updateHash = true) {
             shipNameDisplay.classList.add('show');
             document.title = `${displayName} - EVE Model Viewer`;
             
-            // 添加点击事件来复制模型URL
             const getModelUrl = () => {
                 if (src.startsWith('http://') || src.startsWith('https://')) {
                     return src;
@@ -348,24 +361,20 @@ function loadModel(src, shipInfo = null, typeId = null, updateHash = true) {
                 try {
                     return new URL(src, window.location.href).href;
                 } catch (e) {
-                    // fallback: 手动构建URL
                     const baseUrl = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '');
                     return baseUrl + '/' + src.replace(/^\.\//, '');
                 }
             };
             
-            // 移除旧的点击事件监听器（通过保存的引用）
             if (shipNameDisplay._copyHandler) {
                 shipNameDisplay.removeEventListener('click', shipNameDisplay._copyHandler);
             }
             
-            // 创建新的点击事件处理函数
             shipNameDisplay._copyHandler = async () => {
                 const modelUrl = getModelUrl();
                 try {
                     await navigator.clipboard.writeText(modelUrl);
                 } catch (err) {
-                    // 如果clipboard API失败，使用fallback方法
                     const textArea = document.createElement('textarea');
                     textArea.value = modelUrl;
                     textArea.style.position = 'fixed';
@@ -375,7 +384,6 @@ function loadModel(src, shipInfo = null, typeId = null, updateHash = true) {
                     try {
                         document.execCommand('copy');
                     } catch (e) {
-                        // 忽略错误
                     }
                     document.body.removeChild(textArea);
                 }
@@ -431,7 +439,7 @@ function loadModel(src, shipInfo = null, typeId = null, updateHash = true) {
         }
     };
     
-    const loadHandler = () => {
+    const hideLoadingSpinner = () => {
         if (modelLoadingProgress) {
             modelLoadingProgress.textContent = '100%';
         }
@@ -451,11 +459,22 @@ function loadModel(src, shipInfo = null, typeId = null, updateHash = true) {
         applyShadowState(getShadowEnabled());
     };
     
+    const loadHandler = () => {
+        if (loadTimeout) {
+            clearTimeout(loadTimeout);
+            loadTimeout = null;
+        }
+        hideLoadingSpinner();
+    };
+    
     const abortController = new AbortController();
     const signal = abortController.signal;
     
     if (modelViewer._loadAbortController) {
         modelViewer._loadAbortController.abort();
+    }
+    if (modelViewer._loadTimeout) {
+        clearTimeout(modelViewer._loadTimeout);
     }
     modelViewer._loadAbortController = abortController;
     
@@ -463,7 +482,68 @@ function loadModel(src, shipInfo = null, typeId = null, updateHash = true) {
     modelViewer.addEventListener('error', errorHandler, { once: true, signal });
     modelViewer.addEventListener('progress', progressHandler, { signal });
     
-    modelViewer.src = src;
+    if (isSameModel && modelViewer.loaded) {
+        setTimeout(() => {
+            hideLoadingSpinner();
+        }, 0);
+        return;
+    }
+    
+    modelViewer.src = '';
+    
+    let loadTimeout = null;
+    let loadCheckInterval = null;
+    
+    const cleanup = () => {
+        if (loadTimeout) {
+            clearTimeout(loadTimeout);
+            loadTimeout = null;
+        }
+        if (loadCheckInterval) {
+            clearInterval(loadCheckInterval);
+            loadCheckInterval = null;
+        }
+    };
+    
+    const checkAndHide = () => {
+        if (modelViewer.loaded) {
+            const currentSrcAfterLoad = normalizeSrc(modelViewer.src);
+            if (currentSrcAfterLoad === newSrc) {
+                cleanup();
+                hideLoadingSpinner();
+                return true;
+            }
+        }
+        return false;
+    };
+    
+    setTimeout(() => {
+        modelViewer.src = src;
+        
+        setTimeout(() => {
+            if (checkAndHide()) {
+                return;
+            }
+            
+            loadTimeout = setTimeout(() => {
+                if (!checkAndHide()) {
+                    loadCheckInterval = setInterval(() => {
+                        if (checkAndHide()) {
+                            return;
+                        }
+                    }, 50);
+                    
+                    setTimeout(() => {
+                        cleanup();
+                        if (modelViewer.loaded) {
+                            hideLoadingSpinner();
+                        }
+                    }, 2000);
+                }
+            }, 100);
+            modelViewer._loadTimeout = loadTimeout;
+        }, 50);
+    }, 10);
 }
 
 let resourcesIndex = null;
@@ -567,14 +647,11 @@ function getIconPath(iconName) {
 
 function getTypeIconUrl(iconName, typeId) {
     if (iconName) {
-        // 如果有图标名称，使用本地图标文件
         return getIconPath(iconName);
     }
-    // 如果没有图标名称，使用 API 作为兜底
     if (typeId) {
         return `https://images.evetech.net/types/${typeId}/icon`;
     }
-    // 如果既没有图标名称也没有 typeId，返回默认
     return './type_default.png';
 }
 
