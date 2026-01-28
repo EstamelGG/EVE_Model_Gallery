@@ -210,7 +210,7 @@
             "name_en": "Stargate (Gallente Unused 1)",
             "name_zh": "星门（盖伦特新建1）",
             "icon_name": "type_2902_64.png",
-            "model_path": "./extra_models/29631_lite.glb"
+            "model_path": "./extra_models/29628_lite.glb"
           },
           {
             "id": 29630,
@@ -218,7 +218,7 @@
             "name_en": "Stargate (Gallente Unused 2)",
             "name_zh": "星门（盖伦特新建2）",
             "icon_name": "type_2902_64.png",
-            "model_path": "./extra_models/29630_lite.glb"
+            "model_path": "./extra_models/29628_lite.glb"
           },
           {
             "id": 29634,
@@ -251,6 +251,14 @@
             "name_zh": "星门（米玛塔尔星系）",
             "icon_name": "type_29633_64.png",
             "model_path": "./extra_models/29633_lite.glb"
+          },
+          {
+            "id": 57760,
+            "name": "Stargate (Old Man Star to Villore)",
+            "name_en": "Stargate (Old Man Star to Villore)",
+            "name_zh": "星门 (老人星到维洛勒)",
+            "icon_name": "type_57760_64.png",
+            "model_path": "./extra_models/57760_lite.glb"
           }
         ]
       },
