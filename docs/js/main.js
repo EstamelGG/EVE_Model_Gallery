@@ -208,7 +208,7 @@ const errorTag = document.getElementById('errorTag');
 const actionToast = document.getElementById('actionToast');
 const brightnessControl = document.getElementById('brightnessControl');
 const brightnessSlider = document.getElementById('brightnessSlider');
-const brightnessIcon = document.querySelector('.brightness-icon');
+const autoRotateToggleIcon = document.getElementById('autoRotateToggleIcon');
 const resetViewIcon = document.getElementById('resetViewIcon');
 const shadowToggleIcon = document.getElementById('shadowToggleIcon');
 const themeToggleIcon = document.getElementById('themeToggleIcon');
@@ -1510,17 +1510,24 @@ function showActionToast(message) {
     }, 2000);
 }
 
-brightnessIcon.addEventListener('click', () => {
-    const defaultValue = 1;
-
-    modelViewer.exposure = defaultValue;
-
-    brightnessSlider.value = defaultValue;
-
-    showActionToast(currentLang === 'cn' ? '已重置亮度' : 'Brightness reset');
-    
-    if (navigator.vibrate) navigator.vibrate(10);
-});
+if (autoRotateToggleIcon) {
+    autoRotateToggleIcon.setAttribute('title', currentLang === 'cn' ? '关闭自动旋转' : 'Stop auto-rotate');
+    autoRotateToggleIcon.addEventListener('click', () => {
+        const isOn = modelViewer.autoRotate;
+        modelViewer.autoRotate = !isOn;
+        if (modelViewer.autoRotate) {
+            autoRotateToggleIcon.classList.remove('active');
+            autoRotateToggleIcon.setAttribute('title', currentLang === 'cn' ? '关闭自动旋转' : 'Stop auto-rotate');
+        } else {
+            autoRotateToggleIcon.classList.add('active');
+            autoRotateToggleIcon.setAttribute('title', currentLang === 'cn' ? '开启自动旋转' : 'Start auto-rotate');
+        }
+        showActionToast(modelViewer.autoRotate
+            ? (currentLang === 'cn' ? '已开启自动旋转' : 'Auto-rotate on')
+            : (currentLang === 'cn' ? '已关闭自动旋转' : 'Auto-rotate off'));
+        if (navigator.vibrate) navigator.vibrate(10);
+    });
+}
 
 resetViewIcon.addEventListener('click', () => {
     modelViewer.cameraOrbit = initialCameraOrbit;
