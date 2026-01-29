@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Dict, Set, Optional, List, Tuple
 import shutil
 import hashlib
+import re
 
 class EVEDataInitializer:
     def __init__(self):
@@ -180,14 +181,28 @@ class EVEDataInitializer:
             'icon_names': icon_names
         }
     
-    def build_category_tree(self, data: Dict, model_map: Dict[int, str] = None) -> list:
-        """构建category -> group -> type三层树结构"""
+    def build_category_tree(self, data: Dict, model_map: Dict[int, str] = None, all_file_info: List[Dict] = None) -> list:
+        """构建category -> group -> type树结构，对于group 963增加第四层variants"""
         categories = data['categories']
         groups = data['groups']
         types = data['types']
         
         if model_map is None:
             model_map = {}
+        if all_file_info is None:
+            all_file_info = []
+        
+        # 为每个typeid构建变体列表（用于group 963）
+        typeid_variants = {}
+        for file_info in all_file_info:
+            typeid = file_info['typeid']
+            if typeid not in typeid_variants:
+                typeid_variants[typeid] = []
+            typeid_variants[typeid].append({
+                'variant': file_info.get('variant'),
+                'model_path': file_info['relative_path'],
+                'filename': file_info.get('filename', '')
+            })
         
         # 构建树结构
         category_map = {}
@@ -218,7 +233,8 @@ class EVEDataInitializer:
                     'id': group_id,
                     'name': group_info['name'],
                     'icon_name': group_info.get('icon_name'),
-                    'types': []
+                    'types': [],
+                    'is_t3_cruiser': (group_id == 963)  # 标记是否为T3巡洋舰
                 }
         
         # 添加types到groups
@@ -229,7 +245,6 @@ class EVEDataInitializer:
             if category_id and group_id:
                 # 如果category不在map中，需要先创建（用于额外物品ID的情况）
                 if category_id not in category_map:
-                    # 从groups中获取category信息，如果groups中也没有，则创建一个默认的
                     category_map[category_id] = {
                         'id': category_id,
                         'name': categories.get(category_id, {}).get('name', f'分类 {category_id}'),
@@ -243,20 +258,62 @@ class EVEDataInitializer:
                         'id': group_id,
                         'name': groups.get(group_id, {}).get('name', f'组 {group_id}'),
                         'icon_name': groups.get(group_id, {}).get('icon_name'),
-                        'types': []
+                        'types': [],
+                        'is_t3_cruiser': (group_id == 963)
                     }
                 
-                # 获取模型路径（如果有）
-                model_path = model_map.get(type_id, '')
+                # 检查是否为group 963（T3巡洋舰）
+                is_t3_cruiser = (group_id == 963)
                 
-                category_map[category_id]['groups'][group_id]['types'].append({
-                    'id': type_id,
-                    'name': type_info['name'],
-                    'name_en': type_info.get('name_en', ''),
-                    'name_zh': type_info.get('name_zh', ''),
-                    'icon_name': type_info.get('icon_name'),
-                    'model_path': model_path
-                })
+                if is_t3_cruiser and type_id in typeid_variants:
+                    # 对于T3巡洋舰，构建变体列表
+                    variants_list = []
+                    for variant_info in typeid_variants[type_id]:
+                        variant_code = variant_info['variant']
+                        # 构建变体名称
+                        if variant_code:
+                            variant_name = f"{type_info['name']}（{variant_code}）"
+                            variant_name_en = f"{type_info.get('name_en', '')} ({variant_code})"
+                            variant_name_zh = f"{type_info.get('name_zh', '')}（{variant_code}）"
+                        else:
+                            variant_name = type_info['name']
+                            variant_name_en = type_info.get('name_en', '')
+                            variant_name_zh = type_info.get('name_zh', '')
+                        
+                        variants_list.append({
+                            'variant_code': variant_code or '',
+                            'name': variant_name,
+                            'name_en': variant_name_en,
+                            'name_zh': variant_name_zh,
+                            'model_path': variant_info['model_path']
+                        })
+                    
+                    # 按变体代码排序
+                    variants_list.sort(key=lambda x: x['variant_code'])
+                    
+                    # 添加带变体的type
+                    category_map[category_id]['groups'][group_id]['types'].append({
+                        'id': type_id,
+                        'name': type_info['name'],
+                        'name_en': type_info.get('name_en', ''),
+                        'name_zh': type_info.get('name_zh', ''),
+                        'icon_name': type_info.get('icon_name'),
+                        'has_variants': True,
+                        'variants': variants_list
+                    })
+                else:
+                    # 对于普通物品，使用原有逻辑
+                    model_path = model_map.get(type_id, '')
+                    
+                    category_map[category_id]['groups'][group_id]['types'].append({
+                        'id': type_id,
+                        'name': type_info['name'],
+                        'name_en': type_info.get('name_en', ''),
+                        'name_zh': type_info.get('name_zh', ''),
+                        'icon_name': type_info.get('icon_name'),
+                        'has_variants': False,
+                        'model_path': model_path
+                    })
         
         # 转换为列表并排序（按名称排序）
         result = []
@@ -283,13 +340,28 @@ class EVEDataInitializer:
             print(f"  警告: 计算文件哈希失败 {file_path}: {e}")
             return ""
     
+    def extract_variant_info(self, filename: str) -> Optional[str]:
+        """
+        从文件名中提取变体信息（用于group 963的T3巡洋舰）
+        例如: 29984_Tengu2312_caldaribase_lite.glb -> 2312
+        返回4位数字字符串，如果没有则返回None
+        """
+        parts = filename.split('_')
+        if len(parts) >= 2:
+            # 提取第二段
+            second_part = parts[1]
+            # 尝试提取末尾4位数字
+            match = re.search(r'(\d{4})$', second_part)
+            if match:
+                return match.group(1)
+        return None
+    
     def scan_models(self) -> Tuple[Dict[int, str], List[Dict]]:
         """扫描models目录，提取模型文件信息，返回模型映射和文件信息列表（包含哈希）"""
         print("扫描模型文件...")
         
         model_map = {}
-        duplicate_ids = []
-        file_info_list = []  # 存储文件信息：typeid, path, hash
+        file_info_list = []  # 存储文件信息：typeid, path, hash, variant
         
         if not self.models_path.exists():
             print(f"  警告: 模型目录不存在 {self.models_path}")
@@ -320,39 +392,32 @@ class EVEDataInitializer:
                 print(f"  警告: 无法解析模型ID: {model_file.name} (提取的ID: {model_id_str})")
                 continue
             
-            # 检查是否有重复的id（文件名重复）
-            if model_id in model_map:
-                duplicate_ids.append({
-                    'id': model_id,
-                    'existing': model_map[model_id],
-                    'duplicate': model_file.name
-                })
-                continue
-            
             # 计算文件哈希
             file_hash = self.calculate_file_hash(model_file)
             if not file_hash:
                 continue
             
+            # 提取变体信息（用于group 963）
+            variant = self.extract_variant_info(filename_without_ext)
+            
             # 记录模型路径（相对于docs目录）
             model_path = f"./models/{model_file.name}"
-            model_map[model_id] = model_path
             
-            # 记录文件信息
+            # 记录文件信息（包含变体信息）
             file_info_list.append({
                 'typeid': model_id,
                 'path': model_file,
                 'relative_path': model_path,
-                'hash': file_hash
+                'hash': file_hash,
+                'variant': variant,
+                'filename': model_file.name
             })
+            
+            # 对于非变体情况，保留原有的简单映射
+            if model_id not in model_map:
+                model_map[model_id] = model_path
         
-        # 报告重复项
-        if duplicate_ids:
-            print(f"  发现 {len(duplicate_ids)} 个重复的模型ID:")
-            for dup in duplicate_ids:
-                print(f"    ID {dup['id']}: 已使用 {dup['existing']}, 跳过 {dup['duplicate']}")
-        
-        print(f"  扫描到 {len(model_map)} 个模型文件")
+        print(f"  扫描到 {len(file_info_list)} 个模型文件（包含变体）")
         return model_map, file_info_list
     
     def scan_extra_models(self) -> Tuple[Dict[int, str], List[Dict]]:
@@ -360,8 +425,7 @@ class EVEDataInitializer:
         print("扫描额外模型目录...")
         
         extra_models_map = {}
-        duplicate_ids = []
-        file_info_list = []  # 存储文件信息：typeid, path, hash
+        file_info_list = []  # 存储文件信息：typeid, path, hash, variant
         
         if not self.extra_models_path.exists():
             print(f"  提示: 额外模型目录不存在 {self.extra_models_path}，跳过")
@@ -392,59 +456,54 @@ class EVEDataInitializer:
                 print(f"  警告: 无法解析额外模型ID: {model_file.name} (提取的ID: {model_id_str})")
                 continue
             
-            # 检查是否有重复的id（在extra_models目录内部）
-            if model_id in extra_models_map:
-                duplicate_ids.append({
-                    'id': model_id,
-                    'existing': extra_models_map[model_id],
-                    'duplicate': model_file.name
-                })
-                continue
-            
             # 计算文件哈希
             file_hash = self.calculate_file_hash(model_file)
             if not file_hash:
                 continue
             
+            # 提取变体信息（用于group 963）
+            variant = self.extract_variant_info(filename_without_ext)
+            
             # 记录文件路径（相对于docs目录）
             file_path = f"./extra_models/{model_file.name}"
-            extra_models_map[model_id] = file_path
             
-            # 记录文件信息
+            # 记录文件信息（包含变体信息）
             file_info_list.append({
                 'typeid': model_id,
                 'path': model_file,
                 'relative_path': file_path,
-                'hash': file_hash
+                'hash': file_hash,
+                'variant': variant,
+                'filename': model_file.name
             })
+            
+            # 对于非变体情况，保留原有的简单映射
+            if model_id not in extra_models_map:
+                extra_models_map[model_id] = file_path
         
-        # 报告重复项
-        if duplicate_ids:
-            print(f"  警告: 额外模型目录中发现 {len(duplicate_ids)} 个重复的模型ID:")
-            for dup in duplicate_ids:
-                print(f"    ID {dup['id']}: 已使用 {dup['existing']}, 跳过 {dup['duplicate']}")
-        
-        print(f"  从额外模型目录中提取了 {len(extra_models_map)} 个物品ID")
+        print(f"  从额外模型目录中提取了 {len(file_info_list)} 个模型文件（包含变体）")
         return extra_models_map, file_info_list
     
-    def check_duplicate_ids(self, model_map: Dict[int, str], extra_models_map: Dict[int, str]):
-        """检查models和extra_models目录是否有重复的ID"""
-        model_ids = set(model_map.keys())
-        extra_ids = set(extra_models_map.keys())
-        duplicate_ids = model_ids & extra_ids
+    def check_duplicate_files(self, model_file_info: List[Dict], extra_file_info: List[Dict]):
+        """检查models和extra_models目录是否有完全相同的文件名"""
+        model_filenames = {info['filename']: info['relative_path'] for info in model_file_info}
+        extra_filenames = {info['filename']: info['relative_path'] for info in extra_file_info}
         
-        if duplicate_ids:
-            error_msg = f"\n错误: 发现 {len(duplicate_ids)} 个重复的物品ID，这些ID同时存在于models和extra_models目录中:\n"
-            for dup_id in sorted(duplicate_ids):
-                error_msg += f"  物品ID {dup_id}:\n"
-                error_msg += f"    - models目录: {model_map[dup_id]}\n"
-                error_msg += f"    - extra_models目录: {extra_models_map[dup_id]}\n"
-            error_msg += "\n请移除其中一个目录中的文件，确保每个物品ID只在一个目录中出现。\n"
+        duplicate_files = set(model_filenames.keys()) & set(extra_filenames.keys())
+        
+        if duplicate_files:
+            error_msg = f"\n错误: 发现 {len(duplicate_files)} 个重复的文件名，这些文件同时存在于models和extra_models目录中:\n"
+            for dup_file in sorted(duplicate_files):
+                error_msg += f"  文件 {dup_file}:\n"
+                error_msg += f"    - models目录: {model_filenames[dup_file]}\n"
+                error_msg += f"    - extra_models目录: {extra_filenames[dup_file]}\n"
+            error_msg += "\n请移除其中一个目录中的文件，确保每个文件名只在一个目录中出现。\n"
             raise ValueError(error_msg)
     
     def deduplicate_model_mapping(self, file_info_list: List[Dict]) -> Dict[int, str]:
         """
         根据文件哈希值复用模型文件，对于哈希相同的文件，让所有 typeid 都指向 typeid 最小的文件
+        但对于有变体标识的文件（variant不为None），不参与去重，保留所有变体
         不删除任何文件，只是更新映射关系以实现复用
         返回: 去重后的模型映射（所有相同哈希的 typeid 都指向保留的文件）
         """
@@ -453,9 +512,26 @@ class EVEDataInitializer:
         if not file_info_list:
             return {}
         
-        # 按哈希值分组
+        # 分离变体文件和普通文件
+        variant_files = [f for f in file_info_list if f.get('variant') is not None]
+        normal_files = [f for f in file_info_list if f.get('variant') is None]
+        
+        print(f"  变体文件: {len(variant_files)} 个（不参与去重）")
+        print(f"  普通文件: {len(normal_files)} 个（参与去重）")
+        
+        # 构建结果映射
+        result_map = {}
+        
+        # 变体文件直接保留，不去重
+        for file_info in variant_files:
+            typeid = file_info['typeid']
+            # 对于变体文件，使用文件名作为键的一部分来保证唯一性
+            # 但在实际映射中，我们需要保留完整路径信息
+            result_map[typeid] = file_info['relative_path']
+        
+        # 按哈希值分组普通文件
         hash_groups: Dict[str, List[Dict]] = {}
-        for file_info in file_info_list:
+        for file_info in normal_files:
             file_hash = file_info['hash']
             if file_hash not in hash_groups:
                 hash_groups[file_hash] = []
@@ -464,8 +540,6 @@ class EVEDataInitializer:
         # 找出重复的哈希值（组内文件数 > 1）
         duplicate_groups = {h: files for h, files in hash_groups.items() if len(files) > 1}
         
-        # 构建复用映射：所有 typeid -> 保留文件的路径
-        result_map = {}
         reused_count = 0
         
         # 处理每个重复组
@@ -489,7 +563,7 @@ class EVEDataInitializer:
             for reuse_file in reuse_files:
                 print(f"        复用: {reuse_file['path'].name} (typeid: {reuse_file['typeid']}) -> 指向 {keep_file['path'].name}")
         
-        # 处理非重复的文件（直接使用自己的路径）
+        # 处理非重复的普通文件（直接使用自己的路径）
         for file_hash, files in hash_groups.items():
             if file_hash not in duplicate_groups:
                 for file_info in files:
@@ -500,7 +574,7 @@ class EVEDataInitializer:
         else:
             print("  未发现重复文件，无需复用")
         
-        print(f"  映射关系: {len(result_map)} 个 typeid")
+        print(f"  映射关系: {len(result_map)} 个条目（包含 {len(variant_files)} 个变体文件）")
         
         return result_map
     
@@ -582,8 +656,8 @@ class EVEDataInitializer:
                 # 4. 扫描额外模型目录，提取额外物品ID（包含哈希计算）
                 extra_models_map, extra_file_info = self.scan_extra_models()
                 
-                # 5. 检查两个目录是否有重复的ID（文件名重复）
-                self.check_duplicate_ids(model_map, extra_models_map)
+                # 5. 检查两个目录是否有重复的文件名
+                self.check_duplicate_files(model_file_info, extra_file_info)
                 
                 # 6. 合并文件信息列表，进行哈希去重
                 all_file_info = model_file_info + extra_file_info
@@ -596,11 +670,11 @@ class EVEDataInitializer:
                 
                 # 10. 加载中文数据
                 data_zh = self.load_data(conn_zh, 'zh', extra_type_ids)
-                tree_zh = self.build_category_tree(data_zh, combined_model_map)
+                tree_zh = self.build_category_tree(data_zh, combined_model_map, all_file_info)
                 
                 # 11. 加载英文数据
                 data_en = self.load_data(conn_en, 'en', extra_type_ids)
-                tree_en = self.build_category_tree(data_en, combined_model_map)
+                tree_en = self.build_category_tree(data_en, combined_model_map, all_file_info)
                 
                 # 12. 提取图标（合并中英文的图标需求）
                 all_icons = data_zh['icon_names'] | data_en['icon_names']

@@ -300,7 +300,7 @@ if (themeToggleIcon) {
     themeToggleIcon.addEventListener('click', toggleTheme);
 }
 
-function loadModel(src, shipInfo = null, typeId = null, updateHash = true) {
+function loadModel(src, shipInfo = null, typeId = null, variantCode = null, updateHash = true) {
     if (!src) return;
     
     const normalizeSrc = (path) => {
@@ -336,8 +336,14 @@ function loadModel(src, shipInfo = null, typeId = null, updateHash = true) {
     if (updateHash) {
         if (typeId) {
             setHashParam('typeid', typeId);
+            if (variantCode) {
+                setHashParam('variant', variantCode);
+            } else {
+                setHashParam('variant', null);
+            }
         } else {
             setHashParam('typeid', null);
+            setHashParam('variant', null);
         }
     }
     
@@ -813,7 +819,11 @@ class NavigationManager {
                 category.groups.forEach(group => {
                     if (group.types) {
                         group.types.forEach(type => {
-                            type.has_model = !!(type.model_path && type.model_path.trim());
+                            if (type.has_variants && type.variants && type.variants.length > 0) {
+                                type.has_model = true;
+                            } else {
+                                type.has_model = !!(type.model_path && type.model_path.trim());
+                            }
                         });
                         group.has_model = group.types.some(type => type.has_model);
                     } else {
@@ -912,6 +922,8 @@ class NavigationManager {
                 current = current.children.find(c => c.id === item.id);
             } else if (item.type === 'group') {
                 current = current.groups.find(g => g.id === item.id);
+            } else if (item.type === 'ship') {
+                current = current.types.find(t => t.id === item.id);
             }
         });
     }
@@ -933,6 +945,8 @@ class NavigationManager {
                 current = current.children.find(c => c.id === item.id);
             } else if (item.type === 'group') {
                 current = current.groups.find(g => g.id === item.id);
+            } else if (item.type === 'ship') {
+                current = current.types.find(t => t.id === item.id);
             }
         });
 
@@ -970,6 +984,8 @@ class NavigationManager {
                 return nameA.localeCompare(nameB);
             });
             this.renderTypes(sortedTypes);
+        } else if (this.path[this.path.length - 1].type === 'ship') {
+            this.renderVariants(current.variants || []);
         }
     }
 
@@ -979,7 +995,9 @@ class NavigationManager {
             category.groups.forEach(group => {
                 if (group.types) {
                     group.types.forEach(type => {
-                        if (type.has_model || (type.model_path && type.model_path.trim())) {
+                        if (type.has_variants && type.variants && type.variants.length > 0) {
+                            count += type.variants.length;
+                        } else if (type.has_model || (type.model_path && type.model_path.trim())) {
                             count++;
                         }
                     });
@@ -1123,16 +1141,100 @@ class NavigationManager {
             }
             item.appendChild(name);
 
+            if (type.has_variants && type.variants && type.variants.length > 0) {
+                const arrow = document.createElement('div');
+                arrow.className = 'nav-arrow';
+                arrow.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>';
+                item.appendChild(arrow);
+            }
+
             item.addEventListener('click', () => {
                 document.querySelectorAll('.type-item').forEach(i => i.classList.remove('active'));
                 item.classList.add('active');
                 
-                if (type.model_path) {
+                if (type.has_variants && type.variants && type.variants.length > 0) {
+                    const newPath = [...this.path, { type: 'ship', id: type.id, name: type.name }];
+                    this.navigateTo(newPath);
+                } else if (type.model_path) {
                     loadModel(type.model_path, {
                         name: type.name,
                         name_en: type.name_en || '',
                         name_zh: type.name_zh || ''
                     }, type.id);
+                    
+                    if (this.container && this.container.id === 'navContentMobile') {
+                        closeDrawer();
+                    }
+                }
+            });
+
+            list.appendChild(item);
+        });
+
+        this.container.appendChild(list);
+    }
+
+    renderVariants(variants) {
+        const list = document.createElement('ul');
+        list.className = 'category-tree';
+
+        const shipInfo = this.path[this.path.length - 1];
+        const shipId = shipInfo.id;
+        
+        // 从 URL 获取当前选中的变体
+        const currentVariantCode = getHashParam('variant');
+        const currentTypeId = parseInt(getHashParam('typeid'), 10);
+        
+        // 判断是否需要自动加载第一个变体（当导航到变体列表时）
+        const shouldAutoLoad = currentTypeId !== shipId || !currentVariantCode;
+
+        variants.forEach((variant, index) => {
+            const item = document.createElement('li');
+            item.className = 'variant-item';
+            
+            // 如果是URL指定的变体或第一个变体（没有URL参数时），自动选中
+            const shouldActivate = currentVariantCode 
+                ? variant.variant_code === currentVariantCode 
+                : index === 0;
+            
+            if (shouldActivate) {
+                item.classList.add('active');
+                
+                // 自动加载第一个变体的模型（当用户手动导航到变体列表时）
+                if (shouldAutoLoad && index === 0 && variant.model_path) {
+                    setTimeout(() => {
+                        loadModel(variant.model_path, {
+                            name: variant.name,
+                            name_en: variant.name_en || '',
+                            name_zh: variant.name_zh || ''
+                        }, shipId, variant.variant_code || null);
+                    }, 50);
+                }
+            }
+
+            const iconWrapper = createIconWithSpinner(
+                'variant-icon',
+                getTypeIconUrl(null, shipId),
+                variant.name,
+                true
+            );
+            item.appendChild(iconWrapper);
+
+            const name = document.createElement('span');
+            name.className = 'variant-name';
+            name.textContent = variant.name;
+            item.appendChild(name);
+
+            item.addEventListener('click', () => {
+                document.querySelectorAll('.variant-item').forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+                
+                if (variant.model_path) {
+                    loadModel(variant.model_path, {
+                        name: variant.name,
+                        name_en: variant.name_en || '',
+                        name_zh: variant.name_zh || ''
+                    }, shipId, variant.variant_code || null);
                 }
                 
                 if (this.container && this.container.id === 'navContentMobile') {
@@ -1157,18 +1259,38 @@ function buildSearchIndex(data) {
             category.groups.forEach(group => {
                 if (group.types) {
                     group.types.forEach(type => {
-                        index.push({
-                            id: type.id,
-                            name: type.name,
-                            name_en: type.name_en || '',
-                            name_zh: type.name_zh || '',
-                            icon_name: type.icon_name || '',
-                            model_path: type.model_path || '',
-                            categoryId: category.id,
-                            categoryName: category.name,
-                            groupId: group.id,
-                            groupName: group.name
-                        });
+                        if (type.has_variants && type.variants && type.variants.length > 0) {
+                            type.variants.forEach(variant => {
+                                index.push({
+                                    id: type.id,
+                                    name: variant.name,
+                                    name_en: variant.name_en || '',
+                                    name_zh: variant.name_zh || '',
+                                    icon_name: type.icon_name || '',
+                                    model_path: variant.model_path || '',
+                                    variant_code: variant.variant_code || '',
+                                    has_variants: true,
+                                    categoryId: category.id,
+                                    categoryName: category.name,
+                                    groupId: group.id,
+                                    groupName: group.name
+                                });
+                            });
+                        } else {
+                            index.push({
+                                id: type.id,
+                                name: type.name,
+                                name_en: type.name_en || '',
+                                name_zh: type.name_zh || '',
+                                icon_name: type.icon_name || '',
+                                model_path: type.model_path || '',
+                                has_variants: false,
+                                categoryId: category.id,
+                                categoryName: category.name,
+                                groupId: group.id,
+                                groupName: group.name
+                            });
+                        }
                     });
                 }
             });
@@ -1177,15 +1299,40 @@ function buildSearchIndex(data) {
     return index;
 }
 
-function findTypeById(data, typeId) {
+function findTypeById(data, typeId, variantCode = null) {
     for (const category of data) {
         if (category.groups) {
             for (const group of category.groups) {
                 if (group.types) {
                     for (const type of group.types) {
                         if (type.id === typeId) {
+                            // 如果有变体
+                            if (type.has_variants && type.variants && type.variants.length > 0) {
+                                let selectedVariant = null;
+                                
+                                if (variantCode) {
+                                    // 查找指定的变体
+                                    selectedVariant = type.variants.find(v => v.variant_code === variantCode);
+                                }
+                                
+                                // 如果没找到指定变体，使用第一个变体
+                                if (!selectedVariant) {
+                                    selectedVariant = type.variants[0];
+                                }
+                                
+                                // 返回变体数据
+                                return {
+                                    type: type,
+                                    variant: selectedVariant,
+                                    category: category,
+                                    group: group
+                                };
+                            }
+                            
+                            // 没有变体，返回普通类型
                             return {
                                 type: type,
+                                variant: null,
                                 category: category,
                                 group: group
                             };
@@ -1213,17 +1360,40 @@ function loadModelFromHash() {
         return;
     }
     
-    const result = findTypeById(resourcesIndex, typeId);
-    if (!result || !result.type.model_path) {
+    const variantCode = getHashParam('variant') || null;
+    const result = findTypeById(resourcesIndex, typeId, variantCode);
+    
+    if (!result) {
         showModelNotFoundError();
         return;
     }
     
-    loadModel(result.type.model_path, {
-        name: result.type.name,
-        name_en: result.type.name_en || '',
-        name_zh: result.type.name_zh || ''
-    }, result.type.id, false);
+    // 如果有变体，使用变体的数据
+    let modelPath, shipInfo, actualVariantCode;
+    if (result.variant) {
+        modelPath = result.variant.model_path;
+        shipInfo = {
+            name: result.variant.name,
+            name_en: result.variant.name_en || '',
+            name_zh: result.variant.name_zh || ''
+        };
+        actualVariantCode = result.variant.variant_code || null;
+    } else {
+        modelPath = result.type.model_path;
+        shipInfo = {
+            name: result.type.name,
+            name_en: result.type.name_en || '',
+            name_zh: result.type.name_zh || ''
+        };
+        actualVariantCode = null;
+    }
+    
+    if (!modelPath) {
+        showModelNotFoundError();
+        return;
+    }
+    
+    loadModel(modelPath, shipInfo, result.type.id, actualVariantCode, false);
 }
 
 function showModelNotFoundError() {
@@ -1315,7 +1485,7 @@ function renderSearchResults(results, searchResultsContainer, navManager) {
                             name: result.name,
                             name_en: result.name_en || '',
                             name_zh: result.name_zh || ''
-                        }, result.id);
+                        }, result.id, result.variant_code || null);
                     }
                 });
             } else {
@@ -1330,7 +1500,7 @@ function renderSearchResults(results, searchResultsContainer, navManager) {
                                 name: result.name,
                                 name_en: result.name_en || '',
                                 name_zh: result.name_zh || ''
-                            }, result.id);
+                            }, result.id, result.variant_code || null);
                         }
                     }
                 }, 100);
