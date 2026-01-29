@@ -8945,5 +8945,424 @@
         ]
       }
     ]
+  },
+  {
+    "id": 32,
+    "name": "Subsystem",
+    "icon_name": "category_32.png",
+    "groups": [
+      {
+        "id": 958,
+        "name": "Core Subsystem",
+        "icon_name": "type_30139_64.png",
+        "types": [
+          {
+            "id": 45623,
+            "name": "Legion Core - Augmented Antimatter Reactor",
+            "name_en": "Legion Core - Augmented Antimatter Reactor",
+            "name_zh": "圣卒核心 - 增强反物质反应堆",
+            "icon_name": "type_30139_64.png",
+            "model_path": "./extra_models/45623_lite.glb"
+          },
+          {
+            "id": 45622,
+            "name": "Legion Core - Dissolution Sequencer",
+            "name_en": "Legion Core - Dissolution Sequencer",
+            "name_zh": "圣卒核心 - 散解程控装置",
+            "icon_name": "type_30139_64.png",
+            "model_path": "./extra_models/45622_lite.glb"
+          },
+          {
+            "id": 45624,
+            "name": "Legion Core - Energy Parasitic Complex",
+            "name_en": "Legion Core - Energy Parasitic Complex",
+            "name_zh": "圣卒核心 - 能量寄取集成体",
+            "icon_name": "type_30139_64.png",
+            "model_path": "./extra_models/45624_lite.glb"
+          },
+          {
+            "id": 45632,
+            "name": "Loki Core - Augmented Nuclear Reactor",
+            "name_en": "Loki Core - Augmented Nuclear Reactor",
+            "name_zh": "洛基核心 - 增强核反应堆",
+            "icon_name": "type_30139_64.png",
+            "model_path": "./extra_models/45632_lite.glb"
+          },
+          {
+            "id": 45631,
+            "name": "Loki Core - Dissolution Sequencer",
+            "name_en": "Loki Core - Dissolution Sequencer",
+            "name_zh": "洛基核心 - 散解程控装置",
+            "icon_name": "type_30139_64.png",
+            "model_path": "./extra_models/45631_lite.glb"
+          },
+          {
+            "id": 45633,
+            "name": "Loki Core - Immobility Drivers",
+            "name_en": "Loki Core - Immobility Drivers",
+            "name_zh": "洛基核心 - 停滞光束驱动器",
+            "icon_name": "type_30139_64.png",
+            "model_path": "./extra_models/45633_lite.glb"
+          },
+          {
+            "id": 45629,
+            "name": "Proteus Core - Augmented Fusion Reactor",
+            "name_en": "Proteus Core - Augmented Fusion Reactor",
+            "name_zh": "海神核心 - 增强聚变反应堆",
+            "icon_name": "type_30139_64.png",
+            "model_path": "./extra_models/45629_lite.glb"
+          },
+          {
+            "id": 45628,
+            "name": "Proteus Core - Electronic Efficiency Gate",
+            "name_en": "Proteus Core - Electronic Efficiency Gate",
+            "name_zh": "海神核心 - 电子效能组合逻辑元件",
+            "icon_name": "type_30139_64.png",
+            "model_path": "./extra_models/45628_lite.glb"
+          },
+          {
+            "id": 45630,
+            "name": "Proteus Core - Friction Extension Processor",
+            "name_en": "Proteus Core - Friction Extension Processor",
+            "name_zh": "海神核心 - 分歧缓散处理器",
+            "icon_name": "type_30139_64.png",
+            "model_path": "./extra_models/45630_lite.glb"
+          },
+          {
+            "id": 45626,
+            "name": "Tengu Core - Augmented Graviton Reactor",
+            "name_en": "Tengu Core - Augmented Graviton Reactor",
+            "name_zh": "金鹏核心 - 增强引力子反应堆",
+            "icon_name": "type_30139_64.png",
+            "model_path": "./extra_models/45626_lite.glb"
+          },
+          {
+            "id": 45625,
+            "name": "Tengu Core - Electronic Efficiency Gate",
+            "name_en": "Tengu Core - Electronic Efficiency Gate",
+            "name_zh": "金鹏核心 - 电子效能组合逻辑元件",
+            "icon_name": "type_30139_64.png",
+            "model_path": "./extra_models/45625_lite.glb"
+          },
+          {
+            "id": 45627,
+            "name": "Tengu Core - Obfuscation Manifold",
+            "name_en": "Tengu Core - Obfuscation Manifold",
+            "name_zh": "金鹏核心 - 干扰管",
+            "icon_name": "type_30139_64.png",
+            "model_path": "./extra_models/45627_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 954,
+        "name": "Defensive Subsystem",
+        "icon_name": "type_29964_64.png",
+        "types": [
+          {
+            "id": 45587,
+            "name": "Legion Defensive - Augmented Plating",
+            "name_en": "Legion Defensive - Augmented Plating",
+            "name_zh": "圣卒防御 - 增强装甲板",
+            "icon_name": "type_29964_64.png",
+            "model_path": "./extra_models/45587_lite.glb"
+          },
+          {
+            "id": 45586,
+            "name": "Legion Defensive - Covert Reconfiguration",
+            "name_en": "Legion Defensive - Covert Reconfiguration",
+            "name_zh": "圣卒防御 - 隐形优化器",
+            "icon_name": "type_29964_64.png",
+            "model_path": "./extra_models/45586_lite.glb"
+          },
+          {
+            "id": 45588,
+            "name": "Legion Defensive - Nanobot Injector",
+            "name_en": "Legion Defensive - Nanobot Injector",
+            "name_zh": "圣卒防御 - 纳米机器人喷注器",
+            "icon_name": "type_29964_64.png",
+            "model_path": "./extra_models/45588_lite.glb"
+          },
+          {
+            "id": 45597,
+            "name": "Loki Defensive - Adaptive Defense Node",
+            "name_en": "Loki Defensive - Adaptive Defense Node",
+            "name_zh": "洛基防御 - 自适应防御节点",
+            "icon_name": "type_29964_64.png",
+            "model_path": "./extra_models/45597_lite.glb"
+          },
+          {
+            "id": 45596,
+            "name": "Loki Defensive - Augmented Durability",
+            "name_en": "Loki Defensive - Augmented Durability",
+            "name_zh": "洛基防御 - 增强耐用装置",
+            "icon_name": "type_29964_64.png",
+            "model_path": "./extra_models/45596_lite.glb"
+          },
+          {
+            "id": 45595,
+            "name": "Loki Defensive - Covert Reconfiguration",
+            "name_en": "Loki Defensive - Covert Reconfiguration",
+            "name_zh": "洛基防御 - 隐形优化器",
+            "icon_name": "type_29964_64.png",
+            "model_path": "./extra_models/45595_lite.glb"
+          },
+          {
+            "id": 45593,
+            "name": "Proteus Defensive - Augmented Plating",
+            "name_en": "Proteus Defensive - Augmented Plating",
+            "name_zh": "海神防御 - 增强无人机装甲板",
+            "icon_name": "type_29964_64.png",
+            "model_path": "./extra_models/45593_lite.glb"
+          },
+          {
+            "id": 45592,
+            "name": "Proteus Defensive - Covert Reconfiguration",
+            "name_en": "Proteus Defensive - Covert Reconfiguration",
+            "name_zh": "海神防御 - 隐形优化器",
+            "icon_name": "type_29964_64.png",
+            "model_path": "./extra_models/45592_lite.glb"
+          },
+          {
+            "id": 45594,
+            "name": "Proteus Defensive - Nanobot Injector",
+            "name_en": "Proteus Defensive - Nanobot Injector",
+            "name_zh": "海神防御 - 纳米机器人喷注器",
+            "icon_name": "type_29964_64.png",
+            "model_path": "./extra_models/45594_lite.glb"
+          },
+          {
+            "id": 45591,
+            "name": "Tengu Defensive - Amplification Node",
+            "name_en": "Tengu Defensive - Amplification Node",
+            "name_zh": "金鹏防御 - 放大节点",
+            "icon_name": "type_29964_64.png",
+            "model_path": "./extra_models/45591_lite.glb"
+          },
+          {
+            "id": 45589,
+            "name": "Tengu Defensive - Covert Reconfiguration",
+            "name_en": "Tengu Defensive - Covert Reconfiguration",
+            "name_zh": "金鹏防御 - 隐形优化器",
+            "icon_name": "type_29964_64.png",
+            "model_path": "./extra_models/45589_lite.glb"
+          },
+          {
+            "id": 45590,
+            "name": "Tengu Defensive - Supplemental Screening",
+            "name_en": "Tengu Defensive - Supplemental Screening",
+            "name_zh": "金鹏防御 - 辅助保护幕墙",
+            "icon_name": "type_29964_64.png",
+            "model_path": "./extra_models/45590_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 956,
+        "name": "Offensive Subsystem",
+        "icon_name": "type_30117_64.png",
+        "types": [
+          {
+            "id": 45599,
+            "name": "Legion Offensive - Assault Optimization",
+            "name_en": "Legion Offensive - Assault Optimization",
+            "name_zh": "圣卒攻击 - 攻击导弹优化器",
+            "icon_name": "type_30117_64.png",
+            "model_path": "./extra_models/45599_lite.glb"
+          },
+          {
+            "id": 45598,
+            "name": "Legion Offensive - Liquid Crystal Magnifiers",
+            "name_en": "Legion Offensive - Liquid Crystal Magnifiers",
+            "name_zh": "圣卒攻击 - 液晶放大器",
+            "icon_name": "type_30117_64.png",
+            "model_path": "./extra_models/45598_lite.glb"
+          },
+          {
+            "id": 45600,
+            "name": "Legion Offensive - Support Processor",
+            "name_en": "Legion Offensive - Support Processor",
+            "name_zh": "圣卒攻击 - 后勤处理器",
+            "icon_name": "type_30117_64.png",
+            "model_path": "./extra_models/45600_lite.glb"
+          },
+          {
+            "id": 45608,
+            "name": "Loki Offensive - Launcher Efficiency Configuration",
+            "name_en": "Loki Offensive - Launcher Efficiency Configuration",
+            "name_zh": "洛基攻击 - 发射器增效装置",
+            "icon_name": "type_30117_64.png",
+            "model_path": "./extra_models/45608_lite.glb"
+          },
+          {
+            "id": 45607,
+            "name": "Loki Offensive - Projectile Scoping Array",
+            "name_en": "Loki Offensive - Projectile Scoping Array",
+            "name_zh": "洛基攻击 - 弹道描迹阵列",
+            "icon_name": "type_30117_64.png",
+            "model_path": "./extra_models/45607_lite.glb"
+          },
+          {
+            "id": 45609,
+            "name": "Loki Offensive - Support Processor",
+            "name_en": "Loki Offensive - Support Processor",
+            "name_zh": "洛基攻击 - 后勤处理器",
+            "icon_name": "type_30117_64.png",
+            "model_path": "./extra_models/45609_lite.glb"
+          },
+          {
+            "id": 45605,
+            "name": "Proteus Offensive - Drone Synthesis Projector",
+            "name_en": "Proteus Offensive - Drone Synthesis Projector",
+            "name_zh": "海神攻击 - 无人机合成投射装置",
+            "icon_name": "type_30117_64.png",
+            "model_path": "./extra_models/45605_lite.glb"
+          },
+          {
+            "id": 45604,
+            "name": "Proteus Offensive - Hybrid Encoding Platform",
+            "name_en": "Proteus Offensive - Hybrid Encoding Platform",
+            "name_zh": "海神攻击 - 混合解码平台",
+            "icon_name": "type_30117_64.png",
+            "model_path": "./extra_models/45604_lite.glb"
+          },
+          {
+            "id": 45606,
+            "name": "Proteus Offensive - Support Processor",
+            "name_en": "Proteus Offensive - Support Processor",
+            "name_zh": "海神攻击 - 后勤处理器",
+            "icon_name": "type_30117_64.png",
+            "model_path": "./extra_models/45606_lite.glb"
+          },
+          {
+            "id": 45601,
+            "name": "Tengu Offensive - Accelerated Ejection Bay",
+            "name_en": "Tengu Offensive - Accelerated Ejection Bay",
+            "name_zh": "金鹏攻击 - 加速弹射舱",
+            "icon_name": "type_30117_64.png",
+            "model_path": "./extra_models/45601_lite.glb"
+          },
+          {
+            "id": 45602,
+            "name": "Tengu Offensive - Magnetic Infusion Basin",
+            "name_en": "Tengu Offensive - Magnetic Infusion Basin",
+            "name_zh": "金鹏攻击 - 磁性注入闸",
+            "icon_name": "type_30117_64.png",
+            "model_path": "./extra_models/45602_lite.glb"
+          },
+          {
+            "id": 45603,
+            "name": "Tengu Offensive - Support Processor",
+            "name_en": "Tengu Offensive - Support Processor",
+            "name_zh": "金鹏攻击 - 后勤处理器",
+            "icon_name": "type_30117_64.png",
+            "model_path": "./extra_models/45603_lite.glb"
+          }
+        ]
+      },
+      {
+        "id": 957,
+        "name": "Propulsion Subsystem",
+        "icon_name": "type_30076_64.png",
+        "types": [
+          {
+            "id": 45611,
+            "name": "Legion Propulsion - Intercalated Nanofibers",
+            "name_en": "Legion Propulsion - Intercalated Nanofibers",
+            "name_zh": "圣卒推进 - 间层纳米纤维",
+            "icon_name": "type_30076_64.png",
+            "model_path": "./extra_models/45611_lite.glb"
+          },
+          {
+            "id": 45610,
+            "name": "Legion Propulsion - Interdiction Nullifier",
+            "name_en": "Legion Propulsion - Interdiction Nullifier",
+            "name_zh": "圣卒推进 - 拦截湮灭者",
+            "icon_name": "type_30076_64.png",
+            "model_path": "./extra_models/45610_lite.glb"
+          },
+          {
+            "id": 45612,
+            "name": "Legion Propulsion - Wake Limiter",
+            "name_en": "Legion Propulsion - Wake Limiter",
+            "name_zh": "圣卒推进 - 尾迹抑制器",
+            "icon_name": "type_30076_64.png",
+            "model_path": "./extra_models/45612_lite.glb"
+          },
+          {
+            "id": 45620,
+            "name": "Loki Propulsion - Intercalated Nanofibers",
+            "name_en": "Loki Propulsion - Intercalated Nanofibers",
+            "name_zh": "洛基推进 - 间层纳米纤维",
+            "icon_name": "type_30076_64.png",
+            "model_path": "./extra_models/45620_lite.glb"
+          },
+          {
+            "id": 45619,
+            "name": "Loki Propulsion - Interdiction Nullifier",
+            "name_en": "Loki Propulsion - Interdiction Nullifier",
+            "name_zh": "洛基推进 - 拦截湮灭者",
+            "icon_name": "type_30076_64.png",
+            "model_path": "./extra_models/45619_lite.glb"
+          },
+          {
+            "id": 45621,
+            "name": "Loki Propulsion - Wake Limiter",
+            "name_en": "Loki Propulsion - Wake Limiter",
+            "name_zh": "洛基推进 - 尾迹抑制器",
+            "icon_name": "type_30076_64.png",
+            "model_path": "./extra_models/45621_lite.glb"
+          },
+          {
+            "id": 45617,
+            "name": "Proteus Propulsion - Hyperspatial Optimization",
+            "name_en": "Proteus Propulsion - Hyperspatial Optimization",
+            "name_zh": "海神推进 - 超空间优化器",
+            "icon_name": "type_30076_64.png",
+            "model_path": "./extra_models/45617_lite.glb"
+          },
+          {
+            "id": 45616,
+            "name": "Proteus Propulsion - Interdiction Nullifier",
+            "name_en": "Proteus Propulsion - Interdiction Nullifier",
+            "name_zh": "海神推进 - 拦截湮灭者",
+            "icon_name": "type_30076_64.png",
+            "model_path": "./extra_models/45616_lite.glb"
+          },
+          {
+            "id": 45618,
+            "name": "Proteus Propulsion - Localized Injectors",
+            "name_en": "Proteus Propulsion - Localized Injectors",
+            "name_zh": "海神推进 - 分布喷注器",
+            "icon_name": "type_30076_64.png",
+            "model_path": "./extra_models/45618_lite.glb"
+          },
+          {
+            "id": 45614,
+            "name": "Tengu Propulsion - Chassis Optimization",
+            "name_en": "Tengu Propulsion - Chassis Optimization",
+            "name_zh": "金鹏推进 - 机舱优化",
+            "icon_name": "type_30076_64.png",
+            "model_path": "./extra_models/45614_lite.glb"
+          },
+          {
+            "id": 45615,
+            "name": "Tengu Propulsion - Fuel Catalyst",
+            "name_en": "Tengu Propulsion - Fuel Catalyst",
+            "name_zh": "金鹏推进 - 燃料催化器",
+            "icon_name": "type_30076_64.png",
+            "model_path": "./extra_models/45615_lite.glb"
+          },
+          {
+            "id": 45613,
+            "name": "Tengu Propulsion - Interdiction Nullifier",
+            "name_en": "Tengu Propulsion - Interdiction Nullifier",
+            "name_zh": "金鹏推进 - 拦截湮灭者",
+            "icon_name": "type_30076_64.png",
+            "model_path": "./extra_models/45613_lite.glb"
+          }
+        ]
+      }
+    ]
   }
 ]
