@@ -1260,21 +1260,41 @@ function buildSearchIndex(data) {
                 if (group.types) {
                     group.types.forEach(type => {
                         if (type.has_variants && type.variants && type.variants.length > 0) {
+                            // 为有变体的类型添加主条目（使用默认模型）
+                            index.push({
+                                id: type.id,
+                                name: type.name,
+                                name_en: type.name_en || '',
+                                name_zh: type.name_zh || '',
+                                icon_name: type.icon_name || '',
+                                model_path: type.model_path || '',
+                                variant_code: '',
+                                has_variants: true,
+                                categoryId: category.id,
+                                categoryName: category.name,
+                                groupId: group.id,
+                                groupName: group.name
+                            });
+                            
+                            // 也为每个变体创建条目，方便搜索具体变体
                             type.variants.forEach(variant => {
-                                index.push({
-                                    id: type.id,
-                                    name: variant.name,
-                                    name_en: variant.name_en || '',
-                                    name_zh: variant.name_zh || '',
-                                    icon_name: type.icon_name || '',
-                                    model_path: variant.model_path || '',
-                                    variant_code: variant.variant_code || '',
-                                    has_variants: true,
-                                    categoryId: category.id,
-                                    categoryName: category.name,
-                                    groupId: group.id,
-                                    groupName: group.name
-                                });
+                                // 只为有变体代码的创建单独条目
+                                if (variant.variant_code) {
+                                    index.push({
+                                        id: type.id,
+                                        name: variant.name,
+                                        name_en: variant.name_en || '',
+                                        name_zh: variant.name_zh || '',
+                                        icon_name: type.icon_name || '',
+                                        model_path: variant.model_path || '',
+                                        variant_code: variant.variant_code || '',
+                                        has_variants: true,
+                                        categoryId: category.id,
+                                        categoryName: category.name,
+                                        groupId: group.id,
+                                        groupName: group.name
+                                    });
+                                }
                             });
                         } else {
                             index.push({
@@ -1306,33 +1326,17 @@ function findTypeById(data, typeId, variantCode = null) {
                 if (group.types) {
                     for (const type of group.types) {
                         if (type.id === typeId) {
-                            // 如果有变体
-                            if (type.has_variants && type.variants && type.variants.length > 0) {
-                                let selectedVariant = null;
-                                
-                                if (variantCode) {
-                                    // 查找指定的变体
-                                    selectedVariant = type.variants.find(v => v.variant_code === variantCode);
-                                }
-                                
-                                // 如果没找到指定变体，使用第一个变体
-                                if (!selectedVariant) {
-                                    selectedVariant = type.variants[0];
-                                }
-                                
-                                // 返回变体数据
-                                return {
-                                    type: type,
-                                    variant: selectedVariant,
-                                    category: category,
-                                    group: group
-                                };
+                            let selectedVariant = null;
+                            
+                            // 只有指定了 variantCode 时才查找变体
+                            if (variantCode && type.has_variants && type.variants && type.variants.length > 0) {
+                                selectedVariant = type.variants.find(v => v.variant_code === variantCode);
                             }
                             
-                            // 没有变体，返回普通类型
+                            // 返回结果
                             return {
                                 type: type,
-                                variant: null,
+                                variant: selectedVariant,
                                 category: category,
                                 group: group
                             };
@@ -1368,9 +1372,14 @@ function loadModelFromHash() {
         return;
     }
     
-    // 如果有变体，使用变体的数据
+    // 如果指定了变体参数
     let modelPath, shipInfo, actualVariantCode;
-    if (result.variant) {
+    if (variantCode) {
+        // 如果指定了变体但没找到，显示错误
+        if (!result.variant) {
+            showModelNotFoundError();
+            return;
+        }
         modelPath = result.variant.model_path;
         shipInfo = {
             name: result.variant.name,
@@ -1379,6 +1388,7 @@ function loadModelFromHash() {
         };
         actualVariantCode = result.variant.variant_code || null;
     } else {
+        // 没有指定变体参数，使用默认模型
         modelPath = result.type.model_path;
         shipInfo = {
             name: result.type.name,

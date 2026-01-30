@@ -268,6 +268,8 @@ class EVEDataInitializer:
                 if is_t3_cruiser and type_id in typeid_variants:
                     # 对于T3巡洋舰，构建变体列表
                     variants_list = []
+                    default_model_path = None
+                    
                     for variant_info in typeid_variants[type_id]:
                         variant_code = variant_info['variant']
                         # 构建变体名称
@@ -279,6 +281,8 @@ class EVEDataInitializer:
                             variant_name = type_info['name']
                             variant_name_en = type_info.get('name_en', '')
                             variant_name_zh = type_info.get('name_zh', '')
+                            # 找到无变体数值的文件，作为默认模型
+                            default_model_path = variant_info['model_path']
                         
                         variants_list.append({
                             'variant_code': variant_code or '',
@@ -291,6 +295,10 @@ class EVEDataInitializer:
                     # 按变体代码排序
                     variants_list.sort(key=lambda x: x['variant_code'])
                     
+                    # 如果没有找到无变体的默认模型，使用第一个变体
+                    if not default_model_path and variants_list:
+                        default_model_path = variants_list[0]['model_path']
+                    
                     # 添加带变体的type
                     category_map[category_id]['groups'][group_id]['types'].append({
                         'id': type_id,
@@ -299,6 +307,7 @@ class EVEDataInitializer:
                         'name_zh': type_info.get('name_zh', ''),
                         'icon_name': type_info.get('icon_name'),
                         'has_variants': True,
+                        'model_path': default_model_path or '',
                         'variants': variants_list
                     })
                 else:

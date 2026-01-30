@@ -6942,6 +6942,7 @@
             "name_zh": "圣卒级",
             "icon_name": "type_29986_64.png",
             "has_variants": true,
+            "model_path": "./models/29986_lite.glb",
             "variants": [
               {
                 "variant_code": "",
@@ -6959,6 +6960,7 @@
             "name_zh": "洛基级",
             "icon_name": "type_29990_64.png",
             "has_variants": true,
+            "model_path": "./models/29990_lite.glb",
             "variants": [
               {
                 "variant_code": "",
@@ -6976,6 +6978,7 @@
             "name_zh": "海神级",
             "icon_name": "type_29988_64.png",
             "has_variants": true,
+            "model_path": "./models/29988_lite.glb",
             "variants": [
               {
                 "variant_code": "",
@@ -6993,6 +6996,7 @@
             "name_zh": "金鹏级",
             "icon_name": "type_29984_64.png",
             "has_variants": true,
+            "model_path": "./models/29984_lite.glb",
             "variants": [
               {
                 "variant_code": "",
@@ -7006,567 +7010,567 @@
                 "name": "金鹏级（1111）",
                 "name_en": "Tengu (1111)",
                 "name_zh": "金鹏级（1111）",
-                "model_path": "./models/29984_Tengu1111_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1111_lite.glb"
               },
               {
                 "variant_code": "1112",
                 "name": "金鹏级（1112）",
                 "name_en": "Tengu (1112)",
                 "name_zh": "金鹏级（1112）",
-                "model_path": "./models/29984_Tengu1112_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1112_lite.glb"
               },
               {
                 "variant_code": "1113",
                 "name": "金鹏级（1113）",
                 "name_en": "Tengu (1113)",
                 "name_zh": "金鹏级（1113）",
-                "model_path": "./models/29984_Tengu1113_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1113_lite.glb"
               },
               {
                 "variant_code": "1121",
                 "name": "金鹏级（1121）",
                 "name_en": "Tengu (1121)",
                 "name_zh": "金鹏级（1121）",
-                "model_path": "./models/29984_Tengu1121_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1121_lite.glb"
               },
               {
                 "variant_code": "1122",
                 "name": "金鹏级（1122）",
                 "name_en": "Tengu (1122)",
                 "name_zh": "金鹏级（1122）",
-                "model_path": "./models/29984_Tengu1122_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1122_lite.glb"
               },
               {
                 "variant_code": "1123",
                 "name": "金鹏级（1123）",
                 "name_en": "Tengu (1123)",
                 "name_zh": "金鹏级（1123）",
-                "model_path": "./models/29984_Tengu1123_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1123_lite.glb"
               },
               {
                 "variant_code": "1131",
                 "name": "金鹏级（1131）",
                 "name_en": "Tengu (1131)",
                 "name_zh": "金鹏级（1131）",
-                "model_path": "./models/29984_Tengu1131_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1131_lite.glb"
               },
               {
                 "variant_code": "1132",
                 "name": "金鹏级（1132）",
                 "name_en": "Tengu (1132)",
                 "name_zh": "金鹏级（1132）",
-                "model_path": "./models/29984_Tengu1132_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1132_lite.glb"
               },
               {
                 "variant_code": "1133",
                 "name": "金鹏级（1133）",
                 "name_en": "Tengu (1133)",
                 "name_zh": "金鹏级（1133）",
-                "model_path": "./models/29984_Tengu1133_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1133_lite.glb"
               },
               {
                 "variant_code": "1211",
                 "name": "金鹏级（1211）",
                 "name_en": "Tengu (1211)",
                 "name_zh": "金鹏级（1211）",
-                "model_path": "./models/29984_Tengu1211_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1211_lite.glb"
               },
               {
                 "variant_code": "1212",
                 "name": "金鹏级（1212）",
                 "name_en": "Tengu (1212)",
                 "name_zh": "金鹏级（1212）",
-                "model_path": "./models/29984_Tengu1212_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1212_lite.glb"
               },
               {
                 "variant_code": "1213",
                 "name": "金鹏级（1213）",
                 "name_en": "Tengu (1213)",
                 "name_zh": "金鹏级（1213）",
-                "model_path": "./models/29984_Tengu1213_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1213_lite.glb"
               },
               {
                 "variant_code": "1221",
                 "name": "金鹏级（1221）",
                 "name_en": "Tengu (1221)",
                 "name_zh": "金鹏级（1221）",
-                "model_path": "./models/29984_Tengu1221_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1221_lite.glb"
               },
               {
                 "variant_code": "1222",
                 "name": "金鹏级（1222）",
                 "name_en": "Tengu (1222)",
                 "name_zh": "金鹏级（1222）",
-                "model_path": "./models/29984_Tengu1222_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1222_lite.glb"
               },
               {
                 "variant_code": "1223",
                 "name": "金鹏级（1223）",
                 "name_en": "Tengu (1223)",
                 "name_zh": "金鹏级（1223）",
-                "model_path": "./models/29984_Tengu1223_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1223_lite.glb"
               },
               {
                 "variant_code": "1231",
                 "name": "金鹏级（1231）",
                 "name_en": "Tengu (1231)",
                 "name_zh": "金鹏级（1231）",
-                "model_path": "./models/29984_Tengu1231_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1231_lite.glb"
               },
               {
                 "variant_code": "1232",
                 "name": "金鹏级（1232）",
                 "name_en": "Tengu (1232)",
                 "name_zh": "金鹏级（1232）",
-                "model_path": "./models/29984_Tengu1232_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1232_lite.glb"
               },
               {
                 "variant_code": "1233",
                 "name": "金鹏级（1233）",
                 "name_en": "Tengu (1233)",
                 "name_zh": "金鹏级（1233）",
-                "model_path": "./models/29984_Tengu1233_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1233_lite.glb"
               },
               {
                 "variant_code": "1311",
                 "name": "金鹏级（1311）",
                 "name_en": "Tengu (1311)",
                 "name_zh": "金鹏级（1311）",
-                "model_path": "./models/29984_Tengu1311_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1311_lite.glb"
               },
               {
                 "variant_code": "1312",
                 "name": "金鹏级（1312）",
                 "name_en": "Tengu (1312)",
                 "name_zh": "金鹏级（1312）",
-                "model_path": "./models/29984_Tengu1312_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1312_lite.glb"
               },
               {
                 "variant_code": "1313",
                 "name": "金鹏级（1313）",
                 "name_en": "Tengu (1313)",
                 "name_zh": "金鹏级（1313）",
-                "model_path": "./models/29984_Tengu1313_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1313_lite.glb"
               },
               {
                 "variant_code": "1321",
                 "name": "金鹏级（1321）",
                 "name_en": "Tengu (1321)",
                 "name_zh": "金鹏级（1321）",
-                "model_path": "./models/29984_Tengu1321_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1321_lite.glb"
               },
               {
                 "variant_code": "1322",
                 "name": "金鹏级（1322）",
                 "name_en": "Tengu (1322)",
                 "name_zh": "金鹏级（1322）",
-                "model_path": "./models/29984_Tengu1322_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1322_lite.glb"
               },
               {
                 "variant_code": "1323",
                 "name": "金鹏级（1323）",
                 "name_en": "Tengu (1323)",
                 "name_zh": "金鹏级（1323）",
-                "model_path": "./models/29984_Tengu1323_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1323_lite.glb"
               },
               {
                 "variant_code": "1331",
                 "name": "金鹏级（1331）",
                 "name_en": "Tengu (1331)",
                 "name_zh": "金鹏级（1331）",
-                "model_path": "./models/29984_Tengu1331_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1331_lite.glb"
               },
               {
                 "variant_code": "1332",
                 "name": "金鹏级（1332）",
                 "name_en": "Tengu (1332)",
                 "name_zh": "金鹏级（1332）",
-                "model_path": "./models/29984_Tengu1332_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1332_lite.glb"
               },
               {
                 "variant_code": "1333",
                 "name": "金鹏级（1333）",
                 "name_en": "Tengu (1333)",
                 "name_zh": "金鹏级（1333）",
-                "model_path": "./models/29984_Tengu1333_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu1333_lite.glb"
               },
               {
                 "variant_code": "2111",
                 "name": "金鹏级（2111）",
                 "name_en": "Tengu (2111)",
                 "name_zh": "金鹏级（2111）",
-                "model_path": "./models/29984_Tengu2111_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2111_lite.glb"
               },
               {
                 "variant_code": "2112",
                 "name": "金鹏级（2112）",
                 "name_en": "Tengu (2112)",
                 "name_zh": "金鹏级（2112）",
-                "model_path": "./models/29984_Tengu2112_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2112_lite.glb"
               },
               {
                 "variant_code": "2113",
                 "name": "金鹏级（2113）",
                 "name_en": "Tengu (2113)",
                 "name_zh": "金鹏级（2113）",
-                "model_path": "./models/29984_Tengu2113_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2113_lite.glb"
               },
               {
                 "variant_code": "2121",
                 "name": "金鹏级（2121）",
                 "name_en": "Tengu (2121)",
                 "name_zh": "金鹏级（2121）",
-                "model_path": "./models/29984_Tengu2121_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2121_lite.glb"
               },
               {
                 "variant_code": "2122",
                 "name": "金鹏级（2122）",
                 "name_en": "Tengu (2122)",
                 "name_zh": "金鹏级（2122）",
-                "model_path": "./models/29984_Tengu2122_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2122_lite.glb"
               },
               {
                 "variant_code": "2123",
                 "name": "金鹏级（2123）",
                 "name_en": "Tengu (2123)",
                 "name_zh": "金鹏级（2123）",
-                "model_path": "./models/29984_Tengu2123_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2123_lite.glb"
               },
               {
                 "variant_code": "2131",
                 "name": "金鹏级（2131）",
                 "name_en": "Tengu (2131)",
                 "name_zh": "金鹏级（2131）",
-                "model_path": "./models/29984_Tengu2131_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2131_lite.glb"
               },
               {
                 "variant_code": "2132",
                 "name": "金鹏级（2132）",
                 "name_en": "Tengu (2132)",
                 "name_zh": "金鹏级（2132）",
-                "model_path": "./models/29984_Tengu2132_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2132_lite.glb"
               },
               {
                 "variant_code": "2133",
                 "name": "金鹏级（2133）",
                 "name_en": "Tengu (2133)",
                 "name_zh": "金鹏级（2133）",
-                "model_path": "./models/29984_Tengu2133_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2133_lite.glb"
               },
               {
                 "variant_code": "2211",
                 "name": "金鹏级（2211）",
                 "name_en": "Tengu (2211)",
                 "name_zh": "金鹏级（2211）",
-                "model_path": "./models/29984_Tengu2211_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2211_lite.glb"
               },
               {
                 "variant_code": "2212",
                 "name": "金鹏级（2212）",
                 "name_en": "Tengu (2212)",
                 "name_zh": "金鹏级（2212）",
-                "model_path": "./models/29984_Tengu2212_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2212_lite.glb"
               },
               {
                 "variant_code": "2213",
                 "name": "金鹏级（2213）",
                 "name_en": "Tengu (2213)",
                 "name_zh": "金鹏级（2213）",
-                "model_path": "./models/29984_Tengu2213_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2213_lite.glb"
               },
               {
                 "variant_code": "2221",
                 "name": "金鹏级（2221）",
                 "name_en": "Tengu (2221)",
                 "name_zh": "金鹏级（2221）",
-                "model_path": "./models/29984_Tengu2221_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2221_lite.glb"
               },
               {
                 "variant_code": "2222",
                 "name": "金鹏级（2222）",
                 "name_en": "Tengu (2222)",
                 "name_zh": "金鹏级（2222）",
-                "model_path": "./models/29984_Tengu2222_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2222_lite.glb"
               },
               {
                 "variant_code": "2223",
                 "name": "金鹏级（2223）",
                 "name_en": "Tengu (2223)",
                 "name_zh": "金鹏级（2223）",
-                "model_path": "./models/29984_Tengu2223_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2223_lite.glb"
               },
               {
                 "variant_code": "2231",
                 "name": "金鹏级（2231）",
                 "name_en": "Tengu (2231)",
                 "name_zh": "金鹏级（2231）",
-                "model_path": "./models/29984_Tengu2231_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2231_lite.glb"
               },
               {
                 "variant_code": "2232",
                 "name": "金鹏级（2232）",
                 "name_en": "Tengu (2232)",
                 "name_zh": "金鹏级（2232）",
-                "model_path": "./models/29984_Tengu2232_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2232_lite.glb"
               },
               {
                 "variant_code": "2233",
                 "name": "金鹏级（2233）",
                 "name_en": "Tengu (2233)",
                 "name_zh": "金鹏级（2233）",
-                "model_path": "./models/29984_Tengu2233_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2233_lite.glb"
               },
               {
                 "variant_code": "2311",
                 "name": "金鹏级（2311）",
                 "name_en": "Tengu (2311)",
                 "name_zh": "金鹏级（2311）",
-                "model_path": "./models/29984_Tengu2311_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2311_lite.glb"
               },
               {
                 "variant_code": "2312",
                 "name": "金鹏级（2312）",
                 "name_en": "Tengu (2312)",
                 "name_zh": "金鹏级（2312）",
-                "model_path": "./models/29984_Tengu2312_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2312_lite.glb"
               },
               {
                 "variant_code": "2313",
                 "name": "金鹏级（2313）",
                 "name_en": "Tengu (2313)",
                 "name_zh": "金鹏级（2313）",
-                "model_path": "./models/29984_Tengu2313_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2313_lite.glb"
               },
               {
                 "variant_code": "2321",
                 "name": "金鹏级（2321）",
                 "name_en": "Tengu (2321)",
                 "name_zh": "金鹏级（2321）",
-                "model_path": "./models/29984_Tengu2321_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2321_lite.glb"
               },
               {
                 "variant_code": "2322",
                 "name": "金鹏级（2322）",
                 "name_en": "Tengu (2322)",
                 "name_zh": "金鹏级（2322）",
-                "model_path": "./models/29984_Tengu2322_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2322_lite.glb"
               },
               {
                 "variant_code": "2323",
                 "name": "金鹏级（2323）",
                 "name_en": "Tengu (2323)",
                 "name_zh": "金鹏级（2323）",
-                "model_path": "./models/29984_Tengu2323_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2323_lite.glb"
               },
               {
                 "variant_code": "2331",
                 "name": "金鹏级（2331）",
                 "name_en": "Tengu (2331)",
                 "name_zh": "金鹏级（2331）",
-                "model_path": "./models/29984_Tengu2331_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2331_lite.glb"
               },
               {
                 "variant_code": "2332",
                 "name": "金鹏级（2332）",
                 "name_en": "Tengu (2332)",
                 "name_zh": "金鹏级（2332）",
-                "model_path": "./models/29984_Tengu2332_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2332_lite.glb"
               },
               {
                 "variant_code": "2333",
                 "name": "金鹏级（2333）",
                 "name_en": "Tengu (2333)",
                 "name_zh": "金鹏级（2333）",
-                "model_path": "./models/29984_Tengu2333_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu2333_lite.glb"
               },
               {
                 "variant_code": "3111",
                 "name": "金鹏级（3111）",
                 "name_en": "Tengu (3111)",
                 "name_zh": "金鹏级（3111）",
-                "model_path": "./models/29984_Tengu3111_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3111_lite.glb"
               },
               {
                 "variant_code": "3112",
                 "name": "金鹏级（3112）",
                 "name_en": "Tengu (3112)",
                 "name_zh": "金鹏级（3112）",
-                "model_path": "./models/29984_Tengu3112_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3112_lite.glb"
               },
               {
                 "variant_code": "3113",
                 "name": "金鹏级（3113）",
                 "name_en": "Tengu (3113)",
                 "name_zh": "金鹏级（3113）",
-                "model_path": "./models/29984_Tengu3113_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3113_lite.glb"
               },
               {
                 "variant_code": "3121",
                 "name": "金鹏级（3121）",
                 "name_en": "Tengu (3121)",
                 "name_zh": "金鹏级（3121）",
-                "model_path": "./models/29984_Tengu3121_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3121_lite.glb"
               },
               {
                 "variant_code": "3122",
                 "name": "金鹏级（3122）",
                 "name_en": "Tengu (3122)",
                 "name_zh": "金鹏级（3122）",
-                "model_path": "./models/29984_Tengu3122_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3122_lite.glb"
               },
               {
                 "variant_code": "3123",
                 "name": "金鹏级（3123）",
                 "name_en": "Tengu (3123)",
                 "name_zh": "金鹏级（3123）",
-                "model_path": "./models/29984_Tengu3123_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3123_lite.glb"
               },
               {
                 "variant_code": "3131",
                 "name": "金鹏级（3131）",
                 "name_en": "Tengu (3131)",
                 "name_zh": "金鹏级（3131）",
-                "model_path": "./models/29984_Tengu3131_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3131_lite.glb"
               },
               {
                 "variant_code": "3132",
                 "name": "金鹏级（3132）",
                 "name_en": "Tengu (3132)",
                 "name_zh": "金鹏级（3132）",
-                "model_path": "./models/29984_Tengu3132_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3132_lite.glb"
               },
               {
                 "variant_code": "3133",
                 "name": "金鹏级（3133）",
                 "name_en": "Tengu (3133)",
                 "name_zh": "金鹏级（3133）",
-                "model_path": "./models/29984_Tengu3133_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3133_lite.glb"
               },
               {
                 "variant_code": "3211",
                 "name": "金鹏级（3211）",
                 "name_en": "Tengu (3211)",
                 "name_zh": "金鹏级（3211）",
-                "model_path": "./models/29984_Tengu3211_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3211_lite.glb"
               },
               {
                 "variant_code": "3212",
                 "name": "金鹏级（3212）",
                 "name_en": "Tengu (3212)",
                 "name_zh": "金鹏级（3212）",
-                "model_path": "./models/29984_Tengu3212_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3212_lite.glb"
               },
               {
                 "variant_code": "3213",
                 "name": "金鹏级（3213）",
                 "name_en": "Tengu (3213)",
                 "name_zh": "金鹏级（3213）",
-                "model_path": "./models/29984_Tengu3213_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3213_lite.glb"
               },
               {
                 "variant_code": "3221",
                 "name": "金鹏级（3221）",
                 "name_en": "Tengu (3221)",
                 "name_zh": "金鹏级（3221）",
-                "model_path": "./models/29984_Tengu3221_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3221_lite.glb"
               },
               {
                 "variant_code": "3222",
                 "name": "金鹏级（3222）",
                 "name_en": "Tengu (3222)",
                 "name_zh": "金鹏级（3222）",
-                "model_path": "./models/29984_Tengu3222_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3222_lite.glb"
               },
               {
                 "variant_code": "3223",
                 "name": "金鹏级（3223）",
                 "name_en": "Tengu (3223)",
                 "name_zh": "金鹏级（3223）",
-                "model_path": "./models/29984_Tengu3223_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3223_lite.glb"
               },
               {
                 "variant_code": "3231",
                 "name": "金鹏级（3231）",
                 "name_en": "Tengu (3231)",
                 "name_zh": "金鹏级（3231）",
-                "model_path": "./models/29984_Tengu3231_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3231_lite.glb"
               },
               {
                 "variant_code": "3232",
                 "name": "金鹏级（3232）",
                 "name_en": "Tengu (3232)",
                 "name_zh": "金鹏级（3232）",
-                "model_path": "./models/29984_Tengu3232_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3232_lite.glb"
               },
               {
                 "variant_code": "3233",
                 "name": "金鹏级（3233）",
                 "name_en": "Tengu (3233)",
                 "name_zh": "金鹏级（3233）",
-                "model_path": "./models/29984_Tengu3233_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3233_lite.glb"
               },
               {
                 "variant_code": "3311",
                 "name": "金鹏级（3311）",
                 "name_en": "Tengu (3311)",
                 "name_zh": "金鹏级（3311）",
-                "model_path": "./models/29984_Tengu3311_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3311_lite.glb"
               },
               {
                 "variant_code": "3312",
                 "name": "金鹏级（3312）",
                 "name_en": "Tengu (3312)",
                 "name_zh": "金鹏级（3312）",
-                "model_path": "./models/29984_Tengu3312_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3312_lite.glb"
               },
               {
                 "variant_code": "3313",
                 "name": "金鹏级（3313）",
                 "name_en": "Tengu (3313)",
                 "name_zh": "金鹏级（3313）",
-                "model_path": "./models/29984_Tengu3313_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3313_lite.glb"
               },
               {
                 "variant_code": "3321",
                 "name": "金鹏级（3321）",
                 "name_en": "Tengu (3321)",
                 "name_zh": "金鹏级（3321）",
-                "model_path": "./models/29984_Tengu3321_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3321_lite.glb"
               },
               {
                 "variant_code": "3322",
                 "name": "金鹏级（3322）",
                 "name_en": "Tengu (3322)",
                 "name_zh": "金鹏级（3322）",
-                "model_path": "./models/29984_Tengu3322_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3322_lite.glb"
               },
               {
                 "variant_code": "3323",
                 "name": "金鹏级（3323）",
                 "name_en": "Tengu (3323)",
                 "name_zh": "金鹏级（3323）",
-                "model_path": "./models/29984_Tengu3323_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3323_lite.glb"
               },
               {
                 "variant_code": "3331",
                 "name": "金鹏级（3331）",
                 "name_en": "Tengu (3331)",
                 "name_zh": "金鹏级（3331）",
-                "model_path": "./models/29984_Tengu3331_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3331_lite.glb"
               },
               {
                 "variant_code": "3332",
                 "name": "金鹏级（3332）",
                 "name_en": "Tengu (3332)",
                 "name_zh": "金鹏级（3332）",
-                "model_path": "./models/29984_Tengu3332_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3332_lite.glb"
               },
               {
                 "variant_code": "3333",
                 "name": "金鹏级（3333）",
                 "name_en": "Tengu (3333)",
                 "name_zh": "金鹏级（3333）",
-                "model_path": "./models/29984_Tengu3333_caldaribase_lite.glb"
+                "model_path": "./models/29984_Tengu3333_lite.glb"
               }
             ]
           }
