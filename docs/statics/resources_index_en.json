@@ -6964,6 +6964,573 @@
                 "name_en": "Legion",
                 "name_zh": "圣卒级",
                 "model_path": "./models/29986_lite.glb"
+              },
+              {
+                "variant_code": "1111",
+                "name": "Legion（1111）",
+                "name_en": "Legion (1111)",
+                "name_zh": "圣卒级（1111）",
+                "model_path": "./models/29986_Legion1111_lite.glb"
+              },
+              {
+                "variant_code": "1112",
+                "name": "Legion（1112）",
+                "name_en": "Legion (1112)",
+                "name_zh": "圣卒级（1112）",
+                "model_path": "./models/29986_Legion1112_lite.glb"
+              },
+              {
+                "variant_code": "1113",
+                "name": "Legion（1113）",
+                "name_en": "Legion (1113)",
+                "name_zh": "圣卒级（1113）",
+                "model_path": "./models/29986_Legion1113_lite.glb"
+              },
+              {
+                "variant_code": "1121",
+                "name": "Legion（1121）",
+                "name_en": "Legion (1121)",
+                "name_zh": "圣卒级（1121）",
+                "model_path": "./models/29986_Legion1121_lite.glb"
+              },
+              {
+                "variant_code": "1122",
+                "name": "Legion（1122）",
+                "name_en": "Legion (1122)",
+                "name_zh": "圣卒级（1122）",
+                "model_path": "./models/29986_Legion1122_lite.glb"
+              },
+              {
+                "variant_code": "1123",
+                "name": "Legion（1123）",
+                "name_en": "Legion (1123)",
+                "name_zh": "圣卒级（1123）",
+                "model_path": "./models/29986_Legion1123_lite.glb"
+              },
+              {
+                "variant_code": "1131",
+                "name": "Legion（1131）",
+                "name_en": "Legion (1131)",
+                "name_zh": "圣卒级（1131）",
+                "model_path": "./models/29986_Legion1131_lite.glb"
+              },
+              {
+                "variant_code": "1132",
+                "name": "Legion（1132）",
+                "name_en": "Legion (1132)",
+                "name_zh": "圣卒级（1132）",
+                "model_path": "./models/29986_Legion1132_lite.glb"
+              },
+              {
+                "variant_code": "1133",
+                "name": "Legion（1133）",
+                "name_en": "Legion (1133)",
+                "name_zh": "圣卒级（1133）",
+                "model_path": "./models/29986_Legion1133_lite.glb"
+              },
+              {
+                "variant_code": "1211",
+                "name": "Legion（1211）",
+                "name_en": "Legion (1211)",
+                "name_zh": "圣卒级（1211）",
+                "model_path": "./models/29986_Legion1211_lite.glb"
+              },
+              {
+                "variant_code": "1212",
+                "name": "Legion（1212）",
+                "name_en": "Legion (1212)",
+                "name_zh": "圣卒级（1212）",
+                "model_path": "./models/29986_Legion1212_lite.glb"
+              },
+              {
+                "variant_code": "1213",
+                "name": "Legion（1213）",
+                "name_en": "Legion (1213)",
+                "name_zh": "圣卒级（1213）",
+                "model_path": "./models/29986_Legion1213_lite.glb"
+              },
+              {
+                "variant_code": "1221",
+                "name": "Legion（1221）",
+                "name_en": "Legion (1221)",
+                "name_zh": "圣卒级（1221）",
+                "model_path": "./models/29986_Legion1221_lite.glb"
+              },
+              {
+                "variant_code": "1222",
+                "name": "Legion（1222）",
+                "name_en": "Legion (1222)",
+                "name_zh": "圣卒级（1222）",
+                "model_path": "./models/29986_Legion1222_lite.glb"
+              },
+              {
+                "variant_code": "1223",
+                "name": "Legion（1223）",
+                "name_en": "Legion (1223)",
+                "name_zh": "圣卒级（1223）",
+                "model_path": "./models/29986_Legion1223_lite.glb"
+              },
+              {
+                "variant_code": "1231",
+                "name": "Legion（1231）",
+                "name_en": "Legion (1231)",
+                "name_zh": "圣卒级（1231）",
+                "model_path": "./models/29986_Legion1231_lite.glb"
+              },
+              {
+                "variant_code": "1232",
+                "name": "Legion（1232）",
+                "name_en": "Legion (1232)",
+                "name_zh": "圣卒级（1232）",
+                "model_path": "./models/29986_Legion1232_lite.glb"
+              },
+              {
+                "variant_code": "1233",
+                "name": "Legion（1233）",
+                "name_en": "Legion (1233)",
+                "name_zh": "圣卒级（1233）",
+                "model_path": "./models/29986_Legion1233_lite.glb"
+              },
+              {
+                "variant_code": "1311",
+                "name": "Legion（1311）",
+                "name_en": "Legion (1311)",
+                "name_zh": "圣卒级（1311）",
+                "model_path": "./models/29986_Legion1311_lite.glb"
+              },
+              {
+                "variant_code": "1312",
+                "name": "Legion（1312）",
+                "name_en": "Legion (1312)",
+                "name_zh": "圣卒级（1312）",
+                "model_path": "./models/29986_Legion1312_lite.glb"
+              },
+              {
+                "variant_code": "1313",
+                "name": "Legion（1313）",
+                "name_en": "Legion (1313)",
+                "name_zh": "圣卒级（1313）",
+                "model_path": "./models/29986_Legion1313_lite.glb"
+              },
+              {
+                "variant_code": "1321",
+                "name": "Legion（1321）",
+                "name_en": "Legion (1321)",
+                "name_zh": "圣卒级（1321）",
+                "model_path": "./models/29986_Legion1321_lite.glb"
+              },
+              {
+                "variant_code": "1322",
+                "name": "Legion（1322）",
+                "name_en": "Legion (1322)",
+                "name_zh": "圣卒级（1322）",
+                "model_path": "./models/29986_Legion1322_lite.glb"
+              },
+              {
+                "variant_code": "1323",
+                "name": "Legion（1323）",
+                "name_en": "Legion (1323)",
+                "name_zh": "圣卒级（1323）",
+                "model_path": "./models/29986_Legion1323_lite.glb"
+              },
+              {
+                "variant_code": "1331",
+                "name": "Legion（1331）",
+                "name_en": "Legion (1331)",
+                "name_zh": "圣卒级（1331）",
+                "model_path": "./models/29986_Legion1331_lite.glb"
+              },
+              {
+                "variant_code": "1332",
+                "name": "Legion（1332）",
+                "name_en": "Legion (1332)",
+                "name_zh": "圣卒级（1332）",
+                "model_path": "./models/29986_Legion1332_lite.glb"
+              },
+              {
+                "variant_code": "1333",
+                "name": "Legion（1333）",
+                "name_en": "Legion (1333)",
+                "name_zh": "圣卒级（1333）",
+                "model_path": "./models/29986_Legion1333_lite.glb"
+              },
+              {
+                "variant_code": "2111",
+                "name": "Legion（2111）",
+                "name_en": "Legion (2111)",
+                "name_zh": "圣卒级（2111）",
+                "model_path": "./models/29986_Legion2111_lite.glb"
+              },
+              {
+                "variant_code": "2112",
+                "name": "Legion（2112）",
+                "name_en": "Legion (2112)",
+                "name_zh": "圣卒级（2112）",
+                "model_path": "./models/29986_Legion2112_lite.glb"
+              },
+              {
+                "variant_code": "2113",
+                "name": "Legion（2113）",
+                "name_en": "Legion (2113)",
+                "name_zh": "圣卒级（2113）",
+                "model_path": "./models/29986_Legion2113_lite.glb"
+              },
+              {
+                "variant_code": "2121",
+                "name": "Legion（2121）",
+                "name_en": "Legion (2121)",
+                "name_zh": "圣卒级（2121）",
+                "model_path": "./models/29986_Legion2121_lite.glb"
+              },
+              {
+                "variant_code": "2122",
+                "name": "Legion（2122）",
+                "name_en": "Legion (2122)",
+                "name_zh": "圣卒级（2122）",
+                "model_path": "./models/29986_Legion2122_lite.glb"
+              },
+              {
+                "variant_code": "2123",
+                "name": "Legion（2123）",
+                "name_en": "Legion (2123)",
+                "name_zh": "圣卒级（2123）",
+                "model_path": "./models/29986_Legion2123_lite.glb"
+              },
+              {
+                "variant_code": "2131",
+                "name": "Legion（2131）",
+                "name_en": "Legion (2131)",
+                "name_zh": "圣卒级（2131）",
+                "model_path": "./models/29986_Legion2131_lite.glb"
+              },
+              {
+                "variant_code": "2132",
+                "name": "Legion（2132）",
+                "name_en": "Legion (2132)",
+                "name_zh": "圣卒级（2132）",
+                "model_path": "./models/29986_Legion2132_lite.glb"
+              },
+              {
+                "variant_code": "2133",
+                "name": "Legion（2133）",
+                "name_en": "Legion (2133)",
+                "name_zh": "圣卒级（2133）",
+                "model_path": "./models/29986_Legion2133_lite.glb"
+              },
+              {
+                "variant_code": "2211",
+                "name": "Legion（2211）",
+                "name_en": "Legion (2211)",
+                "name_zh": "圣卒级（2211）",
+                "model_path": "./models/29986_Legion2211_lite.glb"
+              },
+              {
+                "variant_code": "2212",
+                "name": "Legion（2212）",
+                "name_en": "Legion (2212)",
+                "name_zh": "圣卒级（2212）",
+                "model_path": "./models/29986_Legion2212_lite.glb"
+              },
+              {
+                "variant_code": "2213",
+                "name": "Legion（2213）",
+                "name_en": "Legion (2213)",
+                "name_zh": "圣卒级（2213）",
+                "model_path": "./models/29986_Legion2213_lite.glb"
+              },
+              {
+                "variant_code": "2221",
+                "name": "Legion（2221）",
+                "name_en": "Legion (2221)",
+                "name_zh": "圣卒级（2221）",
+                "model_path": "./models/29986_Legion2221_lite.glb"
+              },
+              {
+                "variant_code": "2222",
+                "name": "Legion（2222）",
+                "name_en": "Legion (2222)",
+                "name_zh": "圣卒级（2222）",
+                "model_path": "./models/29986_Legion2222_lite.glb"
+              },
+              {
+                "variant_code": "2223",
+                "name": "Legion（2223）",
+                "name_en": "Legion (2223)",
+                "name_zh": "圣卒级（2223）",
+                "model_path": "./models/29986_Legion2223_lite.glb"
+              },
+              {
+                "variant_code": "2231",
+                "name": "Legion（2231）",
+                "name_en": "Legion (2231)",
+                "name_zh": "圣卒级（2231）",
+                "model_path": "./models/29986_Legion2231_lite.glb"
+              },
+              {
+                "variant_code": "2232",
+                "name": "Legion（2232）",
+                "name_en": "Legion (2232)",
+                "name_zh": "圣卒级（2232）",
+                "model_path": "./models/29986_Legion2232_lite.glb"
+              },
+              {
+                "variant_code": "2233",
+                "name": "Legion（2233）",
+                "name_en": "Legion (2233)",
+                "name_zh": "圣卒级（2233）",
+                "model_path": "./models/29986_Legion2233_lite.glb"
+              },
+              {
+                "variant_code": "2311",
+                "name": "Legion（2311）",
+                "name_en": "Legion (2311)",
+                "name_zh": "圣卒级（2311）",
+                "model_path": "./models/29986_Legion2311_lite.glb"
+              },
+              {
+                "variant_code": "2312",
+                "name": "Legion（2312）",
+                "name_en": "Legion (2312)",
+                "name_zh": "圣卒级（2312）",
+                "model_path": "./models/29986_Legion2312_lite.glb"
+              },
+              {
+                "variant_code": "2313",
+                "name": "Legion（2313）",
+                "name_en": "Legion (2313)",
+                "name_zh": "圣卒级（2313）",
+                "model_path": "./models/29986_Legion2313_lite.glb"
+              },
+              {
+                "variant_code": "2321",
+                "name": "Legion（2321）",
+                "name_en": "Legion (2321)",
+                "name_zh": "圣卒级（2321）",
+                "model_path": "./models/29986_Legion2321_lite.glb"
+              },
+              {
+                "variant_code": "2322",
+                "name": "Legion（2322）",
+                "name_en": "Legion (2322)",
+                "name_zh": "圣卒级（2322）",
+                "model_path": "./models/29986_Legion2322_lite.glb"
+              },
+              {
+                "variant_code": "2323",
+                "name": "Legion（2323）",
+                "name_en": "Legion (2323)",
+                "name_zh": "圣卒级（2323）",
+                "model_path": "./models/29986_Legion2323_lite.glb"
+              },
+              {
+                "variant_code": "2331",
+                "name": "Legion（2331）",
+                "name_en": "Legion (2331)",
+                "name_zh": "圣卒级（2331）",
+                "model_path": "./models/29986_Legion2331_lite.glb"
+              },
+              {
+                "variant_code": "2332",
+                "name": "Legion（2332）",
+                "name_en": "Legion (2332)",
+                "name_zh": "圣卒级（2332）",
+                "model_path": "./models/29986_Legion2332_lite.glb"
+              },
+              {
+                "variant_code": "2333",
+                "name": "Legion（2333）",
+                "name_en": "Legion (2333)",
+                "name_zh": "圣卒级（2333）",
+                "model_path": "./models/29986_Legion2333_lite.glb"
+              },
+              {
+                "variant_code": "3111",
+                "name": "Legion（3111）",
+                "name_en": "Legion (3111)",
+                "name_zh": "圣卒级（3111）",
+                "model_path": "./models/29986_Legion3111_lite.glb"
+              },
+              {
+                "variant_code": "3112",
+                "name": "Legion（3112）",
+                "name_en": "Legion (3112)",
+                "name_zh": "圣卒级（3112）",
+                "model_path": "./models/29986_Legion3112_lite.glb"
+              },
+              {
+                "variant_code": "3113",
+                "name": "Legion（3113）",
+                "name_en": "Legion (3113)",
+                "name_zh": "圣卒级（3113）",
+                "model_path": "./models/29986_Legion3113_lite.glb"
+              },
+              {
+                "variant_code": "3121",
+                "name": "Legion（3121）",
+                "name_en": "Legion (3121)",
+                "name_zh": "圣卒级（3121）",
+                "model_path": "./models/29986_Legion3121_lite.glb"
+              },
+              {
+                "variant_code": "3122",
+                "name": "Legion（3122）",
+                "name_en": "Legion (3122)",
+                "name_zh": "圣卒级（3122）",
+                "model_path": "./models/29986_Legion3122_lite.glb"
+              },
+              {
+                "variant_code": "3123",
+                "name": "Legion（3123）",
+                "name_en": "Legion (3123)",
+                "name_zh": "圣卒级（3123）",
+                "model_path": "./models/29986_Legion3123_lite.glb"
+              },
+              {
+                "variant_code": "3131",
+                "name": "Legion（3131）",
+                "name_en": "Legion (3131)",
+                "name_zh": "圣卒级（3131）",
+                "model_path": "./models/29986_Legion3131_lite.glb"
+              },
+              {
+                "variant_code": "3132",
+                "name": "Legion（3132）",
+                "name_en": "Legion (3132)",
+                "name_zh": "圣卒级（3132）",
+                "model_path": "./models/29986_Legion3132_lite.glb"
+              },
+              {
+                "variant_code": "3133",
+                "name": "Legion（3133）",
+                "name_en": "Legion (3133)",
+                "name_zh": "圣卒级（3133）",
+                "model_path": "./models/29986_Legion3133_lite.glb"
+              },
+              {
+                "variant_code": "3211",
+                "name": "Legion（3211）",
+                "name_en": "Legion (3211)",
+                "name_zh": "圣卒级（3211）",
+                "model_path": "./models/29986_Legion3211_lite.glb"
+              },
+              {
+                "variant_code": "3212",
+                "name": "Legion（3212）",
+                "name_en": "Legion (3212)",
+                "name_zh": "圣卒级（3212）",
+                "model_path": "./models/29986_Legion3212_lite.glb"
+              },
+              {
+                "variant_code": "3213",
+                "name": "Legion（3213）",
+                "name_en": "Legion (3213)",
+                "name_zh": "圣卒级（3213）",
+                "model_path": "./models/29986_Legion3213_lite.glb"
+              },
+              {
+                "variant_code": "3221",
+                "name": "Legion（3221）",
+                "name_en": "Legion (3221)",
+                "name_zh": "圣卒级（3221）",
+                "model_path": "./models/29986_Legion3221_lite.glb"
+              },
+              {
+                "variant_code": "3222",
+                "name": "Legion（3222）",
+                "name_en": "Legion (3222)",
+                "name_zh": "圣卒级（3222）",
+                "model_path": "./models/29986_Legion3222_lite.glb"
+              },
+              {
+                "variant_code": "3223",
+                "name": "Legion（3223）",
+                "name_en": "Legion (3223)",
+                "name_zh": "圣卒级（3223）",
+                "model_path": "./models/29986_Legion3223_lite.glb"
+              },
+              {
+                "variant_code": "3231",
+                "name": "Legion（3231）",
+                "name_en": "Legion (3231)",
+                "name_zh": "圣卒级（3231）",
+                "model_path": "./models/29986_Legion3231_lite.glb"
+              },
+              {
+                "variant_code": "3232",
+                "name": "Legion（3232）",
+                "name_en": "Legion (3232)",
+                "name_zh": "圣卒级（3232）",
+                "model_path": "./models/29986_Legion3232_lite.glb"
+              },
+              {
+                "variant_code": "3233",
+                "name": "Legion（3233）",
+                "name_en": "Legion (3233)",
+                "name_zh": "圣卒级（3233）",
+                "model_path": "./models/29986_Legion3233_lite.glb"
+              },
+              {
+                "variant_code": "3311",
+                "name": "Legion（3311）",
+                "name_en": "Legion (3311)",
+                "name_zh": "圣卒级（3311）",
+                "model_path": "./models/29986_Legion3311_lite.glb"
+              },
+              {
+                "variant_code": "3312",
+                "name": "Legion（3312）",
+                "name_en": "Legion (3312)",
+                "name_zh": "圣卒级（3312）",
+                "model_path": "./models/29986_Legion3312_lite.glb"
+              },
+              {
+                "variant_code": "3313",
+                "name": "Legion（3313）",
+                "name_en": "Legion (3313)",
+                "name_zh": "圣卒级（3313）",
+                "model_path": "./models/29986_Legion3313_lite.glb"
+              },
+              {
+                "variant_code": "3321",
+                "name": "Legion（3321）",
+                "name_en": "Legion (3321)",
+                "name_zh": "圣卒级（3321）",
+                "model_path": "./models/29986_Legion3321_lite.glb"
+              },
+              {
+                "variant_code": "3322",
+                "name": "Legion（3322）",
+                "name_en": "Legion (3322)",
+                "name_zh": "圣卒级（3322）",
+                "model_path": "./models/29986_Legion3322_lite.glb"
+              },
+              {
+                "variant_code": "3323",
+                "name": "Legion（3323）",
+                "name_en": "Legion (3323)",
+                "name_zh": "圣卒级（3323）",
+                "model_path": "./models/29986_Legion3323_lite.glb"
+              },
+              {
+                "variant_code": "3331",
+                "name": "Legion（3331）",
+                "name_en": "Legion (3331)",
+                "name_zh": "圣卒级（3331）",
+                "model_path": "./models/29986_Legion3331_lite.glb"
+              },
+              {
+                "variant_code": "3332",
+                "name": "Legion（3332）",
+                "name_en": "Legion (3332)",
+                "name_zh": "圣卒级（3332）",
+                "model_path": "./models/29986_Legion3332_lite.glb"
+              },
+              {
+                "variant_code": "3333",
+                "name": "Legion（3333）",
+                "name_en": "Legion (3333)",
+                "name_zh": "圣卒级（3333）",
+                "model_path": "./models/29986_Legion3333_lite.glb"
               }
             ]
           },
