@@ -7549,6 +7549,573 @@
                 "name_en": "Loki",
                 "name_zh": "洛基级",
                 "model_path": "./models/29990_lite.glb"
+              },
+              {
+                "variant_code": "1111",
+                "name": "Loki（1111）",
+                "name_en": "Loki (1111)",
+                "name_zh": "洛基级（1111）",
+                "model_path": "./models/29990_Loki1111_lite.glb"
+              },
+              {
+                "variant_code": "1112",
+                "name": "Loki（1112）",
+                "name_en": "Loki (1112)",
+                "name_zh": "洛基级（1112）",
+                "model_path": "./models/29990_Loki1112_lite.glb"
+              },
+              {
+                "variant_code": "1113",
+                "name": "Loki（1113）",
+                "name_en": "Loki (1113)",
+                "name_zh": "洛基级（1113）",
+                "model_path": "./models/29990_Loki1113_lite.glb"
+              },
+              {
+                "variant_code": "1121",
+                "name": "Loki（1121）",
+                "name_en": "Loki (1121)",
+                "name_zh": "洛基级（1121）",
+                "model_path": "./models/29990_Loki1121_lite.glb"
+              },
+              {
+                "variant_code": "1122",
+                "name": "Loki（1122）",
+                "name_en": "Loki (1122)",
+                "name_zh": "洛基级（1122）",
+                "model_path": "./models/29990_Loki1122_lite.glb"
+              },
+              {
+                "variant_code": "1123",
+                "name": "Loki（1123）",
+                "name_en": "Loki (1123)",
+                "name_zh": "洛基级（1123）",
+                "model_path": "./models/29990_Loki1123_lite.glb"
+              },
+              {
+                "variant_code": "1131",
+                "name": "Loki（1131）",
+                "name_en": "Loki (1131)",
+                "name_zh": "洛基级（1131）",
+                "model_path": "./models/29990_Loki1131_lite.glb"
+              },
+              {
+                "variant_code": "1132",
+                "name": "Loki（1132）",
+                "name_en": "Loki (1132)",
+                "name_zh": "洛基级（1132）",
+                "model_path": "./models/29990_Loki1132_lite.glb"
+              },
+              {
+                "variant_code": "1133",
+                "name": "Loki（1133）",
+                "name_en": "Loki (1133)",
+                "name_zh": "洛基级（1133）",
+                "model_path": "./models/29990_Loki1133_lite.glb"
+              },
+              {
+                "variant_code": "1211",
+                "name": "Loki（1211）",
+                "name_en": "Loki (1211)",
+                "name_zh": "洛基级（1211）",
+                "model_path": "./models/29990_Loki1211_lite.glb"
+              },
+              {
+                "variant_code": "1212",
+                "name": "Loki（1212）",
+                "name_en": "Loki (1212)",
+                "name_zh": "洛基级（1212）",
+                "model_path": "./models/29990_Loki1212_lite.glb"
+              },
+              {
+                "variant_code": "1213",
+                "name": "Loki（1213）",
+                "name_en": "Loki (1213)",
+                "name_zh": "洛基级（1213）",
+                "model_path": "./models/29990_Loki1213_lite.glb"
+              },
+              {
+                "variant_code": "1221",
+                "name": "Loki（1221）",
+                "name_en": "Loki (1221)",
+                "name_zh": "洛基级（1221）",
+                "model_path": "./models/29990_Loki1221_lite.glb"
+              },
+              {
+                "variant_code": "1222",
+                "name": "Loki（1222）",
+                "name_en": "Loki (1222)",
+                "name_zh": "洛基级（1222）",
+                "model_path": "./models/29990_Loki1222_lite.glb"
+              },
+              {
+                "variant_code": "1223",
+                "name": "Loki（1223）",
+                "name_en": "Loki (1223)",
+                "name_zh": "洛基级（1223）",
+                "model_path": "./models/29990_Loki1223_lite.glb"
+              },
+              {
+                "variant_code": "1231",
+                "name": "Loki（1231）",
+                "name_en": "Loki (1231)",
+                "name_zh": "洛基级（1231）",
+                "model_path": "./models/29990_Loki1231_lite.glb"
+              },
+              {
+                "variant_code": "1232",
+                "name": "Loki（1232）",
+                "name_en": "Loki (1232)",
+                "name_zh": "洛基级（1232）",
+                "model_path": "./models/29990_Loki1232_lite.glb"
+              },
+              {
+                "variant_code": "1233",
+                "name": "Loki（1233）",
+                "name_en": "Loki (1233)",
+                "name_zh": "洛基级（1233）",
+                "model_path": "./models/29990_Loki1233_lite.glb"
+              },
+              {
+                "variant_code": "1311",
+                "name": "Loki（1311）",
+                "name_en": "Loki (1311)",
+                "name_zh": "洛基级（1311）",
+                "model_path": "./models/29990_Loki1311_lite.glb"
+              },
+              {
+                "variant_code": "1312",
+                "name": "Loki（1312）",
+                "name_en": "Loki (1312)",
+                "name_zh": "洛基级（1312）",
+                "model_path": "./models/29990_Loki1312_lite.glb"
+              },
+              {
+                "variant_code": "1313",
+                "name": "Loki（1313）",
+                "name_en": "Loki (1313)",
+                "name_zh": "洛基级（1313）",
+                "model_path": "./models/29990_Loki1313_lite.glb"
+              },
+              {
+                "variant_code": "1321",
+                "name": "Loki（1321）",
+                "name_en": "Loki (1321)",
+                "name_zh": "洛基级（1321）",
+                "model_path": "./models/29990_Loki1321_lite.glb"
+              },
+              {
+                "variant_code": "1322",
+                "name": "Loki（1322）",
+                "name_en": "Loki (1322)",
+                "name_zh": "洛基级（1322）",
+                "model_path": "./models/29990_Loki1322_lite.glb"
+              },
+              {
+                "variant_code": "1323",
+                "name": "Loki（1323）",
+                "name_en": "Loki (1323)",
+                "name_zh": "洛基级（1323）",
+                "model_path": "./models/29990_Loki1323_lite.glb"
+              },
+              {
+                "variant_code": "1331",
+                "name": "Loki（1331）",
+                "name_en": "Loki (1331)",
+                "name_zh": "洛基级（1331）",
+                "model_path": "./models/29990_Loki1331_lite.glb"
+              },
+              {
+                "variant_code": "1332",
+                "name": "Loki（1332）",
+                "name_en": "Loki (1332)",
+                "name_zh": "洛基级（1332）",
+                "model_path": "./models/29990_Loki1332_lite.glb"
+              },
+              {
+                "variant_code": "1333",
+                "name": "Loki（1333）",
+                "name_en": "Loki (1333)",
+                "name_zh": "洛基级（1333）",
+                "model_path": "./models/29990_Loki1333_lite.glb"
+              },
+              {
+                "variant_code": "2111",
+                "name": "Loki（2111）",
+                "name_en": "Loki (2111)",
+                "name_zh": "洛基级（2111）",
+                "model_path": "./models/29990_Loki2111_lite.glb"
+              },
+              {
+                "variant_code": "2112",
+                "name": "Loki（2112）",
+                "name_en": "Loki (2112)",
+                "name_zh": "洛基级（2112）",
+                "model_path": "./models/29990_Loki2112_lite.glb"
+              },
+              {
+                "variant_code": "2113",
+                "name": "Loki（2113）",
+                "name_en": "Loki (2113)",
+                "name_zh": "洛基级（2113）",
+                "model_path": "./models/29990_Loki2113_lite.glb"
+              },
+              {
+                "variant_code": "2121",
+                "name": "Loki（2121）",
+                "name_en": "Loki (2121)",
+                "name_zh": "洛基级（2121）",
+                "model_path": "./models/29990_Loki2121_lite.glb"
+              },
+              {
+                "variant_code": "2122",
+                "name": "Loki（2122）",
+                "name_en": "Loki (2122)",
+                "name_zh": "洛基级（2122）",
+                "model_path": "./models/29990_Loki2122_lite.glb"
+              },
+              {
+                "variant_code": "2123",
+                "name": "Loki（2123）",
+                "name_en": "Loki (2123)",
+                "name_zh": "洛基级（2123）",
+                "model_path": "./models/29990_Loki2123_lite.glb"
+              },
+              {
+                "variant_code": "2131",
+                "name": "Loki（2131）",
+                "name_en": "Loki (2131)",
+                "name_zh": "洛基级（2131）",
+                "model_path": "./models/29990_Loki2131_lite.glb"
+              },
+              {
+                "variant_code": "2132",
+                "name": "Loki（2132）",
+                "name_en": "Loki (2132)",
+                "name_zh": "洛基级（2132）",
+                "model_path": "./models/29990_Loki2132_lite.glb"
+              },
+              {
+                "variant_code": "2133",
+                "name": "Loki（2133）",
+                "name_en": "Loki (2133)",
+                "name_zh": "洛基级（2133）",
+                "model_path": "./models/29990_Loki2133_lite.glb"
+              },
+              {
+                "variant_code": "2211",
+                "name": "Loki（2211）",
+                "name_en": "Loki (2211)",
+                "name_zh": "洛基级（2211）",
+                "model_path": "./models/29990_Loki2211_lite.glb"
+              },
+              {
+                "variant_code": "2212",
+                "name": "Loki（2212）",
+                "name_en": "Loki (2212)",
+                "name_zh": "洛基级（2212）",
+                "model_path": "./models/29990_Loki2212_lite.glb"
+              },
+              {
+                "variant_code": "2213",
+                "name": "Loki（2213）",
+                "name_en": "Loki (2213)",
+                "name_zh": "洛基级（2213）",
+                "model_path": "./models/29990_Loki2213_lite.glb"
+              },
+              {
+                "variant_code": "2221",
+                "name": "Loki（2221）",
+                "name_en": "Loki (2221)",
+                "name_zh": "洛基级（2221）",
+                "model_path": "./models/29990_Loki2221_lite.glb"
+              },
+              {
+                "variant_code": "2222",
+                "name": "Loki（2222）",
+                "name_en": "Loki (2222)",
+                "name_zh": "洛基级（2222）",
+                "model_path": "./models/29990_Loki2222_lite.glb"
+              },
+              {
+                "variant_code": "2223",
+                "name": "Loki（2223）",
+                "name_en": "Loki (2223)",
+                "name_zh": "洛基级（2223）",
+                "model_path": "./models/29990_Loki2223_lite.glb"
+              },
+              {
+                "variant_code": "2231",
+                "name": "Loki（2231）",
+                "name_en": "Loki (2231)",
+                "name_zh": "洛基级（2231）",
+                "model_path": "./models/29990_Loki2231_lite.glb"
+              },
+              {
+                "variant_code": "2232",
+                "name": "Loki（2232）",
+                "name_en": "Loki (2232)",
+                "name_zh": "洛基级（2232）",
+                "model_path": "./models/29990_Loki2232_lite.glb"
+              },
+              {
+                "variant_code": "2233",
+                "name": "Loki（2233）",
+                "name_en": "Loki (2233)",
+                "name_zh": "洛基级（2233）",
+                "model_path": "./models/29990_Loki2233_lite.glb"
+              },
+              {
+                "variant_code": "2311",
+                "name": "Loki（2311）",
+                "name_en": "Loki (2311)",
+                "name_zh": "洛基级（2311）",
+                "model_path": "./models/29990_Loki2311_lite.glb"
+              },
+              {
+                "variant_code": "2312",
+                "name": "Loki（2312）",
+                "name_en": "Loki (2312)",
+                "name_zh": "洛基级（2312）",
+                "model_path": "./models/29990_Loki2312_lite.glb"
+              },
+              {
+                "variant_code": "2313",
+                "name": "Loki（2313）",
+                "name_en": "Loki (2313)",
+                "name_zh": "洛基级（2313）",
+                "model_path": "./models/29990_Loki2313_lite.glb"
+              },
+              {
+                "variant_code": "2321",
+                "name": "Loki（2321）",
+                "name_en": "Loki (2321)",
+                "name_zh": "洛基级（2321）",
+                "model_path": "./models/29990_Loki2321_lite.glb"
+              },
+              {
+                "variant_code": "2322",
+                "name": "Loki（2322）",
+                "name_en": "Loki (2322)",
+                "name_zh": "洛基级（2322）",
+                "model_path": "./models/29990_Loki2322_lite.glb"
+              },
+              {
+                "variant_code": "2323",
+                "name": "Loki（2323）",
+                "name_en": "Loki (2323)",
+                "name_zh": "洛基级（2323）",
+                "model_path": "./models/29990_Loki2323_lite.glb"
+              },
+              {
+                "variant_code": "2331",
+                "name": "Loki（2331）",
+                "name_en": "Loki (2331)",
+                "name_zh": "洛基级（2331）",
+                "model_path": "./models/29990_Loki2331_lite.glb"
+              },
+              {
+                "variant_code": "2332",
+                "name": "Loki（2332）",
+                "name_en": "Loki (2332)",
+                "name_zh": "洛基级（2332）",
+                "model_path": "./models/29990_Loki2332_lite.glb"
+              },
+              {
+                "variant_code": "2333",
+                "name": "Loki（2333）",
+                "name_en": "Loki (2333)",
+                "name_zh": "洛基级（2333）",
+                "model_path": "./models/29990_Loki2333_lite.glb"
+              },
+              {
+                "variant_code": "3111",
+                "name": "Loki（3111）",
+                "name_en": "Loki (3111)",
+                "name_zh": "洛基级（3111）",
+                "model_path": "./models/29990_Loki3111_lite.glb"
+              },
+              {
+                "variant_code": "3112",
+                "name": "Loki（3112）",
+                "name_en": "Loki (3112)",
+                "name_zh": "洛基级（3112）",
+                "model_path": "./models/29990_Loki3112_lite.glb"
+              },
+              {
+                "variant_code": "3113",
+                "name": "Loki（3113）",
+                "name_en": "Loki (3113)",
+                "name_zh": "洛基级（3113）",
+                "model_path": "./models/29990_Loki3113_lite.glb"
+              },
+              {
+                "variant_code": "3121",
+                "name": "Loki（3121）",
+                "name_en": "Loki (3121)",
+                "name_zh": "洛基级（3121）",
+                "model_path": "./models/29990_Loki3121_lite.glb"
+              },
+              {
+                "variant_code": "3122",
+                "name": "Loki（3122）",
+                "name_en": "Loki (3122)",
+                "name_zh": "洛基级（3122）",
+                "model_path": "./models/29990_Loki3122_lite.glb"
+              },
+              {
+                "variant_code": "3123",
+                "name": "Loki（3123）",
+                "name_en": "Loki (3123)",
+                "name_zh": "洛基级（3123）",
+                "model_path": "./models/29990_Loki3123_lite.glb"
+              },
+              {
+                "variant_code": "3131",
+                "name": "Loki（3131）",
+                "name_en": "Loki (3131)",
+                "name_zh": "洛基级（3131）",
+                "model_path": "./models/29990_Loki3131_lite.glb"
+              },
+              {
+                "variant_code": "3132",
+                "name": "Loki（3132）",
+                "name_en": "Loki (3132)",
+                "name_zh": "洛基级（3132）",
+                "model_path": "./models/29990_Loki3132_lite.glb"
+              },
+              {
+                "variant_code": "3133",
+                "name": "Loki（3133）",
+                "name_en": "Loki (3133)",
+                "name_zh": "洛基级（3133）",
+                "model_path": "./models/29990_Loki3133_lite.glb"
+              },
+              {
+                "variant_code": "3211",
+                "name": "Loki（3211）",
+                "name_en": "Loki (3211)",
+                "name_zh": "洛基级（3211）",
+                "model_path": "./models/29990_Loki3211_lite.glb"
+              },
+              {
+                "variant_code": "3212",
+                "name": "Loki（3212）",
+                "name_en": "Loki (3212)",
+                "name_zh": "洛基级（3212）",
+                "model_path": "./models/29990_Loki3212_lite.glb"
+              },
+              {
+                "variant_code": "3213",
+                "name": "Loki（3213）",
+                "name_en": "Loki (3213)",
+                "name_zh": "洛基级（3213）",
+                "model_path": "./models/29990_Loki3213_lite.glb"
+              },
+              {
+                "variant_code": "3221",
+                "name": "Loki（3221）",
+                "name_en": "Loki (3221)",
+                "name_zh": "洛基级（3221）",
+                "model_path": "./models/29990_Loki3221_lite.glb"
+              },
+              {
+                "variant_code": "3222",
+                "name": "Loki（3222）",
+                "name_en": "Loki (3222)",
+                "name_zh": "洛基级（3222）",
+                "model_path": "./models/29990_Loki3222_lite.glb"
+              },
+              {
+                "variant_code": "3223",
+                "name": "Loki（3223）",
+                "name_en": "Loki (3223)",
+                "name_zh": "洛基级（3223）",
+                "model_path": "./models/29990_Loki3223_lite.glb"
+              },
+              {
+                "variant_code": "3231",
+                "name": "Loki（3231）",
+                "name_en": "Loki (3231)",
+                "name_zh": "洛基级（3231）",
+                "model_path": "./models/29990_Loki3231_lite.glb"
+              },
+              {
+                "variant_code": "3232",
+                "name": "Loki（3232）",
+                "name_en": "Loki (3232)",
+                "name_zh": "洛基级（3232）",
+                "model_path": "./models/29990_Loki3232_lite.glb"
+              },
+              {
+                "variant_code": "3233",
+                "name": "Loki（3233）",
+                "name_en": "Loki (3233)",
+                "name_zh": "洛基级（3233）",
+                "model_path": "./models/29990_Loki3233_lite.glb"
+              },
+              {
+                "variant_code": "3311",
+                "name": "Loki（3311）",
+                "name_en": "Loki (3311)",
+                "name_zh": "洛基级（3311）",
+                "model_path": "./models/29990_Loki3311_lite.glb"
+              },
+              {
+                "variant_code": "3312",
+                "name": "Loki（3312）",
+                "name_en": "Loki (3312)",
+                "name_zh": "洛基级（3312）",
+                "model_path": "./models/29990_Loki3312_lite.glb"
+              },
+              {
+                "variant_code": "3313",
+                "name": "Loki（3313）",
+                "name_en": "Loki (3313)",
+                "name_zh": "洛基级（3313）",
+                "model_path": "./models/29990_Loki3313_lite.glb"
+              },
+              {
+                "variant_code": "3321",
+                "name": "Loki（3321）",
+                "name_en": "Loki (3321)",
+                "name_zh": "洛基级（3321）",
+                "model_path": "./models/29990_Loki3321_lite.glb"
+              },
+              {
+                "variant_code": "3322",
+                "name": "Loki（3322）",
+                "name_en": "Loki (3322)",
+                "name_zh": "洛基级（3322）",
+                "model_path": "./models/29990_Loki3322_lite.glb"
+              },
+              {
+                "variant_code": "3323",
+                "name": "Loki（3323）",
+                "name_en": "Loki (3323)",
+                "name_zh": "洛基级（3323）",
+                "model_path": "./models/29990_Loki3323_lite.glb"
+              },
+              {
+                "variant_code": "3331",
+                "name": "Loki（3331）",
+                "name_en": "Loki (3331)",
+                "name_zh": "洛基级（3331）",
+                "model_path": "./models/29990_Loki3331_lite.glb"
+              },
+              {
+                "variant_code": "3332",
+                "name": "Loki（3332）",
+                "name_en": "Loki (3332)",
+                "name_zh": "洛基级（3332）",
+                "model_path": "./models/29990_Loki3332_lite.glb"
+              },
+              {
+                "variant_code": "3333",
+                "name": "Loki（3333）",
+                "name_en": "Loki (3333)",
+                "name_zh": "洛基级（3333）",
+                "model_path": "./models/29990_Loki3333_lite.glb"
               }
             ]
           },
