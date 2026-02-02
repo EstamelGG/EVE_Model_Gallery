@@ -1777,14 +1777,38 @@ model-viewer.active { display: block; }
     color: #000;
 }
 
-.brightness-slider {
-    -webkit-appearance: slider-vertical;
-    writing-mode: bt-lr;
-    width: 4px;
+/* 用水平滑块旋转实现垂直滑块，保证 Chrome / Firefox 表现一致 */
+.brightness-slider-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
     height: 120px;
+    position: relative;
+}
+
+.brightness-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    width: 120px;
+    height: 4px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    transform-origin: center center;
     border-radius: 2px;
     background: #e0e0e0;
     outline: none;
+}
+
+.brightness-slider::-webkit-slider-runnable-track {
+    width: 120px;
+    height: 4px;
+    border-radius: 2px;
+    background: #e0e0e0;
 }
 
 .brightness-slider::-webkit-slider-thumb {
@@ -1792,11 +1816,20 @@ model-viewer.active { display: block; }
     appearance: none;
     width: 18px;
     height: 18px;
+    margin-top: -7px;
     border-radius: 50%;
     background: #111;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     border: 2px solid white;
+}
+
+.brightness-slider::-moz-range-track {
+    width: 120px;
+    height: 4px;
+    border-radius: 2px;
+    background: #e0e0e0;
+    border: none;
 }
 
 .brightness-slider::-moz-range-thumb {
