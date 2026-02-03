@@ -2108,6 +2108,84 @@
     "icon_name": "category_11.png",
     "groups": [
       {
+        "id": 985,
+        "name": "Deadspace Sleeper Awakened Patroller",
+        "icon_name": "type_30200_64.png",
+        "types": [
+          {
+            "id": 30202,
+            "name": "Awakened Escort",
+            "name_en": "Awakened Escort",
+            "name_zh": "苏醒的护航者",
+            "icon_name": "type_30202_64.png",
+            "has_variants": false,
+            "model_path": "./extra_models/30202_lite.glb"
+          },
+          {
+            "id": 30200,
+            "name": "Awakened Patroller",
+            "name_en": "Awakened Patroller",
+            "name_zh": "苏醒的巡逻者",
+            "icon_name": "type_30200_64.png",
+            "has_variants": false,
+            "model_path": "./extra_models/30200_lite.glb"
+          }
+        ],
+        "is_t3_cruiser": false
+      },
+      {
+        "id": 961,
+        "name": "Deadspace Sleeper Emergent Sentinel",
+        "icon_name": "type_30209_64.png",
+        "types": [
+          {
+            "id": 41338,
+            "name": "Emergent Retainer",
+            "name_en": "Emergent Retainer",
+            "name_zh": "紧急保持者",
+            "icon_name": "type_30210_64.png",
+            "has_variants": false,
+            "model_path": "./extra_models/41338_lite.glb"
+          },
+          {
+            "id": 30215,
+            "name": "Emergent Sentinel",
+            "name_en": "Emergent Sentinel",
+            "name_zh": "新生卫士",
+            "icon_name": "type_30209_64.png",
+            "has_variants": false,
+            "model_path": "./extra_models/30215_lite.glb"
+          }
+        ],
+        "is_t3_cruiser": false
+      },
+      {
+        "id": 982,
+        "name": "Deadspace Sleeper Sleepless Defender",
+        "icon_name": "type_30188_64.png",
+        "types": [
+          {
+            "id": 30192,
+            "name": "Sleepless Defender",
+            "name_en": "Sleepless Defender",
+            "name_zh": "长明防卫者",
+            "icon_name": "type_30188_64.png",
+            "has_variants": false,
+            "model_path": "./extra_models/30192_lite.glb"
+          },
+          {
+            "id": 30194,
+            "name": "Sleepless Preserver",
+            "name_en": "Sleepless Preserver",
+            "name_zh": "长明保护者",
+            "icon_name": "type_30189_64.png",
+            "has_variants": false,
+            "model_path": "./extra_models/30194_lite.glb"
+          }
+        ],
+        "is_t3_cruiser": false
+      },
+      {
         "id": 1310,
         "name": "Drifter Battleship",
         "icon_name": "type_34495_64.png",
@@ -2154,6 +2232,23 @@
             "icon_name": "type_52361_64.png",
             "has_variants": false,
             "model_path": "./extra_models/52361_lite.glb"
+          }
+        ],
+        "is_t3_cruiser": false
+      },
+      {
+        "id": 1768,
+        "name": "Seeker Scouts",
+        "icon_name": "type_34337_64.png",
+        "types": [
+          {
+            "id": 42692,
+            "name": "Circadian Seeker",
+            "name_en": "Circadian Seeker",
+            "name_zh": "节律探寻者",
+            "icon_name": "type_34337_64.png",
+            "has_variants": false,
+            "model_path": "./extra_models/42692_lite.glb"
           }
         ],
         "is_t3_cruiser": false

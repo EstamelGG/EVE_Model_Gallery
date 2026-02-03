@@ -5124,6 +5124,75 @@
         "is_t3_cruiser": false
       },
       {
+        "id": 1768,
+        "name": "探寻者 侦察兵",
+        "icon_name": "type_34337_64.png",
+        "types": [
+          {
+            "id": 42692,
+            "name": "节律探寻者",
+            "name_en": "Circadian Seeker",
+            "name_zh": "节律探寻者",
+            "icon_name": "type_34337_64.png",
+            "has_variants": false,
+            "model_path": "./extra_models/42692_lite.glb"
+          }
+        ],
+        "is_t3_cruiser": false
+      },
+      {
+        "id": 961,
+        "name": "死亡空间冬眠者新生卫士",
+        "icon_name": "type_30209_64.png",
+        "types": [
+          {
+            "id": 30215,
+            "name": "新生卫士",
+            "name_en": "Emergent Sentinel",
+            "name_zh": "新生卫士",
+            "icon_name": "type_30209_64.png",
+            "has_variants": false,
+            "model_path": "./extra_models/30215_lite.glb"
+          },
+          {
+            "id": 41338,
+            "name": "紧急保持者",
+            "name_en": "Emergent Retainer",
+            "name_zh": "紧急保持者",
+            "icon_name": "type_30210_64.png",
+            "has_variants": false,
+            "model_path": "./extra_models/41338_lite.glb"
+          }
+        ],
+        "is_t3_cruiser": false
+      },
+      {
+        "id": 982,
+        "name": "死亡空间冬眠者长明防卫者",
+        "icon_name": "type_30188_64.png",
+        "types": [
+          {
+            "id": 30194,
+            "name": "长明保护者",
+            "name_en": "Sleepless Preserver",
+            "name_zh": "长明保护者",
+            "icon_name": "type_30189_64.png",
+            "has_variants": false,
+            "model_path": "./extra_models/30194_lite.glb"
+          },
+          {
+            "id": 30192,
+            "name": "长明防卫者",
+            "name_en": "Sleepless Defender",
+            "name_zh": "长明防卫者",
+            "icon_name": "type_30188_64.png",
+            "has_variants": false,
+            "model_path": "./extra_models/30192_lite.glb"
+          }
+        ],
+        "is_t3_cruiser": false
+      },
+      {
         "id": 1310,
         "name": "流浪者战列舰",
         "icon_name": "type_34495_64.png",
@@ -5136,6 +5205,32 @@
             "icon_name": "type_34495_64.png",
             "has_variants": false,
             "model_path": "./extra_models/34495_lite.glb"
+          }
+        ],
+        "is_t3_cruiser": false
+      },
+      {
+        "id": 985,
+        "name": "苏醒的冬眠巡逻者",
+        "icon_name": "type_30200_64.png",
+        "types": [
+          {
+            "id": 30200,
+            "name": "苏醒的巡逻者",
+            "name_en": "Awakened Patroller",
+            "name_zh": "苏醒的巡逻者",
+            "icon_name": "type_30200_64.png",
+            "has_variants": false,
+            "model_path": "./extra_models/30200_lite.glb"
+          },
+          {
+            "id": 30202,
+            "name": "苏醒的护航者",
+            "name_en": "Awakened Escort",
+            "name_zh": "苏醒的护航者",
+            "icon_name": "type_30202_64.png",
+            "has_variants": false,
+            "model_path": "./extra_models/30202_lite.glb"
           }
         ],
         "is_t3_cruiser": false
