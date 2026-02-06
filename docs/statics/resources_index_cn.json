@@ -5119,6 +5119,15 @@
             "icon_name": "type_52361_64.png",
             "has_variants": false,
             "model_path": "./extra_models/52361_lite.glb"
+          },
+          {
+            "id": 87227,
+            "name": "警惕级逐梦者",
+            "name_en": "Vigilant Dreamer",
+            "name_zh": "警惕级逐梦者",
+            "icon_name": "type_87227_64.png",
+            "has_variants": false,
+            "model_path": "./extra_models/87227_lite.glb"
           }
         ],
         "is_t3_cruiser": false
@@ -5136,6 +5145,23 @@
             "icon_name": "type_34337_64.png",
             "has_variants": false,
             "model_path": "./extra_models/42692_lite.glb"
+          }
+        ],
+        "is_t3_cruiser": false
+      },
+      {
+        "id": 1207,
+        "name": "散落货柜",
+        "icon_name": "type_10140_64.png",
+        "types": [
+          {
+            "id": 33239,
+            "name": "血袭者残骸",
+            "name_en": "Blood Remains",
+            "name_zh": "血袭者残骸",
+            "icon_name": "type_27278_64.png",
+            "has_variants": false,
+            "model_path": "./extra_models/33239_lite.glb"
           }
         ],
         "is_t3_cruiser": false
