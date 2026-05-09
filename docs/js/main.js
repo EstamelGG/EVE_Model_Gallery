@@ -212,6 +212,9 @@ const autoRotateToggleIcon = document.getElementById('autoRotateToggleIcon');
 const resetViewIcon = document.getElementById('resetViewIcon');
 const shadowToggleIcon = document.getElementById('shadowToggleIcon');
 const themeToggleIcon = document.getElementById('themeToggleIcon');
+const modelViewerFixedBg = document.getElementById('modelViewerFixedBg');
+const backgroundImageInput = document.getElementById('backgroundImageInput');
+const backgroundPickIcon = document.getElementById('backgroundPickIcon');
 const themeToggleBtnHome = document.getElementById('themeToggleBtnHome');
 const modelLoadingSpinner = document.getElementById('modelLoadingSpinner');
 const modelLoadingProgress = document.getElementById('modelLoadingProgress');
@@ -1688,6 +1691,59 @@ function showActionToast(message) {
             actionToast.classList.remove('hide');
         }, 300);
     }, 2000);
+}
+
+let customFixedBgObjectUrl = null;
+
+function revokeCustomFixedBgUrl() {
+    if (customFixedBgObjectUrl) {
+        URL.revokeObjectURL(customFixedBgObjectUrl);
+        customFixedBgObjectUrl = null;
+    }
+}
+
+function applyLocalImageAsFixedBackdrop(file) {
+    if (!modelViewer || !modelViewerFixedBg || !file || !file.type.startsWith('image/')) return false;
+    revokeCustomFixedBgUrl();
+    customFixedBgObjectUrl = URL.createObjectURL(file);
+    modelViewer.skyboxImage = '';
+    if (modelViewer.removeAttribute) {
+        modelViewer.removeAttribute('skybox-image');
+    }
+    modelViewerFixedBg.style.backgroundImage = `url("${customFixedBgObjectUrl}")`;
+    modelViewer.classList.add('model-viewer--fixed-bg');
+    return true;
+}
+
+window.addEventListener('beforeunload', revokeCustomFixedBgUrl);
+
+if (backgroundPickIcon && backgroundImageInput && modelViewer && modelViewerFixedBg) {
+    backgroundPickIcon.setAttribute('role', 'button');
+    backgroundPickIcon.setAttribute('tabindex', '0');
+    backgroundPickIcon.addEventListener('click', () => backgroundImageInput.click());
+    backgroundPickIcon.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            backgroundImageInput.click();
+        }
+    });
+    backgroundPickIcon.setAttribute(
+        'title',
+        currentLang === 'cn' ? '本地图片作为固定背景' : 'Set fixed background from image'
+    );
+    backgroundImageInput.addEventListener('change', () => {
+        const file = backgroundImageInput.files && backgroundImageInput.files[0];
+        backgroundImageInput.value = '';
+        if (!file) return;
+        if (!file.type.startsWith('image/')) {
+            showActionToast(currentLang === 'cn' ? '请选择图片文件' : 'Please choose an image file');
+            return;
+        }
+        if (applyLocalImageAsFixedBackdrop(file)) {
+            showActionToast(currentLang === 'cn' ? '已应用固定背景' : 'Fixed background applied');
+        }
+        if (navigator.vibrate) navigator.vibrate(10);
+    });
 }
 
 if (autoRotateToggleIcon) {
